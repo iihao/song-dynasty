@@ -110,6 +110,19 @@ OVERRIDES = {
     "tl-1232": "三峰山之战",
     "tl-1247": "洗冤集录",
     "tl-1275": "丁家洲之战",
+    "ppl-litang": "李唐 (宋朝)",
+    "ppl-zhangyan": "張炎 (宋朝)",
+    "ppl-wangweiyi": "王惟一 (医学家)",
+    "ppl-hongzhizhengjue": "宏智正覺",
+    "ppl-licheng": "李成 (五代)",
+    "ppl-hangonglian": "韓公廉",
+    "ppl-yangwujiu": "扬无咎",
+    "ppl-yangshi": "楊時 (宋朝)",
+    "soc-chanzu": "缠足",
+    "tec-huoyao": "火药",
+    "tec-diaoban": "雕版印刷",
+    "soc-huozang": "火葬",
+    "pol-liao-wolusuo": "斡耳朵",
 }
 
 # 这些条目与维基条目只是“大类相同”，宁可留空也不误导
