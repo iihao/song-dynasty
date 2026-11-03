@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-03T15:45:19",
+  "generatedAt": "2026-11-03T16:07:12",
   "categories": [
     {
       "id": "politics",
@@ -325,6 +325,9 @@
         "后梁",
         "唐亡",
         "五代十国"
+      ],
+      "related": [
+        "ppl-zhuwen"
       ]
     },
     {
@@ -365,6 +368,11 @@
         "因俗而治",
         "北面官",
         "南面官"
+      ],
+      "related": [
+        "cul-liao-wenzi",
+        "pol-jin-bojilie",
+        "pol-xixia-guanzhi"
       ]
     },
     {
@@ -385,6 +393,9 @@
         "捺钵",
         "行营",
         "政治中心"
+      ],
+      "related": [
+        "cus-liao-nabo"
       ]
     },
     {
@@ -545,6 +556,9 @@
         "捺钵",
         "渔猎",
         "四时"
+      ],
+      "related": [
+        "pol-liao-sishinabo"
       ]
     },
     {
@@ -645,6 +659,9 @@
         "契丹",
         "建国",
         "辽太祖"
+      ],
+      "related": [
+        "ppl-liao-shuluping"
       ]
     },
     {
@@ -745,6 +762,9 @@
         "契丹",
         "髡发",
         "发式"
+      ],
+      "related": [
+        "cul-liao-wenzi"
       ]
     },
     {
@@ -788,6 +808,12 @@
         "契丹文",
         "耶律突吕不",
         "耶律迭剌"
+      ],
+      "related": [
+        "cul-xixia-wenzi",
+        "cus-liao-kunfa",
+        "pol-liao-nanbeimian",
+        "ppl-liao-yelubei"
       ]
     },
     {
@@ -808,6 +834,10 @@
         "渤海",
         "东丹国",
         "耶律倍"
+      ],
+      "related": [
+        "ppl-liao-shuluping",
+        "ppl-liao-yelubei"
       ]
     },
     {
@@ -848,6 +878,10 @@
         "燕云",
         "石敬瑭",
         "后晋"
+      ],
+      "related": [
+        "ppl-shijingtang",
+        "tl-liao-947"
       ]
     },
     {
@@ -888,6 +922,9 @@
         "燕云",
         "燕京",
         "北京"
+      ],
+      "related": [
+        "geo-jin-zhongdu"
       ]
     },
     {
@@ -908,6 +945,9 @@
         "燕云",
         "辽",
         "国防"
+      ],
+      "related": [
+        "ppl-shijingtang"
       ]
     },
     {
@@ -975,7 +1015,8 @@
         "柴荣"
       ],
       "related": [
-        "emp-song-taizu"
+        "emp-song-taizu",
+        "ppl-chairong"
       ]
     },
     {
@@ -998,7 +1039,8 @@
         "柴荣"
       ],
       "related": [
-        "emp-song-taizu"
+        "emp-song-taizu",
+        "ppl-chairong"
       ]
     },
     {
@@ -1040,6 +1082,11 @@
         "度支",
         "盐铁",
         "户部"
+      ],
+      "related": [
+        "eco-quejiu",
+        "eco-yan",
+        "mil-sanrong"
       ]
     },
     {
@@ -1060,6 +1107,9 @@
         "殿前司",
         "马军司",
         "步军司"
+      ],
+      "related": [
+        "mil-shumiyuan"
       ]
     },
     {
@@ -1100,6 +1150,9 @@
         "土地",
         "兼并",
         "田制"
+      ],
+      "related": [
+        "eco-zudian"
       ]
     },
     {
@@ -1120,6 +1173,13 @@
         "都城",
         "汴京",
         "汴河"
+      ],
+      "related": [
+        "cus-washe",
+        "cus-yuanxiao",
+        "eco-caoyun",
+        "geo-xingqingfu",
+        "soc-xiangfang"
       ]
     },
     {
@@ -1283,6 +1343,10 @@
         "户籍",
         "佃户",
         "租佃制"
+      ],
+      "related": [
+        "eco-zudian",
+        "pol-jingjie"
       ]
     },
     {
@@ -1325,7 +1389,9 @@
         "四大书院"
       ],
       "related": [
-        "ppl-zhuxi"
+        "pol-guanxue",
+        "ppl-zhuxi",
+        "soc-mengxue"
       ]
     },
     {
@@ -1410,6 +1476,9 @@
         "上元",
         "灯会",
         "猜灯谜"
+      ],
+      "related": [
+        "geo-kaifeng"
       ]
     },
     {
@@ -1510,6 +1579,9 @@
         "刻书",
         "书坊",
         "建阳"
+      ],
+      "related": [
+        "tec-diaoban"
       ]
     },
     {
@@ -1530,6 +1602,9 @@
         "役兵",
         "地方",
         "劳役"
+      ],
+      "related": [
+        "mil-jinjun"
       ]
     },
     {
@@ -1550,6 +1625,9 @@
         "城市管理",
         "厢",
         "坊"
+      ],
+      "related": [
+        "geo-kaifeng"
       ]
     },
     {
@@ -1669,6 +1747,9 @@
         "夜市",
         "早市",
         "鬼市"
+      ],
+      "related": [
+        "cus-washe"
       ]
     },
     {
@@ -1689,6 +1770,9 @@
         "司法",
         "复核",
         "审刑院"
+      ],
+      "related": [
+        "pol-shenxing"
       ]
     },
     {
@@ -1709,6 +1793,9 @@
         "六礼",
         "花轿",
         "拜堂"
+      ],
+      "related": [
+        "soc-hunyin"
       ]
     },
     {
@@ -1729,6 +1816,9 @@
         "六礼",
         "嫁妆",
         "门第"
+      ],
+      "related": [
+        "cus-hunsu"
       ]
     },
     {
@@ -1769,6 +1859,9 @@
         "女性",
         "财产权",
         "才女"
+      ],
+      "related": [
+        "soc-chanzu"
       ]
     },
     {
@@ -1830,6 +1923,11 @@
         "戏曲",
         "杂剧",
         "滑稽"
+      ],
+      "related": [
+        "cul-jiaofang",
+        "cul-nanxi",
+        "cus-washe"
       ]
     },
     {
@@ -1950,6 +2048,9 @@
         "太学",
         "州学",
         "县学"
+      ],
+      "related": [
+        "cul-shuyuan"
       ]
     },
     {
@@ -2010,6 +2111,10 @@
         "服饰",
         "幞头",
         "官服"
+      ],
+      "related": [
+        "cus-beizi",
+        "cus-jiaju"
       ]
     },
     {
@@ -2030,6 +2135,9 @@
         "市舶司",
         "南海",
         "蕃坊"
+      ],
+      "related": [
+        "eco-shibo"
       ]
     },
     {
@@ -2053,6 +2161,7 @@
       ],
       "related": [
         "mil-shenbimgong",
+        "ppl-liao-xiaotalin",
         "tl-1005"
       ]
     },
@@ -2094,6 +2203,9 @@
         "特权",
         "免役",
         "士大夫"
+      ],
+      "related": [
+        "pol-jingjie"
       ]
     },
     {
@@ -2114,6 +2226,9 @@
         "台谏",
         "监察",
         "言官"
+      ],
+      "related": [
+        "pol-taijian"
       ]
     },
     {
@@ -2134,6 +2249,9 @@
         "交子",
         "天府",
         "蜀锦"
+      ],
+      "related": [
+        "eco-chama"
       ]
     },
     {
@@ -2234,6 +2352,9 @@
         "司法",
         "监察",
         "提刑"
+      ],
+      "related": [
+        "pol-lu"
       ]
     },
     {
@@ -2254,6 +2375,9 @@
         "教坊",
         "大曲",
         "词乐"
+      ],
+      "related": [
+        "cus-zaju"
       ]
     },
     {
@@ -2294,6 +2418,9 @@
         "市舶司",
         "海港",
         "宁波"
+      ],
+      "related": [
+        "eco-shibo"
       ]
     },
     {
@@ -2314,6 +2441,9 @@
         "禁军",
         "轮戍",
         "兵不识将"
+      ],
+      "related": [
+        "mil-jinjun"
       ]
     },
     {
@@ -2336,6 +2466,7 @@
         "调兵权"
       ],
       "related": [
+        "mil-sanya",
         "pol-erfu"
       ]
     },
@@ -2357,6 +2488,9 @@
         "酒",
         "专卖",
         "酒税"
+      ],
+      "related": [
+        "pol-sansi"
       ]
     },
     {
@@ -2398,6 +2532,11 @@
         "市舶司",
         "海港",
         "刺桐"
+      ],
+      "related": [
+        "eco-haishang",
+        "eco-shibo",
+        "tec-qiaoliang"
       ]
     },
     {
@@ -2418,6 +2557,10 @@
         "海路",
         "东南亚",
         "阿拉伯"
+      ],
+      "related": [
+        "geo-quanzhou",
+        "tec-zhinanzhen"
       ]
     },
     {
@@ -2458,6 +2601,9 @@
         "汴河",
         "漕运",
         "大运河"
+      ],
+      "related": [
+        "geo-kaifeng"
       ]
     },
     {
@@ -2519,6 +2665,10 @@
         "茶",
         "点茶",
         "茶百戏"
+      ],
+      "related": [
+        "cul-dingyao",
+        "eco-chama"
       ]
     },
     {
@@ -2579,6 +2729,15 @@
         "瓦舍",
         "勾栏",
         "市民娱乐"
+      ],
+      "related": [
+        "cus-cuju",
+        "cus-shuohua",
+        "cus-xiangpu",
+        "cus-zaju",
+        "eco-caoshi",
+        "eco-yeshi",
+        "geo-kaifeng"
       ]
     },
     {
@@ -2599,6 +2758,9 @@
         "财政",
         "盐",
         "榷盐"
+      ],
+      "related": [
+        "pol-sansi"
       ]
     },
     {
@@ -2619,6 +2781,10 @@
         "相扑",
         "角抵",
         "竞技"
+      ],
+      "related": [
+        "cus-cuju",
+        "cus-washe"
       ]
     },
     {
@@ -2639,6 +2805,9 @@
         "差遣",
         "知州",
         "知县"
+      ],
+      "related": [
+        "soc-xuli"
       ]
     },
     {
@@ -2659,6 +2828,9 @@
         "铁",
         "铜",
         "煤"
+      ],
+      "related": [
+        "tec-yetie"
       ]
     },
     {
@@ -2699,6 +2871,10 @@
         "募兵",
         "中央军",
         "强干弱枝"
+      ],
+      "related": [
+        "mil-gengshu",
+        "mil-xiangjun"
       ]
     },
     {
@@ -2740,6 +2916,9 @@
         "士大夫",
         "科举",
         "寒门"
+      ],
+      "related": [
+        "pol-keju"
       ]
     },
     {
@@ -2760,6 +2939,10 @@
         "佃户",
         "契约",
         "地租"
+      ],
+      "related": [
+        "eco-buyijianbing",
+        "soc-zhuhu"
       ]
     },
     {
@@ -2880,6 +3063,9 @@
         "行政",
         "吏",
         "基层"
+      ],
+      "related": [
+        "pol-zhizhou"
       ]
     },
     {
@@ -2920,6 +3106,10 @@
         "马",
         "西北",
         "茶"
+      ],
+      "related": [
+        "cus-diancha",
+        "geo-chengdu"
       ]
     },
     {
@@ -2940,6 +3130,10 @@
         "草市",
         "镇",
         "乡村市场"
+      ],
+      "related": [
+        "cus-washe",
+        "soc-hanghui"
       ]
     },
     {
@@ -2981,6 +3175,9 @@
         "蒙学",
         "村学",
         "识字"
+      ],
+      "related": [
+        "cul-shuyuan"
       ]
     },
     {
@@ -3001,6 +3198,9 @@
         "商人",
         "行",
         "市场"
+      ],
+      "related": [
+        "eco-caoshi"
       ]
     },
     {
@@ -3021,6 +3221,9 @@
         "女性",
         "服饰",
         "褙子"
+      ],
+      "related": [
+        "cus-fushi"
       ]
     },
     {
@@ -3061,6 +3264,10 @@
         "科举",
         "三级考试",
         "殿试"
+      ],
+      "related": [
+        "cul-taixue",
+        "soc-liudong"
       ]
     },
     {
@@ -3081,6 +3288,10 @@
         "说书",
         "讲史",
         "小说"
+      ],
+      "related": [
+        "cul-huaben",
+        "cus-washe"
       ]
     },
     {
@@ -3101,6 +3312,10 @@
         "地方",
         "路",
         "转运使"
+      ],
+      "related": [
+        "pol-tidian",
+        "pol-zhuanyun"
       ]
     },
     {
@@ -3121,6 +3336,10 @@
         "蹴鞠",
         "足球",
         "高俅"
+      ],
+      "related": [
+        "cus-washe",
+        "cus-xiangpu"
       ]
     },
     {
@@ -3141,6 +3360,10 @@
         "财政",
         "路",
         "漕运"
+      ],
+      "related": [
+        "pol-jingjie",
+        "pol-lu"
       ]
     },
     {
@@ -3181,6 +3404,9 @@
         "南京",
         "上京",
         "中京"
+      ],
+      "related": [
+        "geo-liao-shangjing"
       ]
     },
     {
@@ -3221,6 +3447,9 @@
         "造船",
         "远洋",
         "船场"
+      ],
+      "related": [
+        "tec-zaochuan"
       ]
     },
     {
@@ -3241,6 +3470,9 @@
         "江防",
         "商业",
         "武昌"
+      ],
+      "related": [
+        "geo-xiangyang"
       ]
     },
     {
@@ -3361,6 +3593,9 @@
         "印刷",
         "书籍",
         "出版"
+      ],
+      "related": [
+        "eco-yinshua"
       ]
     },
     {
@@ -3421,6 +3656,9 @@
         "家具",
         "椅子",
         "起居"
+      ],
+      "related": [
+        "cus-fushi"
       ]
     },
     {
@@ -3563,6 +3801,11 @@
         "市舶司",
         "海上丝路",
         "泉州"
+      ],
+      "related": [
+        "geo-guangzhou",
+        "geo-mingzhou",
+        "geo-quanzhou"
       ]
     },
     {
@@ -3624,6 +3867,10 @@
         "赵光义",
         "高梁河",
         "北汉"
+      ],
+      "related": [
+        "ppl-liao-yeluxiezhen",
+        "ppl-liao-yeluxiuge"
       ]
     },
     {
@@ -3684,6 +3931,9 @@
         "司法",
         "复核",
         "太宗"
+      ],
+      "related": [
+        "soc-sifa"
       ]
     },
     {
@@ -3706,6 +3956,7 @@
         "圣宗"
       ],
       "related": [
+        "ppl-liao-handrang",
         "ppl-xiaochuo"
       ]
     },
@@ -3810,6 +4061,9 @@
         "杨业",
         "北伐",
         "雍熙"
+      ],
+      "related": [
+        "ppl-liao-yeluxiuge"
       ]
     },
     {
@@ -3973,6 +4227,9 @@
         "柳永",
         "李清照",
         "周邦彦"
+      ],
+      "related": [
+        "ppl-liqingzhao"
       ]
     },
     {
@@ -3995,7 +4252,8 @@
         "刻花"
       ],
       "related": [
-        "cul-ruyao"
+        "cul-ruyao",
+        "cus-diancha"
       ]
     },
     {
@@ -4101,6 +4359,7 @@
       "related": [
         "emp-song-zhenzong",
         "ppl-kouzhun",
+        "ppl-liao-xiaotalin",
         "tl-1005"
       ]
     },
@@ -4122,6 +4381,10 @@
         "澶渊之盟",
         "绍兴和议",
         "岁币"
+      ],
+      "related": [
+        "eco-quechang",
+        "tl-1005"
       ]
     },
     {
@@ -4143,6 +4406,11 @@
         "西夏",
         "金",
         "边境贸易"
+      ],
+      "related": [
+        "eco-liao-quechang",
+        "pol-waijiao",
+        "tl-1005"
       ]
     },
     {
@@ -4165,11 +4433,16 @@
         "和议"
       ],
       "related": [
+        "eco-quechang",
         "emp-song-zhenzong",
         "mil-chuangzin",
+        "pol-waijiao",
         "ppl-kouzhun",
+        "ppl-liao-handrang",
         "ppl-xiaochuo",
-        "tl-1004"
+        "tl-1004",
+        "tl-liao-1009",
+        "tl-liao-1042"
       ]
     },
     {
@@ -4210,6 +4483,9 @@
         "澶渊",
         "榷场",
         "互市"
+      ],
+      "related": [
+        "eco-quechang"
       ]
     },
     {
@@ -4334,6 +4610,10 @@
         "占城稻",
         "复种",
         "粮食"
+      ],
+      "related": [
+        "soc-renkou",
+        "tl-1012"
       ]
     },
     {
@@ -4354,6 +4634,9 @@
         "占城稻",
         "农业",
         "江淮"
+      ],
+      "related": [
+        "eco-zanchengdao"
       ]
     },
     {
@@ -4394,6 +4677,9 @@
         "高丽",
         "姜邯赞",
         "萧排押"
+      ],
+      "related": [
+        "mil-liao-guizhou"
       ]
     },
     {
@@ -4414,6 +4700,9 @@
         "高丽",
         "姜邯赞",
         "东征"
+      ],
+      "related": [
+        "tl-liao-1019"
       ]
     },
     {
@@ -4496,6 +4785,11 @@
         "纸币",
         "益州",
         "交子务"
+      ],
+      "related": [
+        "eco-huizi",
+        "tec-yinshua",
+        "tl-1023"
       ]
     },
     {
@@ -4517,6 +4811,9 @@
         "纸币",
         "成都",
         "经济"
+      ],
+      "related": [
+        "eco-jiaozi"
       ]
     },
     {
@@ -4537,6 +4834,9 @@
         "交子",
         "套印",
         "防伪"
+      ],
+      "related": [
+        "eco-jiaozi"
       ]
     },
     {
@@ -4577,6 +4877,9 @@
         "王惟一",
         "针灸",
         "教学"
+      ],
+      "related": [
+        "ppl-wangweiyi"
       ]
     },
     {
@@ -4642,6 +4945,32 @@
       ]
     },
     {
+      "id": "cul-xixia-wenzi",
+      "cat": "culture",
+      "type": "文字",
+      "name": "西夏文",
+      "era": "西夏",
+      "year": 1036,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "元昊命野利仁荣仿汉字创制西夏文，用于官方文书、佛经与碑刻。",
+      "detail": "西夏文创于 1036 年前后，字形仿汉字而笔画繁复，共六千余字。西夏以之译佛经、编字典《文海》，黑水城出土的西夏文文献是研究党项文化与语言的主要材料。",
+      "refs": "《宋史·夏国传》《文海》",
+      "tags": [
+        "西夏文",
+        "野利仁荣",
+        "黑水城"
+      ],
+      "related": [
+        "cul-liao-wenzi",
+        "cul-xixia-fojiao",
+        "emp-xixia-jingzong",
+        "geo-heishuicheng"
+      ]
+    },
+    {
       "id": "tl-1038",
       "cat": "timeline",
       "type": "事件",
@@ -4661,7 +4990,84 @@
         "兴庆府"
       ],
       "related": [
-        "emp-xixia-jingzong"
+        "emp-xixia-jingzong",
+        "geo-xingqingfu",
+        "pol-xixia-guanzhi"
+      ]
+    },
+    {
+      "id": "geo-xingqingfu",
+      "cat": "geography",
+      "type": "都城",
+      "name": "兴庆府",
+      "era": "西夏",
+      "year": 1038,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "西夏都城，今宁夏银川。元昊定都于此，城郭宫室多仿汴京。",
+      "detail": "兴庆府本为灵州怀远镇，李德明迁居筑城，1038 年元昊称帝后升为都城。城内营宫殿、置百官，西郊贺兰山下有西夏王陵。1227 年蒙古灭夏，城郭毁于兵火。",
+      "refs": "《宋史·夏国传》《西夏书事》",
+      "tags": [
+        "都城",
+        "银川",
+        "王陵"
+      ],
+      "related": [
+        "emp-xixia-jingzong",
+        "geo-kaifeng",
+        "tl-1038"
+      ]
+    },
+    {
+      "id": "cul-xixia-fojiao",
+      "cat": "culture",
+      "type": "宗教",
+      "name": "西夏佛教",
+      "era": "西夏",
+      "year": 1038,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "西夏崇佛，广建寺塔、译刻佛经，兼受汉传与藏传两系影响。",
+      "detail": "西夏多次向宋求取大藏经，并刻印汉文与西夏文佛典。仁宗李仁孝时更重藏传佛教，延请西藏僧人弘法。黑水城出土大量佛画、经卷与唐卡，可见其信仰之盛。",
+      "refs": "《西夏书事》卷十八《凉州重修护国寺感通塔碑》",
+      "tags": [
+        "佛教",
+        "藏传",
+        "译经"
+      ],
+      "related": [
+        "cul-xixia-wenzi",
+        "emp-xixia-renzong",
+        "geo-heishuicheng"
+      ]
+    },
+    {
+      "id": "pol-xixia-guanzhi",
+      "cat": "politics",
+      "type": "官制",
+      "name": "西夏官制（蕃汉并行）",
+      "era": "西夏",
+      "year": 1038,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "西夏官制蕃汉两套并行：中书、枢密、三司等仿宋机构，与党项族帐旧制并存。",
+      "detail": "元昊称帝后设汉制中枢——中书、枢密、三司、御史台，又保留宁令、谟宁令等蕃官名号与部落“首领—族帐”结构。文书夏汉并用，官制因此带有双重性格。",
+      "refs": "《宋史·夏国传》《西夏书事》卷十二",
+      "tags": [
+        "官制",
+        "蕃汉",
+        "元昊"
+      ],
+      "related": [
+        "emp-xixia-jingzong",
+        "pol-liao-nanbeimian",
+        "tl-1038"
       ]
     },
     {
@@ -4685,6 +5091,30 @@
       ]
     },
     {
+      "id": "geo-heishuicheng",
+      "cat": "geography",
+      "type": "城市",
+      "name": "黑水城",
+      "era": "西夏",
+      "year": 1038,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "西夏黑水镇燕军司驻地，今内蒙古额济纳旗，出土大量西夏文文书与佛画。",
+      "detail": "黑水城扼居延故道，是西夏北境军事与贸易据点。1908—1909 年科兹洛夫在此掘得西夏文、汉文文书与佛画数千件，与敦煌遗书并称为西夏研究的两大支柱。",
+      "refs": "《西夏书事》《黑水城出土文书研究》",
+      "tags": [
+        "黑水城",
+        "额济纳",
+        "考古"
+      ],
+      "related": [
+        "cul-xixia-fojiao",
+        "cul-xixia-wenzi"
+      ]
+    },
+    {
       "id": "mil-sanrong",
       "cat": "military",
       "type": "军政",
@@ -4702,6 +5132,9 @@
         "冗官",
         "冗兵",
         "冗费"
+      ],
+      "related": [
+        "pol-sansi"
       ]
     },
     {
@@ -4924,6 +5357,9 @@
         "李元昊",
         "辽夏战争",
         "兴宗"
+      ],
+      "related": [
+        "mil-liao-hequ"
       ]
     },
     {
@@ -4944,6 +5380,9 @@
         "西夏",
         "李元昊",
         "辽夏"
+      ],
+      "related": [
+        "tl-liao-1044"
       ]
     },
     {
@@ -4966,7 +5405,9 @@
         "火药"
       ],
       "related": [
-        "mil-wujingzongyao"
+        "mil-tuhuoqiang",
+        "mil-wujingzongyao",
+        "mil-zhentianlei"
       ]
     },
     {
@@ -5091,6 +5532,10 @@
         "张载",
         "气本论",
         "横渠四句"
+      ],
+      "related": [
+        "ppl-zhangzai",
+        "tl-1057"
       ]
     },
     {
@@ -5111,6 +5556,9 @@
         "台谏",
         "党争",
         "言路"
+      ],
+      "related": [
+        "pol-yushitai"
       ]
     },
     {
@@ -5132,6 +5580,10 @@
         "王安石",
         "三苏",
         "曾巩"
+      ],
+      "related": [
+        "ppl-ouyangxiu",
+        "ppl-sushi"
       ]
     },
     {
@@ -5153,6 +5605,9 @@
         "苏轼",
         "米芾",
         "蔡襄"
+      ],
+      "related": [
+        "ppl-sushi"
       ]
     },
     {
@@ -5193,6 +5648,9 @@
         "周敦颐",
         "太极图说",
         "通书"
+      ],
+      "related": [
+        "ppl-zhoudunyi"
       ]
     },
     {
@@ -5213,6 +5671,9 @@
         "道学",
         "程朱",
         "四书"
+      ],
+      "related": [
+        "tho-zhuxi"
       ]
     },
     {
@@ -5273,6 +5734,9 @@
         "桥梁",
         "虹桥",
         "洛阳桥"
+      ],
+      "related": [
+        "geo-quanzhou"
       ]
     },
     {
@@ -5293,6 +5757,9 @@
         "贾宪",
         "杨辉",
         "二项式"
+      ],
+      "related": [
+        "ppl-yanghui"
       ]
     },
     {
@@ -5313,6 +5780,9 @@
         "欧阳修",
         "李清照",
         "赵明诚"
+      ],
+      "related": [
+        "ppl-ouyangxiu"
       ]
     },
     {
@@ -5491,6 +5961,9 @@
         "耶律重元",
         "耶律仁先",
         "叛乱"
+      ],
+      "related": [
+        "ppl-liao-yelurenxian"
       ]
     },
     {
@@ -5600,6 +6073,9 @@
         "民兵",
         "王安石",
         "治安"
+      ],
+      "related": [
+        "ppl-wanganshi"
       ]
     },
     {
@@ -5663,6 +6139,9 @@
         "程颢",
         "程颐",
         "天理"
+      ],
+      "related": [
+        "ppl-chengyi"
       ]
     },
     {
@@ -5729,6 +6208,9 @@
         "苏轼",
         "苏辙",
         "苏洵"
+      ],
+      "related": [
+        "ppl-sushi"
       ]
     },
     {
@@ -5749,6 +6231,9 @@
         "苏轼",
         "辛弃疾",
         "以诗为词"
+      ],
+      "related": [
+        "ppl-sushi"
       ]
     },
     {
@@ -5769,6 +6254,9 @@
         "王安石",
         "置将",
         "训练"
+      ],
+      "related": [
+        "ppl-wanganshi"
       ]
     },
     {
@@ -5809,6 +6297,10 @@
         "耶律乙辛",
         "萧观音",
         "冤案"
+      ],
+      "related": [
+        "ppl-liao-xiaoguanyin",
+        "ppl-liao-yeluyixin"
       ]
     },
     {
@@ -5892,7 +6384,10 @@
         "耶律濬",
         "储位"
       ],
-      "minor": true
+      "minor": true,
+      "related": [
+        "ppl-liao-yeluyixin"
+      ]
     },
     {
       "id": "pol-sansheng",
@@ -5934,6 +6429,7 @@
         "三省六部"
       ],
       "related": [
+        "emp-song-shenzong",
         "ppl-wanganshi"
       ]
     },
@@ -5955,6 +6451,9 @@
         "冶铁",
         "煤炭",
         "工业革命"
+      ],
+      "related": [
+        "eco-kuangye"
       ]
     },
     {
@@ -5999,6 +6498,9 @@
         "太学",
         "王安石",
         "三舍法"
+      ],
+      "related": [
+        "pol-keju"
       ]
     },
     {
@@ -6039,6 +6541,9 @@
         "四大发明",
         "航海",
         "磁针"
+      ],
+      "related": [
+        "eco-haishang"
       ]
     },
     {
@@ -6309,6 +6814,7 @@
         "科学史"
       ],
       "related": [
+        "ppl-shenkuo",
         "tec-huoziban"
       ]
     },
@@ -6370,6 +6876,9 @@
         "苏颂",
         "天文钟",
         "擒纵机构"
+      ],
+      "related": [
+        "ppl-susong"
       ]
     },
     {
@@ -6484,6 +6993,9 @@
         "人口",
         "南迁",
         "城市化"
+      ],
+      "related": [
+        "eco-zanchengdao"
       ]
     },
     {
@@ -6565,6 +7077,9 @@
         "造船",
         "远洋",
         "水密隔舱"
+      ],
+      "related": [
+        "eco-zaochuan"
       ]
     },
     {
@@ -6605,6 +7120,9 @@
         "黄庭坚",
         "杜甫",
         "点铁成金"
+      ],
+      "related": [
+        "ppl-huangtingjian"
       ]
     },
     {
@@ -6645,6 +7163,9 @@
         "赵佶",
         "宋徽宗",
         "楷书"
+      ],
+      "related": [
+        "emp-song-huizong"
       ]
     },
     {
@@ -6665,6 +7186,9 @@
         "缠足",
         "身体",
         "性别"
+      ],
+      "related": [
+        "soc-nvxing"
       ]
     },
     {
@@ -6685,6 +7209,9 @@
         "说书",
         "白话",
         "市井"
+      ],
+      "related": [
+        "cus-shuohua"
       ]
     },
     {
@@ -6705,6 +7232,9 @@
         "说唱",
         "董解元",
         "西厢记"
+      ],
+      "related": [
+        "ppl-dongjieyuan"
       ]
     },
     {
@@ -6811,6 +7341,9 @@
         "建筑",
         "李诫",
         "模数"
+      ],
+      "related": [
+        "ppl-lijie"
       ]
     },
     {
@@ -6876,6 +7409,9 @@
         "女真",
         "阿骨打",
         "起兵"
+      ],
+      "related": [
+        "mil-liao-ningjiangzhou"
       ]
     },
     {
@@ -6902,6 +7438,31 @@
       ]
     },
     {
+      "id": "pol-jin-bojilie",
+      "cat": "politics",
+      "type": "官制",
+      "name": "勃极烈制",
+      "era": "金",
+      "year": 1115,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "金初以“勃极烈”贵族议事制共治国政，熙宗推行汉制后废。",
+      "detail": "勃极烈为女真语“官长”，谙班勃极烈（储嗣）、国论勃极烈等分掌军政，保留部落议事遗风。熙宗天眷年间改行三省六部，勃极烈制遂废，金朝完成由部族联盟向官僚国家的转型。",
+      "refs": "《金史·百官志》《金史·熙宗纪》",
+      "tags": [
+        "汉制",
+        "勃极烈",
+        "女真旧制"
+      ],
+      "related": [
+        "emp-jin-taizu",
+        "emp-jin-xizong",
+        "pol-liao-nanbeimian"
+      ]
+    },
+    {
       "id": "tl-liao-1115",
       "cat": "timeline",
       "type": "事件",
@@ -6922,6 +7483,7 @@
       ],
       "related": [
         "emp-jin-taizu",
+        "mil-liao-hubudagang",
         "tl-1115"
       ]
     },
@@ -6970,6 +7532,31 @@
       ]
     },
     {
+      "id": "geo-jin-shangjing",
+      "cat": "geography",
+      "type": "都城",
+      "name": "金上京会宁府",
+      "era": "金",
+      "year": 1115,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "女真兴起之地，金初都城，在今黑龙江哈尔滨阿城。",
+      "detail": "1115 年完颜阿骨打建国即都于此，历经太宗、熙宗两朝经营，城分南北二城，有皇城、宫室与佛寺。1153 年海陵王迁都燕京后上京渐废，今存城墙与宫殿台基遗址。",
+      "refs": "《金史·地理志》《金史·太祖纪》",
+      "tags": [
+        "上京",
+        "女真",
+        "会宁府"
+      ],
+      "related": [
+        "emp-jin-taizu",
+        "geo-jin-zhongdu",
+        "tl-1153"
+      ]
+    },
+    {
       "id": "tl-1115",
       "cat": "timeline",
       "type": "事件",
@@ -6989,7 +7576,9 @@
         "完颜阿骨打"
       ],
       "related": [
-        "emp-jin-taizu"
+        "emp-jin-taizu",
+        "mil-liao-hubudagang",
+        "tl-liao-1115"
       ]
     },
     {
@@ -7083,7 +7672,8 @@
         "北辽"
       ],
       "related": [
-        "emp-jin-taizong"
+        "emp-jin-taizong",
+        "ppl-liao-yeluchun"
       ]
     },
     {
@@ -7219,6 +7809,9 @@
         "戏曲",
         "温州杂剧",
         "永嘉杂剧"
+      ],
+      "related": [
+        "cus-zaju"
       ]
     },
     {
@@ -7285,6 +7878,9 @@
         "抗金",
         "淮河",
         "两淮"
+      ],
+      "related": [
+        "mil-changjiang"
       ]
     },
     {
@@ -7305,6 +7901,10 @@
         "江防",
         "水军",
         "采石"
+      ],
+      "related": [
+        "geo-huainan",
+        "geo-xiangyang"
       ]
     },
     {
@@ -7607,6 +8207,9 @@
         "四川",
         "抗金",
         "秦岭"
+      ],
+      "related": [
+        "mil-chuanshan"
       ]
     },
     {
@@ -7629,6 +8232,7 @@
         "大散关"
       ],
       "related": [
+        "geo-chuanshan",
         "ppl-wujie"
       ]
     },
@@ -7676,6 +8280,7 @@
         "虎思斡耳朵"
       ],
       "related": [
+        "geo-liao-xiliao",
         "ppl-yeludashi"
       ]
     },
@@ -7717,6 +8322,9 @@
         "杭州",
         "行在",
         "西湖"
+      ],
+      "related": [
+        "tl-1138"
       ]
     },
     {
@@ -7738,7 +8346,8 @@
         "临安"
       ],
       "related": [
-        "emp-song-gaozong"
+        "emp-song-gaozong",
+        "geo-linan"
       ]
     },
     {
@@ -7919,6 +8528,31 @@
       ]
     },
     {
+      "id": "pol-jingjie",
+      "cat": "politics",
+      "type": "制度",
+      "name": "经界法",
+      "era": "南宋",
+      "year": 1142,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "绍兴年间李椿年主持打量田亩、核实产权，以均定田赋，史称经界法。",
+      "detail": "南渡之后版籍散佚、田税不均，1142 年起在两浙试点“经界”：逐丘打量、绘图置簿、归户定税。因触犯形势户利益，推行屡有反复，但为南宋财政重建提供了基册。",
+      "refs": "《宋史·食货志上》《建炎以来系年要录》卷一四七",
+      "tags": [
+        "经界法",
+        "李椿年",
+        "田赋"
+      ],
+      "related": [
+        "pol-zhuanyun",
+        "soc-xingshi",
+        "soc-zhuhu"
+      ]
+    },
+    {
       "id": "tl-1147",
       "cat": "timeline",
       "type": "事件",
@@ -7961,6 +8595,9 @@
         "陈旉",
         "农学",
         "土地利用"
+      ],
+      "related": [
+        "ppl-chenfu"
       ]
     },
     {
@@ -8027,7 +8664,36 @@
         "中都"
       ],
       "related": [
-        "emp-jin-hailing"
+        "emp-jin-hailing",
+        "geo-jin-shangjing",
+        "geo-jin-zhongdu"
+      ]
+    },
+    {
+      "id": "geo-jin-zhongdu",
+      "cat": "geography",
+      "type": "都城",
+      "name": "金中都",
+      "era": "金",
+      "year": 1153,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "海陵王迁都燕京后改称中都，为北京作为王朝都城的开端。",
+      "detail": "中都在辽南京析津府基础上扩建，宫城、皇城多仿汴京之制，并迁中原民户实都。1215 年陷于蒙古，宫室焚毁；元代于其东北另建大都，北京城的中轴格局自此相承。",
+      "refs": "《金史·地理志》《大金国志》卷十三",
+      "tags": [
+        "燕京",
+        "迁都",
+        "中都"
+      ],
+      "related": [
+        "emp-jin-hailing",
+        "geo-jin-shangjing",
+        "geo-liao-nanjing",
+        "tl-1153",
+        "tl-1215"
       ]
     },
     {
@@ -8068,6 +8734,10 @@
         "纸币",
         "会子",
         "通货膨胀"
+      ],
+      "related": [
+        "eco-jiaozi",
+        "pol-gongtian"
       ]
     },
     {
@@ -8223,6 +8893,9 @@
         "陆九渊",
         "心即理",
         "发明本心"
+      ],
+      "related": [
+        "ppl-lujiuyuan"
       ]
     },
     {
@@ -8244,6 +8917,10 @@
         "叶适",
         "永嘉",
         "永康"
+      ],
+      "related": [
+        "ppl-chenliang",
+        "ppl-yeshi"
       ]
     },
     {
@@ -8266,7 +8943,8 @@
         "集大成"
       ],
       "related": [
-        "ppl-zhuxi"
+        "ppl-zhuxi",
+        "tho-lixue"
       ]
     },
     {
@@ -8289,6 +8967,7 @@
         "辩论"
       ],
       "related": [
+        "ppl-lujiuyuan",
         "ppl-zhuxi"
       ]
     },
@@ -8613,7 +9292,8 @@
         "金宣宗"
       ],
       "related": [
-        "emp-jin-xuanzong"
+        "emp-jin-xuanzong",
+        "geo-jin-zhongdu"
       ]
     },
     {
@@ -8654,6 +9334,9 @@
         "金",
         "火器",
         "爆炸"
+      ],
+      "related": [
+        "tec-huoyao"
       ]
     },
     {
@@ -8819,7 +9502,8 @@
       ],
       "related": [
         "ppl-zhendexiu",
-        "ppl-zhuxi"
+        "ppl-zhuxi",
+        "tho-lixue-guan"
       ]
     },
     {
@@ -8840,6 +9524,9 @@
         "科举",
         "朱熹",
         "理宗"
+      ],
+      "related": [
+        "tl-1241"
       ]
     },
     {
@@ -8883,6 +9570,9 @@
         "秦九韶",
         "大衍求一术",
         "高次方程"
+      ],
+      "related": [
+        "ppl-qinjiushao"
       ]
     },
     {
@@ -8903,6 +9593,9 @@
         "宋慈",
         "法医",
         "检验"
+      ],
+      "related": [
+        "ppl-songci"
       ]
     },
     {
@@ -8970,6 +9663,9 @@
         "火器",
         "火药",
         "管形"
+      ],
+      "related": [
+        "tec-huoyao"
       ]
     },
     {
@@ -8999,6 +9695,31 @@
       ]
     },
     {
+      "id": "pol-gongtian",
+      "cat": "politics",
+      "type": "制度",
+      "name": "公田法",
+      "era": "南宋",
+      "year": 1263,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "景定四年贾似道行公田法，回买官户逾限田亩为公田出租，以租入充军饷。",
+      "detail": "南宋末军费浩繁、楮币贬值，遂以“回买”方式将官户超额田产收为公田，收租以充和籴。执行中估价苛刻、强买扰民，成为南宋末年最受诟病的财政措施之一。",
+      "refs": "《宋史·食货志上》《宋史·贾似道传》",
+      "tags": [
+        "贾似道",
+        "公田法",
+        "景定"
+      ],
+      "related": [
+        "eco-huizi",
+        "emp-song-lizong",
+        "ppl-jiashidao"
+      ]
+    },
+    {
       "id": "tl-1264",
       "cat": "timeline",
       "type": "事件",
@@ -9022,6 +9743,33 @@
       ]
     },
     {
+      "id": "geo-xiangyang",
+      "cat": "geography",
+      "type": "城市",
+      "name": "襄阳",
+      "era": "南宋",
+      "year": 1267,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "汉水重镇，南宋京西南路治所；1267—1273 年被元军围困六年，城破则临安门户洞开。",
+      "detail": "襄阳与樊城夹汉水对峙，为控扼荆襄、通达江汉的枢纽。宋元战争中元军筑堡连营、断其援路，守将吕文焕坚守六年后出降。襄阳既失，元军顺汉入江，直取鄂州、临安。",
+      "refs": "《宋史·度宗纪》《宋史·吕文焕传》",
+      "tags": [
+        "襄阳",
+        "汉水",
+        "围城"
+      ],
+      "related": [
+        "geo-ezhou",
+        "mil-changjiang",
+        "ppl-lvwenhuan",
+        "tl-1267",
+        "tl-1273"
+      ]
+    },
+    {
       "id": "tl-1267",
       "cat": "timeline",
       "type": "事件",
@@ -9039,6 +9787,9 @@
         "蒙古",
         "襄阳",
         "吕文焕"
+      ],
+      "related": [
+        "geo-xiangyang"
       ]
     },
     {
@@ -9104,6 +9855,7 @@
         "元军"
       ],
       "related": [
+        "geo-xiangyang",
         "ppl-boyan",
         "ppl-lvwenhuan"
       ]
@@ -9363,6 +10115,11 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "tl-1273",
+        "tl-1275",
+        "tl-1276"
       ]
     },
     {
@@ -9569,6 +10326,33 @@
       ]
     },
     {
+      "id": "ppl-liuzhiyuan",
+      "cat": "people",
+      "type": "帝王",
+      "name": "刘知远",
+      "era": "五代",
+      "year": null,
+      "endYear": null,
+      "ptype": "帝王",
+      "birth": 895,
+      "death": 948,
+      "summary": "后晋河东节度使，契丹北撤后称帝，建后汉，在位不足一年。",
+      "detail": "刘知远为沙陀人，乘契丹灭晋、中原无主之际称帝于太原，后迁汴。后汉仅历二帝四年，是五代中最短的王朝，其部将郭威即后周开国之君。",
+      "refs": "《旧五代史·汉书·高祖纪》",
+      "tags": [
+        "太原",
+        "后汉",
+        "沙陀"
+      ],
+      "groups": [
+        "帝王"
+      ],
+      "related": [
+        "emp-liao-taizong",
+        "ppl-guowei"
+      ]
+    },
+    {
       "id": "ppl-liuyu",
       "cat": "people",
       "type": "名臣",
@@ -9632,6 +10416,9 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "tl-1140"
       ]
     },
     {
@@ -9677,6 +10464,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1211"
       ]
     },
     {
@@ -9699,6 +10489,11 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1208",
+        "tl-1224",
+        "tl-1233"
       ]
     },
     {
@@ -9721,6 +10516,9 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "tho-zhedong"
       ]
     },
     {
@@ -9746,7 +10544,8 @@
       ],
       "related": [
         "tho-sushui",
-        "tl-1084"
+        "tl-1084",
+        "tl-1085"
       ]
     },
     {
@@ -9814,6 +10613,10 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "geo-xiangyang",
+        "tl-1273"
       ]
     },
     {
@@ -9996,6 +10799,9 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "tho-zhou"
       ]
     },
     {
@@ -10130,6 +10936,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "cul-xixia-fojiao"
       ]
     },
     {
@@ -10221,6 +11030,15 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "cul-xixia-wenzi",
+        "geo-xingqingfu",
+        "pol-xixia-guanzhi",
+        "tl-1038",
+        "tl-1044",
+        "tl-1081",
+        "tl-1098"
       ]
     },
     {
@@ -10265,6 +11083,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1205"
       ]
     },
     {
@@ -10466,6 +11287,9 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1147"
       ]
     },
     {
@@ -10536,6 +11360,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1022"
       ]
     },
     {
@@ -10581,6 +11408,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1085"
       ]
     },
     {
@@ -10627,6 +11457,11 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "ppl-chairong",
+        "tl-wd-954",
+        "tl-wd-959"
       ]
     },
     {
@@ -10650,6 +11485,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1189"
       ]
     },
     {
@@ -10673,6 +11511,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1194",
+        "tl-1224"
       ]
     },
     {
@@ -10696,6 +11538,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1264"
       ]
     },
     {
@@ -10720,6 +11565,11 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "cul-shoujin",
+        "tl-1100",
+        "tl-1127"
       ]
     },
     {
@@ -10742,6 +11592,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1274",
+        "tl-1276"
       ]
     },
     {
@@ -10764,6 +11618,10 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "tec-xiyuan",
+        "tl-1247"
       ]
     },
     {
@@ -10832,6 +11690,11 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "pol-gongtian",
+        "tl-1224",
+        "tl-1233"
       ]
     },
     {
@@ -10855,6 +11718,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1004",
+        "tl-1005"
       ]
     },
     {
@@ -10877,6 +11744,9 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "tl-1060"
       ]
     },
     {
@@ -10900,6 +11770,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "pol-yuanfeng",
+        "tl-1067"
       ]
     },
     {
@@ -10944,6 +11818,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1063"
       ]
     },
     {
@@ -10966,6 +11843,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1127"
       ]
     },
     {
@@ -10989,6 +11869,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1127n",
+        "tl-1138"
       ]
     },
     {
@@ -11011,6 +11895,9 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "tl-1140"
       ]
     },
     {
@@ -11033,6 +11920,10 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "tl-1126",
+        "tl-1127"
       ]
     },
     {
@@ -11055,6 +11946,9 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "tl-1127"
       ]
     },
     {
@@ -11099,6 +11993,9 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "tl-1232"
       ]
     },
     {
@@ -11165,6 +12062,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1004",
+        "tl-1005"
       ]
     },
     {
@@ -11187,6 +12088,9 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1043"
       ]
     },
     {
@@ -11259,6 +12163,7 @@
         "mil-yancheng",
         "mil-yuejiajun",
         "ppl-qinhui",
+        "tl-1130b",
         "tl-1140",
         "tl-1141",
         "tl-1142"
@@ -11328,6 +12233,9 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1279"
       ]
     },
     {
@@ -11505,6 +12413,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1163",
+        "tl-1164"
       ]
     },
     {
@@ -11594,6 +12506,10 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "tho-zhangzai",
+        "tl-1057"
       ]
     },
     {
@@ -11661,6 +12577,11 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "tl-1253",
+        "tl-1259",
+        "tl-1271"
       ]
     },
     {
@@ -11732,6 +12653,7 @@
       "related": [
         "lit-guolingdingyang",
         "lit-zhengqige",
+        "tl-1276",
         "tl-1279"
       ]
     },
@@ -11932,6 +12854,9 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "tl-1057"
       ]
     },
     {
@@ -11958,6 +12883,33 @@
       ]
     },
     {
+      "id": "ppl-zhuwen",
+      "cat": "people",
+      "type": "帝王",
+      "name": "朱温",
+      "era": "五代",
+      "year": null,
+      "endYear": null,
+      "ptype": "帝王",
+      "birth": 852,
+      "death": 912,
+      "summary": "黄巢旧部降唐，据汴州兼并中原，907 年废唐哀帝建后梁，开启五代。",
+      "detail": "朱温出身砀山，归唐后赐名全忠，与河东李克用争雄数十年。907 年受禅称帝，都汴州。晚年荒暴，为亲子朱友珪所弑。后梁历三主十七年，923 年为后唐所灭。",
+      "refs": "《旧五代史·梁书·太祖纪》《新五代史·梁本纪》",
+      "tags": [
+        "后梁",
+        "唐亡",
+        "汴州"
+      ],
+      "groups": [
+        "帝王"
+      ],
+      "related": [
+        "ppl-licunxu",
+        "tl-wd-907"
+      ]
+    },
+    {
       "id": "ppl-zhuxi",
       "cat": "people",
       "type": "思想家",
@@ -11981,7 +12933,9 @@
       "related": [
         "cul-shuyuan",
         "tho-ehu",
-        "tho-zhuxi"
+        "tho-zhuxi",
+        "tl-1195",
+        "tl-1241"
       ]
     },
     {
@@ -12048,6 +13002,32 @@
       ],
       "groups": [
         "艺术家"
+      ]
+    },
+    {
+      "id": "ppl-licunxu",
+      "cat": "people",
+      "type": "帝王",
+      "name": "李存勖",
+      "era": "五代",
+      "year": null,
+      "endYear": null,
+      "ptype": "帝王",
+      "birth": 885,
+      "death": 926,
+      "summary": "李克用之子，923 年灭后梁建后唐，都洛阳，在位三年死于兵变。",
+      "detail": "李存勖善骑射，承父业据河东，与后梁夹河苦战十余年，终灭梁。后唐版图为五代最广者，然他宠信伶人、疏忌功臣，926 年兴教门之变中中流矢而死。",
+      "refs": "《旧五代史·唐书·庄宗纪》《新五代史·唐本纪》",
+      "tags": [
+        "后唐",
+        "河东",
+        "伶人"
+      ],
+      "groups": [
+        "帝王"
+      ],
+      "related": [
+        "ppl-zhuwen"
       ]
     },
     {
@@ -12207,6 +13187,7 @@
         "女性"
       ],
       "related": [
+        "cul-wanyue",
         "lit-rumengling",
         "lit-shengshengman"
       ]
@@ -12231,6 +13212,9 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1126"
       ]
     },
     {
@@ -12319,6 +13303,10 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "tec-yingzao",
+        "tl-1103"
       ]
     },
     {
@@ -12385,6 +13373,9 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-liao-yeluxiezhen"
       ]
     },
     {
@@ -12407,6 +13398,9 @@
       ],
       "groups": [
         "起义"
+      ],
+      "related": [
+        "tl-1130b"
       ]
     },
     {
@@ -12519,6 +13513,9 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "tec-yanghui"
       ]
     },
     {
@@ -12563,6 +13560,36 @@
       ],
       "groups": [
         "文豪"
+      ]
+    },
+    {
+      "id": "ppl-chairong",
+      "cat": "people",
+      "type": "帝王",
+      "name": "柴荣",
+      "era": "五代",
+      "year": null,
+      "endYear": null,
+      "ptype": "帝王",
+      "birth": 921,
+      "death": 959,
+      "summary": "郭威养子，整军、均田、毁佛、治河，北伐契丹取三关，志在统一而早逝。",
+      "detail": "柴荣在位五年余，尝言“以十年开拓天下，十年养百姓，十年致太平”。954 年高平之战立威，继而整顿禁军、均定田租、限佛寺、疏汴河，959 年北伐辽境收三关，染病还京而卒，次年陈桥兵变。",
+      "refs": "《旧五代史·周书·世宗纪》《资治通鉴》卷二九四",
+      "tags": [
+        "北伐",
+        "后周",
+        "高平之战",
+        "毁佛"
+      ],
+      "groups": [
+        "帝王"
+      ],
+      "related": [
+        "emp-song-taizu",
+        "ppl-guowei",
+        "tl-wd-954",
+        "tl-wd-959"
       ]
     },
     {
@@ -12657,8 +13684,12 @@
         "文豪"
       ],
       "related": [
+        "cul-badajia",
         "cul-guwen",
-        "lit-zuiweng"
+        "cul-jinshi",
+        "lit-zuiweng",
+        "tl-1057",
+        "tl-1060"
       ]
     },
     {
@@ -12705,7 +13736,8 @@
         "科学家"
       ],
       "related": [
-        "tec-huoziban"
+        "tec-huoziban",
+        "tl-1041b"
       ]
     },
     {
@@ -12772,6 +13804,10 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "tec-mengxi",
+        "tl-1041b"
       ]
     },
     {
@@ -12817,6 +13853,12 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "geo-jin-zhongdu",
+        "tl-1153",
+        "tl-1161",
+        "tl-1161b"
       ]
     },
     {
@@ -12955,6 +13997,8 @@
         "名臣"
       ],
       "related": [
+        "mil-baojia",
+        "mil-jiangbing",
         "pol-yuanfeng",
         "tho-xinxue",
         "tl-1069"
@@ -13069,6 +14113,9 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "tec-zhenjiu"
       ]
     },
     {
@@ -13292,6 +14339,37 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1241"
+      ]
+    },
+    {
+      "id": "ppl-shijingtang",
+      "cat": "people",
+      "type": "帝王",
+      "name": "石敬瑭",
+      "era": "五代",
+      "year": null,
+      "endYear": null,
+      "ptype": "帝王",
+      "birth": 892,
+      "death": 942,
+      "summary": "以割燕云十六州、称儿皇帝为条件借契丹兵灭后唐，936 年建后晋。",
+      "detail": "石敬瑭为后唐明宗之婿，镇守太原。936 年反唐，求援耶律德光，割十六州并岁输绢帛，对辽称“儿皇帝”。中原自此失去北方屏障，影响延及北宋。",
+      "refs": "《旧五代史·晋书·高祖纪》《辽史·太宗纪》",
+      "tags": [
+        "后晋",
+        "燕云十六州",
+        "儿皇帝"
+      ],
+      "groups": [
+        "帝王"
+      ],
+      "related": [
+        "emp-liao-taizong",
+        "geo-yanyun",
+        "tl-liao-936"
       ]
     },
     {
@@ -13381,6 +14459,9 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "tec-shushu"
       ]
     },
     {
@@ -13451,6 +14532,9 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "tho-erchheng"
       ]
     },
     {
@@ -13473,6 +14557,9 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "tl-1057"
       ]
     },
     {
@@ -13495,6 +14582,9 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1093"
       ]
     },
     {
@@ -13517,6 +14607,9 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "tl-1098"
       ]
     },
     {
@@ -13714,7 +14807,10 @@
         "外族"
       ],
       "related": [
-        "tl-1125"
+        "geo-liao-xiliao",
+        "tl-1125",
+        "tl-liao-1124",
+        "tl-liao-1132"
       ]
     },
     {
@@ -13925,11 +15021,17 @@
         "文豪"
       ],
       "related": [
+        "cul-badajia",
+        "cul-haofang",
+        "cul-shufa",
         "cul-wenrenhua",
         "lit-chibi-fu",
         "lit-niannujiao",
         "lit-shuidiao",
-        "lit-tixilinbi"
+        "lit-tixilinbi",
+        "tho-shuxue",
+        "tl-1057",
+        "tl-1079"
       ]
     },
     {
@@ -13974,6 +15076,9 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "tec-shuiyun"
       ]
     },
     {
@@ -14091,7 +15196,9 @@
         "外族"
       ],
       "related": [
-        "tl-1005"
+        "tl-1005",
+        "tl-liao-1009",
+        "tl-liao-982"
       ]
     },
     {
@@ -14189,6 +15296,9 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "cul-zhugongdiao"
       ]
     },
     {
@@ -14257,7 +15367,9 @@
         "名臣"
       ],
       "related": [
-        "tl-1102"
+        "tl-1093",
+        "tl-1102",
+        "tl-1120"
       ]
     },
     {
@@ -14346,6 +15458,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1161",
+        "tl-1161b"
       ]
     },
     {
@@ -14501,6 +15617,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "pol-gongtian",
+        "tl-1275"
       ]
     },
     {
@@ -14752,6 +15872,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "ppl-liuzhiyuan",
+        "ppl-shijingtang"
       ]
     },
     {
@@ -14939,6 +16063,33 @@
       ]
     },
     {
+      "id": "ppl-guowei",
+      "cat": "people",
+      "type": "帝王",
+      "name": "郭威",
+      "era": "五代",
+      "year": null,
+      "endYear": null,
+      "ptype": "帝王",
+      "birth": 904,
+      "death": 954,
+      "summary": "后汉枢密使，全家被杀后起兵代汉，951 年建后周，革除苛敛、崇尚节俭。",
+      "detail": "郭威出身行伍，因后汉隐帝诛杀其全家而起兵。在位期间废营田、罢牛租、弛盐曲之禁，宫中器用务从俭素，为柴荣的改革与北宋统一铺路。",
+      "refs": "《旧五代史·周书·太祖纪》《资治通鉴》卷二九〇",
+      "tags": [
+        "后周",
+        "轻徭薄赋",
+        "营田"
+      ],
+      "groups": [
+        "帝王"
+      ],
+      "related": [
+        "ppl-chairong",
+        "ppl-liuzhiyuan"
+      ]
+    },
+    {
       "id": "ppl-guoxi",
       "cat": "people",
       "type": "艺术家",
@@ -15003,6 +16154,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1161b",
+        "tl-1189b"
       ]
     },
     {
@@ -15026,6 +16181,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1234"
       ]
     },
     {
@@ -15049,6 +16207,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1125",
+        "tl-liao-1122"
       ]
     },
     {
@@ -15072,6 +16234,14 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "geo-jin-shangjing",
+        "pol-jin-bojilie",
+        "tl-1115",
+        "tl-liao-1115",
+        "tl-liao-1116",
+        "tl-liao-1120"
       ]
     },
     {
@@ -15094,6 +16264,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1214",
+        "tl-1215"
       ]
     },
     {
@@ -15139,6 +16313,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "pol-jin-bojilie"
       ]
     },
     {
@@ -15162,6 +16339,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1189b"
       ]
     },
     {
@@ -15184,6 +16364,9 @@
       ],
       "groups": [
         "起义"
+      ],
+      "related": [
+        "tl-1130b"
       ]
     },
     {
@@ -15228,6 +16411,10 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "tho-ehu",
+        "tho-lujiuyuan"
       ]
     },
     {
@@ -15272,6 +16459,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1278",
+        "tl-1279"
       ]
     },
     {
@@ -15294,6 +16485,9 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "tho-zhedong"
       ]
     },
     {
@@ -15383,6 +16577,9 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "tec-nongshu"
       ]
     },
     {
@@ -15474,6 +16671,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1195",
+        "tl-1206"
       ]
     },
     {
@@ -15680,6 +16881,9 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "cul-jiangxi"
       ]
     },
     {

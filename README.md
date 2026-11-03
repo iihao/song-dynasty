@@ -7,23 +7,23 @@
 
 | 门类 | 条目 |
 |---|---:|
-| 人物（含 47 位帝王） | 283 |
+| 人物（含 54 位帝王，含五代） | 289 |
 | 大事年表（含五代、辽、西辽） | 127 |
+| 文化 | 45 |
 | 军事 | 44 |
-| 文化 | 43 |
+| 政治制度 | 41 |
 | 风俗生活 | 40 |
-| 政治制度 | 37 |
+| 地理邦交 | 31 |
 | 经济 | 27 |
-| 地理邦交 | 26 |
 | 社会民生 | 23 |
 | 名篇 | 22 |
 | 科技 | 20 |
 | 思想学术 | 16 |
-| **合计** | **708** |
+| **合计** | **725** |
 
-另有 1,369 个标签、239 条条目关联、12 个身份分组、5 组统计面板。
+另有 1,400 个标签、650 条条目关联、12 个身份分组、5 组统计面板。
 
-已富化维基百科条目 **577 条 / 708 条（81.5%）**，其中 336 条正文超过 600 字；保留修订号、Wikidata QID 与 CC BY-SA 4.0 署名。
+已富化维基百科条目 **577 条 / 725 条（79.6%）**；保留修订号、Wikidata QID 与 CC BY-SA 4.0 署名。
 
 人物支持**多身份分组**：如李清照同时属于「女性」「文豪」，梁红玉同时属于「女性」「名将」。
 
@@ -119,6 +119,7 @@ song-dynasty/
 │   ├── wiki_cache.json     维基富化缓存（CC BY-SA 4.0）
 │   └── song.db             运行时数据库（已 gitignore）
 ├── tools/manage.py         增删改查 / 导入导出 CLI
+├── tools/audit.py          覆盖与质量体检（门类×政权、孤立条目、重名、缺字段）
 ├── tools/enrich_wiki.py    维基百科 / 维基数据富化
 └── start.sh                本地一键启动
 ```
@@ -216,6 +217,11 @@ python3 tools/manage.py stats
 python3 tools/manage.py list --cat customs
 python3 tools/manage.py search 缠足
 python3 tools/manage.py show cus-yuanxiao
+
+# 体检：门类×政权 覆盖矩阵、完全孤立条目、重名、缺字段
+python3 tools/audit.py
+python3 tools/audit.py --orphans      # 只列出无任何关联的 id
+python3 tools/audit.py --strict       # 重名或字段异常时非零退出（可接 CI）
 
 # 新增（准备 item.json）
 python3 tools/manage.py add item.json
