@@ -123,6 +123,11 @@ OVERRIDES = {
     "tec-diaoban": "雕版印刷",
     "soc-huozang": "火葬",
     "pol-liao-wolusuo": "斡耳朵",
+    "geo-mingzhou": "宁波市",
+    "geo-luoyang": "洛阳市",
+    "pol-lu": "路 (行政区划)",
+    "tho-zhedong": "浙东学派",
+    "mil-chechuan": "外轮船",
 }
 
 # 这些条目与维基条目只是“大类相同”，宁可留空也不误导
