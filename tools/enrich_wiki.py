@@ -33,9 +33,9 @@ REPORT = os.path.join(ROOT, "db", "wiki_report.json")
 API = "https://zh.wikipedia.org/w/api.php"
 UA = "SongAtlas/1.0 (local history research; https://localhost) python-urllib"
 LICENSE = "CC BY-SA 4.0"
-MAX_CHARS = 3000
+MAX_CHARS = 4000
 SLEEP = 0.6
-MIN_EXTRACT = 30
+MIN_EXTRACT = 20
 
 # 维基标题与本库名称不一致时的显式映射（可继续补充）
 OVERRIDES = {
@@ -43,6 +43,80 @@ OVERRIDES = {
     "ppl-boyan": "伯颜 (八邻部)",
     "ppl-gaotaotao": "宣仁皇后",
     "ppl-xiaochuo": "萧绰",
+    "lit-chibi-fu": "前赤壁赋",
+    "tho-lixue": "宋明理学",
+    "geo-ezhou": "鄂州 (古代)",
+    "geo-guangzhou": "广州 (古代)",
+    "geo-yangzhou": "扬州 (古代)",
+    "geo-linan": "临安府 (浙江)",
+    "geo-jiankang": "建康府",
+    "geo-tanzhou": "潭州 (隋朝)",
+    "cul-wanyue": "婉约派",
+    "cul-haofang": "豪放派",
+    "eco-chama": "茶马互市",
+    "eco-buyijianbing": "土地兼并",
+    "eco-caoshi": "草市",
+    "eco-huizi": "会子",
+    "cul-liao-wenzi": "契丹大字",
+    "geo-kaifeng": "开封府",
+    "cus-chuxi": "除夕",
+    "cus-hunsu": "婚礼",
+    "cus-jiaju": "家具",
+    "cus-jiaozi": "轿",
+    "cus-xiaochi": "小吃",
+    "cus-jiu": "酒文化",
+    "cus-jiaqi": "休假",
+    "cus-yuanlin": "中国园林",
+    "eco-yeshi": "夜市",
+    "eco-caoyun": "漕运",
+    "cus-washe": "瓦肆",
+    "cus-qingming": "清明節",
+    "cul-huaben": "话本",
+    "cul-jianyao": "建窑",
+    "cul-jingdezhen": "景德镇陶瓷",
+    "tl-963": "荆南",
+    "tl-liao-1122": "北辽",
+    "tl-liao-916": "耶律阿保机",
+    "tl-liao-926": "渤海国",
+    "tl-liao-936": "燕云十六州",
+    "tl-965": "宋灭后蜀之战",
+    "tl-1012": "占城稻",
+    "tl-1038": "西夏",
+    "tl-1048": "李元昊",
+    "tl-liao-1077": "耶律濬",
+    "tl-1084": "资治通鉴",
+    "tl-liao-1120": "上京临潢府",
+    "tl-liao-1124": "耶律大石",
+    "tl-1138": "临安府 (浙江)",
+    "tl-liao-1218": "西辽",
+    "tl-1227": "西夏",
+    "tl-1234": "蔡州之战",
+    "tl-1253": "蒙古灭大理之战",
+    "mil-han": "韩世忠",
+    "mil-diqing": "昆仑关",
+    "tl-wd-907": "后梁",
+    "tl-wd-954": "高平之战",
+    "tl-wd-959": "柴荣",
+    "tl-983": "太平御览",
+    "tl-1023": "交子",
+    "tl-1041b": "毕昇",
+    "tl-1060": "新唐书",
+    "tl-1079": "乌台诗案",
+    "tl-1103": "营造法式",
+    "tl-1147": "东京梦华录",
+    "tl-1153": "金中都",
+    "tl-1215": "金中都",
+    "tl-1224": "霅川之变",
+    "tl-1232": "三峰山之战",
+    "tl-1247": "洗冤集录",
+    "tl-1275": "丁家洲之战",
+}
+
+# 这些条目与维基条目只是“大类相同”，宁可留空也不误导
+SKIP_IDS = {
+    "cul-liao-fojiao", "cul-liao-sancai", "cul-liao-ci",
+    "eco-liao-nongye", "eco-liao-xumu", "eco-liao-yantie", "eco-liao-huobi",
+    "cul-zaju", "soc-mengxue",
 }
 
 
@@ -59,37 +133,44 @@ def candidates(name):
     out = []
 
     def add(x):
-        x = x.strip(" ·，,。；;：:（）()")
+        x = re.sub(r"\s+", " ", str(x)).strip(" ·，,。；;：:（）()")
         if x and x not in out:
             out.append(x)
 
     add(raw)
 
-    # 「宋太祖 赵匡胤」→ 赵匡胤 / 宋太祖
-    if " " in raw:
-        parts = [p for p in raw.split(" ") if p]
-        for p in reversed(parts):
+    # 组合名拆分为单个概念：「点茶与斗茶」「太学与三舍法」「两餐到三餐」
+    parts = [p for p in re.split(r"[，、；：·]|与|及|和|到", raw) if p.strip()]
+    if len(parts) > 1:
+        for p in parts:
             add(p)
 
-    # 「韩德让（耶律隆运）」→ 韩德让 / 耶律隆运
+    # 去朝代前缀：「宋代山水画」→ 山水画
+    stripped = re.sub(r"^(北宋|南宋|两宋|宋代|辽代|金代|西夏|元代|唐代|五代)", "", raw)
+    if stripped and stripped != raw:
+        add(stripped)
+        for p in re.split(r"[，、；：·]|与|及|和|到", stripped):
+            add(p)
+
+    # 去通用后缀：「书院教育」→ 书院；「印刷业」→ 印刷
+    for suf in ("教育", "制度", "文化", "经济", "军事", "习俗", "风俗",
+                "运动", "政策", "业", "制", "法", "派"):
+        if raw.endswith(suf) and len(raw) > len(suf) + 1:
+            add(raw[: -len(suf)])
+        if stripped.endswith(suf) and len(stripped) > len(suf) + 1:
+            add(stripped[: -len(suf)])
+
+    # 书名号/事件后缀
+    add(raw.strip("《》"))
+    for suf in ("开始", "爆发", "建立", "之死", "被杀", "即位", "去世"):
+        if raw.endswith(suf) and len(raw) > len(suf) + 1:
+            add(raw[: -len(suf)])
+
+    # 括号内别名
     m = re.match(r"^(.+?)[（(](.+?)[）)]$", raw)
     if m:
         add(m.group(1))
         add(m.group(2))
-
-    # 「陈桥兵变，北宋建立」→ 陈桥兵变
-    for sep in ["，", "、", "；", "·", "："]:
-        if sep in raw:
-            add(raw.split(sep)[0])
-
-    # 「契丹大字与小字」→ 契丹大字 / 小字
-    if "与" in raw and len(raw) > 6:
-        add(raw.split("与")[0])
-
-    # 去掉「开始 / 爆发 / 建立」等事件后缀再试
-    for suf in ["开始", "爆发", "建立", "之死", "被杀", "即位", "去世"]:
-        if raw.endswith(suf) and len(raw) > len(suf) + 1:
-            add(raw[: -len(suf)])
 
     return out
 
@@ -98,6 +179,14 @@ def norm(title):
     t = title.replace("_", " ").strip()
     t = re.sub(r"\s*[（(][^）)]*[）)]\s*$", "", t)
     return t
+
+
+def cand_rank(title, cands):
+    t = norm(title)
+    for i, c in enumerate(cands):
+        if t == norm(c):
+            return i
+    return 999
 
 
 def score_title(title, cands):
@@ -164,11 +253,10 @@ def api(params):
     return {}
 
 
-def page_props():
-    return {
+def page_props(full=False):
+    props = {
         "action": "query",
         "prop": "extracts|pageprops|info",
-        "exintro": "1",
         "explaintext": "1",
         "exchars": str(MAX_CHARS),
         "exlimit": "max",
@@ -176,12 +264,15 @@ def page_props():
         "redirects": "1",
         "variant": "zh-cn",
     }
+    if not full:
+        props["exintro"] = "1"
+    return props
 
 
-def get_by_titles(titles):
+def get_by_titles(titles, full=False):
     if not titles:
         return []
-    data = api(dict(page_props(), titles="|".join(titles[:15])))
+    data = api(dict(page_props(full), titles="|".join(titles[:15])))
     pages = data.get("query", {}).get("pages", []) or []
     reds = data.get("query", {}).get("redirects", []) or []
     rmap = {r.get("to"): r.get("from") for r in reds}
@@ -190,8 +281,8 @@ def get_by_titles(titles):
     return pages
 
 
-def search_pages(q):
-    params = dict(page_props())
+def search_pages(q, full=False):
+    params = dict(page_props(full))
     params.update({"generator": "search", "gsrsearch": q, "gsrlimit": "5"})
     data = api(params)
     pages = data.get("query", {}).get("pages", []) or []
@@ -222,6 +313,8 @@ def pick(pages, cands, item):
     best = None
     for p in pages:
         s = max(score_title(p.get("title", ""), cands), extract_score(p, cands))
+        if score_title(p.get("title", ""), cands) >= 0.99:
+            s += 0.04
         rf = norm(p.get("_redirect_from") or "")
         if rf and rf in [norm(c) for c in cands]:
             s = max(s, 0.95)
@@ -237,9 +330,14 @@ def pick(pages, cands, item):
         if item["category_id"] == "people" and any(
                 k in p.get("title", "") for k in ("之战", "事件", "起义", "变法", "之乱", "之死", "案", "党", "军", "部")):
             s -= 0.25
-        s -= 0.05 if len(ex) < 80 else 0
-        if best is None or s > best[0] or (abs(s - best[0]) < 1e-6 and len(ex) > len(best[1].get("extract") or "")):
-            best = (s, p, reason)
+        # 短条目不再额外扣分：精确标题优先于长度
+        rank = cand_rank(p.get("title", ""), cands)
+        if best is None or s > best[0] + 1e-6:
+            best = (s, p, reason, rank)
+        elif abs(s - best[0]) < 1e-6 and rank < best[3]:
+            best = (s, p, reason, rank)
+        elif abs(s - best[0]) < 1e-6 and rank == best[3] and len(ex) > len(best[1].get("extract") or ""):
+            best = (s, p, reason, rank)
     return best
 
 
@@ -260,7 +358,7 @@ def record(item, page, conf, method, reason):
         "license": LICENSE,
         "revision_id": page.get("lastrevid"),
         "qid": qid,
-        "confidence": round(conf, 3),
+        "confidence": round(min(conf, 1.0), 3),
         "match": method,
         "note": reason,
         "extract": ex,
@@ -322,6 +420,11 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--min-confidence", type=float, default=0.78)
     ap.add_argument("--sleep", type=float, default=SLEEP)
+    ap.add_argument("--full", action="store_true", help="抓正文前 4000 字，而非仅导言")
+    ap.add_argument("--upgrade-short", type=int, default=0,
+                    help="只升级缓存中正文短于该字数的条目，例如 --upgrade-short 600")
+    ap.add_argument("--missing-only", action="store_true",
+                    help="只处理尚无外部来源的条目")
     args = ap.parse_args()
 
     if not os.path.exists(args.db):
@@ -346,6 +449,22 @@ def main():
     report = {"ok": [], "unmatched": [], "skipped": 0, "failed": []}
     todo = []
     for it in items:
+        if it["id"] in SKIP_IDS:
+            report["skipped"] += 1
+            continue
+        if args.missing_only:
+            if conn.execute("SELECT 1 FROM item_sources WHERE item_id=?", (it["id"],)).fetchone():
+                report["skipped"] += 1
+                continue
+            todo.append(it)
+            continue
+        if args.upgrade_short:
+            rec = cache.get(it["id"])
+            if not rec or len(rec.get("extract") or "") >= args.upgrade_short:
+                report["skipped"] += 1
+                continue
+            todo.append(it)
+            continue
         if not args.refresh and it["id"] in cache:
             report["skipped"] += 1
             continue
@@ -359,19 +478,26 @@ def main():
         best = None
         used = []
         try:
-            pages = get_by_titles(cands)
+            pages = get_by_titles(cands, full=args.full)
             used = [p.get("title") for p in pages]
             best = pick(pages, cands, it)
             if not best or best[0] < 0.85:
                 # 搜索兜底
-                q = cands[0] if cands else it["name"]
-                if it["category_id"] == "people" and it.get("era"):
-                    q = f'{q} {it["era"]}'
-                extra = search_pages(q)
+                if it["category_id"] == "people":
+                    q = cands[0] if cands else it["name"]
+                    if it.get("era"):
+                        q = f'{q} {it["era"]}'
+                else:
+                    # 非人物：优先用拆分后的短概念检索
+                    short = [c for c in cands[1:] if 2 <= len(c) <= 8]
+                    q = (short[0] if short else cands[0]) if cands else it["name"]
+                extra = search_pages(q, full=args.full)
                 for p in extra:
                     if p.get("title") in used:
                         continue
                     s = max(score_title(p.get("title", ""), cands), extract_score(p, cands))
+                    if score_title(p.get("title", ""), cands) >= 0.99:
+                        s += 0.04
                     ok, reason = usable(p, cands, it)
                     if not ok or s < 0.6:
                         continue
@@ -379,8 +505,10 @@ def main():
                     if len(ex) < MIN_EXTRACT:
                         continue
                     s -= 0.08 if reason == "year-mismatch" else 0
-                    if not best or s > best[0]:
-                        best = (s, p, reason)
+                    rank = cand_rank(p.get("title", ""), cands)
+                    if best is None or s > best[0] + 1e-6 or (
+                            abs(s - best[0]) < 1e-6 and rank < best[3]):
+                        best = (s, p, reason, rank)
             time.sleep(args.sleep)
         except Exception as exc:  # noqa: BLE001
             report["failed"].append({"id": it["id"], "name": it["name"], "error": str(exc)})
@@ -397,7 +525,7 @@ def main():
             print(f"[{idx}/{len(todo)}] - {it['name']} → {info['best']} ({info['score']})")
             continue
 
-        conf, page, reason = best
+        conf, page, reason = best[0], best[1], best[2]
         rec = record(it, page, conf, "exact" if conf >= 0.95 else "search", reason)
         cache[it["id"]] = rec
         if not args.dry_run:

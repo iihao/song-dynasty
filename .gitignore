@@ -12,3 +12,4 @@ backup/
 
 # 构建产物
 dist/
+db/wiki_report.json
