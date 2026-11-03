@@ -359,14 +359,23 @@ table.data tr:hover td{background:rgba(255,255,255,.5)}
 
 /* ---------- modal ---------- */
 .modal{position:fixed;inset:0;z-index:110;background:rgba(30,25,18,.45);backdrop-filter:blur(5px);
-  display:flex;justify-content:center;align-items:flex-start;padding:6vh 18px;overflow:auto}
-.modal-box{position:relative;width:min(760px,100%);background:var(--paper);border:1px solid var(--line-2);
+  display:flex;justify-content:center;align-items:center;padding:28px 18px;overflow:hidden;overscroll-behavior:none}
+.modal-box{position:relative;width:min(760px,100%);
+  height:min(84vh,900px);height:min(84dvh,900px);max-height:calc(100vh - 56px);
+  display:flex;flex-direction:column;overflow:hidden;
+  background:var(--paper);border:1px solid var(--line-2);
   border-radius:4px;box-shadow:0 50px 90px -30px rgba(30,20,10,.7);animation:pop .22s ease}
 @keyframes pop{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:none}}
 .modal-close{position:absolute;top:14px;right:14px;width:32px;height:32px;border:1px solid var(--line);
   background:rgba(255,255,255,.5);border-radius:50%;cursor:pointer;font-size:13px;color:var(--ink-3)}
 .modal-close:hover{color:var(--cinnabar);border-color:var(--cinnabar)}
-.modal-body{padding:40px 44px 30px}
+.modal-body{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;
+  scrollbar-width:thin;scrollbar-color:var(--line-2) transparent;
+  padding:40px 44px 30px}
+.modal-body::-webkit-scrollbar{width:9px}
+.modal-body::-webkit-scrollbar-track{background:transparent}
+.modal-body::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:99px;border:2px solid var(--paper)}
+.modal-body::-webkit-scrollbar-thumb:hover{background:var(--ink-3)}
 .modal-body .m-eyebrow{font-size:10.5px;letter-spacing:.26em;color:var(--cinnabar);margin-bottom:14px}
 .modal-body h2{font-size:32px;letter-spacing:.04em;line-height:1.3;padding-right:30px}
 .modal-body .m-sub{margin-top:10px;font-size:12px;color:var(--ink-3);letter-spacing:.08em}
@@ -390,10 +399,14 @@ table.data tr:hover td{background:rgba(255,255,255,.5)}
 .modal-body .m-refs b{letter-spacing:.16em;font-size:10.5px;color:var(--ink-3)}
 .modal-body .m-rel{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px}
 .modal-body .m-rel .chip{font-size:11px}
-.modal-nav{display:flex;justify-content:space-between;padding:14px 24px;border-top:1px solid var(--line)}
+.modal-nav{flex:0 0 auto;display:flex;justify-content:space-between;padding:14px 24px;
+  border-top:1px solid var(--line);background:var(--paper)}
 .modal-nav button{background:none;border:0;font-size:12px;color:var(--ink-3);cursor:pointer;letter-spacing:.06em}
 .modal-nav button:hover{color:var(--cinnabar)}
-@media(max-width:600px){.modal-body{padding:32px 22px 24px}.modal-body h2{font-size:25px}
+@media(max-width:600px){
+  .modal{padding:10px}
+  .modal-box{height:calc(100vh - 20px);height:calc(100dvh - 20px);max-height:none}
+  .modal-body{padding:32px 20px 24px}.modal-body h2{font-size:25px}
   .tl-atlas{padding:14px 14px 8px;margin-bottom:22px}
   .timeline{padding-left:24px;margin-left:2px}
   .tl-item::before{left:-30px;width:9px;height:9px}

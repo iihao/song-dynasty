@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-03T16:07:12",
+  "generatedAt": "2026-11-03T16:15:45",
   "categories": [
     {
       "id": "politics",
@@ -331,6 +331,31 @@
       ]
     },
     {
+      "id": "mil-wudai-yabing",
+      "cat": "military",
+      "type": "兵制",
+      "name": "牙兵与藩镇兵制",
+      "era": "五代",
+      "year": 907,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "五代藩镇以“牙兵”为亲军，骄横难制，动辄废立主帅，兵骄将悍成为时代底色。",
+      "detail": "牙兵本为节度使亲兵，粮饷优厚、父子相袭，魏博牙兵尤以“长安天子，魏府牙军”自诩。骄兵逐帅、拥立留后成为常态，五代五十三年兵变不绝，直至宋初收兵权、行更戍才告终结。",
+      "refs": "《资治通鉴》卷二六五、《旧五代史·梁书》",
+      "tags": [
+        "牙兵",
+        "藩镇",
+        "兵变"
+      ],
+      "related": [
+        "mil-gengshu",
+        "mil-jinjun",
+        "ppl-zhuwen"
+      ]
+    },
+    {
       "id": "pol-liao-shixuan",
       "cat": "politics",
       "type": "制度",
@@ -372,7 +397,8 @@
       "related": [
         "cul-liao-wenzi",
         "pol-jin-bojilie",
-        "pol-xixia-guanzhi"
+        "pol-xixia-guanzhi",
+        "soc-liao-jieceng"
       ]
     },
     {
@@ -416,6 +442,9 @@
         "贵族",
         "私城",
         "俘户"
+      ],
+      "related": [
+        "soc-liao-jieceng"
       ]
     },
     {
@@ -476,6 +505,9 @@
         "骑兵",
         "袭扰",
         "打草谷"
+      ],
+      "related": [
+        "tec-liao-yetie"
       ]
     },
     {
@@ -579,6 +611,9 @@
         "宫帐",
         "私属",
         "十二宫一府"
+      ],
+      "related": [
+        "soc-liao-jieceng"
       ]
     },
     {
@@ -665,6 +700,30 @@
       ]
     },
     {
+      "id": "tho-liao-ruxue",
+      "cat": "thought",
+      "type": "学术",
+      "name": "辽代儒学与五京学",
+      "era": "辽",
+      "year": 916,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "辽以儒术治国，五京设学、开科取士，兴宗、道宗尤好经史，儒学与佛学并行。",
+      "detail": "辽太祖立国即建孔庙，太宗得燕云后沿用汉地学校与科举。五京置国子学，设博士、助教，士人读《五经》而重章句。儒学为契丹贵族提供了“以汉制治汉人”的意识形态工具，与佛教共同构成辽代上层的精神世界。",
+      "refs": "《辽史·百官志》《辽史·兴宗纪》",
+      "tags": [
+        "科举",
+        "儒学",
+        "五京学"
+      ],
+      "related": [
+        "cul-liao-fojiao",
+        "pol-liao-keju"
+      ]
+    },
+    {
       "id": "eco-liao-nongye",
       "cat": "economy",
       "type": "农业",
@@ -682,6 +741,31 @@
         "燕云",
         "辽东",
         "农耕"
+      ]
+    },
+    {
+      "id": "tec-liao-yetie",
+      "cat": "tech",
+      "type": "工艺",
+      "name": "辽代冶铁与马具",
+      "era": "辽",
+      "year": 916,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "辽境铁矿与冶铸作坊支撑兵甲，契丹鞍具、马镫工艺尤精，为骑兵战力之基。",
+      "detail": "辽东京辽阳府及饶州等地设有铁冶，出土铁农具、兵刃与铁锅可见其规模。契丹鞍具以金银装饰、结构合理著称，宋人称“契丹鞍”为天下第一；马具的成熟也放大了轻骑突袭的战术优势。",
+      "refs": "《辽史·食货志》《辽史·地理志》",
+      "tags": [
+        "冶铁",
+        "马具",
+        "契丹鞍"
+      ],
+      "related": [
+        "emp-liao-taizu",
+        "mil-liao-qibing",
+        "tec-yetie"
       ]
     },
     {
@@ -722,6 +806,31 @@
         "冶铁",
         "官营",
         "盐池"
+      ]
+    },
+    {
+      "id": "soc-liao-jieceng",
+      "cat": "society",
+      "type": "阶层",
+      "name": "辽代社会阶层",
+      "era": "辽",
+      "year": 916,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "辽社会由契丹部族、宫分人、头下户、著帐户与汉地编户层叠构成，身份世袭、法有蕃汉之别。",
+      "detail": "宫分人（斡鲁朵户）隶属皇帝与后族宫帐，供役而不入州县；头下户是贵族俘掠人口所建头下军州的属民；著帐户为犯罪没入官府的奴婢。汉人、渤海人多入州县编户，依汉法纳税。蕃汉异法是辽制的一体两面。",
+      "refs": "《辽史·营卫志》《辽史·刑法志》",
+      "tags": [
+        "宫分人",
+        "头下户",
+        "著帐户"
+      ],
+      "related": [
+        "pol-liao-nanbeimian",
+        "pol-liao-touxia",
+        "pol-liao-wolusuo"
       ]
     },
     {
@@ -2443,7 +2552,8 @@
         "兵不识将"
       ],
       "related": [
-        "mil-jinjun"
+        "mil-jinjun",
+        "mil-wudai-yabing"
       ]
     },
     {
@@ -2760,6 +2870,7 @@
         "榷盐"
       ],
       "related": [
+        "eco-xixia-yanchi",
         "pol-sansi"
       ]
     },
@@ -2874,6 +2985,7 @@
       ],
       "related": [
         "mil-gengshu",
+        "mil-wudai-yabing",
         "mil-xiangjun"
       ]
     },
@@ -4084,6 +4196,9 @@
         "科举",
         "汉人",
         "进士"
+      ],
+      "related": [
+        "tho-liao-ruxue"
       ]
     },
     {
@@ -4294,6 +4409,9 @@
         "佛教",
         "房山石经",
         "崇佛"
+      ],
+      "related": [
+        "tho-liao-ruxue"
       ]
     },
     {
@@ -4788,6 +4906,7 @@
       ],
       "related": [
         "eco-huizi",
+        "eco-jin-chaofa",
         "tec-yinshua",
         "tl-1023"
       ]
@@ -4967,7 +5086,8 @@
         "cul-liao-wenzi",
         "cul-xixia-fojiao",
         "emp-xixia-jingzong",
-        "geo-heishuicheng"
+        "geo-heishuicheng",
+        "tec-xixia-lifa"
       ]
     },
     {
@@ -5015,6 +5135,7 @@
         "王陵"
       ],
       "related": [
+        "eco-xixia-yanchi",
         "emp-xixia-jingzong",
         "geo-kaifeng",
         "tl-1038"
@@ -5046,6 +5167,31 @@
       ]
     },
     {
+      "id": "tec-xixia-lifa",
+      "cat": "tech",
+      "type": "历法",
+      "name": "西夏历法与历书",
+      "era": "西夏",
+      "year": 1038,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "西夏行用宋历而自编历书，黑水城出土的西夏文历书是研究其天文历法的主要依据。",
+      "detail": "西夏历书以汉历为骨架，兼记党项语月名与吉凶宜忌，多为写本、刻本残页。历书的颁行说明西夏已具备观测、推算与雕印的官方能力，也反映其“仿汉制而立国”的技术路径。",
+      "refs": "《宋史·夏国传》《黑水城出土西夏历书研究》",
+      "tags": [
+        "黑水城",
+        "历法",
+        "历书"
+      ],
+      "related": [
+        "cul-xixia-wenzi",
+        "geo-heishuicheng",
+        "tec-lifa"
+      ]
+    },
+    {
       "id": "pol-xixia-guanzhi",
       "cat": "politics",
       "type": "官制",
@@ -5068,6 +5214,31 @@
         "emp-xixia-jingzong",
         "pol-liao-nanbeimian",
         "tl-1038"
+      ]
+    },
+    {
+      "id": "eco-xixia-yanchi",
+      "cat": "economy",
+      "type": "产业",
+      "name": "西夏盐池与青白盐",
+      "era": "西夏",
+      "year": 1038,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "西夏据盐州、灵州盐池，所产青白盐行销宋夏沿边，盐利为其财政支柱之一。",
+      "detail": "西夏盐池产量大、成本低，宋人常以谷物易盐。北宋为保护解盐专卖，屡禁青白盐入境，边民却因价廉而私贩不绝。盐禁与盐利因此成为宋夏和战之外的另一条战线。",
+      "refs": "《宋史·食货志下五》《宋史·夏国传》",
+      "tags": [
+        "盐池",
+        "青白盐",
+        "榷禁"
+      ],
+      "related": [
+        "eco-yan",
+        "geo-xingqingfu",
+        "tl-1044"
       ]
     },
     {
@@ -5111,7 +5282,8 @@
       ],
       "related": [
         "cul-xixia-fojiao",
-        "cul-xixia-wenzi"
+        "cul-xixia-wenzi",
+        "tec-xixia-lifa"
       ]
     },
     {
@@ -5336,6 +5508,7 @@
         "岁赐"
       ],
       "related": [
+        "eco-xixia-yanchi",
         "emp-xixia-jingzong"
       ]
     },
@@ -5673,6 +5846,7 @@
         "四书"
       ],
       "related": [
+        "tho-jin-ruxue",
         "tho-zhuxi"
       ]
     },
@@ -6260,6 +6434,30 @@
       ]
     },
     {
+      "id": "lit-liao-huiyuan",
+      "cat": "literature",
+      "type": "词",
+      "name": "《回心院词》",
+      "era": "辽",
+      "year": 1075,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "辽道宗皇后萧观音作《回心院》十首，后被耶律乙辛诬以艳诗，赐死。",
+      "detail": "《回心院词》十首写宫怨与盼幸，情感直露、语言清丽，是辽代传世最完整的文人词。萧观音善琵琶，令伶官赵唯一谱曲。乙辛构陷时正以此事诬其与伶人私通，史称“十香词冤案”。",
+      "refs": "《辽史·后妃传》《焚椒录》",
+      "tags": [
+        "萧观音",
+        "回心院",
+        "十香词"
+      ],
+      "related": [
+        "emp-liao-daozong",
+        "tl-liao-1075"
+      ]
+    },
+    {
       "id": "lit-bochuan",
       "cat": "literature",
       "type": "诗",
@@ -6299,6 +6497,7 @@
         "冤案"
       ],
       "related": [
+        "lit-liao-huiyuan",
         "ppl-liao-xiaoguanyin",
         "ppl-liao-yeluyixin"
       ]
@@ -6453,7 +6652,8 @@
         "工业革命"
       ],
       "related": [
-        "eco-kuangye"
+        "eco-kuangye",
+        "tec-liao-yetie"
       ]
     },
     {
@@ -7016,6 +7216,9 @@
         "纪元历",
         "统天历",
         "天文观测"
+      ],
+      "related": [
+        "tec-xixia-lifa"
       ]
     },
     {
@@ -7234,6 +7437,7 @@
         "西厢记"
       ],
       "related": [
+        "lit-jin-yanqiu",
         "ppl-dongjieyuan"
       ]
     },
@@ -8697,6 +8901,55 @@
       ]
     },
     {
+      "id": "tho-jin-ruxue",
+      "cat": "thought",
+      "type": "学术",
+      "name": "金代儒学",
+      "era": "金",
+      "year": 1153,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "金中叶儒学大兴，赵秉文、王若虚、李纯甫各立门户，苏学与程学之争延续至金末。",
+      "detail": "金世宗、章宗倡文治，设国子监、开科取士，士人宗苏轼之文而疑程学之严。赵秉文主“文以载道”而尚气格，王若虚以《滹南遗老集》辨经史之失，李纯甫好佛而杂禅。金亡后，元好问以诗文存一代文献。",
+      "refs": "《金史·赵秉文传》《滹南遗老集》",
+      "tags": [
+        "赵秉文",
+        "王若虚",
+        "苏学"
+      ],
+      "related": [
+        "ppl-yuanhaowen",
+        "tho-lixue"
+      ]
+    },
+    {
+      "id": "eco-jin-chaofa",
+      "cat": "economy",
+      "type": "货币",
+      "name": "金代交钞与通检推排",
+      "era": "金",
+      "year": 1154,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "金行交钞（纸币），又以通检推排核实民户物力、均定赋役，后期钞法滥发而坏。",
+      "detail": "1154 年始行交钞，与铜钱并行。章宗以后对外用兵、用度不足，交钞印造无度，屡屡更名（宝券、通宝、宝泉），物价腾踊。通检推排本为均赋，执行中亦多扰民，两者同为金末财政崩坏的两条线索。",
+      "refs": "《金史·食货志三》",
+      "tags": [
+        "纸币",
+        "交钞",
+        "通检推排"
+      ],
+      "related": [
+        "eco-huizi",
+        "eco-jiaozi",
+        "emp-jin-zhangzong"
+      ]
+    },
+    {
       "id": "lit-chaitoufeng",
       "cat": "literature",
       "type": "词",
@@ -8737,6 +8990,7 @@
       ],
       "related": [
         "eco-jiaozi",
+        "eco-jin-chaofa",
         "pol-gongtian"
       ]
     },
@@ -9109,6 +9363,30 @@
       "related": [
         "ppl-hantuozhou",
         "ppl-zhuxi"
+      ]
+    },
+    {
+      "id": "lit-jin-yanqiu",
+      "cat": "literature",
+      "type": "词",
+      "name": "《摸鱼儿·雁丘词》",
+      "era": "金",
+      "year": 1205,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "元好问赴并州应试途中见捕雁者，感双雁殉情而作，“问世间情为何物”遂成绝唱。",
+      "detail": "1205 年，十六岁的元好问途遇捕雁者，言一雁被杀、另一雁悲鸣投地而死，遂买雁葬于汾水之上，垒石为“雁丘”并作此词。上片以雁之生死诘问人间情爱，下片借荒烟残照写凭吊，为金词中最负盛名者。",
+      "refs": "《遗山乐府》《金史·元好问传》",
+      "tags": [
+        "元好问",
+        "雁丘",
+        "金词"
+      ],
+      "related": [
+        "cul-zhugongdiao",
+        "ppl-yuanhaowen"
       ]
     },
     {
@@ -10160,7 +10438,7 @@
       "death": 1055,
       "summary": "北宋广西壮族首领，建“南天国”，攻陷邕州，后被狄青击败。",
       "detail": "其起兵反映宋对西南边疆治理的失当。",
-      "refs": null,
+      "refs": "《宋史·广源州蛮传》",
       "tags": [
         "南天国",
         "广西"
@@ -10189,6 +10467,10 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "lit-jin-yanqiu",
+        "tho-jin-ruxue"
       ]
     },
     {
@@ -10250,7 +10532,7 @@
       "death": 1200,
       "summary": "金代医学家，金元四大家之首，主张“六气皆从火化”，创寒凉派。",
       "detail": "其理论对温病学发展有重要影响。",
-      "refs": null,
+      "refs": "《金史·方伎传》",
       "tags": [
         "寒凉派",
         "金元四大家"
@@ -10606,7 +10888,7 @@
       "death": 1300,
       "summary": "南宋襄阳守将，坚守六年，后降元，并参与招降沿江州郡。",
       "detail": "其降使长江门户洞开，加速南宋灭亡。",
-      "refs": null,
+      "refs": "《宋史·度宗纪》《宋史·瀛国公纪》",
       "tags": [
         "襄阳",
         "降元"
@@ -10861,7 +11143,7 @@
       "death": 1156,
       "summary": "陆游前妻，因婆媳不和被迫离异，重逢时陆游作《钗头凤》。",
       "detail": "其和词《钗头凤·世情薄》传为绝唱。",
-      "refs": null,
+      "refs": "《齐东野语》卷一",
       "tags": [
         "陆游",
         "钗头凤"
@@ -10906,7 +11188,7 @@
       "death": 1135,
       "summary": "南宋禅宗高僧，著《碧岩录》，对禅宗公案学影响深远。",
       "detail": "其《碧岩录》被誉为“宗门第一书”。",
-      "refs": null,
+      "refs": "《五灯会元》卷十九",
       "tags": [
         "禅宗",
         "碧岩录"
@@ -10954,7 +11236,7 @@
       "death": 1230,
       "summary": "南宋画家，南宋四家之一，构图多取半边，人称“夏半边”。",
       "detail": "与马远齐名，画风简淡空灵。",
-      "refs": null,
+      "refs": "《图绘宝鉴》卷四",
       "tags": [
         "南宋四家",
         "夏半边"
@@ -11964,7 +12246,7 @@
       "death": 1140,
       "summary": "金初大臣，创制女真大字，参与灭辽灭宋。",
       "detail": "其文字创制对女真文化发展意义重大。",
-      "refs": null,
+      "refs": "《金史·完颜希尹传》",
       "tags": [
         "女真文字",
         "谋臣"
@@ -12011,7 +12293,7 @@
       "death": 1157,
       "summary": "南宋禅宗高僧，倡“默照禅”，与宗杲“看话禅”并立。",
       "detail": "其禅风静默观照，主张“默照忘言”。",
-      "refs": null,
+      "refs": "《五灯会元》卷十四",
       "tags": [
         "禅宗",
         "默照禅"
@@ -12251,7 +12533,7 @@
       "death": 1228,
       "summary": "金代医学家，金元四大家之一，主张“攻邪已病”，创攻邪派。",
       "detail": "善用汗、吐、下三法，强调祛邪为先。",
-      "refs": null,
+      "refs": "《金史·方伎传》",
       "tags": [
         "金元四大家",
         "攻邪派"
@@ -12619,7 +12901,7 @@
       "death": 1079,
       "summary": "北宋画家、诗人，以画墨竹著称，苏轼表兄。",
       "detail": "“胸有成竹”典故即出自其画竹经验。",
-      "refs": null,
+      "refs": "《宋史·文苑传》《宣和画谱》",
       "tags": [
         "画竹",
         "苏轼表兄"
@@ -12714,7 +12996,7 @@
       "death": 1110,
       "summary": "北宋词人，晏殊幼子，词风哀感顽艳，多写离愁别恨。",
       "detail": "代表作《临江仙·梦后楼台高锁》。",
-      "refs": null,
+      "refs": "《宋史·文苑传》《小山词》自序",
       "tags": [
         "婉约",
         "小山词"
@@ -12905,6 +13187,7 @@
         "帝王"
       ],
       "related": [
+        "mil-wudai-yabing",
         "ppl-licunxu",
         "tl-wd-907"
       ]
@@ -12995,7 +13278,7 @@
       "death": 1150,
       "summary": "两宋之际画家，南宋四家之首，开南宋水墨苍劲一派。",
       "detail": "代表作《万壑松风图》《采薇图》。",
-      "refs": null,
+      "refs": "《图绘宝鉴》卷四",
       "tags": [
         "南宋四家",
         "万壑松风图"
@@ -13087,7 +13370,7 @@
       "death": 1032,
       "summary": "李继迁之子、李元昊之父，与宋辽修好，积蓄国力。",
       "detail": "其统治时期西夏实际已具备建国基础。",
-      "refs": null,
+      "refs": "《宋史·夏国传》",
       "tags": [
         "党项",
         "西夏"
@@ -13131,7 +13414,7 @@
       "death": 1251,
       "summary": "金元之际医学家，金元四大家之一，主张“脾胃为后天之本”，创补土派。",
       "detail": "著《脾胃论》，对后世中医影响极大。",
-      "refs": null,
+      "refs": "《元史·方伎传》",
       "tags": [
         "补土派",
         "脾胃论"
@@ -13230,7 +13513,7 @@
       "death": 1004,
       "summary": "党项首领，西夏政权的奠基者，抗宋自立，夺取灵州。",
       "detail": "其孙李元昊正式称帝建西夏。",
-      "refs": null,
+      "refs": "《宋史·夏国传》",
       "tags": [
         "党项",
         "西夏奠基"
@@ -13461,7 +13744,7 @@
       "death": 1171,
       "summary": "南宋画家，以墨梅著称，号逃禅老人。",
       "detail": "其墨梅清瘦俊逸，对后世画梅影响很大。",
-      "refs": null,
+      "refs": "《图绘宝鉴》卷四",
       "tags": [
         "墨梅",
         "逃禅"
@@ -13874,7 +14157,7 @@
       "death": 1123,
       "summary": "北宋理学家，“程门立雪”另一主角，程门四大弟子之一。",
       "detail": "其学兼采禅宗，著作多佚。",
-      "refs": null,
+      "refs": "《宋史·道学传》《宋元学案·廌山学案》",
       "tags": [
         "程门立雪",
         "廌山"
@@ -14244,7 +14527,7 @@
       "death": 1104,
       "summary": "北宋画家、驸马，与苏轼交好，参与西园雅集。",
       "detail": "其山水画取法李成、郭熙，笔墨清润。",
-      "refs": null,
+      "refs": "《宣和画谱》卷十二",
       "tags": [
         "驸马",
         "西园雅集"
@@ -14452,7 +14735,7 @@
       "death": 1261,
       "summary": "南宋数学家，著《数书九章》，提出中国剩余定理与高次方程解法。",
       "detail": "其数学成就代表宋代数学最高水平。",
-      "refs": null,
+      "refs": "《数书九章》序、《宋史翼》",
       "tags": [
         "大衍求一术",
         "数书九章"
@@ -14669,7 +14952,7 @@
       "death": 1135,
       "summary": "北宋理学家，号豫章，杨时弟子，李侗之师。",
       "detail": "为“道南学派”承上启下的人物。",
-      "refs": null,
+      "refs": "《宋史·道学传》《宋元学案·豫章学案》",
       "tags": [
         "豫章",
         "道南学派"
@@ -14901,7 +15184,7 @@
       "death": 1059,
       "summary": "北宋教育家，宋初三先生之一，创“苏湖教法”，分经义、治事两斋。",
       "detail": "其教育理念影响宋代官学与书院。",
-      "refs": null,
+      "refs": "《宋史·儒林传》《宋元学案·安定学案》",
       "tags": [
         "宋初三先生",
         "苏湖教法"
@@ -15336,7 +15619,7 @@
       "death": 1259,
       "summary": "蒙古大汗，发动全面攻宋，死于钓鱼城下。",
       "detail": "其死引发蒙古汗位之争，南宋得以延续。",
-      "refs": null,
+      "refs": "《元史·宪宗纪》",
       "tags": [
         "钓鱼城",
         "元宪宗"
@@ -15385,7 +15668,7 @@
       "death": 1198,
       "summary": "南宋理学家、律学家，朱熹弟子，著《律吕新书》。",
       "detail": "因庆元党禁被贬，死于道州。",
-      "refs": null,
+      "refs": "《宋史·道学传》《宋元学案·西山学案》",
       "tags": [
         "律吕",
         "朱熹弟子"
@@ -15658,7 +15941,7 @@
       "death": 1264,
       "summary": "南宋画家，宋宗室，以墨兰、白描水仙著称。",
       "detail": "其画清雅秀润，是文人画的重要代表。",
-      "refs": null,
+      "refs": "《图绘宝鉴》卷四",
       "tags": [
         "墨兰",
         "白描水仙"
@@ -15725,7 +16008,7 @@
       "death": 1147,
       "summary": "南宋初年宰相，力主抗金，支持岳飞、韩世忠等。",
       "detail": "因与秦桧不和，屡遭贬谪，绝食而死。",
-      "refs": null,
+      "refs": "《宋史·赵鼎传》",
       "tags": [
         "宰相",
         "主战"
@@ -15898,6 +16181,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tec-liao-yetie"
       ]
     },
     {
@@ -15966,6 +16252,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "lit-liao-huiyuan"
       ]
     },
     {
@@ -16341,6 +16630,7 @@
         "帝王"
       ],
       "related": [
+        "eco-jin-chaofa",
         "tl-1189b"
       ]
     },
@@ -16357,7 +16647,7 @@
       "death": 1130,
       "summary": "南宋初洞庭湖农民起义领袖，提出“等贵贱，均贫富”。",
       "detail": "被岳飞镇压，死后杨幺继续领导。",
-      "refs": null,
+      "refs": "《宋史·岳飞传》《建炎以来系年要录》",
       "tags": [
         "洞庭湖",
         "等贵贱"
@@ -16452,7 +16742,7 @@
       "death": 1279,
       "summary": "南宋末宰相，崖山之战中负幼帝赵昺投海殉国。",
       "detail": "与文天祥、张世杰并称“宋末三杰”。",
-      "refs": null,
+      "refs": "《宋史·陆秀夫传》",
       "tags": [
         "崖山",
         "负帝殉国"
@@ -16595,7 +16885,7 @@
       "death": 1223,
       "summary": "南宋理学家，号北溪，朱熹晚年弟子。",
       "detail": "著《北溪字义》，系统解释理学范畴。",
-      "refs": null,
+      "refs": "《宋史·道学传》《宋元学案·北溪学案》",
       "tags": [
         "朱熹弟子",
         "北溪"
@@ -16617,7 +16907,7 @@
       "death": 1270,
       "summary": "南宋医学家，著《妇人大全良方》，系统总结妇产科经验。",
       "detail": "其书是中医妇产科的经典著作。",
-      "refs": null,
+      "refs": "《四库全书总目·妇人大全良方》",
       "tags": [
         "妇人大全良方",
         "妇科"
