@@ -41,7 +41,10 @@ def connect(path):
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys = ON")
     conn.execute("PRAGMA busy_timeout = 5000")
-    conn.execute("PRAGMA journal_mode = WAL")
+    try:
+        conn.execute("PRAGMA journal_mode = WAL")
+    except sqlite3.OperationalError:
+        pass  # 别的进程正在写（如 enrich_wiki.py），沿用现有模式即可
     return conn
 
 

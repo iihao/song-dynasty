@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>大宋全局志 · Song Dynasty Atlas</title>
 <meta name="description" content="两宋政治、军事、经济、文化、科技、社会、风俗全量结构化资料库">
-<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body>
 
@@ -92,13 +92,18 @@
 
 <!-- ================= 年表 ================= -->
 <section class="view" id="view-timeline">
-  <div class="wrap">
+  <div class="wrap narrow">
     <div class="page-head">
-      <p class="eyebrow">CHRONOLOGY</p>
+      <p class="eyebrow">CHRONOLOGY · 907—1279</p>
       <h1>大宋大事年表</h1>
-      <p>自 960 年正月陈桥兵变，至 1279 年二月初六崖山海战。可按政权筛选。</p>
+      <p>自 907 年唐亡、916 年契丹建国，至 1279 年崖山海战。上方年代轴按政权着色，可点击定位；下方按年代分段排列。</p>
     </div>
     <div class="filterbar" id="timelineFilters"></div>
+    <figure class="tl-atlas" aria-label="年表年代轴">
+      <div class="tl-axis" id="tlAxis"></div>
+      <div class="tl-axis-labels" id="tlAxisLabels"></div>
+      <div class="tl-legend" id="tlLegend"></div>
+    </figure>
     <div class="timeline-wrap">
       <div class="timeline" id="timelineList"></div>
     </div>
@@ -204,7 +209,7 @@
       </ul>
 
       <h2>外部富化与许可</h2>
-      <p>条目详情中的「百科条目」来自中文维基百科，通过 MediaWiki API 抓取导言，保留标题、链接、修订号与许可（CC BY-SA 4.0）；维基数据 QID 用于关联开放知识库。外部内容与本站原创摘要分离存放在 <code>item_sources</code> 表，可随时重新抓取或停用。</p>
+      <p>条目详情中的「百科条目」来自中文维基百科，通过 MediaWiki API 抓取正文（约 600–1250 字），保留标题、链接、修订号与许可（CC BY-SA 4.0）；维基数据 QID 用于关联开放知识库。外部内容与本站原创摘要分离存放在 <code>item_sources</code> 表，可随时重新抓取或停用。</p>
       <p>百度百科仅作为外链跳转，不抓取、不复制正文：其内容没有类似 CC 的开放许可，且站点有反爬限制。直接批量搬运会有版权与合规风险。</p>
 
       <h2>免责</h2>
@@ -251,6 +256,6 @@
   </div>
 </div>
 
-<script src="js/app.js?v=6"></script>
+<script src="js/app.js?v=7"></script>
 </body>
 </html>

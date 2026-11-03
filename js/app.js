@@ -254,31 +254,125 @@
   }
 
   /* ---------------- 年表 ---------------- */
+  var TL_ERA_FALLBACK = { '五代': '#8a6a55', '大理': '#7a7f5a', '元': '#4a4a52', '两宋': '#7a7a7a' };
   var tlEra = 'all';
+  var tlMajor = false;
+
+  function eraColor(era) {
+    var hit = (D.dynasties || []).filter(function (d) { return d.name === era; })[0];
+    return (hit && hit.color) || TL_ERA_FALLBACK[era] || '#6b6458';
+  }
+  function decadeOf(y) { return Math.floor(y / 10) * 10; }
+
+  /* 年代轴：所有节点按年份定位，颜色=政权，线高=重要性；切换筛选时未命中者变淡 */
+  function tlAxisHTML(all, visible) {
+    var years = all.map(function (it) { return it.year; }).filter(function (y) { return y != null; });
+    if (!years.length) return { ticks: '', labels: '' };
+    var min = decadeOf(Math.min.apply(null, years));
+    var max = Math.ceil((Math.max.apply(null, years) + 1) / 10) * 10;
+    var span = max - min || 1;
+    var ticks = all.map(function (it) {
+      var pos = ((it.year - min) / span * 100).toFixed(3);
+      var h = it.minor ? 12 : 26;
+      var dim = visible.indexOf(it.id) < 0 ? ' dim' : '';
+      return '<i class="tl-tick' + (it.minor ? ' minor' : '') + dim + '"' +
+        ' data-tl="' + esc(it.id) + '" title="' + esc(it.year + ' · ' + it.name) + '"' +
+        ' style="left:' + pos + '%;height:' + h + 'px;background:' + eraColor(it.era) + '"></i>';
+    }).join('');
+    var labels = '';
+    for (var y = min; y <= max; y += 50) {
+      labels += '<span style="left:' + ((y - min) / span * 100).toFixed(3) + '%">' + y + '</span>';
+    }
+    return { ticks: ticks, labels: labels };
+  }
+
+  function jumpToTimeline(id) {
+    var el = document.querySelector('#timelineList [data-tl-id="' + id + '"]');
+    if (!el) { openItem(id); return; }  // 被当前筛选隐藏时，直接开详情
+    el.scrollIntoView({ block: 'center' });
+    el.classList.remove('flash');
+    void el.offsetWidth;
+    el.classList.add('flash');
+    setTimeout(function () { el.classList.remove('flash'); }, 1500);
+  }
+
   function renderTimeline() {
-    var eras = ['all', '北宋', '南宋', '辽', '西夏', '金'];
-    $('#timelineFilters').innerHTML = eras.map(function (e) {
-      return '<button class="chip ' + (tlEra === e ? 'on' : '') + '" data-era="' + e + '">' +
-        (e === 'all' ? '全部' : e) + '</button>';
-    }).join('') + '<span class="result-count" id="tlCount"></span>';
-    $$('#timelineFilters .chip').forEach(function (b) {
-      b.addEventListener('click', function () { tlEra = b.getAttribute('data-era'); renderTimeline(); });
+    var all = D.items.filter(function (it) { return it.cat === 'timeline'; })
+      .sort(function (a, b) { return a.year - b.year; });
+
+    var counts = {};
+    all.forEach(function (it) { counts[it.era] = (counts[it.era] || 0) + 1; });
+    var eraOrder = (D.dynasties || []).map(function (d) { return d.name; })
+      .filter(function (n) { return counts[n]; });
+    Object.keys(counts).forEach(function (n) {
+      if (eraOrder.indexOf(n) < 0) eraOrder.push(n);
     });
 
-    var list = D.items.filter(function (it) { return it.cat === 'timeline'; })
-      .filter(function (it) { return tlEra === 'all' || it.era === tlEra; })
-      .sort(function (a, b) { return a.year - b.year; });
+    var list = all.filter(function (it) {
+      if (tlEra !== 'all' && it.era !== tlEra) return false;
+      return !(tlMajor && it.minor);
+    });
     state.list = list;
-    $('#tlCount').textContent = list.length + ' 条';
+
+    var chips = '<button class="chip ' + (tlEra === 'all' ? 'on' : '') + '" data-era="all">全部<em>' + all.length + '</em></button>';
+    chips += eraOrder.map(function (n) {
+      return '<button class="chip ' + (tlEra === n ? 'on' : '') + '" data-era="' + esc(n) + '"' +
+        ' style="--era:' + eraColor(n) + '"><i class="dot"></i>' + esc(n) +
+        '<em>' + counts[n] + '</em></button>';
+    }).join('');
+    chips += '<button class="chip toggle ' + (tlMajor ? 'on' : '') + '" data-major="1">仅看大事</button>';
+    $('#timelineFilters').innerHTML = chips;
+
+    $$('#timelineFilters .chip').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (b.hasAttribute('data-major')) tlMajor = !tlMajor;
+        else tlEra = b.getAttribute('data-era');
+        renderTimeline();
+      });
+    });
+
+    var axis = tlAxisHTML(all, list.map(function (it) { return it.id; }));
+    $('#tlAxis').innerHTML = axis.ticks;
+    $('#tlAxisLabels').innerHTML = axis.labels;
+    $('#tlLegend').innerHTML = eraOrder.map(function (n) {
+      return '<span><i style="background:' + eraColor(n) + '"></i><b>' + esc(n) + '</b></span>';
+    }).join('') + '<span style="margin-left:auto;opacity:.85">共 ' + list.length + ' 条 · 长线为大事，细线为次要事件 · 点击定位</span>';
+    $$('#tlAxis .tl-tick').forEach(function (t) {
+      t.addEventListener('click', function () { jumpToTimeline(t.getAttribute('data-tl')); });
+    });
+
+    if (!list.length) {
+      $('#timelineList').innerHTML = '<div class="empty">没有符合条件的条目。</div>';
+      return;
+    }
+
+    var lastDec = null;
     $('#timelineList').innerHTML = list.map(function (it) {
-      return '<div class="tl-item ' + (it.minor ? 'minor' : '') + '">' +
-        '<div class="tl-year">' + it.year + '<small>' + esc([it.era, it.type].filter(Boolean).join(' · ')) + '</small></div>' +
-        '<div class="tl-card" data-id="' + it.id + '"><h3>' + esc(it.name) + '</h3>' +
-        '<p>' + esc(it.summary) + '</p>' +
+      var dec = decadeOf(it.year);
+      var head = dec !== lastDec ? '<div class="tl-decade">' + dec + '年代</div>' : '';
+      lastDec = dec;
+      var rel = (it.related || []).map(function (r) {
+        var obj = (typeof r === 'string') ? byId[r] : r;
+        return obj ? '<button data-rel="' + esc(obj.id) + '">' + esc(obj.name) + '</button>' : '';
+      }).join('');
+      return head +
+        '<div class="tl-item ' + (it.minor ? 'minor' : 'major') + '" data-tl-id="' + esc(it.id) + '"' +
+        ' style="--era:' + eraColor(it.era) + '">' +
+        '<div class="tl-year">' + it.year + '<small>' + esc(it.era + ' · ' + (it.minor ? '次要' : '大事')) + '</small></div>' +
+        '<div class="tl-card" data-id="' + esc(it.id) + '">' +
+        '<h3>' + esc(it.name) + '</h3><p>' + esc(it.summary) + '</p>' +
         '<div class="tags">' + (it.tags || []).map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div>' +
+        (rel ? '<div class="tl-rel"><span style="font-size:10px;letter-spacing:.16em;color:var(--ink-3);align-self:center">相关</span>' + rel + '</div>' : '') +
         '</div></div>';
     }).join('');
-    bindOpen('#timelineList .tl-card');
+
+    $$('#timelineList .tl-card').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        var rel = e.target.closest ? e.target.closest('[data-rel]') : null;
+        if (rel) { e.stopPropagation(); openItem(rel.getAttribute('data-rel')); return; }
+        openItem(el.getAttribute('data-id'));
+      });
+    });
   }
 
   /* ---------------- 人物 ---------------- */
@@ -399,8 +493,12 @@
     var wikiHtml = '';
     if (src && src.extract) {
       var paras = src.extract.split(/\n+/).map(function (x) { return x.trim(); })
-        .filter(function (x) { return x && !/^=+.*=+$/.test(x); })
-        .map(function (x) { return '<p>' + esc(x) + '</p>'; }).join('');
+        .filter(Boolean)
+        .map(function (x) {
+          var m = x.match(/^=+\s*(.+?)\s*=+$/);
+          if (m) return '<h4>' + esc(m[1]) + '</h4>';
+          return '<p>' + esc(x) + '</p>';
+        }).join('');
       wikiHtml = '<div class="m-wiki"><h3>百科条目 <span class="src-badge">' +
         esc(src.source === 'wikipedia' ? '维基百科' : src.source) + '</span></h3>' + paras +
         '<div class="m-license">来源：<a href="' + esc(src.url) + '" target="_blank" rel="noopener noreferrer">' +
