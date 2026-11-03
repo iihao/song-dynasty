@@ -52,7 +52,9 @@ def build(conn, seed):
     )
 
     for i, p in enumerate(seed.get("dataPanels", [])):
-        payload = {k: p[k] for k in ("rows", "cols") if k in p}
+        # 除展示字段外的键全部进 payload（rows/cols/points/items/source/unit…），
+        # 这样新增的图表形态不必改表结构
+        payload = {k: v for k, v in p.items() if k not in ("title", "desc", "kind")}
         conn.execute(
             "INSERT INTO data_panels(title,description,kind,payload,sort) VALUES(?,?,?,?,?)",
             (p["title"], p.get("desc"), p["kind"],

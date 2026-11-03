@@ -417,6 +417,47 @@
   }
 
   /* ---------------- 数据 ---------------- */
+  /* 折线：时间序列（铸钱量等），点值直接标在图上 */
+  function lineHTML(p) {
+    var pts = p.points || [];
+    if (!pts.length) return '';
+    var W = 640, H = 220, padL = 14, padR = 14, padT = 34, padB = 46;
+    var max = Math.max.apply(null, pts.map(function (d) { return d.value; })) * 1.2 || 1;
+    var step = pts.length > 1 ? (W - padL - padR) / (pts.length - 1) : 0;
+    var xy = pts.map(function (d, i) {
+      return { x: padL + step * i, y: padT + (H - padT - padB) * (1 - d.value / max), d: d };
+    });
+    var grid = [0, 0.5, 1].map(function (f) {
+      var y = padT + (H - padT - padB) * f;
+      return '<line x1="' + padL + '" y1="' + y + '" x2="' + (W - padR) + '" y2="' + y + '" class="lg-grid"/>';
+    }).join('');
+    var base = (H - padB);
+    var area = 'M' + xy[0].x + ',' + base + ' ' + xy.map(function (q) {
+      return 'L' + q.x + ',' + q.y;
+    }).join(' ') + ' L' + xy[xy.length - 1].x + ',' + base + ' Z';
+    var line = xy.map(function (q) { return q.x.toFixed(1) + ',' + q.y.toFixed(1); }).join(' ');
+    var dots = xy.map(function (q) {
+      return '<circle cx="' + q.x + '" cy="' + q.y + '" r="4" class="lg-dot"/>' +
+        '<text x="' + q.x + '" y="' + (q.y - 12) + '" text-anchor="middle" class="lg-val">' + esc(q.d.display) + '</text>';
+    }).join('');
+    var xlab = xy.map(function (q) {
+      return '<text x="' + q.x + '" y="' + (H - 22) + '" text-anchor="middle" class="lg-x">' + esc(q.d.label) + '</text>' +
+        (q.d.sub ? '<text x="' + q.x + '" y="' + (H - 8) + '" text-anchor="middle" class="lg-sub">' + esc(q.d.sub) + '</text>' : '');
+    }).join('');
+    return '<svg class="linechart" viewBox="0 0 ' + W + ' ' + H + '" role="img">' + grid +
+      '<path d="' + area + '" class="lg-area"/><polyline points="' + line + '" class="lg-line"/>' +
+      dots + xlab + '</svg>';
+  }
+
+  /* 关键数字：把一组量级摆在一起，比单看强弱直观 */
+  function kpiHTML(p) {
+    return '<div class="kpis">' + (p.items || []).map(function (k) {
+      return '<div class="kpi"><b>' + esc(k.value) + (k.unit ? '<i>' + esc(k.unit) + '</i>' : '') + '</b>' +
+        '<span>' + esc(k.label) + '</span>' +
+        (k.note ? '<small>' + esc(k.note) + '</small>' : '') + '</div>';
+    }).join('') + '</div>';
+  }
+
   function renderData() {
     if (!$('#dataPanels').dataset.done) {
       var html = '';
@@ -431,6 +472,10 @@
               '<div class="bar-track"><div class="bar-fill ' + cls + '" style="width:' + w + '%"></div></div>' +
               '<div class="bar-val">' + esc(r.display) + '</div></div>';
           }).join('') + '</div>';
+        } else if (p.kind === 'line') {
+          html += lineHTML(p);
+        } else if (p.kind === 'kpi') {
+          html += kpiHTML(p);
         } else if (p.kind === 'table') {
           html += '<table class="data"><thead><tr>' + p.cols.map(function (c) { return '<th>' + esc(c) + '</th>'; }).join('') + '</tr></thead><tbody>' +
             p.rows.map(function (r) {
@@ -439,6 +484,7 @@
               }).join('') + '</tr>';
             }).join('') + '</tbody></table>';
         }
+        if (p.source) html += '<p class="pcite">' + esc(p.source) + '</p>';
         html += '</section>';
       });
       $('#dataPanels').innerHTML = html;
