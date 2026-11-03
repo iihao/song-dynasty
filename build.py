@@ -96,15 +96,18 @@ def check_integrity(conn):
 
 
 # ---------------------------------------------------------------- 页面
-WIKI_HEADING = re.compile(r"^=+.*=+$")
+WIKI_HEADING = re.compile(r"^=+\s*(.+?)\s*=+$")
 
 
 def paragraphs(text):
+    """把维基导言渲染成 HTML：== 小标题 == 转成 <h4>，与前端 app.js 保持一致。"""
     out = []
     for line in (text or "").split("\n"):
         line = line.strip()
-        if line and not WIKI_HEADING.match(line):
-            out.append("<p>%s</p>" % escape(line))
+        if not line:
+            continue
+        m = WIKI_HEADING.match(line)
+        out.append("<h4>%s</h4>" % escape(m.group(1)) if m else "<p>%s</p>" % escape(line))
     return "".join(out)
 
 
