@@ -309,6 +309,8 @@ def main():
         write_text(os.path.join(out, "item", rel_name(it["id"]) + ".html"), page)
 
     # 站点附属文件
+    # .nojekyll：GitHub Pages 不要走 Jekyll（否则 _headers 之类的文件会被吞）
+    write_text(os.path.join(out, ".nojekyll"), "")
     write_text(os.path.join(out, "404.html"), not_found(base_url))
     write_text(os.path.join(out, "_headers"), HEADERS)
     write_text(os.path.join(out, "robots.txt"),

@@ -63,11 +63,25 @@ dist/
 ├── api/bootstrap.json    首屏数据
 ├── api/items/<id>.json   条目详情（含维基富化）
 ├── item/<id>.html        每条一页，可被搜索引擎收录、可分享预览
-├── sitemap.xml          需要 --base-url 才会生成
-├── robots.txt  404.html  _headers   ← _headers 供 Cloudflare Pages / Netlify 使用
+├── sitemap.xml         需要 --base-url 才会生成
+├── robots.txt  404.html  .nojekyll
+├── _headers          ← 仅供 Cloudflare Pages / Netlify（GitHub Pages 会忽略）
 ```
 
 构建期会做一次数据体检（悬空关联、非法 id、年表缺年份等），有问题直接打印出来。
+
+### GitHub Pages
+
+仓库带了发布脚本（单提交强制推送 `gh-pages`，不会膨胀历史）：
+
+```bash
+./deploy.sh            # 自动推导 https://<owner>.github.io/<repo>
+BASE_URL=https://你的域名 ./deploy.sh
+```
+
+首次使用需在 Settings → Pages 把 Source 设为 `gh-pages` 分支（或执行脚本末尾打印的 `gh api` 命令）。构建会自动生成 `.nojekyll`，避免 Jekyll 处理 `_headers` 等文件。
+
+如果你偏好 GitHub Actions 发布，可加一个 workflow 调 `actions/deploy-pages`；注意推送 workflow 文件需要 token 具备 `workflow` scope（`gh auth refresh -s workflow`）。
 
 nginx 最小配置：
 
@@ -94,6 +108,7 @@ song-dynasty/
 ├── css/style.css           宋韵视觉（宣纸 / 朱砂 / 青绿）
 ├── js/app.js               渲染与交互（零依赖）
 ├── build.py                静态站点构建 → dist/（公网部署用这个）
+├── deploy.sh               构建并发布到 GitHub Pages
 ├── server/app.py           HTTP + JSON API（开发/内网，仅标准库）
 ├── db/
 │   ├── schema.sql          表结构、索引、触发器、视图
