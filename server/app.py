@@ -44,7 +44,7 @@ DB_PATH = DEFAULT_DB
 # 之前的做法是“拒绝 /db/ /server/ 前缀”，但前缀判断发生在路径归一化之前，
 # /css/../db/song.db 与 /%64b/seed.json 都能绕过，等于把整个库与源码公开。
 STATIC_RE = re.compile(
-    r"^/(?:index\.html|favicon\.ico|robots\.txt|sitemap\.xml|"
+    r"^/(?:(?:[A-Za-z0-9][A-Za-z0-9._-]*\.html)|favicon\.ico|robots\.txt|sitemap\.xml|"
     r"(?:css|js|assets)/[A-Za-z0-9][A-Za-z0-9._-]*"
     r"\.(?:css|js|mjs|png|jpe?g|svg|webp|gif|ico|woff2?))$"
 )

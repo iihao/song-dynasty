@@ -295,11 +295,21 @@ def main():
 
     # 资产指纹：把 index.html 里手写的 ?v=N 换成内容哈希
     v_css = asset_hash(os.path.join(ROOT, "css", "style.css"))
+    v_cx_css = asset_hash(os.path.join(ROOT, "css", "chixie.css"))
+    v_cx_js = asset_hash(os.path.join(ROOT, "js", "chixie.js"))
     v_js = asset_hash(os.path.join(ROOT, "js", "app.js"))
     html = read(os.path.join(ROOT, "index.html")).decode("utf-8")
     html = re.sub(r"css/style\.css(\?v=[^\"]*)?", f"css/style.css?v={v_css}", html)
     html = re.sub(r"js/app\.js(\?v=[^\"]*)?", f"js/app.js?v={v_js}", html)
     write_text(os.path.join(out, "index.html"), html)
+
+    # 独立页面：持械入宋图谱
+    cx_src = os.path.join(ROOT, "chixie.html")
+    if os.path.exists(cx_src):
+        cx = read(cx_src).decode("utf-8")
+        cx = re.sub(r"css/chixie\.css(\?v=[^\"]*)?", f"css/chixie.css?v={v_cx_css}", cx)
+        cx = re.sub(r"js/chixie\.js(\?v=[^\"]*)?", f"js/chixie.js?v={v_cx_js}", cx)
+        write_text(os.path.join(out, "chixie.html"), cx)
 
     # 数据
     write_json(os.path.join(out, "api", "bootstrap.json"), boot)

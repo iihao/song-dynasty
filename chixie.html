@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《持械入宋》人物·年份图谱</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/chixie.css?v=1">
+</head>
+<body class="cx-body">
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="seal">宋</span>
+    <span class="brand-text">
+      <strong>持械入宋图谱</strong>
+      <small>CHIXIE RUSONG · CHARACTER ATLAS</small>
+    </span>
+  </a>
+  <nav class="mainnav">
+    <a href="index.html">大宋全局志</a>
+    <a href="index.html#timeline">年表</a>
+    <a href="index.html#people">人物</a>
+    <a href="chixie.html" class="active">持械图谱</a>
+  </nav>
+</header>
+
+<main class="cx-wrap">
+
+  <section class="cx-hero">
+    <p class="eyebrow">原著 茶根儿 · 番茄小说 / AI 短剧改编</p>
+    <h1>《持械入宋》<span>人物 · 年份图谱</span></h1>
+    <p class="cx-lead">
+      现代五人小队穿越到 <b>北宋宣和四年（1122）</b>，从西北边陲清河村起家，
+      经陇城、秦州，卷入宋夏、宋金战争，直至靖康之变。
+      下图把<b>叙事年份、阵营、人物关系</b>放在同一张图里；年份为根据卷名、章节目录与公开资料所做的推定。
+    </p>
+    <div class="cx-meta">
+      <span>502 章 · 四卷</span>
+      <span>起点：宣和四年（1122）</span>
+      <span>终点：靖康二年（1127）</span>
+      <span class="warn">含架空改编，非史实年表</span>
+    </div>
+  </section>
+
+  <section class="cx-controls">
+    <div class="cx-years" id="yearBtns"></div>
+    <div class="cx-legend">
+      <span><i class="dot team"></i>主角团</span>
+      <span><i class="dot song"></i>北宋军民</span>
+      <span><i class="dot court"></i>宋室</span>
+      <span><i class="dot literary"></i>文坛</span>
+      <span><i class="dot enemy"></i>敌对势力</span>
+      <span><i class="dot drama"></i>短剧改编名</span>
+    </div>
+    <button class="cx-reset" id="resetBtn">重置</button>
+  </section>
+
+  <section class="cx-graph-card">
+    <div class="cx-graph-scroll">
+      <svg id="graph" viewBox="0 0 1100 660" role="img" aria-label="持械入宋人物关系图"></svg>
+    </div>
+    <p class="cx-hint">点击人物查看说明 · 点击年份筛选 · 悬停节点显示关系文字</p>
+  </section>
+
+  <section class="cx-detail" id="detail">
+    <div class="cx-detail-empty">选择图中的人物，查看身份、登场与关系。</div>
+  </section>
+
+  <section class="cx-timeline-section">
+    <div class="block-head">
+      <h2>年份对照</h2>
+      <p>左列为小说叙事线，右列为真实历史背景；二者并不完全一致。</p>
+    </div>
+    <div class="cx-timeline" id="timeline"></div>
+  </section>
+
+  <section class="cx-notes">
+    <h2>读图说明</h2>
+    <ul>
+      <li><b>年份是推定值。</b>原著卷名与章节目录只给出叙事顺序，未逐章标注公元年份；本图以“宣和四年（1122）穿越、五年后靖康之变（1127）”为骨架，把四卷分配到 1122—1127。</li>
+      <li><b>人物名以原著为主，括号内为短剧改编名。</b>如赵福金／赵宜宁、岳飞／岳武、李清照／李清棠；赵九为短剧角色，原型赵构。</li>
+      <li><b>“灭西夏”是小说架空线。</b>真实历史中西夏亡于 1227 年；小说第三卷让主角团提前介入西北战局。</li>
+      <li><b>关系为剧情定位，不是逐章考据。</b>“婚约”“CP”“招揽”等依据章节目录与公开剧情介绍，细节以原著为准。</li>
+    </ul>
+  </section>
+
+  <section class="cx-sources">
+    <h2>资料来源</h2>
+    <ol>
+      <li><a href="https://fanqienovel.com/page/7616151491132279832" target="_blank" rel="noopener">番茄小说《持械入宋》</a>：作者茶根儿，502 章，四卷目录。</li>
+      <li><a href="https://baike.baidu.com/item/%E6%8C%81%E6%A2%B0%E5%85%A5%E5%AE%8B/68420506" target="_blank" rel="noopener">百度百科《持械入宋》</a>：短剧信息与剧情摘要。</li>
+      <li><a href="https://www.36kr.com/p/4045021148583046" target="_blank" rel="noopener">36氪《被骂“降智”的AI短剧，靠40亿播放的〈持械入宋〉扳回一局》</a>：五人小队设定、宣和四年、人物原型。</li>
+      <li><a href="https://www.thepaper.cn/newsDetail_forward_34352445" target="_blank" rel="noopener">澎湃新闻《一个“草根”团队的两年》</a>：改编与人物设定背景。</li>
+      <li><a href="https://movie.douban.com/subject/38903411/" target="_blank" rel="noopener">豆瓣《持械入宋：第一季》</a>：剧情简介。</li>
+    </ol>
+    <p class="cx-disclaimer">本页为学习/检索用的资料整理，不含原著正文。若用于正式引用，请以原著与上述来源为准。</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span class="seal small">宋</span>
+  <p>大宋全局志 · 持械入宋人物图谱</p>
+</footer>
+
+<script src="js/chixie.js?v=1"></script>
+</body>
+</html>
