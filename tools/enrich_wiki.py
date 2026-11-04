@@ -130,6 +130,10 @@ OVERRIDES = {
     "ppl-zhaofujin": "茂德帝姬",
     "ppl-zhaomingcheng": "赵明诚",
     "lit-ciyuan": "词源 (张炎)",
+    "lit-juexiao": "绝妙好词",
+    "lit-ji-jiaxuan": "稼轩长短句",
+    "lit-ji-shanzhong": "山中白云词",
+    "lit-ji-baishi": "白石道人歌曲",
     "geo-mingzhou": "宁波市",
     "geo-luoyang": "洛阳市",
     "pol-lu": "路 (行政区划)",
@@ -141,7 +145,7 @@ OVERRIDES = {
 SKIP_IDS = {
     "cul-liao-fojiao", "cul-liao-sancai", "cul-liao-ci",
     "eco-liao-nongye", "eco-liao-xumu", "eco-liao-yantie", "eco-liao-huobi",
-    "cul-zaju", "soc-mengxue", "lit-qitianle",
+    "cul-zaju", "soc-mengxue", "lit-qitianle", "lit-mingfeiqu",
 }
 
 

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-04T11:34:05",
+ "generated_at": "2026-11-04T11:47:10",
  "license": "维基百科内容遵循 CC BY-SA 4.0，使用时请保留署名与链接",
  "items": [
   {
@@ -2704,6 +2704,36 @@
    "fetched_at": "2026-11-04T11:32:14"
   },
   {
+   "item_id": "lit-hexinglang-liuke",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "贺新郎",
+   "url": "https://zh.wikipedia.org/wiki/%E8%B4%BA%E6%96%B0%E9%83%8E",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 86050822,
+   "qid": "Q15914366",
+   "confidence": 0.96,
+   "match": "exact",
+   "note": "year-mismatch",
+   "extract": "贺新郎，词牌名。亦称《金缕曲》。双调，一百十六字。前后阙各十句、六仄韵。",
+   "fetched_at": "2026-11-04T11:44:59"
+  },
+  {
+   "item_id": "lit-huajian",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "花间派",
+   "url": "https://zh.wikipedia.org/wiki/%E8%8A%B1%E9%97%B4%E6%B4%BE",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 84706541,
+   "qid": "Q10500385",
+   "confidence": 0.87,
+   "match": "search",
+   "note": "year-mismatch",
+   "extract": "花间派是指作品为五代词集《花间集》所收录的词家。代表人物有温庭筠、韦庄、张泌等。\n一般认为花间派起源于唐代温庭筠，而繁荣于五代时后蜀。严格意义上讲并不能成为一派。一般认为花间派是指这种文学形式由民间歌曲过渡到文人创作的中间形态。",
+   "fetched_at": "2026-11-04T11:43:56"
+  },
+  {
    "item_id": "lit-huanxisha-qinguan",
    "source": "wikipedia",
    "lang": "zh",
@@ -2732,6 +2762,36 @@
    "note": "year-mismatch",
    "extract": "浣溪沙，词牌名。双调四十二字，上阕三句三平韵，下阕三句两平韵，一韵到底。下阕开始两句一般要求对仗。\n本为唐代教坊曲名。取自西施在若耶溪浣纱故事。",
    "fetched_at": "2026-11-04T11:27:00"
+  },
+  {
+   "item_id": "lit-ji-jiaxuan",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "稼轩长短句",
+   "url": "https://zh.wikipedia.org/wiki/%E7%A8%BC%E8%BD%A9%E9%95%BF%E7%9F%AD%E5%8F%A5",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 80055958,
+   "qid": "Q15931810",
+   "confidence": 0.96,
+   "match": "override",
+   "note": "year-mismatch",
+   "extract": "《稼轩长短句》，南宋大词人辛弃疾的词作集，成书于1207年（开禧三年）。\n\n\n== 内容 ==\n《稼轩长短句》包括辛弃疾的词作六百二十余首，辛弃疾的词作基本上收录完整。\n\n\n== 版本 ==\n\n\n=== 传世本 ===\n现今传世版本分为两个：一是四卷本，一是十二卷本。四卷本为南宋原本，但是收录的作品非常少，不过文献和考古价值极高；中国国家图书馆藏1299年（元朝大德三年）铅山广信书院刊本《稼轩长短句》为十二卷，共辑录辛弃疾词573首，属于传世孤本。\n\n\n=== 坊刻本 ===\n1536年（嘉靖十五年），明朝王诏刻《稼轩长短句》十二卷；1545年（嘉靖二十四年），何孟伦刻《辛稼轩词》十二卷，均出自铅山广信书院的版本；明朝末年汲古阁刻《六十名家词》中《稼轩词》则是根据嘉靖本刊印。\n\n\n=== 今刊本 ===\n上海古籍出版社刊印了《稼轩长短句》，存词六百二十余首。\n\n\n== 历史记载 ==\n《宋史·艺文志》著录有“辛弃疾长短句十二卷”；《直斋书录解题》著录有“稼轩词四卷，又信州本十二卷”。\n\n\n== 参考文献 ==",
+   "fetched_at": "2026-11-04T11:47:09"
+  },
+  {
+   "item_id": "lit-ji-shanzhong",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "山中白云词",
+   "url": "https://zh.wikipedia.org/wiki/%E5%B1%B1%E4%B8%AD%E7%99%BD%E4%BA%91%E8%AF%8D",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 24577252,
+   "qid": "Q11044446",
+   "confidence": 1.0,
+   "match": "override",
+   "note": "ok",
+   "extract": "《山中白云词》是宋代词人张炎的词集名。\n\n\n== 版本 ==\n\n\n=== 元代 ===\n张炎词最早结集于元大德四年(1300)，此后陆续有新作增补，编定后名《山中白云词》，仇远为之作序。\n\n\n=== 明清以来 ===\n\n\n==== 八卷本 ====\n八卷本出自元陶宗仪手抄本，原本已佚。陶本不分卷，清朱彝尊据此本整理为八卷，康熙中龚翔麟、李符据朱抄本整理印行，通称“龚刻本”，收词296首。《四库全书》、《彊村丛书》均出自龚刻本。\n\n\n==== 二卷本 ====\n二卷本中最早的是明吴讷的《唐宋明贤百家词》本，题《玉田词》二卷，收词153首。《四印斋所刻词》本《山中白云词》出自二卷本，系王鹏运据端木埰所得旧钞二卷本付梓，是为正集二卷；后续有补遗，成补录二卷、续补一卷。\n\n\n== 参考文献 ==",
+   "fetched_at": "2026-11-04T11:47:10"
   },
   {
    "item_id": "lit-jiangchengzi-mizhou",
@@ -2792,6 +2852,21 @@
    "note": "year-mismatch",
    "extract": "迈陂塘，词牌名。亦称《摸鱼儿》、《陂塘柳》。双调一百一十六字，前后阕各七仄韵，上去通压。",
    "fetched_at": "2026-11-04T11:32:15"
+  },
+  {
+   "item_id": "lit-juexiao",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "绝妙好词",
+   "url": "https://zh.wikipedia.org/wiki/%E7%BB%9D%E5%A6%99%E5%A5%BD%E8%AF%8D",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 56866598,
+   "qid": "Q10473958",
+   "confidence": 0.96,
+   "match": "override",
+   "note": "year-mismatch",
+   "extract": "《绝妙好词》是一本宋词的选集。南宋末年，萃集临安的江湖词人曾结成“西湖吟社”，这个词社在历史上主宰了宋元之交的雅派词坛。它的核心是当时的一批文人雅士，尤其是音乐家，据考其活动主要是传授音律，分题赋词等。这个骚雅词社早期的领导人是杨缵和张枢，后期则是周密。在宋末元初，周密一直是雅词词坛的领袖，编有词选《绝妙好词》流传于世，其中清晰的选词观可说集中反映了宋末临安词人群体的观念。\n张炎在《词源》中赞其“精粹”，但当时“其板不存”印数太少，元明数百年均不见著录，直至清初发现其元抄本为毛氏汲古阁，钱谦益述古堂收藏，才重现人世。清人高士奇在序中写道：“兹选披沙拣金，合一百三十二人，为词不满四百，亦云精矣。”厉鹗序则评曰：“宋人选本朝词，如曾端伯《乐府雅词》、黄叔旸《花庵词选》，皆让其精粹。”四库全书总目提要称其“去取谨严，犹在曾慥《乐府雅词》、黄昇《花庵词选》之上。”此前也标榜“雅词”的《梅苑》、《复雅歌词》都是兼采唐、五代与北宋词，而《草堂诗余》、《阳春白雪》、《乐府雅词》并不遵守严格的时代顺序，或是仅仅漫录选者当时的词作，无完整的时代起止；《花庵词选》相对比较注重时代顺序，体例也较为成熟，但是在南渡词人的归属上不很严谨，受到后人批评。《绝妙好词》成于宋亡后，所录词人从南渡词人开始，至亡宋遗民为止，断代相当清晰，体制也非常科学。\n《绝妙好词》在选取的时期、体例乃至名称上，均暗示出接续《花庵词选》并有意与之争一高下的迹象。从时期上看，《花庵词选》成于淳佑九年，其下卷《中兴以来绝妙词选》以淳佑年为下限；《绝妙好词》所选始于南渡词人，但以宋末时期的词人为主，时间侧重上正是相承接的。在体例上二者都采取了以词人年代先后为序的方式，可见编选方式上的承袭关系。\n周密的选词标准目的性明确，为开一派之风，作为雅词集团的标志，并确立雅词的审美\n\n\n== 词人典范 ==\n从词人名录上可以看出相当明显的雅词词统意识，可以说主要勾画了姜夔以来的宗派系统图。选词最多的词人前后分别为：卢祖皋入选十首，姜夔入选十三首，史达祖入选十首，吴文英入选十六首，李彭老入选十二首，李莱老入选十三首，周密入选二十二首，王沂孙入选十首。周密本人以外，这几人除了作为宗师的前辈词人，就是与周密声应气求的知友。他们与其余一百多词人在选词数量上相差非常悬殊，显然周密有意凸显出他们的地位，将雅词主将们作为典范。其中周密自己录入的词数量居首位，毫不谦让，俨然以派主自居。另外，词选中录入了许多与周密相唱和的作品，如李彭老有四首标明与周密唱和，李莱老有三首，王易简有一首，张炎一首，王沂孙有三首。公然呼朋引伴，大有一派的词坛领袖作风。\n除了雅词的代表词人外，《绝妙好词》同样收入了当时被雅词词人们认为多作“豪气词”的词人。如一开篇就是张孝祥、陆游等，南宋豪放一系的刘过、陈亮、辛弃疾、刘克庄、吴潜等人也居然都有作品入选。但是，所收词作都不是他们最为称道的风格雄健的一类…",
+   "fetched_at": "2026-11-04T11:47:08"
   },
   {
    "item_id": "lit-kunxuejiwen",
@@ -2899,6 +2974,36 @@
    "fetched_at": "2026-11-04T11:32:37"
   },
   {
+   "item_id": "lit-liuzhou-hezhu",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "六州歌头",
+   "url": "https://zh.wikipedia.org/wiki/%E5%85%AD%E5%B7%9E%E6%AD%8C%E5%A4%B4",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 77805810,
+   "qid": "Q10893245",
+   "confidence": 0.96,
+   "match": "exact",
+   "note": "year-mismatch",
+   "extract": "六州歌头，词牌名。\n双调一百四十三字，前段十九句八平韵、八仄韵，后段二十句八平韵、十仄韵，同部平仄互押。亦有多变体。",
+   "fetched_at": "2026-11-04T11:44:14"
+  },
+  {
+   "item_id": "lit-liuzhou-zhang",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "六州歌头",
+   "url": "https://zh.wikipedia.org/wiki/%E5%85%AD%E5%B7%9E%E6%AD%8C%E5%A4%B4",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 77805810,
+   "qid": "Q10893245",
+   "confidence": 0.96,
+   "match": "exact",
+   "note": "year-mismatch",
+   "extract": "六州歌头，词牌名。\n双调一百四十三字，前段十九句八平韵、八仄韵，后段二十句八平韵、十仄韵，同部平仄互押。亦有多变体。",
+   "fetched_at": "2026-11-04T11:44:36"
+  },
+  {
    "item_id": "lit-manjianghong",
    "source": "wikipedia",
    "lang": "zh",
@@ -2989,6 +3094,66 @@
    "fetched_at": "2026-11-03T16:00:27"
   },
   {
+   "item_id": "lit-niannujiao-dongting",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "念奴娇",
+   "url": "https://zh.wikipedia.org/wiki/%E5%BF%B5%E5%A5%B4%E5%A8%87",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 88060895,
+   "qid": "Q24841825",
+   "confidence": 0.96,
+   "match": "exact",
+   "note": "year-mismatch",
+   "extract": "念奴娇，词牌名，相传是根据唐代一位叫念奴的歌姬取的调名。亦称《百字令》、《酹江月》、《大江东去》、《壶中天》、《湘月》等。目前最早所见的作品，为北宋的沈唐、苏轼所作。双调一百字，前后段各四仄韵，用律十分规整，一韵到底，常用入声韵。上下阕后七句字数平仄相同。",
+   "fetched_at": "2026-11-04T11:44:37"
+  },
+  {
+   "item_id": "lit-niannujiao-duojing",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "念奴娇",
+   "url": "https://zh.wikipedia.org/wiki/%E5%BF%B5%E5%A5%B4%E5%A8%87",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 88060895,
+   "qid": "Q24841825",
+   "confidence": 0.96,
+   "match": "exact",
+   "note": "year-mismatch",
+   "extract": "念奴娇，词牌名，相传是根据唐代一位叫念奴的歌姬取的调名。亦称《百字令》、《酹江月》、《大江东去》、《壶中天》、《湘月》等。目前最早所见的作品，为北宋的沈唐、苏轼所作。双调一百字，前后段各四仄韵，用律十分规整，一韵到底，常用入声韵。上下阕后七句字数平仄相同。",
+   "fetched_at": "2026-11-04T11:44:43"
+  },
+  {
+   "item_id": "lit-pai-anxiang",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "暗香·旧时月色",
+   "url": "https://zh.wikipedia.org/wiki/%E6%9A%97%E9%A6%99%C2%B7%E6%97%A7%E6%97%B6%E6%9C%88%E8%89%B2",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 84422597,
+   "qid": "Q59172084",
+   "confidence": 0.92,
+   "match": "search",
+   "note": "ok",
+   "extract": "《暗香·旧时月色》，南宋词人姜夔的词作，写于宋光宗绍熙辛亥（1191年）冬天。",
+   "fetched_at": "2026-11-04T11:45:42"
+  },
+  {
+   "item_id": "lit-pai-busuanzi",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "卜算子",
+   "url": "https://zh.wikipedia.org/wiki/%E5%8D%9C%E7%AE%97%E5%AD%90",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94518678,
+   "qid": "Q10909627",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "卜算子，词牌名。双调，四十四字，上下阕各四句，两仄韵，上去通押。也有一体单押入声韵。取义于“占卜算命之人”。",
+   "fetched_at": "2026-11-04T11:45:35"
+  },
+  {
    "item_id": "lit-pai-dielianhua",
    "source": "wikipedia",
    "lang": "zh",
@@ -3002,6 +3167,21 @@
    "note": "ok",
    "extract": "蝶恋花，词牌名，唐教坊曲名，取自梁简文帝萧纲东飞伯劳歌诗句“翻阶蛱蝶恋花情”中的三个字。 又名《黄金缕》、《鹊踏枝》、《凤栖梧》、《卷珠帘》、《一箩金》、《江如练》、《西笑吟》、《明月生南浦》、《转调蝶恋花》、《鱼水同欢》等。《乐章集》、《张子野词》并入“小石调”，《清真集》入“商调”。赵令畤有《商调蝶恋花》，联章作《鼓子词》，咏《会真记》事。其词牌始于宋。双调，六十字，上下片各四仄韵。\n双调六十字，前后阕各四仄韵，一韵到底。",
    "fetched_at": "2026-11-04T11:33:12"
+  },
+  {
+   "item_id": "lit-pai-hexinglang",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "贺新郎",
+   "url": "https://zh.wikipedia.org/wiki/%E8%B4%BA%E6%96%B0%E9%83%8E",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 86050822,
+   "qid": "Q15914366",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "贺新郎，词牌名。亦称《金缕曲》。双调，一百十六字。前后阙各十句、六仄韵。",
+   "fetched_at": "2026-11-04T11:45:47"
   },
   {
    "item_id": "lit-pai-huanxisha",
@@ -3034,6 +3214,21 @@
    "fetched_at": "2026-11-04T11:33:02"
   },
   {
+   "item_id": "lit-pai-liuzhou",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "六州歌头",
+   "url": "https://zh.wikipedia.org/wiki/%E5%85%AD%E5%B7%9E%E6%AD%8C%E5%A4%B4",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 77805810,
+   "qid": "Q10893245",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "六州歌头，词牌名。\n双调一百四十三字，前段十九句八平韵、八仄韵，后段二十句八平韵、十仄韵，同部平仄互押。亦有多变体。",
+   "fetched_at": "2026-11-04T11:45:30"
+  },
+  {
    "item_id": "lit-pai-manjianghong",
    "source": "wikipedia",
    "lang": "zh",
@@ -3047,6 +3242,21 @@
    "note": "ok",
    "extract": "满江红为一词牌名，此调为双调93字，前阕4仄韵，后阙5仄韵，前阕5、6句、后阕7、8句要对仗。后阕3字4字也可对仗。",
    "fetched_at": "2026-11-04T11:33:10"
+  },
+  {
+   "item_id": "lit-pai-mantingfang",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "满庭芳",
+   "url": "https://zh.wikipedia.org/wiki/%E6%BB%A1%E5%BA%AD%E8%8A%B3",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94144465,
+   "qid": "Q15920966",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "满庭芳，词牌名。亦称《满庭花》。是宋代词人秦观的代表词作之一。其一为《满庭芳·晓色云开》。得名于吴融“满庭芳草易黄昏”、柳宗元“偶地即安居，满庭芳草积”。双调九十五字，前阕四平韵，后阕五平韵，一韵到底。",
+   "fetched_at": "2026-11-04T11:45:44"
   },
   {
    "item_id": "lit-pai-niannujiao",
@@ -3079,6 +3289,36 @@
    "fetched_at": "2026-11-04T11:33:13"
   },
   {
+   "item_id": "lit-pai-rumengling",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "如梦令",
+   "url": "https://zh.wikipedia.org/wiki/%E5%A6%82%E6%A2%A6%E4%BB%A4",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94144112,
+   "qid": "Q10942975",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "《如梦令》，词牌名，又名《忆仙姿》、《宴桃源》，单调，三十三字，七句、五仄韵、一叠韵，上去看通押。",
+   "fetched_at": "2026-11-04T11:45:38"
+  },
+  {
+   "item_id": "lit-pai-shengshengman",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "声声慢",
+   "url": "https://zh.wikipedia.org/wiki/%E5%A3%B0%E5%A3%B0%E6%85%A2",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94186622,
+   "qid": "Q10931593",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "声声慢，词牌名。据传蒋捷作此慢词俱用“声”字入韵，故称此名。亦称《胜胜慢》、《凤示凰》、《寒松叹》、《人在楼上》。双调，上片十句，押四平韵，四十九字；下片九句，押四平韵，四十八字，共九十七字,长调。又有仄韵体（一般押入声）。用“仙吕调”。",
+   "fetched_at": "2026-11-04T11:45:37"
+  },
+  {
    "item_id": "lit-pai-shuidiao",
    "source": "wikipedia",
    "lang": "zh",
@@ -3107,6 +3347,66 @@
    "note": "ok",
    "extract": "水龙吟，词牌名。亦称《龙吟曲》、《小楼连苑》、《庄椿岁》。双调一百零二字，前阕四仄韵、后阕五仄韵，上去通押。",
    "fetched_at": "2026-11-04T11:33:07"
+  },
+  {
+   "item_id": "lit-pai-shuying",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "疏影",
+   "url": "https://zh.wikipedia.org/wiki/%E7%96%8F%E5%BD%B1",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 84422570,
+   "qid": "Q59172086",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "《疏影·苔枝缀玉》，南宋词人姜夔的词作，写于宋光宗绍熙辛亥（1191年）冬天。",
+   "fetched_at": "2026-11-04T11:45:45"
+  },
+  {
+   "item_id": "lit-pai-tasuoxing",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "踏莎行",
+   "url": "https://zh.wikipedia.org/wiki/%E8%B8%8F%E8%8E%8E%E8%A1%8C",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 93360338,
+   "qid": "Q15401644",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "踏莎行，词牌名。亦称《踏雪行》。又名《柳长春》《喜朝天》等。双调五十八字，前后阕各三仄韵，前后阕开始两句例用对仗。又有《转调踏莎行》，双调六十四字或六十六字，平韵。",
+   "fetched_at": "2026-11-04T11:45:48"
+  },
+  {
+   "item_id": "lit-pai-yangzhouman",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "扬州慢",
+   "url": "https://zh.wikipedia.org/wiki/%E6%89%AC%E5%B7%9E%E6%85%A2",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 75151462,
+   "qid": "Q55695128",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "扬州慢，词牌名，为南宋词人姜夔自创。\n双调九十八字，其中上片50字，下片48字。",
+   "fetched_at": "2026-11-04T11:45:40"
+  },
+  {
+   "item_id": "lit-pai-yulinling",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "雨霖铃",
+   "url": "https://zh.wikipedia.org/wiki/%E9%9B%A8%E9%9C%96%E9%93%83",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 92650681,
+   "qid": "Q15941743",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "雨霖铃词牌名。原唐朝教坊曲名，又名《雨霖铃慢》。据王灼《碧鸡漫志》卷五引《明皇杂录》及《杨太真外传》云：“帝幸蜀，初入斜谷，霖雨弥旬，栈道中闻铃声。帝方悼念贵妃，采其声为《雨淋铃曲》以寄恨。时梨园弟子惟张野狐一人，善筚篥，因吹之，遂传于世。”\n双调一百零三字，前后阕各五[仄]韵，本调常用入声韵，且多用拗句。上阕九句五十一字；下阕八句五十二字。",
+   "fetched_at": "2026-11-04T11:45:50"
   },
   {
    "item_id": "lit-pai-zhegutian",
@@ -3289,6 +3589,21 @@
    "fetched_at": "2026-11-03T16:00:34"
   },
   {
+   "item_id": "lit-shuangshuangyan",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "双双燕",
+   "url": "https://zh.wikipedia.org/wiki/%E5%8F%8C%E5%8F%8C%E7%87%95",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 69925698,
+   "qid": "Q10911825",
+   "confidence": 0.96,
+   "match": "exact",
+   "note": "year-mismatch",
+   "extract": "双双燕，词牌名，为史达祖首制，内容为吟咏双燕，故名。双调，上片九句，押五仄韵，四十八字；下片十句，押七仄韵，五十字，共九十八字。",
+   "fetched_at": "2026-11-04T11:44:49"
+  },
+  {
    "item_id": "lit-shuidiao",
    "source": "wikipedia",
    "lang": "zh",
@@ -3317,6 +3632,21 @@
    "note": "year-mismatch",
    "extract": "水龙吟，词牌名。亦称《龙吟曲》、《小楼连苑》、《庄椿岁》。双调一百零二字，前阕四仄韵、后阕五仄韵，上去通押。",
    "fetched_at": "2026-11-04T11:31:26"
+  },
+  {
+   "item_id": "lit-shulian",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "桂枝香",
+   "url": "https://zh.wikipedia.org/wiki/%E6%A1%82%E6%9E%9D%E9%A6%99",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 56758014,
+   "qid": "Q11111662",
+   "confidence": 0.87,
+   "match": "search",
+   "note": "year-mismatch",
+   "extract": "桂枝香，词牌名。亦称《疏帘淡月》。双调一百零一字，前后阕各五仄韵，押入声韵。一韵到底。",
+   "fetched_at": "2026-11-04T11:44:58"
   },
   {
    "item_id": "lit-shuying",
@@ -3379,6 +3709,21 @@
    "fetched_at": "2026-11-04T11:31:40"
   },
   {
+   "item_id": "lit-tangduoling",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "唐多令",
+   "url": "https://zh.wikipedia.org/wiki/%E5%94%90%E5%A4%9A%E4%BB%A4",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94625702,
+   "qid": "Q10922642",
+   "confidence": 0.96,
+   "match": "exact",
+   "note": "year-mismatch",
+   "extract": "唐多令，词牌名，又名糖多令、南楼令、箜篌曲，自南宋中期兴起。本调六十字，通常一韵到底。",
+   "fetched_at": "2026-11-04T11:44:54"
+  },
+  {
    "item_id": "lit-tasuoxing-qinguan",
    "source": "wikipedia",
    "lang": "zh",
@@ -3407,6 +3752,21 @@
    "note": "year-mismatch",
    "extract": "天仙子，词牌名。又名〈万斯年〉。原为咏天仙的。因皇甫松词有“懊恼天仙应有以”句，取以为名。唐时为仄韵单调，宋人改用双调。\n双调六十八字，前后阕各五[仄]韵，上去通押。第四、第五两句，[平][仄]多不定，但是第二句第二字必用去声。",
    "fetched_at": "2026-11-04T11:27:10"
+  },
+  {
+   "item_id": "lit-tiaoxi",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "苕溪漁隱叢話",
+   "url": "https://zh.wikipedia.org/wiki/%E8%8B%95%E6%BA%AA%E6%BC%81%E9%9A%B1%E5%8F%A2%E8%A9%B1",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 82184077,
+   "qid": "Q17030177",
+   "confidence": 0.87,
+   "match": "search",
+   "note": "year-mismatch",
+   "extract": "苕（tiáo）溪渔隐丛话，南宋胡仔（胡元任）编著，成于乾道三年（1167年），是一部诗话集。",
+   "fetched_at": "2026-11-04T11:44:34"
   },
   {
    "item_id": "lit-tixilinbi",
@@ -3499,6 +3859,21 @@
    "fetched_at": "2026-11-04T11:31:34"
   },
   {
+   "item_id": "lit-yangchun",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "陽春白雪 (樂曲)",
+   "url": "https://zh.wikipedia.org/wiki/%E9%99%BD%E6%98%A5%E7%99%BD%E9%9B%AA_(%E6%A8%82%E6%9B%B2)",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 71820867,
+   "qid": "Q15938356",
+   "confidence": 0.84,
+   "match": "search",
+   "note": "year-mismatch",
+   "extract": "《阳春白雪》又名《阳春古曲》，琵琶大曲的代表作，其特点是综合文曲、武曲的表现手法和演奏风格。最早见于浦东派鞠士林传抄的琵琶谱，名为《六板》，其后发展成不同版本，后人称李芳园《南北派十三套大曲新谱》、沈浩初《养正轩琵琶谱》整理的10段与12段乐谱为《大阳春》；汪昱庭所传的7段乐谱为《小阳春》。目前社会上比较流行的《阳春白雪》是7段的《小阳春》。\n本曲通过活泼、新颖的旋律和稍快而具有力的节奏，描绘大地回春、生气勃勃、春意盎然的景象。常被人们作为雅乐代名词的“阳春白雪”出自春秋时期所做的两首古琴曲《阳春》和《白雪》，并非此处所指的琵琶曲。",
+   "fetched_at": "2026-11-04T11:45:02"
+  },
+  {
    "item_id": "lit-yangzhouman",
    "source": "wikipedia",
    "lang": "zh",
@@ -3512,6 +3887,21 @@
    "note": "year-mismatch",
    "extract": "扬州慢，词牌名，为南宋词人姜夔自创。\n双调九十八字，其中上片50字，下片48字。\n\n\n== 词牌格式 ==\n\n平仄平平，仄平平仄，仄平仄仄平平。\n仄平平仄仄，仄仄仄平平。\n仄平仄、平平仄仄，仄平平仄，平仄平平。\n仄平平、平仄平平，平仄平平。\n仄平仄仄，仄平平、平仄平平。\n仄仄仄平平，平平仄仄，平仄平平。\n仄仄仄平平仄，平平仄、仄仄平平。\n仄平平平仄，平平平仄平平。\n注：\n平表示平声，\n仄表示仄声，\n仄表示本仄可平，\n平表示本平可仄，粗体表示韵脚。\n\n\n== 著名作品 ==\n\n姜夔：扬州慢·淮左名都\n淮左名都，竹西佳处，解鞍少驻初程。过春风十里，尽荠麦青青。自胡马窥江去后，废池乔木，犹厌言兵。渐黄昏、清角吹寒，都在空城。\n杜郎俊赏，算而今、重到须惊。纵豆蔻词工，青楼梦好，难赋深情。二十四桥仍在，波心荡冷月无声。念桥边红药，年年知为谁生。\n\n\n== 参考资料 ==",
    "fetched_at": "2026-11-03T16:00:36"
+  },
+  {
+   "item_id": "lit-yiehong",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "一萼红·登蓬莱阁有感",
+   "url": "https://zh.wikipedia.org/wiki/%E4%B8%80%E8%90%BC%E7%BA%A2%C2%B7%E7%99%BB%E8%93%AC%E8%8E%B1%E9%98%81%E6%9C%89%E6%84%9F",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 83521966,
+   "qid": null,
+   "confidence": 0.96,
+   "match": "exact",
+   "note": "year-mismatch",
+   "extract": "《一萼红·登蓬莱阁有感》是南宋词人周密的一首词作。",
+   "fetched_at": "2026-11-04T11:45:08"
   },
   {
    "item_id": "lit-yijianmei",
@@ -3557,6 +3947,21 @@
    "note": "year-mismatch",
    "extract": "永遇乐，词牌名。亦称《消息》。双调一百零四字，二十二句，首起两句，第四、五、七、八句均为四字对，前后阕各四仄韵，上去通押。\n\n\n== 词牌格式 ==\n\n仄仄平平，仄平平仄，平仄平仄。仄仄平平，平平仄仄，仄仄平平仄。\n平平平仄，平平平仄，仄仄仄平平仄。仄平平，平平仄仄，仄平仄仄平仄。\n平平仄仄，平平平仄，仄仄平平仄仄。仄仄平平，平平仄仄，仄仄平平仄。\n平平仄仄，平平仄仄，仄仄平平仄仄。平平仄、平平仄仄，仄平仄仄。\n\n\n== 例词 ==\n辛弃疾 京口北固亭怀古\n千古江山，英雄无觅，孙仲谋处。舞榭歌台，风流总被、雨打风吹去。\n斜阳草树，寻常巷陌，人道寄奴曾住。想当年，金戈铁马，气吞万里如虎。\n元嘉草草，封狼居胥，赢得仓皇北顾。四十三年，望中犹记，烽火扬州路。\n可堪回首，佛狸祠下，一片神鸦社鼓。凭谁问，廉颇老矣，尚能饭否。\n李清照\n落日镕金，暮云合璧，人在何处？染柳烟浓，吹梅笛怨，春意知几许！\n元宵佳节，融和天气，次第岂无风雨？来相召、香车宝马，谢他酒朋诗侣。\n中州盛日，闺门多暇，记得偏重三五。铺翠冠儿，撚金雪柳，簇带争济楚。\n如今憔路，风鬟霜鬓，怕见夜间出去。不如向、帘儿底下，听人笑语。\n苏轼\n明月如霜，好风如水，清景无限。曲港跳鱼，圆荷泻露，寂寞无人见。\n𬘘如三鼓，铿然一叶，黯黯梦云惊断。夜茫茫，重寻无处，觉来小园行遍。\n天涯倦客，山中归路，望断故园心眼。燕子楼空，佳人何在？空锁楼中燕。\n古今如梦，何曾梦觉，但有旧欢新怨。异时对，黄楼夜景，为余浩叹。",
    "fetched_at": "2026-11-03T15:11:27"
+  },
+  {
+   "item_id": "lit-yongyule-liuchenweng",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "永遇乐",
+   "url": "https://zh.wikipedia.org/wiki/%E6%B0%B8%E9%81%87%E4%B9%90",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 21522210,
+   "qid": "Q11132772",
+   "confidence": 0.96,
+   "match": "exact",
+   "note": "year-mismatch",
+   "extract": "永遇乐，词牌名。亦称《消息》。双调一百零四字，二十二句，首起两句，第四、五、七、八句均为四字对，前后阕各四仄韵，上去通押。",
+   "fetched_at": "2026-11-04T11:45:10"
   },
   {
    "item_id": "lit-yueyang",
@@ -3617,6 +4022,21 @@
    "note": "year-mismatch",
    "extract": "雨霖铃词牌名。原唐朝教坊曲名，又名《雨霖铃慢》。据王灼《碧鸡漫志》卷五引《明皇杂录》及《杨太真外传》云：“帝幸蜀，初入斜谷，霖雨弥旬，栈道中闻铃声。帝方悼念贵妃，采其声为《雨淋铃曲》以寄恨。时梨园弟子惟张野狐一人，善筚篥，因吹之，遂传于世。”\n双调一百零三字，前后阕各五[仄]韵，本调常用入声韵，且多用拗句。上阕九句五十一字；下阕八句五十二字。\n\n\n== 词牌格式 ==\n\n平平平仄，仄平平仄、仄仄平仄。平平仄仄平仄，平平仄仄、平平平仄。仄仄平平、仄仄仄平仄平仄。仄仄仄、平仄平平，仄仄平平仄平仄。\n平平仄仄平平仄。仄平平、仄仄平平仄。平平仄仄平仄，平仄仄，仄平平仄。仄仄平平，仄仄平平仄仄平仄。仄仄仄、仄仄平平，仄仄平平仄。\n\n\n== 例词 ==\n柳永\n寒蝉凄切。对长亭晚，骤雨初歇。都门帐饮无绪，方留恋处、兰舟催发。执手相看泪眼，竟无语凝噎。念去去、千里烟波，暮霭沉沉楚天阔。\n多情自古伤离别。更那堪、冷落清秋节。今宵酒醒何处，杨柳岸、晓风残月。此去经年，应是良辰、好景虚设。便纵有、千种风情，更与何人说。\n\n\n== 参见 ==\n\n柳永\n安史之乱\n\n\n== 外部链接 ==\nYouTube上的雨霖铃\n雨霖铃（寒蝉凄切）-宋 柳永",
    "fetched_at": "2026-11-03T16:00:23"
+  },
+  {
+   "item_id": "lit-zhegutian-huang",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "鹧鸪天",
+   "url": "https://zh.wikipedia.org/wiki/%E9%B9%A7%E9%B8%AA%E5%A4%A9",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94224851,
+   "qid": "Q11174786",
+   "confidence": 0.96,
+   "match": "exact",
+   "note": "year-mismatch",
+   "extract": "鹧鸪天，词牌名。亦称《思佳客》、《思越人》、《醉梅花》。双调五十五字，前后阕各三平韵，一韵到底。上阕第三四句、下阕第一二句一般要求对仗。",
+   "fetched_at": "2026-11-04T11:44:16"
   },
   {
    "item_id": "lit-zhegutian-yanjidao",
