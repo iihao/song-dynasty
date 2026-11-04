@@ -167,6 +167,11 @@ def item_page(it, cat_name, base_url):
         for r in (it.get("related") or []) if isinstance(r, dict)
     )
 
+    body = ""
+    if it.get("body"):
+        body = ('<div class="m-text"><h3>正文</h3><div class="m-text-body">%s</div></div>'
+                % escape(it["body"]))
+
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -202,6 +207,7 @@ def item_page(it, cat_name, base_url):
     </div>
     <div class="modal-body">
       <div class="m-tags">{tags}</div>
+      {body}
       <div class="m-detail">{escape(it.get("detail") or it.get("summary") or "")}</div>
       {wiki}
       <div class="m-links"><span>外部链接</span>

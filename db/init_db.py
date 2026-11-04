@@ -90,13 +90,13 @@ def build(conn, seed):
         conn.execute(
             """INSERT INTO items
                (id,category_id,type,name,era,year,end_year,ptype,birth,death,
-                summary,detail,refs,minor)
-               VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                summary,detail,body,refs,minor)
+               VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
             (
                 it["id"], it["cat"], it.get("type"), it["name"], it.get("era"),
                 it.get("year"), it.get("endYear"), it.get("ptype"),
                 it.get("birth"), it.get("death"),
-                it.get("summary"), it.get("detail"), it.get("refs"),
+                it.get("summary"), it.get("detail"), it.get("body"), it.get("refs"),
                 1 if it.get("minor") else 0,
             ),
         )

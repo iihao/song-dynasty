@@ -199,7 +199,8 @@
       if (personFilter && (it.name + ' ' + (it.tags || []).join(' ') + ' ' + (it.summary || '')).indexOf(personFilter) < 0) return false;
       if (low) {
         var hay = (it.name + ' ' + (it.summary || '') + ' ' + (it.detail || '') + ' ' +
-          (it.tags || []).join(' ') + ' ' + (it.era || '') + ' ' + (it.type || '')).toLowerCase();
+          (it.body || '') + ' ' + (it.tags || []).join(' ') + ' ' + (it.era || '') +
+          ' ' + (it.type || '')).toLowerCase();
         if (hay.indexOf(low) < 0) return false;
       }
       return true;
@@ -840,6 +841,7 @@
       '<h2>' + esc(it.name) + '</h2>' +
       '<div class="m-sub">' + esc(itemSub(it)) + '</div>' +
       '<div class="m-tags">' + (it.era ? '<span class="tag era">' + esc(it.era) + '</span>' : '') + groups + tags + '</div>' +
+      (it.body ? '<div class="m-text"><h3>正文</h3><div class="m-text-body">' + esc(it.body) + '</div></div>' : '') +
       '<div class="m-detail">' + esc(it.detail || it.summary || '') + '</div>' +
       wikiHtml + links +
       (rel ? '<div class="m-rel">' + rel + '</div>' : '') +

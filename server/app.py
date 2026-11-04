@@ -106,6 +106,7 @@ def row_to_item(row, full=False):
     }
     if full:
         d["detail"] = row["detail"]
+        d["body"] = row["body"]
         d["refs"] = row["refs"]
         d["categoryName"] = row["category_name"]
         d["createdAt"] = row["created_at"]
@@ -165,6 +166,8 @@ def bootstrap(conn):
             "groups": split_tags(r["groups"]),
             "related": rels.get(r["id"], []),
         }
+        if r["body"]:
+            d["body"] = r["body"]
         items.append(d)
     base = meta(conn)
     base.update({"version": 1, "items": items, "dataPanels": panels(conn)})
@@ -231,10 +234,10 @@ def list_items(conn, q, search_mode=False):
     if kw:
         like = f"%{kw}%"
         where.append(
-            "(name LIKE ? OR summary LIKE ? OR detail LIKE ? OR EXISTS("
+            "(name LIKE ? OR summary LIKE ? OR detail LIKE ? OR body LIKE ? OR EXISTS("
             "SELECT 1 FROM item_tags it JOIN tags t ON t.id=it.tag_id "
             "WHERE it.item_id=v_items.id AND t.name LIKE ?))")
-        args += [like, like, like, like]
+        args += [like, like, like, like, like]
 
     sort = q.get("sort", "year")
     order = {

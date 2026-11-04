@@ -14,7 +14,7 @@
 
 条目 JSON 字段（除 id/cat/name 外均可选）:
     id, cat, type, name, era, year, endYear, ptype, birth, death,
-    summary, detail, refs, minor, tags[], related[]
+    summary, detail, body, refs, minor, tags[], related[]
 """
 import argparse
 import json
@@ -30,7 +30,7 @@ ITEM_FIELDS = {
     "category_id": "cat", "type": "type", "name": "name", "era": "era",
     "year": "year", "end_year": "endYear", "ptype": "ptype",
     "birth": "birth", "death": "death", "summary": "summary",
-    "detail": "detail", "refs": "refs", "minor": "minor",
+    "detail": "detail", "body": "body", "refs": "refs", "minor": "minor",
 }
 
 
@@ -109,7 +109,7 @@ def upsert(conn, it, replace=False):
     vals = [
         it.get("type"), it["name"], it.get("era"), it.get("year"),
         it.get("endYear"), it.get("ptype"), it.get("birth"), it.get("death"),
-        it.get("summary"), it.get("detail"), it.get("refs"),
+        it.get("summary"), it.get("detail"), it.get("body"), it.get("refs"),
         1 if it.get("minor") else 0, it["cat"], it["id"],
     ]
     if exists:
@@ -117,14 +117,14 @@ def upsert(conn, it, replace=False):
             sys.exit(f"条目已存在：{it['id']}（如为导入请用 import，或 update）")
         conn.execute(
             """UPDATE items SET type=?,name=?,era=?,year=?,end_year=?,ptype=?,
-               birth=?,death=?,summary=?,detail=?,refs=?,minor=?,category_id=?
+               birth=?,death=?,summary=?,detail=?,body=?,refs=?,minor=?,category_id=?
                WHERE id=?""", vals)
     else:
         conn.execute(
             """INSERT INTO items
                (type,name,era,year,end_year,ptype,birth,death,summary,detail,
-                refs,minor,category_id,id)
-               VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)""", vals)
+                body,refs,minor,category_id,id)
+               VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""", vals)
     set_tags(conn, it["id"], it.get("tags"))
     if "groups" in it:
         set_groups(conn, it["id"], it.get("groups"))
@@ -259,7 +259,7 @@ def build_export(conn):
             "name": r["name"], "era": r["era"], "year": r["year"],
             "endYear": r["end_year"], "ptype": r["ptype"],
             "birth": r["birth"], "death": r["death"],
-            "summary": r["summary"], "detail": r["detail"],
+            "summary": r["summary"], "detail": r["detail"], "body": r["body"],
             "refs": r["refs"], "tags": [t for t in (r["tags"] or "").split("|") if t],
         }
         grp = groups_of(conn, r["id"])

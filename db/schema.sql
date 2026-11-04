@@ -55,6 +55,7 @@ CREATE TABLE IF NOT EXISTS items (
   death       INTEGER,
   summary     TEXT,
   detail      TEXT,
+  body        TEXT,              -- 名篇正文/全文（诗词文赋等）
   refs        TEXT,
   minor       INTEGER NOT NULL DEFAULT 0,
   created_at  TEXT NOT NULL DEFAULT (datetime('now')),
