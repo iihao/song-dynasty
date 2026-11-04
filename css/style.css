@@ -679,8 +679,8 @@ table.data tr:hover td{background:rgba(255,255,255,.5)}
 
 .pg-edge{stroke:rgba(120,105,80,.28);stroke-width:.9}
 .pg-edge.hl{stroke:var(--cinnabar);stroke-width:1.5;opacity:.9}
-.pg-edge.dim{opacity:.08}
-.pg-edge.faded{opacity:.12}
+.pg-edge.dim{opacity:.10}
+.pg-edge.faded{opacity:.15}
 .pg-node{cursor:pointer}
 .pg-node .pg-halo{fill:none}
 .pg-node .pg-dot{stroke:#fffdf7;stroke-width:1.1;transition:r .12s,filter .12s}
@@ -690,8 +690,8 @@ table.data tr:hover td{background:rgba(255,255,255,.5)}
 .pg-node:hover .pg-label{fill:var(--ink)}
 .pg-node.sel .pg-dot{stroke:var(--ink);stroke-width:2}
 .pg-node.sel .pg-label{fill:var(--cinnabar);font-weight:600;font-size:10.5px}
-.pg-node.dim{opacity:.13}
-.pg-node.faded{opacity:.16}
+.pg-node.dim{opacity:.20}
+.pg-node.faded{opacity:.28}
 
 .pg-detail{margin-top:14px;border:1px solid var(--line);border-radius:4px;background:rgba(255,255,255,.5);
   padding:20px 24px;min-height:96px}

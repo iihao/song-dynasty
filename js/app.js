@@ -866,7 +866,18 @@
       $('#pgDetail').innerHTML = '<div class="pg-detail-empty">还没有人物关联数据。</div>';
       return;
     }
-    if (!pgState.laid) { pgLayout(model); pgState.laid = true; }
+
+    // 复用上一次的坐标：每次重渲染都会新建节点对象，若不回填会全部落到 (0,0)
+    var prev = pgState.pos || {};
+    var needLayout = !pgState.laid;
+    model.nodes.forEach(function (n) {
+      var p = prev[n.id];
+      if (p) { n.x = p[0]; n.y = p[1]; } else { needLayout = true; }
+    });
+    if (needLayout) pgLayout(model);
+    pgState.laid = true;
+    pgState.pos = {};
+    model.nodes.forEach(function (n) { pgState.pos[n.id] = [n.x, n.y]; });
 
     var vis = pgVisibleIds();
     var shown = 0;
@@ -917,6 +928,20 @@
     }).join('');
     $('#pgZoomLabel').textContent = Math.round(pgState.zoom * 100) + '%';
     pgHighlight(pgState.hovered);
+  }
+
+  function clampPan(v) {
+    var lim = PG.W * 0.5;
+    return Math.max(-lim, Math.min(lim, v));
+  }
+
+  function pgResetView() {
+    pgState.zoom = 1;
+    pgState.tx = 0;
+    pgState.ty = 0;
+    applyPgTransform();
+    var lbl = document.getElementById('pgZoomLabel');
+    if (lbl) lbl.textContent = '100%';
   }
 
   function applyPgTransform() {
@@ -1008,7 +1033,7 @@
         var mode = b.getAttribute('data-pgzoom');
         if (mode === 'in') pgState.zoom = Math.min(3, pgState.zoom * 1.2);
         else if (mode === 'out') pgState.zoom = Math.max(0.5, pgState.zoom / 1.2);
-        else { pgState.zoom = 1; pgState.tx = 0; pgState.ty = 0; }
+        else { pgResetView(); return; }
         $('#pgZoomLabel').textContent = Math.round(pgState.zoom * 100) + '%';
         applyPgTransform();
       });
@@ -1019,14 +1044,19 @@
     stage.dataset.bound = '1';
     var drag = null;
     svg.addEventListener('mousedown', function (e) {
-      drag = { x: e.clientX, y: e.clientY, tx: pgState.tx, ty: pgState.ty };
-      stage.classList.add('dragging');
+      // 点在人物节点上不启动拖动，否则点选会把画布一点点推走
+      if (e.target.closest && e.target.closest('.pg-node')) return;
+      drag = { x: e.clientX, y: e.clientY, tx: pgState.tx, ty: pgState.ty, moved: false };
     });
     window.addEventListener('mousemove', function (e) {
       if (!drag) return;
+      var dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+      if (!drag.moved && Math.abs(dx) + Math.abs(dy) < 4) return;  // 阈值：轻微抖动不算拖拽
+      drag.moved = true;
+      stage.classList.add('dragging');
       var k = PG.W / (svg.getBoundingClientRect().width || PG.W);
-      pgState.tx = drag.tx + (e.clientX - drag.x) * k;
-      pgState.ty = drag.ty + (e.clientY - drag.y) * k;
+      pgState.tx = clampPan(drag.tx + dx * k);
+      pgState.ty = clampPan(drag.ty + dy * k);
       applyPgTransform();
     });
     window.addEventListener('mouseup', function () {
@@ -1037,6 +1067,8 @@
       e.preventDefault();
       var dir = e.deltaY > 0 ? -1 : 1;
       pgState.zoom = Math.max(0.5, Math.min(3, pgState.zoom * (dir > 0 ? 1.12 : 0.89)));
+      pgState.tx = clampPan(pgState.tx);
+      pgState.ty = clampPan(pgState.ty);
       $('#pgZoomLabel').textContent = Math.round(pgState.zoom * 100) + '%';
       applyPgTransform();
     }, { passive: false });
@@ -1051,7 +1083,7 @@
     var graphOn = v === 'graph';
     $('#peopleGrid').hidden = graphOn;
     $('#pgWrap').hidden = !graphOn;
-    if (graphOn) renderPeopleGraph();
+    if (graphOn) { pgResetView(); renderPeopleGraph(); }
   }
 
   /* ---------------- 数据 ---------------- */
