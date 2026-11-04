@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-04T15:35:04",
+  "generatedAt": "2026-11-04T15:37:44",
   "categories": [
     {
       "id": "politics",
@@ -837,6 +837,7 @@
       ],
       "related": [
         "cus-jin-hunsu",
+        "cus-liao-fushi",
         "pol-liao-houzu",
         "pol-liao-shixuan"
       ]
@@ -860,6 +861,12 @@
         "左衽",
         "长袍",
         "革带"
+      ],
+      "related": [
+        "cus-liao-bairi",
+        "cus-liao-hunsu",
+        "cus-liao-jishan",
+        "cus-liao-sheliu"
       ]
     },
     {
@@ -905,6 +912,10 @@
         "端午",
         "射柳",
         "祈雨"
+      ],
+      "related": [
+        "cus-liao-bairi",
+        "cus-liao-fushi"
       ]
     },
     {
@@ -954,7 +965,10 @@
       ],
       "related": [
         "cul-liao-sancai",
-        "cus-liao-kunfa"
+        "cus-liao-fushi",
+        "cus-liao-jishan",
+        "cus-liao-kunfa",
+        "cus-liao-sheliu"
       ]
     },
     {
@@ -1074,6 +1088,10 @@
         "木叶山",
         "祭天",
         "祖先"
+      ],
+      "related": [
+        "cus-liao-bairi",
+        "cus-liao-fushi"
       ]
     },
     {
@@ -1147,6 +1165,7 @@
         "农耕"
       ],
       "related": [
+        "eco-liao-huobi",
         "geo-liao-nanjing",
         "tl-liao-1010"
       ]
@@ -1271,6 +1290,10 @@
         "辽钱",
         "宋钱",
         "货币"
+      ],
+      "related": [
+        "eco-liao-nongye",
+        "eco-liao-quechang"
       ]
     },
     {
@@ -1949,6 +1972,10 @@
         "丧礼",
         "纸钱",
         "风水"
+      ],
+      "related": [
+        "cus-beizi",
+        "cus-bocai"
       ]
     },
     {
@@ -2019,6 +2046,10 @@
         "赏月",
         "月饼",
         "团圆"
+      ],
+      "related": [
+        "cus-beizi",
+        "cus-bocai"
       ]
     },
     {
@@ -2270,6 +2301,10 @@
         "制科",
         "词科",
         "武举"
+      ],
+      "related": [
+        "pol-anfu",
+        "pol-dengwen"
       ]
     },
     {
@@ -2622,6 +2657,9 @@
         "军事"
       ],
       "related": [
+        "pol-huanquan",
+        "pol-qita-ke",
+        "pol-shishu",
         "pol-zhizhishi"
       ]
     },
@@ -2943,6 +2981,10 @@
         "旬假",
         "节假",
         "休沐"
+      ],
+      "related": [
+        "cus-beizi",
+        "cus-bocai"
       ]
     },
     {
@@ -2988,6 +3030,10 @@
         "宦官",
         "内侍省",
         "限制"
+      ],
+      "related": [
+        "pol-anfu",
+        "pol-dengwen"
       ]
     },
     {
@@ -3097,6 +3143,8 @@
         "mil-huihpao",
         "mil-shenbimgong",
         "mil-shouchenglu",
+        "mil-wujingqishu",
+        "mil-zhengtu",
         "pol-junqijian",
         "ppl-liao-xiaotalin",
         "tl-1005"
@@ -3249,6 +3297,14 @@
         "博戏",
         "象棋",
         "双陆"
+      ],
+      "related": [
+        "cus-beizi",
+        "cus-chasi",
+        "cus-chuiwan",
+        "cus-jiaqi",
+        "cus-sangzang",
+        "cus-zhongqiu"
       ]
     },
     {
@@ -3295,6 +3351,10 @@
         "捶丸",
         "高尔夫",
         "球戏"
+      ],
+      "related": [
+        "cus-bocai",
+        "cus-cuju"
       ]
     },
     {
@@ -4339,7 +4399,11 @@
         "褙子"
       ],
       "related": [
-        "cus-fushi"
+        "cus-bocai",
+        "cus-fushi",
+        "cus-jiaqi",
+        "cus-sangzang",
+        "cus-zhongqiu"
       ]
     },
     {
@@ -4480,6 +4544,7 @@
         "高俅"
       ],
       "related": [
+        "cus-chuiwan",
         "cus-qiuqian",
         "cus-washe",
         "cus-xiangpu"
@@ -5391,6 +5456,10 @@
         "太平广记",
         "文苑英华",
         "册府元龟"
+      ],
+      "related": [
+        "tho-erchheng",
+        "tho-kaoju"
       ]
     },
     {
@@ -5412,6 +5481,10 @@
         "观音阁",
         "蓟县",
         "辽构"
+      ],
+      "related": [
+        "cul-liao-bihua",
+        "cul-liao-cang"
       ]
     },
     {
@@ -5433,6 +5506,10 @@
         "宋太宗",
         "阵图",
         "指挥"
+      ],
+      "related": [
+        "mil-baojia",
+        "mil-chuangzin"
       ]
     },
     {
@@ -5555,6 +5632,10 @@
       "tags": [
         "赵恒",
         "至道"
+      ],
+      "related": [
+        "tl-1004",
+        "tl-1005"
       ]
     },
     {
@@ -5757,6 +5838,7 @@
         "皮囊壶"
       ],
       "related": [
+        "cul-liao-bihua",
         "cul-liao-sancai"
       ]
     },
@@ -5806,6 +5888,10 @@
         "影青",
         "青白瓷",
         "景德镇"
+      ],
+      "related": [
+        "cul-badajia",
+        "cul-daozang"
       ]
     },
     {
@@ -5833,7 +5919,8 @@
         "emp-song-zhenzong",
         "ppl-kouzhun",
         "ppl-liao-xiaotalin",
-        "tl-1005"
+        "tl-1005",
+        "tl-997"
       ]
     },
     {
@@ -5919,6 +6006,7 @@
         "ppl-wangdan",
         "ppl-xiaochuo",
         "tl-1004",
+        "tl-997",
         "tl-liao-1009",
         "tl-liao-1042"
       ]
@@ -5942,6 +6030,10 @@
         "誓书",
         "国书",
         "礼仪"
+      ],
+      "related": [
+        "pol-anfu",
+        "pol-dengwen"
       ]
     },
     {
@@ -5965,6 +6057,7 @@
         "互市"
       ],
       "related": [
+        "eco-liao-huobi",
         "eco-quechang",
         "geo-hebeidong",
         "geo-liao-zhongjing"
@@ -6092,6 +6185,7 @@
         "内丹"
       ],
       "related": [
+        "cul-jingdezhen",
         "soc-siguan"
       ]
     },
@@ -6290,6 +6384,10 @@
         "胡瑗",
         "孙复",
         "石介"
+      ],
+      "related": [
+        "tho-erchheng",
+        "tho-kaoju"
       ]
     },
     {
@@ -7628,6 +7726,8 @@
         "应县木塔"
       ],
       "related": [
+        "cul-liao-bihua",
+        "cul-liao-dulesi",
         "tec-jin-pingshui"
       ]
     },
@@ -7784,6 +7884,7 @@
         "曾巩"
       ],
       "related": [
+        "cul-jingdezhen",
         "lit-liuyishihua",
         "ppl-ouyangxiu",
         "ppl-sushi"
@@ -7947,7 +8048,9 @@
         "lit-kunxuejiwen",
         "lit-rongzhaibiji",
         "ppl-chaogongwu",
-        "ppl-chenzhensun"
+        "ppl-chenzhensun",
+        "tho-leishu",
+        "tho-songsan"
       ]
     },
     {
@@ -8473,6 +8576,8 @@
         "治安"
       ],
       "related": [
+        "mil-wujingqishu",
+        "mil-zhengtu",
         "ppl-wanganshi"
       ]
     },
@@ -8549,6 +8654,8 @@
       "related": [
         "ppl-chengyi",
         "tho-jinsilu",
+        "tho-leishu",
+        "tho-songsan",
         "tho-xiangshu"
       ]
     },
@@ -9229,6 +9336,10 @@
         "武学",
         "兵法",
         "教科书"
+      ],
+      "related": [
+        "mil-baojia",
+        "mil-chuangzin"
       ]
     },
     {
@@ -9302,6 +9413,11 @@
         "库伦",
         "宣化",
         "壁画"
+      ],
+      "related": [
+        "cul-liao-cang",
+        "cul-liao-ci",
+        "cul-liao-dulesi"
       ]
     },
     {
@@ -11490,6 +11606,7 @@
         "金丝铁线"
       ],
       "related": [
+        "cul-longquan",
         "cul-ruyao"
       ]
     },
@@ -11619,6 +11736,10 @@
         "粉青",
         "梅子青",
         "哥窑"
+      ],
+      "related": [
+        "cul-gelv",
+        "cul-geyao"
       ]
     },
     {
@@ -12686,6 +12807,7 @@
         "吴文英"
       ],
       "related": [
+        "cul-longquan",
         "lit-ciyuan",
         "lit-juexiao"
       ]
@@ -16536,6 +16658,10 @@
       ],
       "groups": [
         "僧道"
+      ],
+      "related": [
+        "emp-jin-aizong",
+        "emp-jin-hailing"
       ]
     },
     {
@@ -16876,6 +17002,10 @@
       ],
       "groups": [
         "起义"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -17179,6 +17309,10 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -17367,6 +17501,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -18196,6 +18334,13 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "emp-xixia-huanzong",
+        "emp-xixia-huizong",
+        "emp-xixia-shenzong",
+        "emp-xixia-xiangzong",
+        "emp-xixia-xianzong"
       ]
     },
     {
@@ -18223,6 +18368,7 @@
       ],
       "related": [
         "emp-jin-weishao",
+        "emp-xixia-chongzong",
         "tl-1082"
       ]
     },
@@ -18312,6 +18458,10 @@
       ],
       "related": [
         "emp-liao-tianzuo",
+        "emp-xixia-chongzong",
+        "emp-xixia-shenzong",
+        "emp-xixia-xiangzong",
+        "emp-xixia-xianzong",
         "tl-1205"
       ]
     },
@@ -18363,6 +18513,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "emp-xixia-chongzong",
+        "emp-xixia-huanzong"
       ]
     },
     {
@@ -18387,6 +18541,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "emp-xixia-chongzong",
+        "emp-xixia-huanzong"
       ]
     },
     {
@@ -18410,6 +18568,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "emp-xixia-chongzong",
+        "emp-xixia-huanzong"
       ]
     },
     {
@@ -19081,6 +19243,7 @@
       "related": [
         "emp-song-duanzong",
         "ppl-chenrong",
+        "ppl-huangzhen",
         "ppl-liangkai",
         "ppl-litiong",
         "ppl-xushuwei",
@@ -19116,7 +19279,30 @@
       "related": [
         "cul-qianli",
         "cul-shoujin",
+        "ppl-baozheng",
+        "ppl-cuibai",
+        "ppl-fangla",
+        "ppl-huyuan",
+        "ppl-jiaxian",
+        "ppl-lijilong",
+        "ppl-linbu",
+        "ppl-lishun",
+        "ppl-liufa",
+        "ppl-luocongyan",
+        "ppl-meiyaochen",
+        "ppl-nongzhigao",
+        "ppl-songjiang",
+        "ppl-sushunqin",
+        "ppl-wangchaoyun",
+        "ppl-wangfu",
+        "ppl-wangshen",
+        "ppl-wangyucheng",
+        "ppl-wentong",
+        "ppl-xieliangzuo",
+        "ppl-yansu",
         "ppl-zhaofujin",
+        "ppl-zhongshidao",
+        "ppl-zhongshiheng",
         "tl-1100",
         "tl-1127"
       ]
@@ -19224,6 +19410,10 @@
       ],
       "groups": [
         "起义"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -19368,6 +19558,7 @@
         "emp-song-duzong",
         "emp-song-gaozong",
         "ppl-chenrong",
+        "ppl-huangzhen",
         "ppl-liangkai",
         "ppl-litiong",
         "ppl-xushuwei",
@@ -19424,6 +19615,29 @@
         "帝王"
       ],
       "related": [
+        "ppl-baozheng",
+        "ppl-cuibai",
+        "ppl-fangla",
+        "ppl-huyuan",
+        "ppl-jiaxian",
+        "ppl-lijilong",
+        "ppl-linbu",
+        "ppl-lishun",
+        "ppl-liufa",
+        "ppl-luocongyan",
+        "ppl-meiyaochen",
+        "ppl-nongzhigao",
+        "ppl-songjiang",
+        "ppl-sushunqin",
+        "ppl-wangchaoyun",
+        "ppl-wangfu",
+        "ppl-wangshen",
+        "ppl-wangyucheng",
+        "ppl-wentong",
+        "ppl-xieliangzuo",
+        "ppl-yansu",
+        "ppl-zhongshidao",
+        "ppl-zhongshiheng",
         "tl-1127"
       ]
     },
@@ -19560,6 +19774,10 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "emp-jin-aizong",
+        "emp-jin-hailing"
       ]
     },
     {
@@ -19818,6 +20036,10 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -20577,6 +20799,10 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -20690,6 +20916,10 @@
       ],
       "groups": [
         "起义"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -21313,6 +21543,10 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "emp-jin-aizong",
+        "emp-jin-hailing"
       ]
     },
     {
@@ -21500,6 +21734,10 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -21576,6 +21814,10 @@
       ],
       "groups": [
         "起义"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -21847,6 +22089,10 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -21991,6 +22237,10 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -22429,6 +22679,9 @@
       "related": [
         "geo-jin-zhongdu",
         "mil-caishi",
+        "ppl-ligao",
+        "ppl-qiuchuji",
+        "ppl-wanyanxiyin",
         "tl-1153",
         "tl-1161",
         "tl-1161b"
@@ -22566,6 +22819,10 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -22760,6 +23017,10 @@
       ],
       "groups": [
         "女性"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -22868,6 +23129,10 @@
       ],
       "groups": [
         "女性"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -22947,6 +23212,10 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -22970,6 +23239,10 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -23076,7 +23349,10 @@
         "民意"
       ],
       "related": [
+        "pol-huanquan",
+        "pol-qita-ke",
         "pol-sansheng",
+        "pol-shishu",
         "pol-yushitai",
         "soc-bianchi",
         "soc-sifa"
@@ -23329,6 +23605,10 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -23378,6 +23658,10 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -23822,6 +24106,10 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -24130,6 +24418,10 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -24291,6 +24583,10 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -24538,6 +24834,7 @@
         "茶肆"
       ],
       "related": [
+        "cus-bocai",
         "cus-diancha",
         "cus-jiulou",
         "cus-sancan",
@@ -26634,6 +26931,10 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -26771,6 +27072,10 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "emp-song-huizong",
+        "emp-song-qinzong"
       ]
     },
     {
@@ -27204,6 +27509,7 @@
         "帝王"
       ],
       "related": [
+        "emp-liao-muzong",
         "ppl-liao-handrang"
       ]
     },
@@ -27228,6 +27534,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "emp-liao-daozong",
+        "emp-liao-jingzong"
       ]
     },
     {
@@ -27254,6 +27564,7 @@
         "帝王"
       ],
       "related": [
+        "emp-liao-muzong",
         "lit-liao-huiyuan"
       ]
     },
@@ -27684,6 +27995,9 @@
       ],
       "related": [
         "emp-jin-modi",
+        "ppl-ligao",
+        "ppl-qiuchuji",
+        "ppl-wanyanxiyin",
         "tl-1234"
       ]
     },
@@ -28636,6 +28950,10 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "emp-song-duanzong",
+        "emp-song-duzong"
       ]
     }
   ],

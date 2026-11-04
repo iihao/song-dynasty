@@ -28,7 +28,7 @@ def main():
     conn = sqlite3.connect(args.db)
     conn.row_factory = sqlite3.Row
     items = {r["id"]: dict(r) for r in conn.execute(
-        "SELECT id,name,category_id,era FROM items")}
+        "SELECT id,name,category_id,type,era FROM items")}
     tags = defaultdict(set)
     for r in conn.execute("SELECT item_id,name FROM item_tags JOIN tags ON tags.id=item_tags.tag_id"):
         tags[r["item_id"]].add(r["name"])
@@ -47,15 +47,21 @@ def main():
                 continue
             shared = (tags[iid] & tags[jid]) - ERA_TAGS
             same_cat = a["category_id"] == b["category_id"]
+            same_type = a["type"] and a["type"] == b["type"]
             same_era = a["era"] and a["era"] == b["era"]
-            if not shared and not (same_cat and same_era):
+            if not shared and not same_cat and not same_era:
                 continue
-            score = len(shared) * 5 + (2 if same_cat else 0) + (1 if same_era else 0)
-            scored.append((score, jid))
+            score = (len(shared) * 5 + (2 if same_cat else 0) +
+                     (1 if same_type else 0) + (1 if same_era else 0))
+            scored.append((score, jid, same_cat, same_type, same_era))
         scored.sort(key=lambda x: (-x[0], x[1]))
-        picked = [jid for score, jid in scored if score >= 5][:args.limit]
+        picked = [jid for score, jid, *_ in scored if score >= 5][:args.limit]
         if not picked:
-            picked = [jid for score, jid in scored if same_cat and same_era][:args.limit]
+            picked = [jid for _, jid, sc, st, se in scored if sc and se][:args.limit]
+        if not picked:
+            picked = [jid for _, jid, sc, st, se in scored if sc and st][:args.limit]
+        if not picked:
+            picked = [jid for _, jid, sc, st, se in scored if sc][:args.limit]
         for jid in picked:
             added.append((iid, jid))
 
