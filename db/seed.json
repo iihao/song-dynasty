@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-04T11:07:35",
+  "generatedAt": "2026-11-04T11:34:05",
   "categories": [
     {
       "id": "politics",
@@ -575,6 +575,7 @@
         "五代十国"
       ],
       "related": [
+        "geo-wudai-shiguo",
         "ppl-zhuwen"
       ]
     },
@@ -700,8 +701,11 @@
       ],
       "related": [
         "eco-haishang",
+        "eco-nongtian",
         "eco-shibo",
-        "geo-mingzhou"
+        "geo-mingzhou",
+        "geo-wudai-shiguo",
+        "tec-shuili"
       ]
     },
     {
@@ -814,6 +818,9 @@
         "耶律",
         "萧氏",
         "通婚"
+      ],
+      "related": [
+        "cus-jin-hunsu"
       ]
     },
     {
@@ -1431,7 +1438,11 @@
         "国防"
       ],
       "related": [
-        "ppl-shijingtang"
+        "geo-hebeidong",
+        "geo-hedonglu",
+        "mil-gaolianghe",
+        "ppl-shijingtang",
+        "tec-yujitu"
       ]
     },
     {
@@ -1456,7 +1467,10 @@
       ],
       "related": [
         "cul-ci",
-        "cul-wanyue"
+        "cul-wanyue",
+        "cus-wudai-yanyin",
+        "emp-nantang-houzhu",
+        "lit-yumeiren-liyu"
       ]
     },
     {
@@ -1570,6 +1584,9 @@
         "乞巧",
         "牛郎织女",
         "磨喝乐"
+      ],
+      "related": [
+        "cus-yufo"
       ]
     },
     {
@@ -1595,7 +1612,8 @@
       "related": [
         "eco-quejiu",
         "eco-yan",
-        "mil-sanrong"
+        "mil-sanrong",
+        "pol-zhishi"
       ]
     },
     {
@@ -1618,7 +1636,9 @@
         "步军司"
       ],
       "related": [
-        "mil-shumiyuan"
+        "mil-shumiyuan",
+        "ppl-yangcunzhong",
+        "tl-961"
       ]
     },
     {
@@ -1639,6 +1659,10 @@
         "踏青",
         "祓禊",
         "曲水流觞"
+      ],
+      "related": [
+        "cus-huazhao",
+        "cus-qiuqian"
       ]
     },
     {
@@ -1661,6 +1685,7 @@
         "田制"
       ],
       "related": [
+        "eco-fangtian",
         "eco-zudian"
       ]
     },
@@ -1684,11 +1709,19 @@
         "汴河"
       ],
       "related": [
+        "cul-qingming",
+        "cus-jiulou",
+        "cus-lichun",
         "cus-washe",
         "cus-yuanxiao",
         "eco-caoyun",
         "geo-xingqingfu",
-        "soc-xiangfang"
+        "lit-dongjingmenghualu",
+        "ppl-leshi",
+        "soc-junxunpu",
+        "soc-xiangfang",
+        "soc-youxu",
+        "tec-yujitu"
       ]
     },
     {
@@ -1709,6 +1742,11 @@
         "官营",
         "纺织",
         "丝绸"
+      ],
+      "related": [
+        "cul-kesi",
+        "geo-chengdufu",
+        "geo-liangzhe"
       ]
     },
     {
@@ -1729,6 +1767,10 @@
         "夏税",
         "秋税",
         "赋税"
+      ],
+      "related": [
+        "eco-fangtian",
+        "eco-hedi"
       ]
     },
     {
@@ -1812,6 +1854,9 @@
         "祭祖",
         "鬼节",
         "放河灯"
+      ],
+      "related": [
+        "cus-yufo"
       ]
     },
     {
@@ -1855,7 +1900,9 @@
       ],
       "related": [
         "eco-zudian",
-        "pol-jingjie"
+        "pol-jingjie",
+        "soc-jin-huju",
+        "soc-wudeng"
       ]
     },
     {
@@ -1876,6 +1923,9 @@
         "民兵",
         "边防",
         "西北"
+      ],
+      "related": [
+        "soc-xunjian"
       ]
     },
     {
@@ -1900,7 +1950,8 @@
       "related": [
         "pol-guanxue",
         "ppl-zhuxi",
-        "soc-mengxue"
+        "soc-mengxue",
+        "tho-huxiang"
       ]
     },
     {
@@ -1988,7 +2039,10 @@
         "猜灯谜"
       ],
       "related": [
-        "geo-kaifeng"
+        "cus-linan-suishi",
+        "geo-kaifeng",
+        "lit-dongjingmenghualu",
+        "lit-menglianglu"
       ]
     },
     {
@@ -2009,6 +2063,10 @@
         "春节",
         "拜年",
         "放假"
+      ],
+      "related": [
+        "cus-jizao",
+        "cus-lichun"
       ]
     },
     {
@@ -2069,6 +2127,13 @@
         "儒医",
         "药铺",
         "医疗"
+      ],
+      "related": [
+        "soc-yibing",
+        "tec-bencao",
+        "tec-furen",
+        "tec-jufang",
+        "tec-xiaoer"
       ]
     },
     {
@@ -2091,7 +2156,9 @@
         "建阳"
       ],
       "related": [
-        "tec-diaoban"
+        "geo-fujianlu",
+        "tec-diaoban",
+        "tec-jin-pingshui"
       ]
     },
     {
@@ -2137,7 +2204,9 @@
         "坊"
       ],
       "related": [
-        "geo-kaifeng"
+        "geo-kaifeng",
+        "soc-junxunpu",
+        "soc-yibing"
       ]
     },
     {
@@ -2177,6 +2246,12 @@
         "商税",
         "过税",
         "住税"
+      ],
+      "related": [
+        "eco-jingzongzhi",
+        "eco-junshu",
+        "eco-qucha",
+        "eco-shiyi"
       ]
     },
     {
@@ -2197,6 +2272,9 @@
         "艮岳",
         "园林",
         "太湖石"
+      ],
+      "related": [
+        "cus-huazhao"
       ]
     },
     {
@@ -2217,6 +2295,10 @@
         "贫民",
         "流民",
         "城市病"
+      ],
+      "related": [
+        "soc-junxunpu",
+        "soc-nubi"
       ]
     },
     {
@@ -2282,6 +2364,7 @@
         "审刑院"
       ],
       "related": [
+        "pol-dengwen",
         "pol-shenxing"
       ]
     },
@@ -2305,7 +2388,9 @@
         "拜堂"
       ],
       "related": [
-        "soc-hunyin"
+        "cus-jin-hunsu",
+        "soc-hunyin",
+        "soc-jiazhuang"
       ]
     },
     {
@@ -2328,7 +2413,9 @@
         "门第"
       ],
       "related": [
-        "cus-hunsu"
+        "cus-hunsu",
+        "cus-jin-hunsu",
+        "soc-jiazhuang"
       ]
     },
     {
@@ -2349,6 +2436,9 @@
         "路",
         "帅司",
         "军事"
+      ],
+      "related": [
+        "pol-zhizhishi"
       ]
     },
     {
@@ -2371,7 +2461,8 @@
         "才女"
       ],
       "related": [
-        "soc-chanzu"
+        "soc-chanzu",
+        "soc-jiazhuang"
       ]
     },
     {
@@ -2392,6 +2483,9 @@
         "小吃",
         "面食",
         "点心"
+      ],
+      "related": [
+        "cus-yinshi"
       ]
     },
     {
@@ -2413,6 +2507,11 @@
         "郭熙",
         "李成",
         "马远"
+      ],
+      "related": [
+        "cul-kesi",
+        "cul-qianli",
+        "cul-xishan"
       ]
     },
     {
@@ -2437,7 +2536,8 @@
       "related": [
         "cul-jiaofang",
         "cul-nanxi",
-        "cus-washe"
+        "cus-washe",
+        "cus-wudai-yanyin"
       ]
     },
     {
@@ -2460,7 +2560,11 @@
         "一代之文学"
       ],
       "related": [
-        "cul-huajian"
+        "cul-huajian",
+        "emp-nantang-houzhu",
+        "lit-pai-linjiangxian",
+        "lit-pai-zhegutian",
+        "lit-yumeiren-liyu"
       ]
     },
     {
@@ -2481,6 +2585,12 @@
         "以文为诗",
         "理趣",
         "陆游"
+      ],
+      "related": [
+        "lit-canglangshihua",
+        "lit-liuyishihua",
+        "lit-mingfeiqu",
+        "lit-xiaochi"
       ]
     },
     {
@@ -2501,6 +2611,9 @@
         "宗室",
         "赵姓",
         "宗正寺"
+      ],
+      "related": [
+        "pol-yinbu"
       ]
     },
     {
@@ -2521,6 +2634,10 @@
         "官制",
         "冗官",
         "差遣"
+      ],
+      "related": [
+        "pol-mokan",
+        "pol-yinbu"
       ]
     },
     {
@@ -2604,6 +2721,9 @@
         "官制",
         "元丰改制",
         "俸禄"
+      ],
+      "related": [
+        "pol-mokan"
       ]
     },
     {
@@ -2626,6 +2746,8 @@
         "官服"
       ],
       "related": [
+        "cul-jinci",
+        "cul-kesi",
         "cus-beizi",
         "cus-jiaju",
         "cus-xixia-tufa"
@@ -2651,7 +2773,13 @@
         "蕃坊"
       ],
       "related": [
-        "eco-shibo"
+        "eco-choujie",
+        "eco-shibo",
+        "geo-dashi",
+        "geo-guangnandong",
+        "geo-sanfoqi",
+        "ppl-zhaorushi",
+        "tl-971b"
       ]
     },
     {
@@ -2675,6 +2803,7 @@
       ],
       "related": [
         "mil-shenbimgong",
+        "pol-junqijian",
         "ppl-liao-xiaotalin",
         "tl-1005"
       ]
@@ -2719,7 +2848,10 @@
         "士大夫"
       ],
       "related": [
-        "pol-jingjie"
+        "eco-fangtian",
+        "pol-jingjie",
+        "pol-yinbu",
+        "soc-wudeng"
       ]
     },
     {
@@ -2742,6 +2874,7 @@
         "言官"
       ],
       "related": [
+        "pol-dengwen",
         "pol-taijian"
       ]
     },
@@ -2765,7 +2898,9 @@
         "蜀锦"
       ],
       "related": [
-        "eco-chama"
+        "eco-chama",
+        "geo-chengdufu",
+        "ppl-zhangyong"
       ]
     },
     {
@@ -2934,8 +3069,11 @@
         "宁波"
       ],
       "related": [
+        "eco-choujie",
         "eco-shibo",
-        "eco-wuyue-shuili"
+        "eco-wuyue-shuili",
+        "geo-liangzhe",
+        "tl-971b"
       ]
     },
     {
@@ -2959,7 +3097,8 @@
       ],
       "related": [
         "mil-jinjun",
-        "mil-wudai-yabing"
+        "mil-wudai-yabing",
+        "tl-961"
       ]
     },
     {
@@ -2984,7 +3123,8 @@
       "related": [
         "mil-sanya",
         "pol-erfu",
-        "pol-wudai-shumi"
+        "pol-wudai-shumi",
+        "tl-961"
       ]
     },
     {
@@ -3007,6 +3147,8 @@
         "酒税"
       ],
       "related": [
+        "cus-jiulou",
+        "eco-jingzongzhi",
         "pol-sansi"
       ]
     },
@@ -3029,6 +3171,13 @@
         "妈祖",
         "城隍",
         "民间宗教"
+      ],
+      "related": [
+        "cul-dazu",
+        "cus-jizao",
+        "cus-yufo",
+        "soc-siguan",
+        "soc-xiangyue"
       ]
     },
     {
@@ -3051,9 +3200,15 @@
         "刺桐"
       ],
       "related": [
+        "eco-choujie",
         "eco-haishang",
         "eco-shibo",
-        "tec-qiaoliang"
+        "geo-dashi",
+        "geo-fujianlu",
+        "geo-sanfoqi",
+        "ppl-zhaorushi",
+        "tec-qiaoliang",
+        "tl-971b"
       ]
     },
     {
@@ -3099,6 +3254,10 @@
         "踏青",
         "扫墓",
         "秋千"
+      ],
+      "related": [
+        "cus-huazhao",
+        "cus-qiuqian"
       ]
     },
     {
@@ -3121,6 +3280,9 @@
         "大运河"
       ],
       "related": [
+        "eco-hedi",
+        "eco-junshu",
+        "geo-jinghubei",
         "geo-kaifeng"
       ]
     },
@@ -3186,6 +3348,7 @@
       ],
       "related": [
         "cul-dingyao",
+        "cus-chasi",
         "eco-chama"
       ]
     },
@@ -3249,8 +3412,10 @@
         "市民娱乐"
       ],
       "related": [
+        "cus-chasi",
         "cus-cuju",
         "cus-shuohua",
+        "cus-wudai-yanyin",
         "cus-xiangpu",
         "cus-zaju",
         "eco-caoshi",
@@ -3278,6 +3443,7 @@
         "榷盐"
       ],
       "related": [
+        "eco-qucha",
         "eco-xixia-yanchi",
         "pol-sansi"
       ]
@@ -3326,6 +3492,7 @@
         "知县"
       ],
       "related": [
+        "pol-mokan",
         "soc-xuli"
       ]
     },
@@ -3349,6 +3516,7 @@
         "煤"
       ],
       "related": [
+        "tec-dantong",
         "tec-yetie"
       ]
     },
@@ -3370,6 +3538,9 @@
         "春社",
         "秋社",
         "祭祀"
+      ],
+      "related": [
+        "cus-lichun"
       ]
     },
     {
@@ -3392,9 +3563,12 @@
         "强干弱枝"
       ],
       "related": [
+        "mil-gaolianghe",
         "mil-gengshu",
         "mil-wudai-yabing",
-        "mil-xiangjun"
+        "mil-xiangjun",
+        "ppl-yangcunzhong",
+        "tl-961"
       ]
     },
     {
@@ -3418,6 +3592,10 @@
         "曹洞"
       ],
       "related": [
+        "cul-dazu",
+        "cus-yufo",
+        "lit-canglangshihua",
+        "soc-siguan",
         "tho-wudai-chan"
       ]
     },
@@ -3442,6 +3620,7 @@
       ],
       "related": [
         "pol-keju",
+        "soc-nubi",
         "soc-wudai-wuren"
       ]
     },
@@ -3466,6 +3645,9 @@
       ],
       "related": [
         "eco-buyijianbing",
+        "eco-qingmiao",
+        "lit-sishitianyuan",
+        "soc-siguan",
         "soc-zhuhu"
       ]
     },
@@ -3487,6 +3669,9 @@
         "粽子",
         "龙舟",
         "艾草"
+      ],
+      "related": [
+        "cus-linan-suishi"
       ]
     },
     {
@@ -3507,6 +3692,9 @@
         "士大夫",
         "簪花",
         "香道"
+      ],
+      "related": [
+        "cus-huazhao"
       ]
     },
     {
@@ -3527,6 +3715,9 @@
         "司法",
         "敕",
         "立法"
+      ],
+      "related": [
+        "pol-dengwen"
       ]
     },
     {
@@ -3547,6 +3738,10 @@
         "画院",
         "徽宗",
         "院体画"
+      ],
+      "related": [
+        "cul-kesi",
+        "cul-qianli"
       ]
     },
     {
@@ -3567,6 +3762,10 @@
         "内制",
         "诏令",
         "词臣"
+      ],
+      "related": [
+        "pol-guange",
+        "pol-mokan"
       ]
     },
     {
@@ -3589,7 +3788,11 @@
         "基层"
       ],
       "related": [
-        "pol-zhizhou"
+        "eco-jingzongzhi",
+        "pol-zhizhou",
+        "soc-wudeng",
+        "soc-xunjian",
+        "soc-zhiyi"
       ]
     },
     {
@@ -3610,6 +3813,9 @@
         "园林",
         "江南",
         "丝织"
+      ],
+      "related": [
+        "geo-liangzhe"
       ]
     },
     {
@@ -3632,8 +3838,11 @@
         "茶"
       ],
       "related": [
+        "cus-chasi",
         "cus-diancha",
-        "geo-chengdu"
+        "eco-qucha",
+        "geo-chengdu",
+        "geo-qinfeng"
       ]
     },
     {
@@ -3657,6 +3866,8 @@
       ],
       "related": [
         "cus-washe",
+        "cus-yinshi",
+        "eco-shiyi",
         "soc-hanghui"
       ]
     },
@@ -3679,6 +3890,9 @@
         "常平仓",
         "义仓",
         "赈济"
+      ],
+      "related": [
+        "soc-yibing"
       ]
     },
     {
@@ -3791,8 +4005,12 @@
       ],
       "related": [
         "cul-taixue",
+        "pol-guange",
+        "pol-yinbu",
+        "ppl-lvmengzheng",
         "soc-liudong",
-        "soc-wudai-wuren"
+        "soc-wudai-wuren",
+        "tl-1190"
       ]
     },
     {
@@ -3839,7 +4057,17 @@
         "转运使"
       ],
       "related": [
+        "geo-chengdufu",
+        "geo-fujianlu",
+        "geo-guangnandong",
+        "geo-hebeidong",
+        "geo-hedonglu",
+        "geo-jinghubei",
+        "geo-liangzhe",
+        "geo-qinfeng",
+        "pol-jinzouyuan",
         "pol-tidian",
+        "pol-zhizhishi",
         "pol-zhuanyun"
       ]
     },
@@ -3863,6 +4091,7 @@
         "高俅"
       ],
       "related": [
+        "cus-qiuqian",
         "cus-washe",
         "cus-xiangpu"
       ]
@@ -3887,8 +4116,11 @@
         "漕运"
       ],
       "related": [
+        "eco-junshu",
         "pol-jingjie",
-        "pol-lu"
+        "pol-jinzouyuan",
+        "pol-lu",
+        "pol-zhizhishi"
       ]
     },
     {
@@ -3997,7 +4229,9 @@
         "武昌"
       ],
       "related": [
-        "geo-xiangyang"
+        "geo-jinghubei",
+        "geo-xiangyang",
+        "tl-1259b"
       ]
     },
     {
@@ -4018,6 +4252,10 @@
         "酒",
         "榷酒",
         "酒楼"
+      ],
+      "related": [
+        "cus-jiulou",
+        "cus-wudai-yanyin"
       ]
     },
     {
@@ -4058,6 +4296,9 @@
         "铜钱",
         "铁钱",
         "货币区"
+      ],
+      "related": [
+        "tec-dantong"
       ]
     },
     {
@@ -4078,6 +4319,9 @@
         "建国",
         "赵匡胤",
         "五代结束"
+      ],
+      "related": [
+        "geo-wudai-shiguo"
       ]
     },
     {
@@ -4098,6 +4342,10 @@
         "守岁",
         "爆竹",
         "腊八粥"
+      ],
+      "related": [
+        "cus-jizao",
+        "cus-linan-suishi"
       ]
     },
     {
@@ -4121,6 +4369,7 @@
       ],
       "related": [
         "eco-yinshua",
+        "tec-jin-pingshui",
         "tec-wudai-jiujing"
       ]
     },
@@ -4162,6 +4411,11 @@
         "借贷",
         "质库",
         "金融"
+      ],
+      "related": [
+        "eco-qingmiao",
+        "eco-shiyi",
+        "soc-nubi"
       ]
     },
     {
@@ -4185,6 +4439,34 @@
       ],
       "related": [
         "cus-fushi"
+      ]
+    },
+    {
+      "id": "tl-961",
+      "cat": "timeline",
+      "type": "事件",
+      "name": "杯酒释兵权",
+      "era": "北宋",
+      "year": 961,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "建隆二年，赵匡胤宴请石守信等禁军将领，以富贵交换兵权，确立“强干弱枝”的国策。",
+      "detail": "赵匡胤恐禁军将领效仿陈桥兵变，遂在一次酒宴中劝石守信、高怀德、王审琦等交出兵权，出为节度使，赐以田宅、联姻。此后又设枢密院、三衙分掌调兵与统兵，实行更戍法，使兵不识将、将不知兵。此举奠定了北宋中央集权与重文抑武的格局。",
+      "refs": "《宋史·太祖本纪》；《续资治通鉴长编》",
+      "tags": [
+        "北宋",
+        "事件",
+        "兵权",
+        "集权"
+      ],
+      "related": [
+        "emp-song-taizu",
+        "mil-gengshu",
+        "mil-jinjun",
+        "mil-sanya",
+        "mil-shumiyuan"
       ]
     },
     {
@@ -4310,6 +4592,34 @@
       ]
     },
     {
+      "id": "tl-971b",
+      "cat": "timeline",
+      "type": "事件",
+      "name": "宋置市舶司",
+      "era": "北宋",
+      "year": 971,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "开宝四年宋灭南汉后，于广州置市舶司，管理海外贸易、抽解与博买。",
+      "detail": "市舶司设提举官，掌蕃货、海舶、征榷、贸易之事。广州之后，杭州、明州、泉州、密州等地相继设司。市舶收入成为宋朝财政的重要来源，南宋时更盛。市舶司的设立标志着宋代海外贸易管理的制度化。",
+      "refs": "《宋史·食货志》；《宋会要辑稿·职官》",
+      "tags": [
+        "海外贸易",
+        "北宋",
+        "事件",
+        "市舶"
+      ],
+      "related": [
+        "eco-choujie",
+        "eco-shibo",
+        "geo-guangzhou",
+        "geo-mingzhou",
+        "geo-quanzhou"
+      ]
+    },
+    {
       "id": "eco-shibo",
       "cat": "economy",
       "type": "贸易",
@@ -4329,10 +4639,19 @@
         "泉州"
       ],
       "related": [
+        "eco-choujie",
+        "eco-qucha",
         "eco-wuyue-shuili",
+        "geo-dashi",
+        "geo-fujianlu",
+        "geo-guangnandong",
         "geo-guangzhou",
         "geo-mingzhou",
-        "geo-quanzhou"
+        "geo-quanzhou",
+        "geo-sanfoqi",
+        "ppl-zhaorushi",
+        "ppl-zhouqufei",
+        "tl-971b"
       ]
     },
     {
@@ -4354,6 +4673,10 @@
         "南唐",
         "李煜",
         "曹彬"
+      ],
+      "related": [
+        "emp-nantang-houzhu",
+        "geo-wudai-shiguo"
       ]
     },
     {
@@ -4373,6 +4696,33 @@
       "tags": [
         "赵光义",
         "烛影斧声"
+      ]
+    },
+    {
+      "id": "lit-yumeiren-liyu",
+      "cat": "literature",
+      "type": "词",
+      "name": "《虞美人·春花秋月何时了》",
+      "era": "五代",
+      "year": 978,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南唐后主李煜亡国后所作，以今昔对比写亡国之痛，是五代词的最高成就之一。",
+      "detail": "“春花秋月何时了，往事知多少”开篇即以永恒自然反衬人生无常，“小楼昨夜又东风，故国不堪回首月明中”写囚居汴京的故国之思，结以“问君能有几多愁，恰似一江春水向东流”。全词语言自然、情感深挚，王国维称其“变伶工之词为士大夫之词”。",
+      "refs": "《南唐二主词》",
+      "tags": [
+        "词",
+        "李煜",
+        "亡国",
+        "五代"
+      ],
+      "related": [
+        "cul-ci",
+        "cul-huajian",
+        "cul-wanyue",
+        "emp-nantang-houzhu"
       ]
     },
     {
@@ -4396,8 +4746,38 @@
         "高梁河"
       ],
       "related": [
+        "geo-wudai-shiguo",
+        "mil-gaolianghe",
         "ppl-liao-yeluxiezhen",
         "ppl-liao-yeluxiuge"
+      ]
+    },
+    {
+      "id": "mil-gaolianghe",
+      "cat": "military",
+      "type": "战役",
+      "name": "高梁河之战",
+      "era": "北宋",
+      "year": 979,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "太平兴国四年宋太宗灭北汉后乘胜攻辽，于高梁河大败，收复燕云的努力受挫。",
+      "detail": "979 年，宋军灭北汉后未经休整即围攻幽州，辽将耶律休哥、耶律斜轸率援军夹击。宋军久战疲惫，在高梁河一带溃败，太宗乘驴车南逃。此战暴露宋军指挥与后勤短板，也使辽宋攻守之势逐渐逆转。",
+      "refs": "《宋史·太宗本纪》；《辽史·耶律休哥传》",
+      "tags": [
+        "燕云",
+        "辽",
+        "北宋",
+        "战役"
+      ],
+      "related": [
+        "geo-yanyun",
+        "mil-jinjun",
+        "ppl-liao-yeluxiezhen",
+        "ppl-liao-yeluxiuge",
+        "tl-979"
       ]
     },
     {
@@ -4655,6 +5035,9 @@
         "起义",
         "四川",
         "均贫富"
+      ],
+      "related": [
+        "ppl-zhangyong"
       ]
     },
     {
@@ -4761,6 +5144,7 @@
       ],
       "related": [
         "cul-huajian",
+        "lit-yumeiren-liyu",
         "ppl-liqingzhao"
       ]
     },
@@ -4828,6 +5212,7 @@
         "崇佛"
       ],
       "related": [
+        "cul-dazu",
         "tho-liao-ruxue"
       ]
     },
@@ -4994,10 +5379,12 @@
       "related": [
         "eco-quechang",
         "emp-song-zhenzong",
+        "geo-hebeidong",
         "mil-chuangzin",
         "pol-waijiao",
         "ppl-kouzhun",
         "ppl-liao-handrang",
+        "ppl-wangdan",
         "ppl-xiaochuo",
         "tl-1004",
         "tl-liao-1009",
@@ -5044,7 +5431,8 @@
         "互市"
       ],
       "related": [
-        "eco-quechang"
+        "eco-quechang",
+        "geo-hebeidong"
       ]
     },
     {
@@ -5109,6 +5497,9 @@
         "杨亿",
         "李商隐",
         "骈文"
+      ],
+      "related": [
+        "lit-liuyishihua"
       ]
     },
     {
@@ -5149,6 +5540,9 @@
         "张伯端",
         "全真",
         "内丹"
+      ],
+      "related": [
+        "soc-siguan"
       ]
     },
     {
@@ -5171,7 +5565,10 @@
         "粮食"
       ],
       "related": [
+        "eco-nongtian",
         "soc-renkou",
+        "tec-shuili",
+        "tec-yangma",
         "tl-1012"
       ]
     },
@@ -5372,6 +5769,8 @@
       "related": [
         "eco-huizi",
         "eco-jin-chaofa",
+        "geo-chengdufu",
+        "ppl-zhangyong",
         "tec-yinshua",
         "tl-1023"
       ]
@@ -5420,7 +5819,8 @@
         "防伪"
       ],
       "related": [
-        "eco-jiaozi"
+        "eco-jiaozi",
+        "tec-jin-pingshui"
       ]
     },
     {
@@ -5441,6 +5841,9 @@
         "柳永",
         "慢词",
         "离别"
+      ],
+      "related": [
+        "cus-jiulou"
       ]
     },
     {
@@ -5487,7 +5890,8 @@
         "教学"
       ],
       "related": [
-        "ppl-wangweiyi"
+        "ppl-wangweiyi",
+        "tec-jufang"
       ]
     },
     {
@@ -5673,6 +6077,7 @@
         "cul-xixia-fojiao",
         "emp-xixia-jingzong",
         "geo-heishuicheng",
+        "lit-fanhan",
         "tec-xixia-lifa",
         "tho-xixia-ruxue"
       ]
@@ -5748,9 +6153,11 @@
         "译经"
       ],
       "related": [
+        "cul-dazu",
         "cul-xixia-wenzi",
         "emp-xixia-renzong",
-        "geo-heishuicheng"
+        "geo-heishuicheng",
+        "lit-fanhan"
       ]
     },
     {
@@ -5899,6 +6306,7 @@
         "重骑兵"
       ],
       "related": [
+        "mil-qianjun",
         "soc-xixia-buluo"
       ]
     },
@@ -5924,6 +6332,7 @@
       "related": [
         "cul-xixia-fojiao",
         "cul-xixia-wenzi",
+        "lit-fanhan",
         "tec-xixia-lifa"
       ]
     },
@@ -6019,6 +6428,7 @@
         "冗费"
       ],
       "related": [
+        "eco-jingzongzhi",
         "pol-sansi"
       ]
     },
@@ -6040,6 +6450,9 @@
         "西夏",
         "宋夏战争",
         "延州"
+      ],
+      "related": [
+        "mil-haoshuichuan"
       ]
     },
     {
@@ -6084,6 +6497,38 @@
         "西夏",
         "宋夏战争",
         "任福"
+      ],
+      "related": [
+        "geo-qinfeng",
+        "mil-haoshuichuan"
+      ]
+    },
+    {
+      "id": "mil-haoshuichuan",
+      "cat": "military",
+      "type": "战役",
+      "name": "好水川之战",
+      "era": "北宋",
+      "year": 1041,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "庆历元年西夏军诱敌深入，在好水川大败宋军，宋夏战争进入长期相持。",
+      "detail": "1041 年，宋将任福率军追击西夏军，轻敌冒进至好水川，被李元昊预设的伏兵包围。宋军阵亡惨重，任福战死，关中震动。此战与三川口、定川寨并称宋夏三大败，促使北宋转向筑寨防守与庆历和议。",
+      "refs": "《宋史·任福传》；《西夏书事》",
+      "tags": [
+        "北宋",
+        "战役",
+        "西夏",
+        "宋夏战争"
+      ],
+      "related": [
+        "emp-xixia-jingzong",
+        "tl-1040",
+        "tl-1041",
+        "tl-1042",
+        "tl-1044"
       ]
     },
     {
@@ -6153,6 +6598,10 @@
         "西夏",
         "宋夏战争",
         "葛怀敏"
+      ],
+      "related": [
+        "geo-qinfeng",
+        "mil-haoshuichuan"
       ]
     },
     {
@@ -6246,7 +6695,8 @@
       ],
       "related": [
         "eco-xixia-yanchi",
-        "emp-xixia-jingzong"
+        "emp-xixia-jingzong",
+        "mil-haoshuichuan"
       ]
     },
     {
@@ -6422,6 +6872,9 @@
         "大藏经",
         "刻经",
         "应县木塔"
+      ],
+      "related": [
+        "tec-jin-pingshui"
       ]
     },
     {
@@ -6469,6 +6922,7 @@
       ],
       "related": [
         "ppl-zhangzai",
+        "tho-jinsilu",
         "tl-1057"
       ]
     },
@@ -6516,6 +6970,7 @@
         "曾巩"
       ],
       "related": [
+        "lit-liuyishihua",
         "ppl-ouyangxiu",
         "ppl-sushi"
       ]
@@ -6541,6 +6996,7 @@
         "蔡襄"
       ],
       "related": [
+        "cul-wenfang",
         "ppl-sushi"
       ]
     },
@@ -6562,6 +7018,10 @@
         "范仲淹",
         "义庄",
         "族田"
+      ],
+      "related": [
+        "soc-jiazhuang",
+        "soc-xiangyue"
       ]
     },
     {
@@ -6584,7 +7044,9 @@
         "通书"
       ],
       "related": [
-        "ppl-zhoudunyi"
+        "ppl-zhoudunyi",
+        "tho-jinsilu",
+        "tho-xiangshu"
       ]
     },
     {
@@ -6607,7 +7069,13 @@
         "四书"
       ],
       "related": [
+        "soc-xiangyue",
+        "tho-huxiang",
         "tho-jin-ruxue",
+        "tho-jinsilu",
+        "tho-sishu",
+        "tho-xiangshu",
+        "tho-yongjia",
         "tho-zhuxi"
       ]
     },
@@ -6649,6 +7117,12 @@
         "欧阳修",
         "疑经",
         "考据"
+      ],
+      "related": [
+        "lit-kunxuejiwen",
+        "lit-rongzhaibiji",
+        "ppl-chaogongwu",
+        "ppl-chenzhensun"
       ]
     },
     {
@@ -6671,7 +7145,8 @@
         "洛阳桥"
       ],
       "related": [
-        "geo-quanzhou"
+        "geo-quanzhou",
+        "tec-shuili"
       ]
     },
     {
@@ -6717,7 +7192,10 @@
         "赵明诚"
       ],
       "related": [
-        "ppl-ouyangxiu"
+        "cul-wenfang",
+        "lit-rongzhaibiji",
+        "ppl-ouyangxiu",
+        "tec-yujitu"
       ]
     },
     {
@@ -6808,6 +7286,34 @@
         "ppl-zenggong",
         "ppl-zhangzai",
         "tho-zhangzai"
+      ]
+    },
+    {
+      "id": "lit-mingfeiqu",
+      "cat": "literature",
+      "type": "诗",
+      "name": "《明妃曲》",
+      "era": "北宋",
+      "year": 1059,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "王安石咏王昭君组诗，翻案传统看法，以议论入诗，体现宋诗“以文为诗”的特点。",
+      "detail": "诗写昭君出塞，不落“红颜薄命”俗套，而以“意态由来画不成，当时枉杀毛延寿”翻新出奇；又从昭君视角写“君不见咫尺长门闭阿娇，人生失意无南北”，将个人命运与政治得失相连。此诗在当时引起欧阳修、司马光、曾巩等纷纷唱和，是宋诗议论化的典范。",
+      "refs": "《临川先生文集》",
+      "tags": [
+        "北宋",
+        "王安石",
+        "诗",
+        "咏史"
+      ],
+      "related": [
+        "cul-songshi",
+        "ppl-ouyangxiu",
+        "ppl-simaguang",
+        "ppl-wanganshi",
+        "ppl-zenggong"
       ]
     },
     {
@@ -6964,7 +7470,66 @@
         "远射"
       ],
       "related": [
-        "mil-chuangzin"
+        "mil-chuangzin",
+        "pol-junqijian"
+      ]
+    },
+    {
+      "id": "eco-nongtian",
+      "cat": "economy",
+      "type": "新法",
+      "name": "农田水利法",
+      "era": "北宋",
+      "year": 1069,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "熙宁新法之一，鼓励兴修水利、开垦荒田，以增产粮食、扩大税源。",
+      "detail": "熙宁二年颁行，规定各地兴修陂塘、圩田、沟渠，费用由受益户按户等分摊，不足可向官府借贷。此法推动了两浙、江东、福建等地水利建设，但也出现强制摊派、虚报工程等弊病。它是王安石变法中争议相对较小、实效较明显的一项。",
+      "refs": "《宋史·食货志》；《宋会要辑稿·食货》",
+      "tags": [
+        "北宋",
+        "农业",
+        "新法",
+        "水利"
+      ],
+      "related": [
+        "cus-lichun",
+        "eco-wuyue-shuili",
+        "eco-zanchengdao",
+        "ppl-wanganshi",
+        "tec-shuili",
+        "tec-yangma",
+        "tl-1069"
+      ]
+    },
+    {
+      "id": "eco-junshu",
+      "cat": "economy",
+      "type": "新法",
+      "name": "均输法",
+      "era": "北宋",
+      "year": 1069,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "王安石新法之一，授权发运使根据各地物价与需求灵活采购、调运物资。",
+      "detail": "熙宁二年在东南六路推行，扩大发运使职权，使其统筹上供物资的采购、运输与储备，避免富商囤积居奇和官府重复采购。均输法旨在提高财政效率、降低运输成本，但实施中因信息不畅、官吏舞弊，效果有限，后渐废。",
+      "refs": "《宋史·食货志》；《续资治通鉴长编》",
+      "tags": [
+        "财政",
+        "漕运",
+        "北宋",
+        "新法"
+      ],
+      "related": [
+        "eco-caoyun",
+        "eco-shangshui",
+        "pol-zhuanyun",
+        "ppl-wanganshi",
+        "tl-1069"
       ]
     },
     {
@@ -6983,11 +7548,45 @@
       "refs": "《宋史·神宗纪》《续资治通鉴长编》",
       "tags": [
         "王安石",
-        "熙宁变法",
+        "新法",
+        "熙宁变法"
+      ],
+      "related": [
+        "eco-fangtian",
+        "eco-junshu",
+        "eco-mianyi",
+        "eco-nongtian",
+        "eco-qingmiao",
+        "eco-shiyi",
+        "ppl-wanganshi"
+      ]
+    },
+    {
+      "id": "eco-qingmiao",
+      "cat": "economy",
+      "type": "新法",
+      "name": "青苗法",
+      "era": "北宋",
+      "year": 1069,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "王安石新法之一，由官府在青黄不接时贷钱谷给农户，收成后加息偿还。",
+      "detail": "熙宁二年颁行，以常平、广惠仓钱谷为本，春贷秋还，半年取息二分，意在抑制高利贷、增加财政收入。实施中因强制摊派、抑配与利息负担，遭到韩琦、司马光等强烈反对；元祐更化时废罢，后虽偶有恢复，终未成定制。",
+      "refs": "《宋史·食货志》；《宋会要辑稿·食货》",
+      "tags": [
+        "借贷",
+        "北宋",
+        "农业",
         "新法"
       ],
       "related": [
-        "ppl-wanganshi"
+        "eco-gaolidai",
+        "eco-zudian",
+        "ppl-simaguang",
+        "ppl-wanganshi",
+        "tl-1069"
       ]
     },
     {
@@ -7053,6 +7652,7 @@
         "士人画"
       ],
       "related": [
+        "cul-xishan",
         "ppl-sushi"
       ]
     },
@@ -7076,7 +7676,9 @@
         "天理"
       ],
       "related": [
-        "ppl-chengyi"
+        "ppl-chengyi",
+        "tho-jinsilu",
+        "tho-xiangshu"
       ]
     },
     {
@@ -7168,7 +7770,93 @@
         "以诗为词"
       ],
       "related": [
+        "lit-pai-shuilongyin",
         "ppl-sushi"
+      ]
+    },
+    {
+      "id": "eco-mianyi",
+      "cat": "economy",
+      "type": "新法",
+      "name": "免役法",
+      "era": "北宋",
+      "year": 1071,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "又称募役法，改差役为雇役，按户等出免役钱，由官府募人充役。",
+      "detail": "熙宁四年推行，将原本按户等轮差的职役改为纳钱免役，官户、坊郭户、单丁、女户等也需出助役钱。此法减轻了上户的差役负担，却增加了下户与坊郭户的货币支出，执行中又有宽剩钱之弊。元祐时复差役，绍圣后再行雇役，南宋役法更趋复杂。",
+      "refs": "《宋史·食货志》；《文献通考·职役》",
+      "tags": [
+        "财政",
+        "北宋",
+        "新法",
+        "役法"
+      ],
+      "related": [
+        "eco-jingzongzhi",
+        "ppl-wanganshi",
+        "soc-nanyi",
+        "soc-wudeng",
+        "soc-zhiyi",
+        "tl-1069"
+      ]
+    },
+    {
+      "id": "eco-shiyi",
+      "cat": "economy",
+      "type": "新法",
+      "name": "市易法",
+      "era": "北宋",
+      "year": 1072,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "王安石新法之一，由市易务平价收购滞销货物、向商人贷款，以平抑物价、增加收入。",
+      "detail": "熙宁五年在开封设市易务，后推广至诸路，官府参与市场买卖，商人可以货物抵押贷款，年息二分。市易法本意是打击富商垄断、稳定物价，但官营机构效率低下，容易出现强买强卖与赊贷亏空，成为反对派批评新法的重要口实。",
+      "refs": "《宋史·食货志》；《续资治通鉴长编》",
+      "tags": [
+        "商业",
+        "市场",
+        "北宋",
+        "新法"
+      ],
+      "related": [
+        "eco-caoshi",
+        "eco-gaolidai",
+        "eco-shangshui",
+        "ppl-wanganshi",
+        "tl-1069"
+      ]
+    },
+    {
+      "id": "eco-fangtian",
+      "cat": "economy",
+      "type": "新法",
+      "name": "方田均税法",
+      "era": "北宋",
+      "year": 1072,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "王安石新法之一，通过清丈土地、划分等第来均平田赋，抑制隐田逃税。",
+      "detail": "熙宁五年始行，以东西南北各千步为一方，按土质肥瘠分五等定税，清查豪强隐田与诡名寄产。方田均税在部分路份取得成效，但清丈成本高、地方执行不一，且触犯形势户利益，元丰后逐渐停滞，最终废罢。",
+      "refs": "《宋史·食货志》；《宋会要辑稿·食货》",
+      "tags": [
+        "土地",
+        "北宋",
+        "新法",
+        "田赋"
+      ],
+      "related": [
+        "eco-buyijianbing",
+        "eco-liangshui",
+        "ppl-wanganshi",
+        "soc-xingshi",
+        "tl-1069"
       ]
     },
     {
@@ -7371,6 +8059,12 @@
         "儒医",
         "太医局",
         "和剂局方"
+      ],
+      "related": [
+        "tec-bencao",
+        "tec-furen",
+        "tec-jufang",
+        "tec-xiaoer"
       ]
     },
     {
@@ -7415,6 +8109,10 @@
         "中书",
         "门下",
         "尚书"
+      ],
+      "related": [
+        "pol-dengwen",
+        "pol-guange"
       ]
     },
     {
@@ -7462,7 +8160,11 @@
       ],
       "related": [
         "eco-kuangye",
-        "tec-liao-yetie"
+        "geo-hedonglu",
+        "pol-junqijian",
+        "tec-dantong",
+        "tec-liao-yetie",
+        "tec-shiyou"
       ]
     },
     {
@@ -7533,6 +8235,7 @@
         "落花人独立"
       ],
       "related": [
+        "lit-pai-linjiangxian",
         "ppl-yanjidao"
       ]
     },
@@ -7644,6 +8347,7 @@
         "小舟从此逝江海寄余生"
       ],
       "related": [
+        "lit-pai-linjiangxian",
         "ppl-sushi"
       ]
     },
@@ -7802,7 +8506,9 @@
         "资治通鉴"
       ],
       "related": [
-        "ppl-simaguang"
+        "ppl-litao",
+        "ppl-simaguang",
+        "ppl-yuanshu"
       ]
     },
     {
@@ -7847,6 +8553,16 @@
         "通志",
         "文献通考",
         "长编"
+      ],
+      "related": [
+        "lit-kunxuejiwen",
+        "lit-rongzhaibiji",
+        "ppl-hongmai",
+        "ppl-leshi",
+        "ppl-litao",
+        "ppl-lixinchuan",
+        "ppl-yuanshu",
+        "ppl-zhengqiao"
       ]
     },
     {
@@ -7894,6 +8610,7 @@
         "舞低杨柳楼心月"
       ],
       "related": [
+        "lit-pai-zhegutian",
         "ppl-yanjidao"
       ]
     },
@@ -7968,7 +8685,9 @@
       ],
       "related": [
         "ppl-shenkuo",
-        "tec-huoziban"
+        "tec-dantong",
+        "tec-huoziban",
+        "tec-shiyou"
       ]
     },
     {
@@ -7989,6 +8708,11 @@
         "沈括",
         "化石",
         "海陆变迁"
+      ],
+      "related": [
+        "ppl-leshi",
+        "tec-shiyou",
+        "tec-yujitu"
       ]
     },
     {
@@ -8103,7 +8827,8 @@
         "擒纵机构"
       ],
       "related": [
-        "ppl-susong"
+        "ppl-susong",
+        "tec-xingtu"
       ]
     },
     {
@@ -8341,7 +9066,8 @@
         "城市化"
       ],
       "related": [
-        "eco-zanchengdao"
+        "eco-zanchengdao",
+        "soc-jiazhuang"
       ]
     },
     {
@@ -8364,6 +9090,7 @@
         "天文观测"
       ],
       "related": [
+        "tec-xingtu",
         "tec-xixia-lifa"
       ]
     },
@@ -8386,6 +9113,11 @@
         "居养院",
         "安济坊",
         "漏泽园"
+      ],
+      "related": [
+        "soc-nubi",
+        "soc-siguan",
+        "soc-yibing"
       ]
     },
     {
@@ -8471,7 +9203,35 @@
         "点铁成金"
       ],
       "related": [
+        "lit-jihuangjifu",
         "ppl-huangtingjian"
+      ]
+    },
+    {
+      "id": "cul-qingming",
+      "cat": "culture",
+      "type": "绘画",
+      "name": "清明上河图",
+      "era": "北宋",
+      "year": 1100,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "北宋张择端所绘长卷，描绘清明时节汴京的市井繁华，是宋代风俗画的巅峰。",
+      "detail": "画卷以汴河为中心，从郊野、虹桥到城内街市，绘有士农工商、舟车轿马、店铺摊贩等数百人物，细致呈现了宋代城市的经济生活与社会风貌。该图不仅是艺术杰作，也是研究汴京城市、交通、商业与服饰的一手图像资料。",
+      "refs": "《清明上河图》故宫博物院藏；《东京梦华录》",
+      "tags": [
+        "汴京",
+        "北宋",
+        "风俗画",
+        "绘画"
+      ],
+      "related": [
+        "cul-fengsu",
+        "geo-kaifeng",
+        "lit-dongjingmenghualu",
+        "ppl-zhangzeduan"
       ]
     },
     {
@@ -8492,6 +9252,9 @@
         "建筑",
         "界尺",
         "张择端"
+      ],
+      "related": [
+        "cul-jinci"
       ]
     },
     {
@@ -8628,6 +9391,9 @@
         "张择端",
         "市井",
         "清明上河图"
+      ],
+      "related": [
+        "cul-qingming"
       ]
     },
     {
@@ -8717,6 +9483,8 @@
         "模数"
       ],
       "related": [
+        "cul-jinci",
+        "pol-junqijian",
         "ppl-lijie"
       ]
     },
@@ -8793,6 +9561,35 @@
       ]
     },
     {
+      "id": "tec-jufang",
+      "cat": "tech",
+      "type": "医学",
+      "name": "《太平惠民和剂局方》",
+      "era": "两宋",
+      "year": 1107,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代官方编修的成药配方手册，由太医局和剂局颁行，是古代影响最大的方书之一。",
+      "detail": "北宋设太医局熟药所，后改和剂局、惠民局，按方制药出售。大观年间陈师文等校正《和剂局方》，绍兴以后屡次增补，载方近八百首，规定药物炮制、剂量与用法。该书推动成药标准化与民间医药普及，也为后世方剂学奠定基础。",
+      "refs": "《太平惠民和剂局方》；《宋史·职官志》",
+      "tags": [
+        "医学",
+        "两宋",
+        "方剂",
+        "官药"
+      ],
+      "related": [
+        "soc-yibing",
+        "soc-yiliao",
+        "tec-bencao",
+        "tec-xiaoer",
+        "tec-yixue",
+        "tec-zhenjiu"
+      ]
+    },
+    {
       "id": "lit-zuihuayin",
       "cat": "literature",
       "type": "词",
@@ -8836,6 +9633,33 @@
         "阿骨打"
       ],
       "minor": true
+    },
+    {
+      "id": "cul-qianli",
+      "cat": "culture",
+      "type": "绘画",
+      "name": "千里江山图",
+      "era": "北宋",
+      "year": 1113,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "北宋王希孟所绘青绿山水长卷，以石青石绿敷色，展现理想化的江山全景。",
+      "detail": "王希孟十八岁入画院，得宋徽宗亲授，历时半年绘成此卷。画面峰峦起伏、江河浩渺，间以渔村、寺观、桥梁、行旅，构图宏阔、色彩浓丽，是宋代青绿山水的代表作。与文人水墨山水不同，它体现了宫廷审美与“太平江山”的政治想象。",
+      "refs": "《千里江山图》故宫博物院藏；《宋史·徽宗本纪》",
+      "tags": [
+        "画院",
+        "北宋",
+        "绘画",
+        "青绿山水"
+      ],
+      "related": [
+        "cul-huayuan",
+        "cul-shanshui",
+        "emp-song-huizong",
+        "ppl-wangxjmeng"
+      ]
     },
     {
       "id": "tl-liao-1114",
@@ -8975,6 +9799,10 @@
         "金",
         "女真",
         "兵农合一"
+      ],
+      "related": [
+        "mil-qianjun",
+        "soc-jin-huju"
       ]
     },
     {
@@ -9215,6 +10043,62 @@
       ]
     },
     {
+      "id": "mil-bazijun",
+      "cat": "military",
+      "type": "兵制",
+      "name": "八字军",
+      "era": "南宋",
+      "year": 1127,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋初王彦所部抗金义军，因面部刺“赤心报国，誓杀金贼”八字而得名。",
+      "detail": "建炎元年，王彦率部在太行山抗金，部众相率刺面，以示决心。八字军转战河东、河北，后归附宗泽，成为南宋初年北方义军的重要力量。其成员多为忠义民兵，纪律与战力参差，但象征了沦陷区军民的抵抗意志。",
+      "refs": "《宋史·王彦传》；《三朝北盟会编》",
+      "tags": [
+        "抗金",
+        "南宋",
+        "义军",
+        "太行山"
+      ],
+      "related": [
+        "mil-zhongyijun",
+        "ppl-yuefei",
+        "ppl-zongze2",
+        "tl-1127"
+      ]
+    },
+    {
+      "id": "mil-zhongyijun",
+      "cat": "military",
+      "type": "兵制",
+      "name": "北方忠义军",
+      "era": "南宋",
+      "year": 1127,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "两宋之际金国占领区内自发组织的抗金武装，成分复杂、此起彼伏。",
+      "detail": "靖康以后，河北、河东、山东等地民众结寨自保，号“忠义军”“忠义社”，多则数万，少则数百，既抗金也与南宋官方时合时离。著名者有王彦八字军、五马山寨、红巾军等；南宋朝廷既倚其牵制金军，又惧其尾大不掉，往往招抚、分割乃至解散。",
+      "refs": "《宋史·高宗本纪》；《三朝北盟会编》",
+      "tags": [
+        "抗金",
+        "南宋",
+        "义军",
+        "河北"
+      ],
+      "related": [
+        "geo-hebeidong",
+        "geo-hedonglu",
+        "mil-bazijun",
+        "ppl-yuefei",
+        "ppl-zongze2",
+        "tl-1127"
+      ]
+    },
+    {
       "id": "tl-1127n",
       "cat": "timeline",
       "type": "事件",
@@ -9350,6 +10234,7 @@
       ],
       "related": [
         "geo-huainan",
+        "geo-jinghubei",
         "geo-xiangyang"
       ]
     },
@@ -9375,6 +10260,9 @@
       "related": [
         "emp-song-huizong",
         "emp-song-qinzong",
+        "mil-bazijun",
+        "mil-zhongyijun",
+        "ppl-lixinchuan",
         "ppl-wanyanzonghan",
         "ppl-wanyanzongwang"
       ]
@@ -9481,6 +10369,11 @@
         "江防",
         "车船",
         "海战"
+      ],
+      "related": [
+        "mil-caishi",
+        "mil-xiangfan",
+        "mil-yashan"
       ]
     },
     {
@@ -9523,7 +10416,9 @@
         "纪律"
       ],
       "related": [
-        "ppl-yuefei"
+        "mil-beiweijun",
+        "ppl-yuefei",
+        "soc-youxu"
       ]
     },
     {
@@ -9544,6 +10439,9 @@
         "水军",
         "明轮",
         "杨幺"
+      ],
+      "related": [
+        "mil-caishi"
       ]
     },
     {
@@ -9679,7 +10577,8 @@
         "秦岭"
       ],
       "related": [
-        "mil-chuanshan"
+        "mil-chuanshan",
+        "mil-diaoyucheng"
       ]
     },
     {
@@ -9702,7 +10601,9 @@
         "大散关"
       ],
       "related": [
+        "geo-chengdufu",
         "geo-chuanshan",
+        "pol-zhizhishi",
         "ppl-wujie"
       ]
     },
@@ -9799,6 +10700,33 @@
       ]
     },
     {
+      "id": "tec-yujitu",
+      "cat": "tech",
+      "type": "地图",
+      "name": "禹迹图与华夷图",
+      "era": "南宋",
+      "year": 1136,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋绍兴年间刻立的《禹迹图》《华夷图》，是现存最早的中国地图石刻之一。",
+      "detail": "《禹迹图》以“计里画方”法绘出山川、河流、州县，比例大致可考；《华夷图》则兼绘周边政权与海域。两图虽托名大禹、华夷，实际反映宋代地理知识与制图水平，现存西安碑林。《禹迹图》的方格网比欧洲同类地图早数百年。",
+      "refs": "《宋史·艺文志》；《金石萃编》",
+      "tags": [
+        "两宋",
+        "石刻",
+        "地图",
+        "地理"
+      ],
+      "related": [
+        "cul-jinshi",
+        "geo-kaifeng",
+        "geo-yanyun",
+        "tec-dizhi"
+      ]
+    },
+    {
       "id": "lit-xiaochongshan",
       "cat": "literature",
       "type": "词",
@@ -9842,6 +10770,10 @@
         "西湖"
       ],
       "related": [
+        "cus-linan-suishi",
+        "geo-liangzhe",
+        "lit-menglianglu",
+        "soc-junxunpu",
         "tl-1138"
       ]
     },
@@ -9886,6 +10818,33 @@
         "存疑",
         "岳飞",
         "爱国"
+      ]
+    },
+    {
+      "id": "mil-beiweijun",
+      "cat": "military",
+      "type": "兵制",
+      "name": "背嵬军",
+      "era": "南宋",
+      "year": 1140,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "岳飞岳家军中的精锐亲军，以骑兵为主，是郾城、颍昌大捷的突击力量。",
+      "detail": "“背嵬”意为大将亲随，岳飞选骁勇之士组成背嵬军，分骑兵与步兵，装备精良、训练严整。郾城之战中，背嵬军以麻扎刀、提刀等破金军拐子马；颍昌之战又正面击溃金军主力。岳家军以“冻死不拆屋，饿死不掳掠”著称，背嵬军是其军纪与战力的集中体现。",
+      "refs": "《宋史·岳飞传》；《建炎以来系年要录》",
+      "tags": [
+        "骑兵",
+        "精锐",
+        "南宋",
+        "岳家军"
+      ],
+      "related": [
+        "mil-shunchang",
+        "mil-yancheng",
+        "mil-yuejiajun",
+        "ppl-yuefei"
       ]
     },
     {
@@ -9934,6 +10893,7 @@
         "铁浮屠"
       ],
       "related": [
+        "mil-beiweijun",
         "ppl-yuefei"
       ]
     },
@@ -9955,6 +10915,9 @@
         "以少胜多",
         "金兀术",
         "刘锜"
+      ],
+      "related": [
+        "mil-beiweijun"
       ]
     },
     {
@@ -9995,6 +10958,9 @@
         "金军",
         "刘锜",
         "杨沂中"
+      ],
+      "related": [
+        "ppl-yangcunzhong"
       ]
     },
     {
@@ -10042,7 +11008,8 @@
         "风波亭"
       ],
       "related": [
-        "ppl-yuefei"
+        "ppl-yuefei",
+        "tl-1162b"
       ]
     },
     {
@@ -10060,9 +11027,9 @@
       "detail": "南渡之后版籍散佚、田税不均，1142 年起在两浙试点“经界”：逐丘打量、绘图置簿、归户定税。因触犯形势户利益，推行屡有反复，但为南宋财政重建提供了基册。",
       "refs": "《宋史·食货志上》《建炎以来系年要录》卷一四七",
       "tags": [
+        "田赋",
         "经界法",
-        "李椿年",
-        "田赋"
+        "李椿年"
       ],
       "related": [
         "pol-zhuanyun",
@@ -10093,7 +11060,36 @@
       "related": [
         "cul-xixia-wenzi",
         "emp-xixia-renzong",
+        "lit-fanhan",
         "tho-liao-ruxue"
+      ]
+    },
+    {
+      "id": "lit-dongjingmenghualu",
+      "cat": "literature",
+      "type": "笔记",
+      "name": "《东京梦华录》",
+      "era": "南宋",
+      "year": 1147,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "孟元老追忆北宋汴京城市生活的笔记，是研究宋代都城社会的一手资料。",
+      "detail": "全书十卷，记汴京宫阙、街巷、店铺、酒楼、瓦舍、节令、风俗、饮食、歌舞等，自“河道”“御街”至“除夕”“娶妇”，巨细靡遗。靖康之变后孟元老南渡，追忆旧京繁华而作，字里行间充满故国之思。它与《梦粱录》《武林旧事》共同构成宋代城市笔记系列。",
+      "refs": "《东京梦华录》",
+      "tags": [
+        "汴京",
+        "笔记",
+        "南宋",
+        "城市"
+      ],
+      "related": [
+        "cul-qingming",
+        "cus-yuanxiao",
+        "geo-kaifeng",
+        "lit-menglianglu",
+        "ppl-mengyuanlao"
       ]
     },
     {
@@ -10112,9 +11108,9 @@
       "refs": "《东京梦华录》序",
       "tags": [
         "汴京",
+        "城市",
         "风俗",
-        "孟元老",
-        "城市"
+        "孟元老"
       ],
       "minor": true,
       "related": [
@@ -10141,7 +11137,8 @@
         "土地利用"
       ],
       "related": [
-        "ppl-chenfu"
+        "ppl-chenfu",
+        "tec-yangma"
       ]
     },
     {
@@ -10257,8 +11254,11 @@
       ],
       "related": [
         "emp-jin-hailing",
+        "geo-hedonglu",
         "geo-jin-shangjing",
         "geo-liao-nanjing",
+        "soc-jin-huju",
+        "tec-jin-pingshui",
         "tl-1153",
         "tl-1215"
       ]
@@ -10428,7 +11428,36 @@
       ],
       "related": [
         "emp-jin-hailing",
+        "mil-caishi",
         "ppl-yuyunwen"
+      ]
+    },
+    {
+      "id": "mil-caishi",
+      "cat": "military",
+      "type": "战役",
+      "name": "采石之战",
+      "era": "南宋",
+      "year": 1161,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "绍兴三十一年虞允文在采石矶组织宋军击退完颜亮南侵，扭转长江危局。",
+      "detail": "1161 年，金主完颜亮率大军渡淮南侵，宋军溃退，长江防线告急。虞允文以中书舍人犒师采石，临危统率残军，利用水军与车船优势阻击金军渡江，金军大败。不久完颜亮在扬州被部将所杀，金军北撤，南宋转危为安。",
+      "refs": "《宋史·虞允文传》；《建炎以来系年要录》",
+      "tags": [
+        "战役",
+        "金",
+        "南宋",
+        "水战"
+      ],
+      "related": [
+        "emp-jin-hailing",
+        "mil-chechuan",
+        "mil-shuijun",
+        "ppl-yuyunwen",
+        "tl-1161"
       ]
     },
     {
@@ -10448,6 +11477,37 @@
       "tags": [
         "赵昚",
         "隆兴"
+      ],
+      "related": [
+        "tl-1162b"
+      ]
+    },
+    {
+      "id": "tl-1162b",
+      "cat": "timeline",
+      "type": "事件",
+      "name": "岳飞昭雪",
+      "era": "南宋",
+      "year": 1162,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "绍兴三十二年孝宗即位后，为岳飞平反昭雪，追复原官，以礼改葬。",
+      "detail": "岳飞于绍兴十一年被秦桧以“莫须有”罪名害死。孝宗即位后，志在恢复，遂下诏追复岳飞元官，以礼改葬于西湖栖霞岭，并访求其后。淳熙五年，赐谥“武穆”；嘉定四年，追封鄂王。岳飞的平反成为南宋政治转向与主战派士气的重要象征。",
+      "refs": "《宋史·岳飞传》；《建炎以来系年要录》",
+      "tags": [
+        "事件",
+        "平反",
+        "南宋",
+        "岳飞"
+      ],
+      "related": [
+        "emp-song-xiaozong",
+        "ppl-qinhui",
+        "ppl-yuefei",
+        "tl-1142",
+        "tl-1162"
       ]
     },
     {
@@ -10470,6 +11530,7 @@
         "符离之溃"
       ],
       "related": [
+        "lit-shufen",
         "ppl-zhangjun"
       ]
     },
@@ -10538,6 +11599,9 @@
         "陆游",
         "哲理",
         "乡村"
+      ],
+      "related": [
+        "lit-shufen"
       ]
     },
     {
@@ -10585,7 +11649,10 @@
       ],
       "related": [
         "ppl-chenliang",
-        "ppl-yeshi"
+        "ppl-yeshi",
+        "tho-wuxue",
+        "tho-yongjia",
+        "tho-yongkang"
       ]
     },
     {
@@ -10633,6 +11700,7 @@
         "英雄失路"
       ],
       "related": [
+        "lit-pai-shuilongyin",
         "ppl-xinqiji"
       ]
     },
@@ -10658,6 +11726,36 @@
       ],
       "related": [
         "ppl-xinqiji"
+      ]
+    },
+    {
+      "id": "tho-jinsilu",
+      "cat": "thought",
+      "type": "典籍",
+      "name": "《近思录》",
+      "era": "南宋",
+      "year": 1175,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "朱熹与吕祖谦合编的理学入门读本，摘录周敦颐、二程、张载语录，确立道学谱系。",
+      "detail": "淳熙二年，朱熹、吕祖谦在寒泉精舍编成《近思录》十四卷，按“道体、为学、致知、存养、克己、家道、出处、治体”等门类编排，把北宋四子之学整合为系统。该书成为后世理学入门书，也确立了周程张朱的道统脉络。",
+      "refs": "《近思录》；《宋元学案》",
+      "tags": [
+        "理学",
+        "南宋",
+        "朱熹",
+        "道统"
+      ],
+      "related": [
+        "ppl-lvzuqian",
+        "ppl-zhuxi",
+        "tho-erchheng",
+        "tho-lixue",
+        "tho-sishu",
+        "tho-zhangzai",
+        "tho-zhou"
       ]
     },
     {
@@ -10801,6 +11899,34 @@
       ]
     },
     {
+      "id": "lit-shufen",
+      "cat": "literature",
+      "type": "诗",
+      "name": "《书愤》",
+      "era": "南宋",
+      "year": 1186,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "陆游晚年名作，回顾早年抗金壮志，抒发报国无门、壮志难酬的悲愤。",
+      "detail": "诗以“早岁那知世事艰，中原北望气如山”开篇，追忆楼船夜雪、铁马秋风的军旅生涯，继而以“塞上长城空自许，镜中衰鬓已先斑”转折，结以“出师一表真名世，千载谁堪伯仲间”。全诗沉郁顿挫，是陆游爱国诗的代表作。",
+      "refs": "《剑南诗稿》",
+      "tags": [
+        "陆游",
+        "诗",
+        "南宋",
+        "爱国"
+      ],
+      "related": [
+        "lit-jihuangjifu",
+        "lit-shier",
+        "lit-youshanxicun",
+        "ppl-luyou",
+        "tl-1163"
+      ]
+    },
+    {
       "id": "lit-pozhenzi",
       "cat": "literature",
       "type": "词",
@@ -10920,6 +12046,62 @@
       ]
     },
     {
+      "id": "tho-sishu",
+      "cat": "thought",
+      "type": "典籍",
+      "name": "《四书章句集注》",
+      "era": "南宋",
+      "year": 1190,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "朱熹毕生注释《大学》《中庸》《论语》《孟子》，成为此后科举与理学的核心文本。",
+      "detail": "朱熹以《大学》为入德之门，重订章句，以《中庸》为道统心法，并以“格物致知”“存天理、灭人欲”贯穿四书。该书融合汉唐注疏与二程理学，形成新的经典体系；元明清科举以之为官方教材，影响东亚近七百年。",
+      "refs": "《四书章句集注》；《宋史·道学传》",
+      "tags": [
+        "理学",
+        "四书",
+        "南宋",
+        "朱熹"
+      ],
+      "related": [
+        "ppl-zhuxi",
+        "tho-jinsilu",
+        "tho-lixue",
+        "tho-lixue-guan",
+        "tl-1190"
+      ]
+    },
+    {
+      "id": "tl-1190",
+      "cat": "timeline",
+      "type": "事件",
+      "name": "朱熹《四书章句集注》成书",
+      "era": "南宋",
+      "year": 1190,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "绍熙元年，朱熹完成《四书章句集注》，此后四书取代五经成为科举核心。",
+      "detail": "朱熹自隆兴以来反复修改《大学》《中庸》章句与《论语》《孟子》集注，至绍熙元年刊行。该书以理学观点重新解释四书，构建“格物、致知、诚意、正心”的为学次第。元皇庆二年恢复科举，以四书朱注为标准，影响中国与东亚六百余年。",
+      "refs": "《四书章句集注》；《宋史·道学传》",
+      "tags": [
+        "科举",
+        "事件",
+        "四书",
+        "南宋"
+      ],
+      "related": [
+        "pol-keju",
+        "ppl-zhuxi",
+        "tho-lixue-guan",
+        "tho-sishu",
+        "tl-1241"
+      ]
+    },
+    {
       "id": "lit-anxiang",
       "cat": "literature",
       "type": "词",
@@ -11013,7 +12195,36 @@
       ],
       "related": [
         "ppl-hantuozhou",
-        "ppl-zhuxi"
+        "ppl-zhuxi",
+        "tho-qingyuan"
+      ]
+    },
+    {
+      "id": "tho-qingyuan",
+      "cat": "thought",
+      "type": "事件",
+      "name": "庆元党禁",
+      "era": "南宋",
+      "year": 1195,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋宁宗庆元年间韩侂胄打击朱熹等道学之士，理学被斥为“伪学”，多人遭贬禁。",
+      "detail": "1195 年起，韩侂胄借“伪学”之名排挤赵汝愚、朱熹及道学人士，订立“伪学逆党籍”，禁止理学书籍与科举引用。党禁持续数年，朱熹在忧愤中去世。嘉定以后理学逐渐平反，至淳祐年间官学化，庆元党禁反而强化了道学的道统意识。",
+      "refs": "《宋史·韩侂胄传》；《庆元党禁》",
+      "tags": [
+        "理学",
+        "党争",
+        "南宋",
+        "庆元"
+      ],
+      "related": [
+        "ppl-hantuozhou",
+        "ppl-zhaoruyu",
+        "ppl-zhuxi",
+        "tho-lixue-guan",
+        "tl-1195"
       ]
     },
     {
@@ -11224,6 +12435,9 @@
         "陆游",
         "绝笔",
         "统一"
+      ],
+      "related": [
+        "lit-shufen"
       ]
     },
     {
@@ -11269,7 +12483,9 @@
         "蒙古"
       ],
       "related": [
-        "emp-jin-xuanzong"
+        "emp-jin-xuanzong",
+        "mil-qianjun",
+        "soc-jin-huju"
       ]
     },
     {
@@ -11431,7 +12647,36 @@
       ],
       "related": [
         "emp-song-lizong",
-        "ppl-shimiyuan"
+        "ppl-shimiyuan",
+        "tl-1233b"
+      ]
+    },
+    {
+      "id": "tl-1233b",
+      "cat": "timeline",
+      "type": "事件",
+      "name": "端平更化",
+      "era": "南宋",
+      "year": 1233,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "绍定六年史弥远死后，理宗亲政，改元端平，起用真德秀、魏了翁等，号称“端平更化”。",
+      "detail": "史弥远专权二十余年，理宗亲政后力图革新，罢黜史党，召还道学名臣，平反济王赵竑之狱，整顿吏治与财政。但更化因财政困窘、宋蒙战争爆发而成效有限。端平更化是南宋末年最后一次较大规模的政治改良尝试。",
+      "refs": "《宋史·理宗本纪》；《宋季三朝政要》",
+      "tags": [
+        "事件",
+        "南宋",
+        "理宗",
+        "更化"
+      ],
+      "related": [
+        "emp-song-lizong",
+        "ppl-shimiyuan",
+        "ppl-weiliaoweng",
+        "ppl-zhendexiu",
+        "tl-1233"
       ]
     },
     {
@@ -11528,7 +12773,8 @@
       "related": [
         "ppl-zhendexiu",
         "ppl-zhuxi",
-        "tho-lixue-guan"
+        "tho-lixue-guan",
+        "tl-1190"
       ]
     },
     {
@@ -11551,6 +12797,10 @@
         "理宗"
       ],
       "related": [
+        "tho-qingyuan",
+        "tho-sishu",
+        "tho-xiangshu",
+        "tl-1190",
         "tl-1241"
       ]
     },
@@ -11574,6 +12824,7 @@
         "余玠"
       ],
       "related": [
+        "mil-diaoyucheng",
         "tl-1259"
       ]
     },
@@ -11648,6 +12899,33 @@
       ]
     },
     {
+      "id": "tec-xingtu",
+      "cat": "tech",
+      "type": "天文",
+      "name": "苏州石刻天文图与漏刻",
+      "era": "南宋",
+      "year": 1247,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋苏州石刻天文图保存了北宋元丰年间的星象观测，是世界上现存最早的大型石刻星图之一。",
+      "detail": "图碑由黄裳绘制、王致远刻石，上部为星图，下部为说明文字，共刻恒星一千四百余颗，反映当时对星官、银河与黄道的认识。宋代还改进漏刻与浑仪，苏颂、韩公廉所造水运仪象台集观测、演示与报时于一体，代表当时天文仪器的最高水平。",
+      "refs": "《宋史·天文志》；《苏州石刻天文图》",
+      "tags": [
+        "两宋",
+        "天文",
+        "星图",
+        "仪器"
+      ],
+      "related": [
+        "ppl-hangonglian",
+        "ppl-susong",
+        "tec-lifa",
+        "tec-shuiyun"
+      ]
+    },
+    {
       "id": "tl-1253",
       "cat": "timeline",
       "type": "事件",
@@ -11694,6 +12972,34 @@
       ]
     },
     {
+      "id": "tl-1259b",
+      "cat": "timeline",
+      "type": "事件",
+      "name": "鄂州之战与贾似道议和",
+      "era": "南宋",
+      "year": 1259,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "开庆元年忽必烈围攻鄂州，贾似道私下议和，蒙古因蒙哥死而北撤，贾似道谎报大捷。",
+      "detail": "1259 年，忽必烈率军渡江围攻鄂州，南宋朝野震动。贾似道督师救援，暗中遣使求和，许以岁币；恰逢蒙哥死于钓鱼城，忽必烈急于北归争位，遂撤军。贾似道隐瞒议和，宣称大捷，由此专权。此事为宋蒙关系与南宋末年政治埋下隐患。",
+      "refs": "《宋史·贾似道传》；《元史·世祖本纪》",
+      "tags": [
+        "事件",
+        "南宋",
+        "贾似道",
+        "鄂州"
+      ],
+      "related": [
+        "geo-ezhou",
+        "ppl-hubilie",
+        "ppl-jiashidao",
+        "ppl-mengge",
+        "tl-1259"
+      ]
+    },
+    {
       "id": "tl-1259",
       "cat": "timeline",
       "type": "事件",
@@ -11713,10 +13019,40 @@
         "王坚"
       ],
       "related": [
+        "mil-diaoyucheng",
         "mil-yujie",
         "ppl-hubilie",
         "ppl-wangjian",
-        "ppl-yujie"
+        "ppl-yujie",
+        "tl-1259b"
+      ]
+    },
+    {
+      "id": "mil-diaoyucheng",
+      "cat": "military",
+      "type": "战役",
+      "name": "钓鱼城之战",
+      "era": "南宋",
+      "year": 1259,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋末年余玠、王坚等经营的山城要塞，1259 年击退蒙哥汗，蒙哥死于城下。",
+      "detail": "钓鱼城位于今重庆合川钓鱼山，控扼嘉陵江、渠江、涪江交汇，是四川山城防御体系的核心。1259 年蒙哥汗亲率大军围攻数月不下，蒙军疫病流行，蒙哥本人死于军中（一说中炮石，一说病逝），蒙古诸军北撤，南宋得以延续。",
+      "refs": "《宋史·王坚传》；《元史·宪宗本纪》",
+      "tags": [
+        "战役",
+        "南宋",
+        "蒙古",
+        "山城"
+      ],
+      "related": [
+        "geo-chuanshan",
+        "mil-yujie",
+        "ppl-wangjian",
+        "ppl-yujie",
+        "tl-1259"
       ]
     },
     {
@@ -11741,7 +13077,36 @@
       "related": [
         "eco-huizi",
         "emp-song-lizong",
-        "ppl-jiashidao"
+        "ppl-jiashidao",
+        "tl-1263"
+      ]
+    },
+    {
+      "id": "tl-1263",
+      "cat": "timeline",
+      "type": "事件",
+      "name": "公田法推行",
+      "era": "南宋",
+      "year": 1263,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "景定四年贾似道推行公田法，强买民间田产以充公田，租给佃农耕种以筹军费。",
+      "detail": "南宋末年财政危机，贾似道采纳知临安府刘良贵等建议，按官户、民户田产超额部分强行回买为公田，再以公田租入充军饷。公田法触动大地主利益，执行中压价、强买、虚报，导致民间骚动，反而加剧社会矛盾，成为南宋灭亡的重要诱因之一。",
+      "refs": "《宋史·食货志》；《宋史·贾似道传》",
+      "tags": [
+        "财政",
+        "事件",
+        "南宋",
+        "公田"
+      ],
+      "related": [
+        "eco-jingzongzhi",
+        "emp-song-lizong",
+        "pol-gongtian",
+        "ppl-jiashidao",
+        "tl-1275"
       ]
     },
     {
@@ -11768,6 +13133,35 @@
       ]
     },
     {
+      "id": "mil-xiangfan",
+      "cat": "military",
+      "type": "战役",
+      "name": "襄樊之战",
+      "era": "南宋",
+      "year": 1267,
+      "endYear": 1273,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋咸淳年间元军长期围困襄阳、樊城，最终陷落，长江中游门户洞开。",
+      "detail": "1267 年起，元军以阿术、刘整为主力围困襄阳，筑城连堡、训练水军，切断宋军援路。宋军张世杰、范文虎等多次救援失败，吕文焕困守六年，1273 年樊城先陷，襄阳降元。襄樊失守后元军顺汉水入长江，南宋防线全面崩溃。",
+      "refs": "《宋史·度宗本纪》；《元史·阿术传》",
+      "tags": [
+        "战役",
+        "南宋",
+        "襄阳",
+        "元"
+      ],
+      "related": [
+        "geo-xiangyang",
+        "mil-shuijun",
+        "ppl-liuzheng",
+        "ppl-lvwenhuan",
+        "tl-1267",
+        "tl-1273"
+      ]
+    },
+    {
       "id": "geo-xiangyang",
       "cat": "geography",
       "type": "城市",
@@ -11788,7 +13182,9 @@
       ],
       "related": [
         "geo-ezhou",
+        "geo-jinghubei",
         "mil-changjiang",
+        "mil-xiangfan",
         "ppl-lvwenhuan",
         "tl-1267",
         "tl-1273"
@@ -11814,7 +13210,8 @@
         "吕文焕"
       ],
       "related": [
-        "geo-xiangyang"
+        "geo-xiangyang",
+        "mil-xiangfan"
       ]
     },
     {
@@ -11881,6 +13278,7 @@
       ],
       "related": [
         "geo-xiangyang",
+        "mil-xiangfan",
         "ppl-boyan",
         "ppl-lvwenhuan"
       ]
@@ -11930,7 +13328,8 @@
       ],
       "related": [
         "ppl-boyan",
-        "ppl-jiashidao"
+        "ppl-jiashidao",
+        "tl-1263"
       ]
     },
     {
@@ -11972,8 +13371,8 @@
       "detail": "“汉上繁华，江南人物，尚遗宣政风流”追忆承平；“一旦刀兵齐举，旌旗拥、百万貔貅”写兵祸；“破鉴徐郎何在？空惆怅、相见无由”写夫妻离散，结句“从今后，断魂千里，夜夜岳阳楼”以身殉作结。",
       "refs": "《辍耕录》",
       "tags": [
-        "绝笔",
         "亡国",
+        "绝笔",
         "徐君宝妻",
         "汉上繁华"
       ],
@@ -12101,6 +13500,35 @@
       ]
     },
     {
+      "id": "mil-yashan",
+      "cat": "military",
+      "type": "战役",
+      "name": "崖山海战",
+      "era": "南宋",
+      "year": 1279,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "祥兴二年宋元在崖山决战，宋军覆没，陆秀夫负帝昺投海，南宋灭亡。",
+      "detail": "1279 年，张弘范率元军进攻退守崖山的宋军，宋将张世杰以铁索连舟、结阵海上，被元军火攻与夹击。宋军大败，陆秀夫负幼帝赵昺投海，杨太后及军民十余万人殉难。崖山之后，南宋政权彻底终结，元朝统一全国。",
+      "refs": "《宋史·瀛国公纪》；《元史·张弘范传》",
+      "tags": [
+        "战役",
+        "南宋",
+        "海战",
+        "元"
+      ],
+      "related": [
+        "emp-song-modi",
+        "mil-shuijun",
+        "ppl-luxiufu",
+        "ppl-zhanghongfan",
+        "ppl-zhangshijie",
+        "tl-1279"
+      ]
+    },
+    {
       "id": "tl-1279",
       "cat": "timeline",
       "type": "事件",
@@ -12121,6 +13549,7 @@
         "宋亡"
       ],
       "related": [
+        "mil-yashan",
         "ppl-luxiufu",
         "ppl-wentianxiang",
         "ppl-zhangshijie"
@@ -12247,6 +13676,312 @@
       ]
     },
     {
+      "id": "lit-liuyishihua",
+      "cat": "literature",
+      "type": "诗论",
+      "name": "《六一诗话》",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "欧阳修所著，是中国最早以“诗话”命名的著作，开创随笔论诗的传统。",
+      "detail": "全书一卷，以轶事、掌故、佳句评点为主，记录宋初诗人的创作与交往，主张“状难写之景如在目前，含不尽之意见于言外”。欧阳修以平易自然的审美评诗，对西昆体的堆砌有所纠正。此后诗话之作蔚然成风，成为宋代文学批评的重要形式。",
+      "refs": "《六一诗话》",
+      "tags": [
+        "北宋",
+        "欧阳修",
+        "诗论",
+        "诗话"
+      ],
+      "related": [
+        "cul-badajia",
+        "cul-songshi",
+        "cul-xikun",
+        "lit-canglangshihua",
+        "ppl-ouyangxiu"
+      ]
+    },
+    {
+      "id": "lit-sishitianyuan",
+      "cat": "literature",
+      "type": "诗",
+      "name": "《四时田园杂兴》",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "范成大晚年所作大型田园组诗，分春日、晚春、夏日、秋日、冬日五组，共六十首。",
+      "detail": "组诗以石湖农村为背景，写春耕、夏耘、秋收、冬藏，也写租税、灾荒与民间疾苦，如“童孙未解供耕织，也傍桑阴学种瓜”“无力买田聊种水，近来湖面亦收租”。范成大把田园诗从陶渊明的隐逸想象拉回真实的农村生活，被誉为古代田园诗的集大成者。",
+      "refs": "《石湖诗集》",
+      "tags": [
+        "诗",
+        "南宋",
+        "田园",
+        "范成大"
+      ],
+      "related": [
+        "eco-zudian",
+        "lit-xiaochi",
+        "ppl-fanchengda",
+        "ppl-luyou"
+      ]
+    },
+    {
+      "id": "lit-kunxuejiwen",
+      "cat": "literature",
+      "type": "笔记",
+      "name": "《困学纪闻》",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "王应麟所著考证笔记，贯通经史子集，是宋代考据学的集大成之作。",
+      "detail": "全书二十卷，按经、史、子、集分类，考订文字、名物、制度、地理、诗文，博采群书而断以己意。王应麟学问渊博，兼通天文、地理、目录与文学，此书与《容斋随笔》并称宋代笔记双璧，对清代朴学影响尤深。",
+      "refs": "《困学纪闻》",
+      "tags": [
+        "考据",
+        "笔记",
+        "南宋",
+        "王应麟"
+      ],
+      "related": [
+        "cul-cangshu",
+        "lit-rongzhaibiji",
+        "ppl-hongmai",
+        "ppl-wangyinglin",
+        "tho-kaoju",
+        "tho-shixue"
+      ]
+    },
+    {
+      "id": "lit-rongzhaibiji",
+      "cat": "literature",
+      "type": "笔记",
+      "name": "《容斋随笔》",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "洪迈所著笔记，内容遍及经史、典章、诗文、地理、民俗，以考据精博著称。",
+      "detail": "全书分《随笔》《续笔》《三笔》《四笔》《五笔》，共七十四卷，一千余则。洪迈博览群书，对史事、名物、制度多所辨析，也记录朝野见闻与诗文评论。该书是宋代笔记中卷帙最富、学术价值最高的一种，对后世考据学影响很大。",
+      "refs": "《容斋随笔》",
+      "tags": [
+        "考据",
+        "笔记",
+        "南宋",
+        "洪迈"
+      ],
+      "related": [
+        "cul-jinshi",
+        "lit-kunxuejiwen",
+        "ppl-hongmai",
+        "tho-kaoju",
+        "tho-shixue"
+      ]
+    },
+    {
+      "id": "lit-jihuangjifu",
+      "cat": "literature",
+      "type": "诗",
+      "name": "《寄黄几复》",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "黄庭坚寄友人之作，以奇崛意象与拗折句法见长，是江西诗派的代表作。",
+      "detail": "诗中有“桃李春风一杯酒，江湖夜雨十年灯”的名联，以乐景与哀景对举，写尽别后十年的漂泊与思念。黄庭坚讲究“点铁成金”“夺胎换骨”，此诗用典密集、声律拗峭，典型体现江西诗派“以故为新”的诗学主张。",
+      "refs": "《山谷集》",
+      "tags": [
+        "北宋",
+        "黄庭坚",
+        "诗",
+        "江西诗派"
+      ],
+      "related": [
+        "cul-jiangxi",
+        "lit-shufen",
+        "ppl-huangtingjian",
+        "ppl-sushi"
+      ]
+    },
+    {
+      "id": "lit-xiaochi",
+      "cat": "literature",
+      "type": "诗",
+      "name": "《小池》",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "杨万里代表作，以清新活泼的笔触捕捉初夏小池的瞬间生机，体现“诚斋体”特色。",
+      "detail": "“泉眼无声惜细流，树阴照水爱晴柔。小荷才露尖尖角，早有蜻蜓立上头。”全诗从小处着眼，以拟人化手法写泉、树、荷、蜓，语言浅近而意趣盎然。杨万里主张“活法”，善于从日常景物中捕捉瞬间美感，形成独具一格的“诚斋体”。",
+      "refs": "《诚斋集》",
+      "tags": [
+        "诗",
+        "南宋",
+        "诚斋体",
+        "杨万里"
+      ],
+      "related": [
+        "cul-songshi",
+        "lit-sishitianyuan",
+        "ppl-luyou",
+        "ppl-yangwanli"
+      ]
+    },
+    {
+      "id": "lit-menglianglu",
+      "cat": "literature",
+      "type": "笔记",
+      "name": "《梦粱录》",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "吴自牧记述南宋临安城市生活的笔记，仿《东京梦华录》而作，保存大量都城史料。",
+      "detail": "全书二十卷，记临安岁时、物产、街巷、店铺、百工、杂戏、寺观、学校、科举等，尤详于节令风俗与市井生活。书中“夜市”“诸色杂货”“瓦舍众伎”等条，是研究南宋城市经济与市民文化的重要资料。",
+      "refs": "《梦粱录》",
+      "tags": [
+        "笔记",
+        "南宋",
+        "临安",
+        "城市"
+      ],
+      "related": [
+        "cus-chasi",
+        "cus-linan-suishi",
+        "cus-yuanxiao",
+        "geo-linan",
+        "lit-dongjingmenghualu",
+        "ppl-wuzimu"
+      ]
+    },
+    {
+      "id": "lit-canglangshihua",
+      "cat": "literature",
+      "type": "诗论",
+      "name": "《沧浪诗话》",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "严羽所著诗论，以禅喻诗，标举“妙悟”“兴趣”，推尊盛唐，批评宋诗议论化。",
+      "detail": "全书分诗辨、诗体、诗法、诗评、考证五门，提出“诗有别材，非关书也；诗有别趣，非关理也”，主张学诗以识为主、以盛唐为法。严羽的“妙悟”说上承禅宗、下启神韵派，是宋代最重要的诗话之一，也对明代复古诗论影响深远。",
+      "refs": "《沧浪诗话》",
+      "tags": [
+        "南宋",
+        "诗论",
+        "严羽",
+        "妙悟"
+      ],
+      "related": [
+        "cul-chanzong",
+        "cul-songshi",
+        "lit-liuyishihua",
+        "ppl-sushi",
+        "ppl-yanyu"
+      ]
+    },
+    {
+      "id": "lit-fanhan",
+      "cat": "literature",
+      "type": "辞书",
+      "name": "《番汉合时掌中珠》",
+      "era": "西夏",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "西夏仁宗时期编纂的西夏文—汉文双语辞书，是解读西夏文与了解西夏社会的钥匙。",
+      "detail": "由西夏学者骨勒茂才编成，按天、地、人三类编排，收录日常词语与短句，每词并列西夏文、汉文及汉字注音。该书出土于黑水城，是现存最重要的西夏文世俗文献之一，为破译西夏文字、研究党项社会与语言提供了关键材料。",
+      "refs": "《番汉合时掌中珠》；《西夏书事》",
+      "tags": [
+        "西夏",
+        "西夏文",
+        "黑水城",
+        "辞书"
+      ],
+      "related": [
+        "cul-xixia-fojiao",
+        "cul-xixia-wenzi",
+        "emp-xixia-renzong",
+        "geo-heishuicheng",
+        "tho-xixia-ruxue"
+      ]
+    },
+    {
+      "id": "tec-bencao",
+      "cat": "tech",
+      "type": "医学",
+      "name": "《证类本草》",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "北宋唐慎微编纂的本草巨著，汇集前代药书与方书，是《本草纲目》之前最重要的本草文献。",
+      "detail": "唐慎微在《嘉祐本草》《本草图经》基础上增补药物与单方，成《经史证类备急本草》，收药一千五百余种，附方三千余首，并保留大量今已失传的医药文献。大观、政和年间官方校定刊行，改称《政和本草》，成为宋元明本草学的主要依据。",
+      "refs": "《证类本草》；《宋史·唐慎微传》",
+      "tags": [
+        "北宋",
+        "医学",
+        "本草",
+        "唐慎微"
+      ],
+      "related": [
+        "ppl-tangshenwei",
+        "soc-yiliao",
+        "tec-jufang",
+        "tec-yixue"
+      ]
+    },
+    {
+      "id": "geo-sanfoqi",
+      "cat": "geography",
+      "type": "邦交",
+      "name": "三佛齐",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代南海重要强国，控制马六甲海峡贸易，是宋与印度洋世界的中转站。",
+      "detail": "三佛齐位于今苏门答腊岛，扼守南海与印度洋交通要道，商船云集。宋代三佛齐多次遣使朝贡，宋在广州、泉州设驿接待；其地盛产香药、胡椒、象牙，转贩大食、印度货物。三佛齐的兴衰直接影响宋代海外贸易的畅通。",
+      "refs": "《宋史·外国传》；《岭外代答》",
+      "tags": [
+        "南海",
+        "贸易",
+        "两宋",
+        "邦交"
+      ],
+      "related": [
+        "eco-shibo",
+        "geo-dashi",
+        "geo-guangzhou",
+        "geo-quanzhou",
+        "ppl-zhouqufei"
+      ]
+    },
+    {
       "id": "ppl-qiuchuji",
       "cat": "people",
       "type": "僧道",
@@ -12269,6 +14004,34 @@
       ]
     },
     {
+      "id": "geo-liangzhe",
+      "cat": "geography",
+      "type": "路制",
+      "name": "两浙路",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代两浙路辖今浙江及江苏南部，是经济最富庶、城市最密集的路份之一。",
+      "detail": "两浙路以杭州、苏州、湖州、明州、越州为核心，稻米、丝织、瓷器、茶叶与海外贸易发达，临安（杭州）为南宋行在。两浙也是科举、刻书、书画与园林的重镇，所谓“上有天堂，下有苏杭”即在宋代奠定基础。",
+      "refs": "《宋史·地理志》；《舆地纪胜》",
+      "tags": [
+        "江南",
+        "两宋",
+        "地理",
+        "路制"
+      ],
+      "related": [
+        "eco-sizhi",
+        "geo-linan",
+        "geo-mingzhou",
+        "geo-suzhou",
+        "pol-lu"
+      ]
+    },
+    {
       "id": "ppl-yanyu",
       "cat": "people",
       "type": "文豪",
@@ -12288,6 +14051,9 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "lit-canglangshihua"
       ]
     },
     {
@@ -12311,6 +14077,178 @@
       "groups": [
         "文豪",
         "女性"
+      ]
+    },
+    {
+      "id": "cus-linan-suishi",
+      "cat": "customs",
+      "type": "节令",
+      "name": "临安岁时",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋临安的岁时节令繁盛，从元旦到除夕，游赏、饮食、娱乐连绵不断。",
+      "detail": "《梦粱录》《武林旧事》详记临安岁时：元旦拜年、元宵观灯、清明祭扫、端午竞渡、七夕乞巧、中秋赏月、重阳登高、冬至贺节、除夕守岁。每逢节令，西湖游船、瓦舍勾栏、酒楼茶肆人潮涌动，反映了南宋都城的商业繁荣与市民生活。",
+      "refs": "《梦粱录》；《武林旧事》",
+      "tags": [
+        "南宋",
+        "临安",
+        "城市",
+        "节令"
+      ],
+      "related": [
+        "cus-chuxi",
+        "cus-duanwu",
+        "cus-yuanxiao",
+        "geo-linan",
+        "lit-menglianglu"
+      ]
+    },
+    {
+      "id": "ppl-leshi",
+      "cat": "people",
+      "type": "名臣",
+      "name": "乐史",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "名臣",
+      "birth": 930,
+      "death": 1007,
+      "summary": "北宋初年地理学家，著《太平寰宇记》，开宋代地理总志的先河。",
+      "detail": "乐史字子正，抚州宜黄人，南唐时曾任秘书郎，入宋后太平兴国五年举进士。他历官知州、三馆编修，博采图经、地志与史传，成《太平寰宇记》二百卷，记北宋初年全国州县沿革、山川、户口、风俗、人物、艺文，体例完备，是研究唐宋地理与社会的重要文献。",
+      "refs": "《宋史·乐史传》；《太平寰宇记》",
+      "tags": [
+        "北宋",
+        "地理",
+        "总志",
+        "太平寰宇记"
+      ],
+      "groups": [
+        "名臣"
+      ],
+      "related": [
+        "geo-kaifeng",
+        "ppl-simaguang",
+        "tec-dizhi",
+        "tho-shixue"
+      ]
+    },
+    {
+      "id": "soc-xiangyue",
+      "cat": "society",
+      "type": "基层",
+      "name": "乡约与《吕氏乡约》",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "北宋吕大钧兄弟制定《吕氏乡约》，以德业相劝、过失相规、礼俗相交、患难相恤教化乡里。",
+      "detail": "《吕氏乡约》是中国现存最早的成文乡约，由吕大忠、吕大钧、吕大临等推行于陕西蓝田，规定同约人定期聚会、记录善恶、互相帮助。朱熹后来加以修订，收入《朱子家礼》系统。乡约把儒家伦理落实到基层，对明清乡约制度影响深远。",
+      "refs": "《吕氏乡约》；《宋元学案·吕范诸儒学案》",
+      "tags": [
+        "基层",
+        "北宋",
+        "乡约",
+        "教化"
+      ],
+      "related": [
+        "ppl-lvdalin",
+        "soc-xinyang",
+        "soc-xunjian",
+        "soc-zhiyi",
+        "soc-zongzu",
+        "tho-lixue"
+      ]
+    },
+    {
+      "id": "geo-wudai-shiguo",
+      "cat": "geography",
+      "type": "政权",
+      "name": "五代十国形势",
+      "era": "五代",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "五代十国是唐末至宋初的分裂时期，中原五朝更迭，南方十国并立，至宋初才重归一统。",
+      "detail": "907 年朱温灭唐建后梁，此后后唐、后晋、后汉、后周相继；南方则有吴、南唐、吴越、闽、楚、南汉、前蜀、后蜀、荆南、北汉等政权。各国政治、经济差异很大，吴越、南唐相对安定，文化延续。960 年北宋建立后，逐步削平诸国，至 979 年灭北汉完成统一。",
+      "refs": "《旧五代史》；《新五代史》",
+      "tags": [
+        "五代",
+        "地理",
+        "政权",
+        "分裂"
+      ],
+      "related": [
+        "eco-wuyue-shuili",
+        "tl-960",
+        "tl-975",
+        "tl-979",
+        "tl-wd-907"
+      ]
+    },
+    {
+      "id": "cus-wudai-yanyin",
+      "cat": "customs",
+      "type": "宴饮",
+      "name": "五代宴饮与乐舞",
+      "era": "五代",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "五代宫廷与藩镇宴饮成风，歌舞、百戏、酒令盛行，为宋代城市娱乐奠定基础。",
+      "detail": "五代虽战乱频仍，宫廷与节度使仍大兴宴饮，蓄养歌儿舞女，表演曲子词、队舞、参军戏与百戏。南唐、后蜀尤其奢靡，花间词多产生于宴席之间。宋代瓦舍勾栏、酒楼茶肆的娱乐文化，正是在五代宴饮传统上发展而来。",
+      "refs": "《旧五代史》；《新五代史》；《花间集》",
+      "tags": [
+        "五代",
+        "城市",
+        "宴饮",
+        "乐舞"
+      ],
+      "related": [
+        "cul-huajian",
+        "cus-jiu",
+        "cus-jiulou",
+        "cus-washe",
+        "cus-zaju"
+      ]
+    },
+    {
+      "id": "soc-wudeng",
+      "cat": "society",
+      "type": "户籍",
+      "name": "五等户与户等",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代按田产、财力将乡村主户分为五等，作为赋役摊派与赈济的依据。",
+      "detail": "一等户田产最多，五等户最少；坊郭户另分十等。户等由地方官府三年一定，用于差役、免役钱、和籴、赈济等。实际操作中，形势户与胥吏常通过诡名寄产、析户等手段降低户等，转嫁负担，导致“上户轻、下户重”的积弊。",
+      "refs": "《宋史·食货志》；《文献通考·户口》",
+      "tags": [
+        "户籍",
+        "两宋",
+        "户等",
+        "赋役"
+      ],
+      "related": [
+        "eco-mianyi",
+        "soc-nanyi",
+        "soc-xingshi",
+        "soc-xuli",
+        "soc-zhiyi",
+        "soc-zhuhu"
       ]
     },
     {
@@ -12362,6 +14300,7 @@
         "名将"
       ],
       "related": [
+        "mil-diaoyucheng",
         "tl-1259"
       ]
     },
@@ -12388,6 +14327,34 @@
       ]
     },
     {
+      "id": "soc-siguan",
+      "cat": "society",
+      "type": "宗教",
+      "name": "僧道与寺观经济",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代佛道寺观拥有大量田产、店宅与免役特权，形成庞大的寺观经济。",
+      "detail": "寺观通过皇帝赐田、信众捐施、购买与侵占积累产业，经营田庄、碾磨、店铺、借贷甚至海外贸易。僧道享有免役、免税等优待，度牒可买卖，成为政府筹款手段。寺观还承担救济、教育、医疗与公共工程，是地方社会的重要力量。",
+      "refs": "《宋史·食货志》；《宋代寺院经济史稿》",
+      "tags": [
+        "经济",
+        "两宋",
+        "宗教",
+        "寺观"
+      ],
+      "related": [
+        "cul-chanzong",
+        "cul-daozang",
+        "eco-zudian",
+        "soc-fuli",
+        "soc-xinyang"
+      ]
+    },
+    {
       "id": "ppl-yuanhaowen",
       "cat": "people",
       "type": "文豪",
@@ -12411,6 +14378,92 @@
       "related": [
         "lit-jin-yanqiu",
         "tho-jin-ruxue"
+      ]
+    },
+    {
+      "id": "pol-junqijian",
+      "cat": "politics",
+      "type": "官制",
+      "name": "军器监与将作监",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代掌兵器制造与宫室营建的中央机构，反映官营手工业的庞大体系。",
+      "detail": "军器监统辖弓弩院、南北作坊等，负责兵器、甲胄、旗帜的制造与验收；将作监掌宫室、城郭、桥梁、舟车营缮。两监下辖众多工匠与作院，实行“物勒工名”的责任制；南宋因战事需要，军器监与地方作院并重，但腐败与质量参差屡见。",
+      "refs": "《宋史·职官志》；《宋会要辑稿·职官》",
+      "tags": [
+        "官制",
+        "官营手工业",
+        "兵器",
+        "营缮"
+      ],
+      "related": [
+        "mil-chuangzin",
+        "mil-shenbimgong",
+        "tec-shuili",
+        "tec-yetie",
+        "tec-yingzao"
+      ]
+    },
+    {
+      "id": "soc-junxunpu",
+      "cat": "society",
+      "type": "城市",
+      "name": "军巡铺与城市消防",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代城市设军巡铺、望火楼，夜间巡警、扑救火灾，形成早期的城市消防体系。",
+      "detail": "汴京、临安街巷每三百步设军巡铺，配铺兵五人，夜间巡警；高处建望火楼，屯驻消防兵，备水桶、麻搭、斧锯等器具。一旦火起，铺兵鸣锣报警、奔赴扑救，并按地段责任追究。宋代城市木构建筑密集，消防制度因此高度发达，是城市管理的重要进步。",
+      "refs": "《东京梦华录》；《梦粱录》",
+      "tags": [
+        "治安",
+        "两宋",
+        "城市",
+        "消防"
+      ],
+      "related": [
+        "geo-kaifeng",
+        "geo-linan",
+        "soc-pinmin",
+        "soc-xiangfang",
+        "soc-xunjian"
+      ]
+    },
+    {
+      "id": "ppl-liuguangshi",
+      "cat": "people",
+      "type": "名将",
+      "name": "刘光世",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "名将",
+      "birth": 1089,
+      "death": 1142,
+      "summary": "南宋“中兴四将”之一，统兵江淮，但治军不严、屡有避战之议。",
+      "detail": "刘光世字平叔，保安军人，将门出身。建炎南渡后率部抗金，拥兵数万，但军纪松弛，常避战自保，时论讥其“不战而退”。绍兴七年被罢兵柄，晚年闲居。尽管战绩平平，他仍因资历与兵权列名中兴四将。",
+      "refs": "《宋史·刘光世传》",
+      "tags": [
+        "江淮",
+        "南宋",
+        "名将",
+        "中兴四将"
+      ],
+      "groups": [
+        "名将"
+      ],
+      "related": [
+        "emp-song-gaozong",
+        "ppl-hanshizhong",
+        "ppl-yuefei",
+        "ppl-zhangjun"
       ]
     },
     {
@@ -12501,6 +14554,9 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "mil-xiangfan"
       ]
     },
     {
@@ -12644,6 +14700,33 @@
       ]
     },
     {
+      "id": "pol-zhizhishi",
+      "cat": "politics",
+      "type": "使职",
+      "name": "制置使与宣抚使",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代为应对战争与地方军政而设的方面大员，权力介于路级监司与中央之间。",
+      "detail": "制置使多设于沿边、沿江要地，掌一路或数路军政、财赋与防务，如四川制置使、江淮制置使；宣抚使则多以宰执、大将充任，负责宣抚军民、节制诸将。二者并非常设，因战事而置，事已则罢，容易与转运使、安抚使职权交错。",
+      "refs": "《宋史·职官志》；《建炎以来系年要录》",
+      "tags": [
+        "使职",
+        "地方",
+        "官制",
+        "军政"
+      ],
+      "related": [
+        "mil-chuanshan",
+        "pol-anfu",
+        "pol-lu",
+        "pol-zhuanyun"
+      ]
+    },
+    {
       "id": "ppl-baozheng",
       "cat": "people",
       "type": "名臣",
@@ -12663,6 +14746,64 @@
       ],
       "groups": [
         "名臣"
+      ]
+    },
+    {
+      "id": "emp-nantang-houzhu",
+      "cat": "people",
+      "type": "帝王",
+      "name": "南唐后主 李煜",
+      "era": "五代",
+      "year": null,
+      "endYear": null,
+      "ptype": "帝王",
+      "birth": 937,
+      "death": 978,
+      "summary": "五代南唐末代君主，亡国后为宋所俘，其词作哀婉深挚，被誉为“词中之帝”。",
+      "detail": "李煜字重光，南唐元宗李璟第六子，961 年即位，975 年宋军攻破金陵，降宋，被封违命侯，978 年被赐死。他前期词多写宫廷享乐，亡国后所作《虞美人》《浪淘沙》《相见欢》等，以血泪写故国之思，艺术成就极高，对宋词发展影响深远。",
+      "refs": "《宋史·南唐李氏世家》；《南唐二主词》",
+      "tags": [
+        "南唐",
+        "五代",
+        "帝王",
+        "词人"
+      ],
+      "groups": [
+        "帝王"
+      ],
+      "related": [
+        "cul-ci",
+        "cul-huajian",
+        "lit-yumeiren-liyu",
+        "tl-975"
+      ]
+    },
+    {
+      "id": "soc-nanyi",
+      "cat": "society",
+      "type": "役法",
+      "name": "南宋义役",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋地方为减轻差役负担，由民户集资置田、以田租雇役，称“义役”。",
+      "detail": "义役始于绍兴年间，婺州、处州等地民户按户等出钱买田，以田租助当役者，或轮流充役、众人补助。义役本意是互助，但常被豪强与胥吏操纵，田产被侵吞，反而加重下户负担。朱熹、叶适等都曾讨论义役利弊，反映南宋役法的深层困境。",
+      "refs": "《宋史·食货志》；《文献通考·职役》",
+      "tags": [
+        "基层",
+        "役法",
+        "南宋",
+        "义役"
+      ],
+      "related": [
+        "eco-mianyi",
+        "ppl-yeshi",
+        "ppl-zhuxi",
+        "soc-wudeng",
+        "soc-zhiyi"
       ]
     },
     {
@@ -12715,7 +14856,8 @@
       "related": [
         "tl-1208",
         "tl-1224",
-        "tl-1233"
+        "tl-1233",
+        "tl-1233b"
       ]
     },
     {
@@ -12740,6 +14882,9 @@
         "思想家"
       ],
       "related": [
+        "soc-nanyi",
+        "tho-wuxue",
+        "tho-yongjia",
         "tho-zhedong"
       ]
     },
@@ -12765,6 +14910,12 @@
         "名臣"
       ],
       "related": [
+        "eco-qingmiao",
+        "lit-mingfeiqu",
+        "ppl-leshi",
+        "ppl-litao",
+        "ppl-yuanshu",
+        "ppl-zhengqiao",
         "tho-sushui",
         "tl-1084",
         "tl-1085"
@@ -12790,6 +14941,9 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "soc-xiangyue"
       ]
     },
     {
@@ -12838,6 +14992,7 @@
       ],
       "related": [
         "geo-xiangyang",
+        "mil-xiangfan",
         "tl-1273"
       ]
     },
@@ -12861,6 +15016,40 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "tho-jinsilu",
+        "tho-wuxue"
+      ]
+    },
+    {
+      "id": "ppl-lvmengzheng",
+      "cat": "people",
+      "type": "名臣",
+      "name": "吕蒙正",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "名臣",
+      "birth": 944,
+      "death": 1011,
+      "summary": "北宋太宗、真宗朝宰相，出身寒微，以宽厚敢言、提拔寒士著称。",
+      "detail": "吕蒙正字圣功，河南洛阳人，太平兴国二年状元。太宗朝拜相，敢于直言，曾谏太宗“弭兵省财”；真宗朝再相，以老病归。他出身贫寒，深知民间疾苦，主张宽恤民力，所荐著者如富言、陈恕等。卒谥文穆。",
+      "refs": "《宋史·吕蒙正传》",
+      "tags": [
+        "科举",
+        "宰相",
+        "北宋",
+        "名臣"
+      ],
+      "groups": [
+        "名臣"
+      ],
+      "related": [
+        "emp-song-taizong",
+        "pol-keju",
+        "ppl-kouzhun",
+        "ppl-zhaopu"
       ]
     },
     {
@@ -12977,6 +15166,40 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "lit-menglianglu"
+      ]
+    },
+    {
+      "id": "ppl-zhouqufei",
+      "cat": "people",
+      "type": "名臣",
+      "name": "周去非",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "名臣",
+      "birth": 1135,
+      "death": 1189,
+      "summary": "南宋地理学家，曾任桂林通判，著《岭外代答》，记录岭南与南海诸国风物。",
+      "detail": "周去非字直夫，温州永嘉人，隆兴元年进士。他任静江府通判时，遍访当地山川、物产、风俗与海外交通，成《岭外代答》十卷，分地理、风土、物产、外国等门，记大食、三佛齐、阇婆等地，是宋代海外地理的重要著作。",
+      "refs": "《岭外代答》；《宋史·艺文志》",
+      "tags": [
+        "南宋",
+        "地理",
+        "岭南",
+        "岭外代答"
+      ],
+      "groups": [
+        "名臣"
+      ],
+      "related": [
+        "eco-shibo",
+        "geo-dashi",
+        "geo-guangnandong",
+        "geo-sanfoqi",
+        "ppl-zhaorushi"
       ]
     },
     {
@@ -13071,6 +15294,33 @@
       ]
     },
     {
+      "id": "eco-hedi",
+      "cat": "economy",
+      "type": "赋税",
+      "name": "和籴与和买",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代官府向民间征购粮食、布帛的两种方式，名为“和”，实则常带强制摊派。",
+      "detail": "和籴是官府按价收购粮食，和买则是预支钱款、后以绢帛偿还，或直接征购布帛。北宋中期以后，和籴、和买逐渐变为定额摊派，价格低于市价，甚至不给钱，成为农民沉重负担。南宋的折帛钱、经总制钱等，多由和买、和籴转化而来。",
+      "refs": "《宋史·食货志》；《文献通考·市籴》",
+      "tags": [
+        "财政",
+        "两宋",
+        "征购",
+        "农民"
+      ],
+      "related": [
+        "eco-caoyun",
+        "eco-jingzongzhi",
+        "eco-liangshui",
+        "soc-zhiyi"
+      ]
+    },
+    {
       "id": "ppl-tangwan",
       "cat": "people",
       "type": "女性",
@@ -13113,6 +15363,9 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "tec-bencao"
       ]
     },
     {
@@ -13161,6 +15414,7 @@
       ],
       "related": [
         "cul-xixia-fojiao",
+        "lit-fanhan",
         "tho-xixia-ruxue"
       ]
     },
@@ -13258,6 +15512,7 @@
         "cul-xixia-wenzi",
         "cus-xixia-tufa",
         "geo-xingqingfu",
+        "mil-haoshuichuan",
         "pol-xixia-guanzhi",
         "soc-xixia-buluo",
         "tl-1038",
@@ -13425,6 +15680,65 @@
       ]
     },
     {
+      "id": "cul-dazu",
+      "cat": "culture",
+      "type": "雕塑",
+      "name": "大足石刻",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "重庆大足一带的唐宋摩崖造像群，宋代题材世俗化、生活化，是宋代佛教艺术的代表。",
+      "detail": "大足石刻始凿于唐末，盛于两宋，以宝顶山、北山、石篆山等最为集中。宋代造像突破宗教仪轨，出现《父母恩重经变》《牧牛图》《地狱变相》等贴近世俗生活的题材，雕刻细腻、情节连贯。它反映了宋代佛教向民间、向伦理教化的转向。",
+      "refs": "《大足石刻铭文录》；《宋史·地理志》",
+      "tags": [
+        "佛教",
+        "两宋",
+        "石刻",
+        "雕塑"
+      ],
+      "related": [
+        "cul-chanzong",
+        "cul-jinci",
+        "cul-liao-fojiao",
+        "cul-xixia-fojiao",
+        "soc-xinyang"
+      ]
+    },
+    {
+      "id": "geo-dashi",
+      "cat": "geography",
+      "type": "邦交",
+      "name": "大食与阿拉伯海贸",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代称阿拉伯帝国及其商人为“大食”，广州、泉州、明州是大食商船的重要停泊港。",
+      "detail": "大食商人经印度洋、马六甲海峡抵达中国，输入香药、犀角、象牙、珠宝、玻璃，输出瓷器、丝绸、茶叶与铜钱。宋政府在广州设蕃坊、置蕃长，允许穆斯林商人聚居、贸易与信仰。大食海贸是宋代海上丝绸之路的重要组成部分。",
+      "refs": "《宋史·外国传》；《诸蕃志》",
+      "tags": [
+        "海外贸易",
+        "两宋",
+        "邦交",
+        "大食"
+      ],
+      "related": [
+        "eco-choujie",
+        "eco-shibo",
+        "geo-guangnandong",
+        "geo-guangzhou",
+        "geo-quanzhou",
+        "geo-sanfoqi",
+        "ppl-zhaorushi",
+        "ppl-zhouqufei"
+      ]
+    },
+    {
       "id": "ppl-qisong",
       "cat": "people",
       "type": "僧道",
@@ -13448,6 +15762,34 @@
       ]
     },
     {
+      "id": "soc-nubi",
+      "cat": "society",
+      "type": "阶层",
+      "name": "奴婢与人口买卖",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代奴婢制度较前代有所变化，法律上奴婢为“雇工”而非“贱民”，但人口买卖仍普遍存在。",
+      "detail": "宋代禁止掠卖良人为奴婢，允许自愿雇佣与债务奴役，契约雇工在法律上高于奴婢。然而灾荒、贫困与高利贷仍迫使贫民卖儿卖女，南方少数民族地区与海外贸易中的人口贩卖亦未绝迹。官府屡禁不止，反映出社会底层的脆弱处境。",
+      "refs": "《宋刑统》；《宋会要辑稿·刑法》",
+      "tags": [
+        "两宋",
+        "奴婢",
+        "人口买卖",
+        "社会底层"
+      ],
+      "related": [
+        "eco-gaolidai",
+        "soc-fuli",
+        "soc-jiazhuang",
+        "soc-liudong",
+        "soc-pinmin"
+      ]
+    },
+    {
       "id": "ppl-jiangkuai",
       "cat": "people",
       "type": "文豪",
@@ -13468,6 +15810,9 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "lit-pai-zhegutian"
       ]
     },
     {
@@ -13493,6 +15838,64 @@
       ]
     },
     {
+      "id": "tho-wuxue",
+      "cat": "thought",
+      "type": "学派",
+      "name": "婺学（吕祖谦）",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋吕祖谦在婺州开创的学派，兼采朱陆、重视史学与文献，又称“吕学”“金华学派”。",
+      "detail": "吕祖谦与朱熹、张栻并称“东南三贤”，主讲丽泽书院，编《宋文鉴》《东莱博议》，主张“理”在史事中体现，治学不专主一心而兼重制度、文献与文章。婺学培养出陈亮、叶适等浙东学者，对南宋事功学风影响深远。",
+      "refs": "《宋元学案·东莱学案》；《东莱集》",
+      "tags": [
+        "理学",
+        "史学",
+        "南宋",
+        "婺学"
+      ],
+      "related": [
+        "ppl-chenliang",
+        "ppl-lvzuqian",
+        "ppl-yeshi",
+        "ppl-zhuxi",
+        "tho-yongkang",
+        "tho-zhedong"
+      ]
+    },
+    {
+      "id": "soc-jiazhuang",
+      "cat": "society",
+      "type": "婚姻",
+      "name": "嫁妆与女性财产",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代婚姻重嫁妆，女儿以奁产形式分得家产，并在夫家拥有一定财产权。",
+      "detail": "宋代厚嫁之风盛行，嫁妆包括田产、房宅、金银、布帛与奴婢，富家嫁女甚至倾家。法律上，嫁妆属妻子私产，离婚或守寡时可带走，寡妇无子也可承分夫家财产。但嫁妆也加剧了溺女、晚婚与贫家娶妻难等社会问题。",
+      "refs": "《宋刑统》；《名公书判清明集》",
+      "tags": [
+        "女性",
+        "两宋",
+        "婚姻",
+        "财产"
+      ],
+      "related": [
+        "cus-hunsu",
+        "soc-hunyin",
+        "soc-nubi",
+        "soc-nvxing",
+        "soc-renkou",
+        "soc-zongzu"
+      ]
+    },
+    {
       "id": "ppl-mengyuanlao",
       "cat": "people",
       "type": "名臣",
@@ -13514,6 +15917,7 @@
         "名臣"
       ],
       "related": [
+        "lit-dongjingmenghualu",
         "tl-1147"
       ]
     },
@@ -13591,6 +15995,94 @@
       ]
     },
     {
+      "id": "tec-shuili",
+      "cat": "tech",
+      "type": "水利",
+      "name": "宋代水利工程",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代修筑木兰陂、它山堰、太湖塘浦等水利工程，支撑江南农业与漕运。",
+      "detail": "福建莆田木兰陂始建于北宋治平年间，历经三次营建，兼具蓄水、灌溉、排洪与通航功能；浙江鄞县它山堰为唐代始建、宋代续修，分导鄞江与奉化江；太湖地区则形成塘浦圩田体系。宋代还设都水监与地方河堤使，水利成为国家与地方共同经营的事业。",
+      "refs": "《宋史·河渠志》；《敕修两浙海塘通志》",
+      "tags": [
+        "江南",
+        "农业",
+        "水利",
+        "两宋"
+      ],
+      "related": [
+        "eco-nongtian",
+        "eco-wuyue-shuili",
+        "eco-zanchengdao",
+        "pol-junqijian",
+        "tec-qiaoliang",
+        "tec-yangma"
+      ]
+    },
+    {
+      "id": "cul-cangshu",
+      "cat": "culture",
+      "type": "文献",
+      "name": "宋代藏书与目录学",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代官私藏书兴盛，目录学由登录书目转向分类、解题与版本考订。",
+      "detail": "北宋崇文院、秘阁藏书丰富，编《崇文总目》；南宋私家藏书楼林立，晁公武《郡斋读书志》、陈振孙《直斋书录解题》、尤袤《遂初堂书目》等开创解题书目传统。郑樵《通志·校雠略》更从理论上总结分类、编目与亡书求书之法，标志目录学成为独立学问。",
+      "refs": "《宋史·艺文志》；《郡斋读书志》；《直斋书录解题》",
+      "tags": [
+        "两宋",
+        "藏书",
+        "目录学",
+        "文献"
+      ],
+      "related": [
+        "cul-wenfang",
+        "geo-fujianlu",
+        "lit-kunxuejiwen",
+        "pol-guange",
+        "pol-jinzouyuan",
+        "ppl-chaogongwu",
+        "ppl-chenzhensun",
+        "ppl-zhengqiao"
+      ]
+    },
+    {
+      "id": "cus-yinshi",
+      "cat": "customs",
+      "type": "饮食",
+      "name": "宋代面食与米食",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代主食南北分化，北方面食、南方稻米，城市中面馆、米铺与点心种类繁多。",
+      "detail": "汴京、临安的面食有馒头、包子、馄饨、饺子（角子）、面条、饼等，米食有饭、粥、糕、团、粽子。城市饮食业发达，面馆分“南食”“北食”“川饭”，还有专卖包子、馒头、汤饼的店铺。宋代饮食的多样化与商业化，反映了城市生活的繁荣。",
+      "refs": "《东京梦华录》；《梦粱录》；《山家清供》",
+      "tags": [
+        "饮食",
+        "面食",
+        "两宋",
+        "米食"
+      ],
+      "related": [
+        "cus-chasi",
+        "cus-jiulou",
+        "cus-xiaochi",
+        "eco-caoshi",
+        "geo-guangnandong"
+      ]
+    },
+    {
       "id": "emp-song-guangzong",
       "cat": "people",
       "type": "帝王",
@@ -13659,6 +16151,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "ppl-lvmengzheng",
+        "ppl-zhangyong"
       ]
     },
     {
@@ -13685,6 +16181,7 @@
       ],
       "related": [
         "ppl-chairong",
+        "tl-961",
         "tl-wd-954",
         "tl-wd-959"
       ]
@@ -13712,6 +16209,7 @@
         "帝王"
       ],
       "related": [
+        "tl-1162b",
         "tl-1189"
       ]
     },
@@ -13792,6 +16290,7 @@
         "帝王"
       ],
       "related": [
+        "cul-qianli",
         "cul-shoujin",
         "tl-1100",
         "tl-1127"
@@ -13870,6 +16369,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "mil-yashan"
       ]
     },
     {
@@ -13919,7 +16421,9 @@
       "related": [
         "pol-gongtian",
         "tl-1224",
-        "tl-1233"
+        "tl-1233",
+        "tl-1233b",
+        "tl-1263"
       ]
     },
     {
@@ -13945,6 +16449,7 @@
         "帝王"
       ],
       "related": [
+        "ppl-wangdan",
         "tl-1004",
         "tl-1005"
       ]
@@ -14096,6 +16601,9 @@
         "帝王"
       ],
       "related": [
+        "ppl-liuguangshi",
+        "ppl-yangcunzhong",
+        "ppl-zhangjun2",
         "tl-1127n",
         "tl-1138"
       ]
@@ -14265,6 +16773,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "mil-bazijun",
+        "mil-zhongyijun"
       ]
     },
     {
@@ -14289,6 +16801,8 @@
         "名臣"
       ],
       "related": [
+        "ppl-lvmengzheng",
+        "ppl-wangdan",
         "tl-1004",
         "tl-1005"
       ]
@@ -14333,8 +16847,8 @@
       "detail": "其诗清新平淡，著作多佚，今存《梁溪遗稿》。",
       "refs": null,
       "tags": [
-        "中兴四大诗人",
-        "藏书"
+        "藏书",
+        "中兴四大诗人"
       ],
       "groups": [
         "文豪"
@@ -14385,13 +16899,20 @@
         "名将"
       ],
       "related": [
+        "mil-bazijun",
+        "mil-beiweijun",
         "mil-yancheng",
         "mil-yuejiajun",
+        "mil-zhongyijun",
+        "ppl-liuguangshi",
         "ppl-qinhui",
+        "ppl-yangcunzhong",
+        "ppl-zhangjun2",
         "tl-1130b",
         "tl-1140",
         "tl-1141",
-        "tl-1142"
+        "tl-1142",
+        "tl-1162b"
       ]
     },
     {
@@ -14417,6 +16938,36 @@
       ]
     },
     {
+      "id": "soc-xunjian",
+      "cat": "society",
+      "type": "治安",
+      "name": "巡检与地方治安",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代在州县、关津、险要之地设巡检司，统辖土兵、弓手，负责捕盗、缉私与巡逻。",
+      "detail": "巡检多设于乡村、江河、边境与盐茶产区，职责包括捕盗贼、禁私盐私茶、检查商旅、维护驿路。巡检下辖寨、铺、堡，兵力从数十到数百不等。南宋以后，巡检与尉司、保甲相互配合，构成地方治安网络，但吏治腐败时也常扰民。",
+      "refs": "《宋史·职官志》；《宋会要辑稿·兵》",
+      "tags": [
+        "基层",
+        "治安",
+        "两宋",
+        "巡检"
+      ],
+      "related": [
+        "eco-qucha",
+        "mil-xiangbing",
+        "soc-junxunpu",
+        "soc-xiangyue",
+        "soc-xuli",
+        "soc-youxu",
+        "soc-zhiyi"
+      ]
+    },
+    {
       "id": "ppl-juran",
       "cat": "people",
       "type": "艺术家",
@@ -14436,6 +16987,92 @@
       ],
       "groups": [
         "艺术家"
+      ]
+    },
+    {
+      "id": "eco-choujie",
+      "cat": "economy",
+      "type": "贸易",
+      "name": "市舶抽解与博买",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代市舶司对进口货物抽取实物税并优先收购，是海外贸易管理的核心环节。",
+      "detail": "海舶入港后，市舶司先“抽解”，按货物种类抽取十分之一至十分之三不等；再对犀角、象牙、香药等珍货“博买”，由官府统购。抽解与博买收入归中央，部分留作地方经费。南宋时市舶收入占财政比重上升，泉州、广州、明州因此繁荣。",
+      "refs": "《宋史·食货志》；《宋会要辑稿·职官》",
+      "tags": [
+        "海外贸易",
+        "市舶",
+        "两宋",
+        "税收"
+      ],
+      "related": [
+        "eco-shibo",
+        "geo-dashi",
+        "geo-guangzhou",
+        "geo-mingzhou",
+        "geo-quanzhou",
+        "tl-971b"
+      ]
+    },
+    {
+      "id": "tec-jin-pingshui",
+      "cat": "tech",
+      "type": "印刷",
+      "name": "平水刻书与金代印刷",
+      "era": "金",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "金代平阳（今山西临汾）书坊林立，所刻“平水版”典籍精善，是金代印刷业的代表。",
+      "detail": "平阳府经济文化发达，盛产纸张与枣木，金代设经籍所，民间书坊刻印经史、医书、类书、词曲与佛经。平水版以校勘精、纸墨佳著称，今存《刘知远诸宫调》《四美图》等。金代印刷上承北宋、下启元明，是北方出版史的重要环节。",
+      "refs": "《金史·地理志》；《中国版刻图录》",
+      "tags": [
+        "刻书",
+        "印刷",
+        "金",
+        "平水"
+      ],
+      "related": [
+        "cul-liao-cang",
+        "eco-yinshua",
+        "geo-jin-zhongdu",
+        "tec-diaoban",
+        "tec-yinshua"
+      ]
+    },
+    {
+      "id": "geo-guangnandong",
+      "cat": "geography",
+      "type": "路制",
+      "name": "广南东路",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代广南东路辖今广东大部，广州为岭南最大港口，海上贸易与盐业发达。",
+      "detail": "广南东路以广州为中心，市舶司设于此，蕃商聚居形成“蕃坊”，香药、犀象、珠贝由此输入。广南还产盐、铁、荔枝与沉香，但开发程度低于江南，官员多视为远恶之地。南宋以后，泉州崛起，广州仍保持重要地位。",
+      "refs": "《宋史·地理志》；《舆地纪胜》",
+      "tags": [
+        "两宋",
+        "地理",
+        "路制",
+        "岭南"
+      ],
+      "related": [
+        "cus-yinshi",
+        "eco-shibo",
+        "geo-dashi",
+        "geo-guangzhou",
+        "pol-lu",
+        "ppl-zhouqufei"
       ]
     },
     {
@@ -14460,6 +17097,7 @@
         "名臣"
       ],
       "related": [
+        "mil-yashan",
         "tl-1279"
       ]
     },
@@ -14509,6 +17147,36 @@
       ]
     },
     {
+      "id": "ppl-zhangjun2",
+      "cat": "people",
+      "type": "名将",
+      "name": "张俊",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "名将",
+      "birth": 1086,
+      "death": 1154,
+      "summary": "南宋“中兴四将”之一，早年抗金有功，后附和秦桧，参与构陷岳飞。",
+      "detail": "张俊字伯英，凤翔府成纪人，行伍出身，靖康后在江淮抗金，曾任御前诸军都统制。他与岳飞、韩世忠、刘光世并称中兴四将，但后期攀附秦桧，参与诬陷岳飞，为后世所讥。晚年封清河郡王，极尽富贵。",
+      "refs": "《宋史·张俊传》",
+      "tags": [
+        "南宋",
+        "岳飞",
+        "名将",
+        "中兴四将"
+      ],
+      "groups": [
+        "名将"
+      ],
+      "related": [
+        "emp-song-gaozong",
+        "ppl-hanshizhong",
+        "ppl-qinhui",
+        "ppl-yuefei"
+      ]
+    },
+    {
       "id": "ppl-zhangxian",
       "cat": "people",
       "type": "文豪",
@@ -14528,6 +17196,36 @@
       ],
       "groups": [
         "文豪"
+      ]
+    },
+    {
+      "id": "ppl-zhangyong",
+      "cat": "people",
+      "type": "名臣",
+      "name": "张咏",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "名臣",
+      "birth": 946,
+      "death": 1015,
+      "summary": "北宋太宗、真宗朝能臣，两知益州，平乱、治蜀、兴学，以刚直果断闻名。",
+      "detail": "张咏字复之，濮州鄄城人，太平兴国五年进士。王小波、李顺起义后，他知益州，安抚百姓、整顿吏治、减轻赋税，蜀中得以安定。他还在蜀地推广交子、兴办学校，政绩卓著。张咏性格刚直，敢于弹劾权贵，卒谥忠定。",
+      "refs": "《宋史·张咏传》",
+      "tags": [
+        "交子",
+        "北宋",
+        "名臣",
+        "治蜀"
+      ],
+      "groups": [
+        "名臣"
+      ],
+      "related": [
+        "eco-jiaozi",
+        "emp-song-taizong",
+        "geo-chengdu",
+        "tl-993"
       ]
     },
     {
@@ -14572,6 +17270,9 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "mil-yashan"
       ]
     },
     {
@@ -14589,11 +17290,14 @@
       "detail": "曾任翰林画院待诏。其画是研究宋代城市生活的珍贵图像史料。",
       "refs": null,
       "tags": [
-        "清明上河图",
-        "风俗画"
+        "风俗画",
+        "清明上河图"
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "cul-qingming"
       ]
     },
     {
@@ -14616,6 +17320,9 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "tho-huxiang"
       ]
     },
     {
@@ -14640,6 +17347,7 @@
         "名臣"
       ],
       "related": [
+        "ppl-liuguangshi",
         "tl-1163",
         "tl-1164"
       ]
@@ -14806,7 +17514,36 @@
       "related": [
         "tl-1253",
         "tl-1259",
+        "tl-1259b",
         "tl-1271"
+      ]
+    },
+    {
+      "id": "geo-chengdufu",
+      "cat": "geography",
+      "type": "路制",
+      "name": "成都府路",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代成都府路以成都平原为中心，农业、蜀锦、造纸与雕版印刷发达。",
+      "detail": "成都府路沃野千里，都江堰灌溉系统保障农业；蜀锦、蜀纸、蜀刻与茶业闻名。北宋在此设成都府路转运使，交子最早出现于成都。南宋时四川是抗蒙前线，成都府路屡遭战火，但仍为西南政治经济中心。",
+      "refs": "《宋史·地理志》；《舆地纪胜》",
+      "tags": [
+        "四川",
+        "两宋",
+        "地理",
+        "路制"
+      ],
+      "related": [
+        "eco-jiaozi",
+        "eco-sizhi",
+        "geo-chengdu",
+        "mil-chuanshan",
+        "pol-lu"
       ]
     },
     {
@@ -14905,6 +17642,33 @@
       ]
     },
     {
+      "id": "cul-wenfang",
+      "cat": "culture",
+      "type": "文房",
+      "name": "文房四宝与宋砚",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代文房用具趋于精致，端砚、歙砚、澄泥砚与湖笔、徽墨、宣纸并称。",
+      "detail": "宋代士大夫普遍参与书画、藏书与文具鉴赏，文房成为文人身份与审美的载体。端砚产于广东端州，歙砚产于安徽歙州，均以石质温润、发墨不损毫著称；澄泥砚则以陶土烧制。宋人还讲究笔架、水滴、镇纸、香炉等配套器具，形成完整的书斋文化。",
+      "refs": "《砚史》；《洞天清录》",
+      "tags": [
+        "两宋",
+        "文房",
+        "砚台",
+        "书斋"
+      ],
+      "related": [
+        "cul-cangshu",
+        "cul-jinshi",
+        "cul-shufa",
+        "ppl-mifu"
+      ]
+    },
+    {
       "id": "ppl-fangla",
       "cat": "people",
       "type": "起义",
@@ -14927,6 +17691,63 @@
       ]
     },
     {
+      "id": "ppl-chaogongwu",
+      "cat": "people",
+      "type": "文豪",
+      "name": "晁公武",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "文豪",
+      "birth": 1105,
+      "death": 1180,
+      "summary": "南宋目录学家，著《郡斋读书志》，是中国现存最早的私家藏书解题书目。",
+      "detail": "晁公武字子止，澶州清丰人，靖康之乱后入蜀，官至敷文阁直学士。他得井度赠书，加上家藏，校雠考订，编成《郡斋读书志》二十卷，分经、史、子、集四部，每书撰提要，考作者、内容、版本与得失。该书与陈振孙《直斋书录解题》并称宋代私家目录双璧。",
+      "refs": "《郡斋读书志》；《宋史·艺文志》",
+      "tags": [
+        "南宋",
+        "藏书",
+        "目录学",
+        "读书志"
+      ],
+      "groups": [
+        "文豪"
+      ],
+      "related": [
+        "cul-cangshu",
+        "ppl-chenzhensun",
+        "ppl-zhengqiao",
+        "tho-kaoju"
+      ]
+    },
+    {
+      "id": "cul-jinci",
+      "cat": "culture",
+      "type": "建筑",
+      "name": "晋祠圣母殿与宋塑",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "太原晋祠圣母殿为北宋天圣年间重建，殿内四十余尊宋塑侍女像生动传神。",
+      "detail": "圣母殿面阔七间、重檐歇山，采用减柱造与“副阶周匝”，是宋代木构建筑的重要实例。殿内彩塑以邑姜（圣母）居中，侍女像姿态各异、神情含蓄，衣饰与发式保存了北宋宫廷生活的细节。它与《营造法式》相互印证，是研究宋代建筑与雕塑的珍贵实物。",
+      "refs": "《营造法式》；《太原晋祠》",
+      "tags": [
+        "北宋",
+        "建筑",
+        "彩塑",
+        "晋祠"
+      ],
+      "related": [
+        "cul-dazu",
+        "cul-jiehua",
+        "cus-fushi",
+        "tec-yingzao"
+      ]
+    },
+    {
       "id": "ppl-yanjidao",
       "cat": "people",
       "type": "文豪",
@@ -14946,6 +17767,10 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "lit-pai-linjiangxian",
+        "lit-pai-zhegutian"
       ]
     },
     {
@@ -15081,6 +17906,7 @@
         "文豪"
       ],
       "related": [
+        "lit-mingfeiqu",
         "tl-1057"
       ]
     },
@@ -15158,8 +17984,18 @@
       ],
       "related": [
         "cul-shuyuan",
+        "pol-zhishi",
+        "ppl-lixinchuan",
+        "soc-nanyi",
         "tho-ehu",
+        "tho-huxiang",
+        "tho-jinsilu",
+        "tho-qingyuan",
+        "tho-sishu",
+        "tho-wuxue",
+        "tho-yongkang",
         "tho-zhuxi",
+        "tl-1190",
         "tl-1195",
         "tl-1241"
       ]
@@ -15323,6 +18159,36 @@
       ]
     },
     {
+      "id": "ppl-lixinchuan",
+      "cat": "people",
+      "type": "文豪",
+      "name": "李心传",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "文豪",
+      "birth": 1167,
+      "death": 1244,
+      "summary": "南宋史学家，著《建炎以来系年要录》《建炎以来朝野杂记》，系统记录高宗一朝史事。",
+      "detail": "李心传字微之，隆州井研人。他长期家居著述，广搜官私文献，编成《建炎以来系年要录》二百卷，记建炎元年至绍兴三十二年史事，与李焘《长编》相接；又有《朝野杂记》记典章制度与朝野见闻。二书是研究南宋初期历史的核心史料。",
+      "refs": "《宋史·李心传传》；《建炎以来系年要录》",
+      "tags": [
+        "南宋",
+        "史学家",
+        "编年",
+        "高宗朝"
+      ],
+      "groups": [
+        "文豪"
+      ],
+      "related": [
+        "ppl-litao",
+        "ppl-zhuxi",
+        "tho-shixue",
+        "tl-1127"
+      ]
+    },
+    {
       "id": "ppl-licheng",
       "cat": "people",
       "type": "艺术家",
@@ -15387,6 +18253,9 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "ppl-wangdan"
       ]
     },
     {
@@ -15416,6 +18285,37 @@
         "cul-wanyue",
         "lit-rumengling",
         "lit-shengshengman"
+      ]
+    },
+    {
+      "id": "ppl-litao",
+      "cat": "people",
+      "type": "文豪",
+      "name": "李焘",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "文豪",
+      "birth": 1115,
+      "death": 1184,
+      "summary": "南宋史学家，毕生编纂《续资治通鉴长编》，为北宋九朝最详尽的编年史。",
+      "detail": "李焘字仁甫，眉州丹棱人，绍兴八年进士。他仿司马光《资治通鉴》体例，采摭北宋九朝史事，成《续资治通鉴长编》九百八十卷，史料宏富、考订严谨。该书是研究北宋历史最基本的文献之一，原书今存五百二十卷。",
+      "refs": "《宋史·李焘传》；《续资治通鉴长编》",
+      "tags": [
+        "南宋",
+        "史学家",
+        "编年",
+        "北宋史"
+      ],
+      "groups": [
+        "文豪"
+      ],
+      "related": [
+        "ppl-lixinchuan",
+        "ppl-simaguang",
+        "ppl-yuanshu",
+        "tho-shixue",
+        "tl-1084"
       ]
     },
     {
@@ -15572,11 +18472,14 @@
       "detail": "与陆游、范成大、尤袤并称中兴四大诗人。",
       "refs": null,
       "tags": [
-        "中兴四大诗人",
-        "诚斋体"
+        "诚斋体",
+        "中兴四大诗人"
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "lit-xiaochi"
       ]
     },
     {
@@ -15602,6 +18505,37 @@
       ],
       "related": [
         "ppl-liao-yeluxiezhen"
+      ]
+    },
+    {
+      "id": "ppl-yangcunzhong",
+      "cat": "people",
+      "type": "名将",
+      "name": "杨存中",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "名将",
+      "birth": 1102,
+      "death": 1166,
+      "summary": "南宋高宗朝宿将，长期统领殿前司军，深得高宗信任，参与多次抗金战役。",
+      "detail": "杨存中字正甫，代州崞县人，杨业之后。绍兴年间任殿前都指挥使，掌禁军二十余年，参与藕塘、柘皋等战。他善于揣摩上意，深得高宗宠信，但在岳飞案中附和秦桧。孝宗朝封和王，卒谥武恭。",
+      "refs": "《宋史·杨存中传》",
+      "tags": [
+        "禁军",
+        "南宋",
+        "高宗",
+        "名将"
+      ],
+      "groups": [
+        "名将"
+      ],
+      "related": [
+        "emp-song-gaozong",
+        "mil-jinjun",
+        "mil-sanya",
+        "mil-zhegao",
+        "ppl-yuefei"
       ]
     },
     {
@@ -15889,6 +18823,34 @@
       ]
     },
     {
+      "id": "eco-qucha",
+      "cat": "economy",
+      "type": "专卖",
+      "name": "榷茶",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代对茶叶实行专卖，通过茶引、茶场与榷货务控制生产与流通。",
+      "detail": "宋初设榷茶场，园户所产茶叶除留少量自用外，全部卖给官府，再由官府批发给商人；商人凭茶引到指定地点提货。榷茶收入是宋朝财政的重要来源，也是茶马贸易的基础。园户因低价征购、私茶禁令而困苦，私贩屡禁不止。",
+      "refs": "《宋史·食货志》；《宋会要辑稿·食货》",
+      "tags": [
+        "财政",
+        "专卖",
+        "茶",
+        "两宋"
+      ],
+      "related": [
+        "eco-chama",
+        "eco-shangshui",
+        "eco-shibo",
+        "eco-yan",
+        "soc-xunjian"
+      ]
+    },
+    {
       "id": "ppl-ouyangxiu",
       "cat": "people",
       "type": "文豪",
@@ -15913,6 +18875,8 @@
         "cul-badajia",
         "cul-guwen",
         "cul-jinshi",
+        "lit-liuyishihua",
+        "lit-mingfeiqu",
         "lit-zuiweng",
         "tl-1057",
         "tl-1060"
@@ -15933,8 +18897,8 @@
       "detail": "曾以“悬羊击鼓”之计迷惑金军，安全撤退。",
       "refs": null,
       "tags": [
-        "开禧北伐",
-        "名将"
+        "名将",
+        "开禧北伐"
       ],
       "groups": [
         "名将"
@@ -15964,6 +18928,62 @@
       "related": [
         "tec-huoziban",
         "tl-1041b"
+      ]
+    },
+    {
+      "id": "tho-yongjia",
+      "cat": "thought",
+      "type": "学派",
+      "name": "永嘉学派",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋以薛季宣、陈傅良、叶适为代表的浙东学派，重制度、事功与实学。",
+      "detail": "永嘉学派由周行己开其端，薛季宣、陈傅良讲求田赋、兵制、水利等经世之学，叶适集其大成，主张“以利和义”，反对空谈心性，提出“道在器中”。其学与朱熹理学形成张力，是南宋浙东事功思潮的中坚。",
+      "refs": "《宋元学案·水心学案》；《叶适集》",
+      "tags": [
+        "南宋",
+        "永嘉",
+        "事功",
+        "制度"
+      ],
+      "related": [
+        "ppl-chenliang",
+        "ppl-yeshi",
+        "tho-lixue",
+        "tho-yongkang",
+        "tho-zhedong"
+      ]
+    },
+    {
+      "id": "tho-yongkang",
+      "cat": "thought",
+      "type": "学派",
+      "name": "永康学派",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋陈亮创立的学派，以“事功”为宗，主张义利双行、王霸并用。",
+      "detail": "陈亮字同甫，婺州永康人，与朱熹展开“王霸义利”之辩，反对以三代为空言、以汉唐为霸道，强调历史发展的连续性与事功价值。其学鼓励抗金、改革，文章气势豪迈，对后世浙东学术与经世思想影响很大。",
+      "refs": "《宋元学案·龙川学案》；《陈亮集》",
+      "tags": [
+        "南宋",
+        "永康",
+        "事功",
+        "义利"
+      ],
+      "related": [
+        "ppl-chenliang",
+        "ppl-zhuxi",
+        "tho-wuxue",
+        "tho-yongjia",
+        "tho-zhedong"
       ]
     },
     {
@@ -16032,8 +19052,66 @@
         "科学家"
       ],
       "related": [
+        "tec-dantong",
         "tec-mengxi",
+        "tec-shiyou",
         "tl-1041b"
+      ]
+    },
+    {
+      "id": "geo-hedonglu",
+      "cat": "geography",
+      "type": "路制",
+      "name": "河东路",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代河东路辖今山西大部，地形险要，是防御辽、西夏的军事重镇。",
+      "detail": "河东路以太原府为中心，太行山、吕梁山、黄河构成天然屏障，盛产煤铁、盐池与战马。宋初灭北汉后，河东成为对辽前线；宋夏战争中，河东路与陕西路互为犄角。金军南下时，太原保卫战历时二百余日，极为惨烈。",
+      "refs": "《宋史·地理志》；《舆地纪胜》",
+      "tags": [
+        "边防",
+        "北宋",
+        "地理",
+        "路制"
+      ],
+      "related": [
+        "geo-jin-zhongdu",
+        "geo-yanyun",
+        "mil-zhongyijun",
+        "pol-lu",
+        "tec-yetie"
+      ]
+    },
+    {
+      "id": "geo-hebeidong",
+      "cat": "geography",
+      "type": "路制",
+      "name": "河北东路",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代河北东路辖今河北东部、河南北部，是防御辽、金的前线，塘泊防线贯穿其间。",
+      "detail": "河北东路以大名府、河间府为中心，地势平坦，无险可守，宋初开凿塘泊、种植水田以限辽骑。澶渊之盟后，河北东路成为宋辽使节往来与榷场贸易的通道；靖康以后又成为金军南下与义军抗金的主战场。",
+      "refs": "《宋史·地理志》；《舆地纪胜》",
+      "tags": [
+        "边防",
+        "北宋",
+        "地理",
+        "路制"
+      ],
+      "related": [
+        "eco-liao-quechang",
+        "geo-yanyun",
+        "mil-zhongyijun",
+        "pol-lu",
+        "tl-1005"
       ]
     },
     {
@@ -16056,6 +19134,66 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "ppl-hongmai"
+      ]
+    },
+    {
+      "id": "ppl-hongmai",
+      "cat": "people",
+      "type": "文豪",
+      "name": "洪迈",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "文豪",
+      "birth": 1123,
+      "death": 1202,
+      "summary": "南宋文学家、史学家，著《容斋随笔》《夷坚志》，学问博洽，著述宏富。",
+      "detail": "洪迈字景卢，饶州鄱阳人，洪皓之子，绍兴十五年中博学宏词科。他曾出使金国，后官至翰林学士、端明殿学士。所著《容斋随笔》考据精博，《夷坚志》收录大量志怪与民间故事，是宋代笔记小说的代表作。他还参与修撰《四朝国史》。",
+      "refs": "《宋史·洪迈传》；《容斋随笔》",
+      "tags": [
+        "笔记",
+        "南宋",
+        "文豪",
+        "夷坚志"
+      ],
+      "groups": [
+        "文豪"
+      ],
+      "related": [
+        "lit-kunxuejiwen",
+        "lit-rongzhaibiji",
+        "ppl-honghao",
+        "tho-shixue"
+      ]
+    },
+    {
+      "id": "cus-yufo",
+      "cat": "customs",
+      "type": "节令",
+      "name": "浴佛节",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代四月初八佛诞日，寺院举行浴佛、放生、斋会，汴京与临安士民竞相参与。",
+      "detail": "浴佛节又称佛诞节，寺院以香水灌洗太子像，举行法会、放生、施斋，民间则买龟鱼放生、游寺烧香。汴京十大禅院各有浴佛斋会，临安西湖寺院尤为热闹。浴佛节融合佛教仪式与市井游乐，是宋代宗教民俗的典型。",
+      "refs": "《东京梦华录》；《梦粱录》",
+      "tags": [
+        "佛教",
+        "两宋",
+        "节令",
+        "民俗"
+      ],
+      "related": [
+        "cul-chanzong",
+        "cus-qixi",
+        "cus-zhongyuan",
+        "soc-xinyang"
       ]
     },
     {
@@ -16082,6 +19220,7 @@
       ],
       "related": [
         "geo-jin-zhongdu",
+        "mil-caishi",
         "tl-1153",
         "tl-1161",
         "tl-1161b"
@@ -16107,6 +19246,61 @@
       ],
       "groups": [
         "思想家"
+      ]
+    },
+    {
+      "id": "tho-huxiang",
+      "cat": "thought",
+      "type": "学派",
+      "name": "湖湘学派",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋以胡宏、张栻为代表的理学学派，主张性本论与经世致用，重心在潭州岳麓书院。",
+      "detail": "胡宏师承杨时、胡安国，著《知言》，提出“性立天下之有”，把性视为宇宙本体；张栻续其学，主讲岳麓书院，与朱熹反复论辩“中和”“仁说”。湖湘学派强调体用合一、知行并进，培养出吴猎、彭龟年等一批抗金与理政人才。",
+      "refs": "《宋元学案·五峰学案》；《知言》",
+      "tags": [
+        "湖湘",
+        "书院",
+        "理学",
+        "南宋"
+      ],
+      "related": [
+        "cul-shuyuan",
+        "ppl-huhong",
+        "ppl-zhangshi",
+        "ppl-zhuxi",
+        "tho-lixue"
+      ]
+    },
+    {
+      "id": "cul-xishan",
+      "cat": "culture",
+      "type": "绘画",
+      "name": "溪山行旅图",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "北宋范宽所作巨幅山水，以雄峻主峰与飞瀑行旅，奠定北宋全景山水的典范。",
+      "detail": "画面上方巨峰壁立，占去大半空间，山脚溪水奔流，一队驮驴行旅穿行林间。范宽以“雨点皴”表现关陕山石的坚硬质感，墨色厚重、气势逼人。此图与郭熙《早春图》、李唐《万壑松风图》并称宋代山水三大名作。",
+      "refs": "《溪山行旅图》台北故宫博物院藏；《宣和画谱》",
+      "tags": [
+        "范宽",
+        "北宋",
+        "山水",
+        "绘画"
+      ],
+      "related": [
+        "cul-shanshui",
+        "cul-wenrenhua",
+        "ppl-fankuan",
+        "ppl-guoxi"
       ]
     },
     {
@@ -16198,6 +19392,7 @@
         "名将"
       ],
       "related": [
+        "mil-diaoyucheng",
         "tl-1259"
       ]
     },
@@ -16223,6 +19418,13 @@
         "名臣"
       ],
       "related": [
+        "eco-fangtian",
+        "eco-junshu",
+        "eco-mianyi",
+        "eco-nongtian",
+        "eco-qingmiao",
+        "eco-shiyi",
+        "lit-mingfeiqu",
         "mil-baojia",
         "mil-jiangbing",
         "pol-yuanfeng",
@@ -16267,11 +19469,14 @@
       "detail": "得徽宗亲授，可惜英年早逝，仅此一卷传世。",
       "refs": null,
       "tags": [
-        "千里江山图",
-        "青绿山水"
+        "青绿山水",
+        "千里江山图"
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "cul-qianli"
       ]
     },
     {
@@ -16295,6 +19500,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "lit-kunxuejiwen",
+        "ppl-zhengqiao"
       ]
     },
     {
@@ -16334,14 +19543,44 @@
       "detail": "铜人用于针灸教学与考试，是世界最早的医学教学模型之一。",
       "refs": null,
       "tags": [
-        "针灸铜人",
-        "医学"
+        "医学",
+        "针灸铜人"
       ],
       "groups": [
         "科学家"
       ],
       "related": [
         "tec-zhenjiu"
+      ]
+    },
+    {
+      "id": "ppl-wangdan",
+      "cat": "people",
+      "type": "名臣",
+      "name": "王旦",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "名臣",
+      "birth": 957,
+      "death": 1017,
+      "summary": "北宋真宗朝宰相，以沉静宽厚、善于用人著称，与寇准同朝而能相容。",
+      "detail": "王旦字子明，大名莘人，太平兴国五年进士。真宗朝拜相十余年，处事谨慎，常荐引人才而不使知。澶渊之盟后，他支持真宗封禅、营造宫观，虽耗费巨大，但维持了政局稳定。卒谥文正，与寇准并称真宗朝名相。",
+      "refs": "《宋史·王旦传》",
+      "tags": [
+        "宰相",
+        "北宋",
+        "真宗",
+        "名臣"
+      ],
+      "groups": [
+        "名臣"
+      ],
+      "related": [
+        "emp-song-zhenzong",
+        "ppl-kouzhun",
+        "ppl-lihang",
+        "tl-1005"
       ]
     },
     {
@@ -16521,6 +19760,64 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "geo-qinfeng"
+      ]
+    },
+    {
+      "id": "soc-yibing",
+      "cat": "society",
+      "type": "医疗",
+      "name": "疫病与公共卫生",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代城市人口密集，疫病频发，官府设病坊、施药、掩骼，形成初步公共卫生应对。",
+      "detail": "两宋记载的疫灾频繁，临安、汴京等大城市尤甚。朝廷常派医官、颁药方、设惠民药局，地方官组织施药、隔离、埋葬死者；寺院与民间善会也参与救济。宋代还出现“病坊”“安济坊”等收容机构，虽规模有限，却体现国家对公共卫生的介入。",
+      "refs": "《宋史·五行志》；《宋会要辑稿·食货》",
+      "tags": [
+        "两宋",
+        "疫病",
+        "公共卫生",
+        "救济"
+      ],
+      "related": [
+        "soc-fuli",
+        "soc-jiuzai",
+        "soc-xiangfang",
+        "soc-yiliao",
+        "tec-jufang"
+      ]
+    },
+    {
+      "id": "pol-dengwen",
+      "cat": "politics",
+      "type": "官制",
+      "name": "登闻鼓院与直诉",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代设登闻鼓院、登闻检院，受理士民直接向朝廷申诉与言事。",
+      "detail": "鼓院掌受文武官员及士民章奏表疏，检院则复核、分类进呈；鼓院前设鼓，击鼓以闻。制度本意是开通下情、纠察冤滞，但实际常受中书、枢密与台谏干预，平民直诉成功率有限。南宋以后鼓院仍存，成为京城的象征性申诉渠道。",
+      "refs": "《宋史·职官志》；《宋会要辑稿·职官》",
+      "tags": [
+        "司法",
+        "官制",
+        "直诉",
+        "民意"
+      ],
+      "related": [
+        "pol-sansheng",
+        "pol-yushitai",
+        "soc-bianchi",
+        "soc-sifa"
       ]
     },
     {
@@ -16567,6 +19864,7 @@
         "名臣"
       ],
       "related": [
+        "tl-1233b",
         "tl-1241"
       ]
     },
@@ -16596,6 +19894,142 @@
         "emp-liao-taizong",
         "geo-yanyun",
         "tl-liao-936"
+      ]
+    },
+    {
+      "id": "tec-shiyou",
+      "cat": "tech",
+      "type": "矿冶",
+      "name": "石油与沈括",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "沈括在《梦溪笔谈》中首次使用“石油”一词，并预言其将大行于世。",
+      "detail": "沈括知延州时，见当地泉水中有黑色油脂可燃，收集燃烧并命名“石油”，还以石油烟制墨。他注意到石油“生于水际沙石”“与泉水相杂”，并推断其地下来源。宋代陕北、川北已有土法开采与利用，沈括的记载是世界石油史上最早的明确文献之一。",
+      "refs": "《梦溪笔谈·杂志》；《宋史·沈括传》",
+      "tags": [
+        "北宋",
+        "科技",
+        "沈括",
+        "石油"
+      ],
+      "related": [
+        "ppl-shenkuo",
+        "tec-dizhi",
+        "tec-mengxi",
+        "tec-yetie"
+      ]
+    },
+    {
+      "id": "pol-mokan",
+      "cat": "politics",
+      "type": "铨选",
+      "name": "磨勘与考课",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代官员考核与迁转的核心制度，以磨勘验资历、以考课定优劣。",
+      "detail": "磨勘由审官院、吏部等机构主持，核对官员历任差遣、举主、资历与考课等第，合格者方可转官；考课则分善最、过失，地方官由监司按年考核。磨勘重资历、考课重实绩，二者结合构成文官升迁的常规轨道，也带来“循资守格”的弊端。",
+      "refs": "《宋史·选举志》；《续资治通鉴长编》",
+      "tags": [
+        "官制",
+        "考核",
+        "铨选",
+        "文官"
+      ],
+      "related": [
+        "pol-guanzhi",
+        "pol-hanlin",
+        "pol-jiluguan",
+        "pol-zhizhou"
+      ]
+    },
+    {
+      "id": "cus-jizao",
+      "cat": "customs",
+      "type": "节令",
+      "name": "祭灶与送穷",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代腊月祭灶神、正月送穷鬼，是岁末年初辞旧迎新的重要习俗。",
+      "detail": "腊月二十四日，人家以酒糟、饧糖祭灶，祈求灶神“上天言好事”；除夕前后扫尘、贴门神、守岁。正月晦日或初六“送穷”，剪纸人、扫积尘、弃于门外，寓意送走贫穷。祭灶与送穷反映了宋人对家宅平安与来年丰足的期盼。",
+      "refs": "《东京梦华录》；《梦粱录》",
+      "tags": [
+        "两宋",
+        "节令",
+        "祭灶",
+        "送穷"
+      ],
+      "related": [
+        "cus-chuxi",
+        "cus-lichun",
+        "cus-yuandan",
+        "soc-xinyang"
+      ]
+    },
+    {
+      "id": "geo-fujianlu",
+      "cat": "geography",
+      "type": "路制",
+      "name": "福建路",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代福建路辖今福建全境，山海兼备，泉州港与建阳刻书闻名天下。",
+      "detail": "福建路多山少田，民众向海谋生，泉州成为海上丝绸之路的重要枢纽，市舶收入丰厚；建阳麻沙、崇化书坊刻书业兴盛，号称“建本”。福建还以茶、盐、荔枝、造船著称，科举中第者众多，形成“海滨邹鲁”之风。",
+      "refs": "《宋史·地理志》；《舆地纪胜》",
+      "tags": [
+        "两宋",
+        "地理",
+        "路制",
+        "福建"
+      ],
+      "related": [
+        "cul-cangshu",
+        "eco-shibo",
+        "eco-yinshua",
+        "geo-quanzhou",
+        "pol-lu"
+      ]
+    },
+    {
+      "id": "cus-qiuqian",
+      "cat": "customs",
+      "type": "游艺",
+      "name": "秋千与斗草",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代春季流行荡秋千、斗草，士女竞相游乐，是寒食清明时节的代表性活动。",
+      "detail": "秋千以彩绳悬木、女子坐立其上，荡越高低为戏；斗草分“文斗”与“武斗”，以草名对答或拉扯草茎比韧。汴京、临安春日，仕女出郊荡秋千、斗草、蹴鞠、放风筝，形成热闹的春游图景。这些活动兼具竞技、审美与社交功能。",
+      "refs": "《东京梦华录》；《武林旧事》",
+      "tags": [
+        "秋千",
+        "两宋",
+        "节令",
+        "斗草"
+      ],
+      "related": [
+        "cus-cuju",
+        "cus-huazhao",
+        "cus-qingming",
+        "cus-shangsi"
       ]
     },
     {
@@ -16691,6 +20125,34 @@
       ]
     },
     {
+      "id": "geo-qinfeng",
+      "cat": "geography",
+      "type": "路制",
+      "name": "秦凤路",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代秦凤路辖今甘肃东部、陕西西部，是防御西夏、经营熙河的前沿。",
+      "detail": "秦凤路以秦州、凤翔府为中心，山川险阻，宜牧马。王韶经略熙河，开边二千余里，设置熙河路，秦凤路成为宋军西进基地。宋夏在好水川、定川寨等地的战争多发生于此，秦凤路也是茶马贸易的重要通道。",
+      "refs": "《宋史·地理志》；《舆地纪胜》",
+      "tags": [
+        "北宋",
+        "地理",
+        "路制",
+        "宋夏"
+      ],
+      "related": [
+        "eco-chama",
+        "pol-lu",
+        "ppl-wangshao",
+        "tl-1041",
+        "tl-1042"
+      ]
+    },
+    {
       "id": "ppl-qinhui",
       "cat": "people",
       "type": "名臣",
@@ -16713,7 +20175,9 @@
       ],
       "related": [
         "ppl-yuefei",
-        "tl-1141"
+        "ppl-zhangjun2",
+        "tl-1141",
+        "tl-1162b"
       ]
     },
     {
@@ -16736,6 +20200,34 @@
       ],
       "groups": [
         "文豪"
+      ]
+    },
+    {
+      "id": "tec-yangma",
+      "cat": "tech",
+      "type": "农具",
+      "name": "秧马与龙骨车",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代推广秧马、龙骨车等农具，减轻插秧与灌溉劳动，提高江南水田生产效率。",
+      "detail": "秧马是一种可骑坐滑行的插秧工具，苏轼在湖北、江东见其便，作《秧马歌》推广；龙骨车即翻车，以人力、畜力或水力提水，宋代江南圩田广泛使用。农具改进与占城稻、稻麦复种相结合，推动宋代农业产量与人口增长。",
+      "refs": "《苏东坡全集·秧马歌》；《陈旉农书》",
+      "tags": [
+        "江南",
+        "农业",
+        "两宋",
+        "农具"
+      ],
+      "related": [
+        "eco-nongtian",
+        "eco-zanchengdao",
+        "ppl-sushi",
+        "tec-nongshu",
+        "tec-shuili"
       ]
     },
     {
@@ -16789,6 +20281,34 @@
       ]
     },
     {
+      "id": "cus-lichun",
+      "cat": "customs",
+      "type": "节令",
+      "name": "立春与鞭春牛",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代立春日举行鞭春牛仪式，象征劝农春耕，官府与民间共同参与。",
+      "detail": "立春前，地方官府用泥土塑春牛、芒神，立春当日以彩杖鞭打春牛，称为“鞭春”或“打春”，随后分送春牛土、春幡、春胜，寓意五谷丰登。汴京、临安还有卖春盘、春饼、生菜等习俗。鞭春牛由官方典礼演变为全民节庆，体现重农传统。",
+      "refs": "《东京梦华录》；《梦粱录》",
+      "tags": [
+        "农耕",
+        "两宋",
+        "节令",
+        "立春"
+      ],
+      "related": [
+        "cus-jizao",
+        "cus-sheri",
+        "cus-yuandan",
+        "eco-nongtian",
+        "geo-kaifeng"
+      ]
+    },
+    {
       "id": "ppl-zhangdun",
       "cat": "people",
       "type": "名臣",
@@ -16839,6 +20359,33 @@
       ]
     },
     {
+      "id": "mil-qianjun",
+      "cat": "military",
+      "type": "兵制",
+      "name": "签军与驱军",
+      "era": "金",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "金代征发汉人、契丹人等充军的制度，签军为强制征兵，驱军则多指被驱掠充役者。",
+      "detail": "金军南下时常“签军”，按户等、丁口强征汉人入伍，或令其运粮、攻城、充作前驱；被签者家属往往被扣为人质。签军战斗力与忠诚度有限，金末滥签更激化社会矛盾。驱军则带有掳掠、驱使性质，与猛安谋克正规军形成鲜明层级。",
+      "refs": "《金史·兵志》；《大金国志》",
+      "tags": [
+        "金",
+        "兵制",
+        "签军",
+        "民族"
+      ],
+      "related": [
+        "mil-mengan",
+        "mil-tieyaozi",
+        "soc-jin-huju",
+        "tl-1214"
+      ]
+    },
+    {
       "id": "ppl-miyouren",
       "cat": "people",
       "type": "艺术家",
@@ -16880,6 +20427,66 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "cul-wenfang"
+      ]
+    },
+    {
+      "id": "eco-jingzongzhi",
+      "cat": "economy",
+      "type": "赋税",
+      "name": "经总制钱与月桩钱",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋为筹措军费而加征的杂税，名目繁多、层层附加，反映南宋财政的窘迫。",
+      "detail": "经制钱始于北宋末，总制钱为南宋初加征，二者合并称经总制钱，多按商税、酒税、契税等附加征收；月桩钱则是按月摊派给地方的军费。此类杂税无固定税则，胥吏上下其手，成为南宋农民与商人负担加重的重要原因。",
+      "refs": "《宋史·食货志》；《建炎以来朝野杂记》",
+      "tags": [
+        "财政",
+        "南宋",
+        "杂税",
+        "军费"
+      ],
+      "related": [
+        "eco-hedi",
+        "eco-mianyi",
+        "eco-quejiu",
+        "eco-shangshui",
+        "mil-sanrong",
+        "soc-xuli",
+        "tl-1263"
+      ]
+    },
+    {
+      "id": "cul-kesi",
+      "cat": "culture",
+      "type": "工艺",
+      "name": "缂丝与宋代织绣",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代缂丝以“通经断纬”织出书画效果，宣和年间达到高峰，成为宫廷与文人珍玩。",
+      "detail": "缂丝又称“刻丝”，以生丝为经、彩色熟丝为纬，小梭局部回织，成品正反如一、细腻如画。北宋宣和画院画家参与粉本，朱克柔、沈子蕃等名家以摹织名人书画著称。宋代织绣还用于官服、宗教幡帐与书画装裱，体现手工业与艺术的结合。",
+      "refs": "《宋史·舆服志》；《辍耕录》",
+      "tags": [
+        "工艺",
+        "两宋",
+        "缂丝",
+        "织绣"
+      ],
+      "related": [
+        "cul-huayuan",
+        "cul-shanshui",
+        "cus-fushi",
+        "eco-sizhi"
       ]
     },
     {
@@ -16980,6 +20587,7 @@
         "名将"
       ],
       "related": [
+        "mil-gaolianghe",
         "tl-979",
         "tl-986"
       ]
@@ -17062,6 +20670,7 @@
         "名将"
       ],
       "related": [
+        "mil-gaolianghe",
         "ppl-yangye",
         "tl-979"
       ]
@@ -17093,6 +20702,64 @@
       ]
     },
     {
+      "id": "soc-zhiyi",
+      "cat": "society",
+      "type": "役法",
+      "name": "职役与差役",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代民户按户等轮流承担州县职役，包括衙前、里正、户长、耆长、壮丁等。",
+      "detail": "职役不是徭役，而是协助官府管理赋税、治安、仓场等事务，但衙前押运官物、里正催税赔补，常致上户破产。北宋前期差役矛盾尖锐，王安石改行免役法；南宋差役与雇役并行，义役、助役等地方办法相继出现，但胥吏盘剥仍未解决。",
+      "refs": "《宋史·食货志》；《文献通考·职役》",
+      "tags": [
+        "基层",
+        "役法",
+        "两宋",
+        "民户"
+      ],
+      "related": [
+        "eco-hedi",
+        "eco-mianyi",
+        "soc-nanyi",
+        "soc-wudeng",
+        "soc-xiangyue",
+        "soc-xuli",
+        "soc-xunjian"
+      ]
+    },
+    {
+      "id": "tec-dantong",
+      "cat": "tech",
+      "type": "冶金",
+      "name": "胆铜法与湿法炼铜",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代利用胆水（硫酸铜溶液）浸铁置换铜的湿法炼铜技术，缓解了铜料短缺。",
+      "detail": "胆铜法基于铁与硫酸铜的置换反应，把铁片浸入胆水，铜析出后刮取冶炼。北宋在信州铅山、饶州德兴等地设场生产，南宋进一步发展，胆铜产量一度占全国铜产的重要份额。该技术是世界冶金史上最早的湿法炼铜大规模应用之一。",
+      "refs": "《宋史·食货志》；《梦溪笔谈》",
+      "tags": [
+        "两宋",
+        "冶金",
+        "胆铜",
+        "化学"
+      ],
+      "related": [
+        "eco-kuangye",
+        "eco-tongqian",
+        "ppl-shenkuo",
+        "tec-mengxi",
+        "tec-yetie"
+      ]
+    },
+    {
       "id": "ppl-huhong",
       "cat": "people",
       "type": "思想家",
@@ -17112,6 +20779,9 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "tho-huxiang"
       ]
     },
     {
@@ -17156,6 +20826,61 @@
       ],
       "groups": [
         "名臣"
+      ]
+    },
+    {
+      "id": "pol-zhishi",
+      "cat": "politics",
+      "type": "官制",
+      "name": "致仕与祠禄",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代官员七十致仕，并以祠禄官安置老病或政治失意者。",
+      "detail": "官员年七十可申请致仕，朝廷给半俸并荫补子孙；不愿或不能致仕者，可除宫观、岳庙等祠禄官，名义上管理道教宫观，实际居家领俸。祠禄官后来成为安置罢黜、调停党争的缓冲带，朱熹、陆九渊等都曾领祠职。",
+      "refs": "《宋史·职官志》；《文献通考·职官》",
+      "tags": [
+        "官制",
+        "致仕",
+        "祠禄",
+        "养老"
+      ],
+      "related": [
+        "pol-guange",
+        "pol-sansi",
+        "pol-yinbu",
+        "ppl-zhuxi"
+      ]
+    },
+    {
+      "id": "cus-huazhao",
+      "cat": "customs",
+      "type": "节令",
+      "name": "花朝节",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代以二月十五为花朝节，士女出郊赏花、扑蝶、挑菜，是春日重要的游赏节日。",
+      "detail": "花朝节又称“百花生日”，临安人赴郊外赏梅、桃、杏，或到园圃挑菜、扑蝶，宫中也有赏花宴。周密《武林旧事》记南宋宫廷于花朝前后赏花、进花。花朝与清明、上巳相连，构成宋代春季连续的游春时节。",
+      "refs": "《武林旧事》；《梦粱录》",
+      "tags": [
+        "两宋",
+        "节令",
+        "花朝",
+        "游春"
+      ],
+      "related": [
+        "cus-qingming",
+        "cus-qiuqian",
+        "cus-shangsi",
+        "cus-yuanlin",
+        "cus-zanhua"
       ]
     },
     {
@@ -17251,10 +20976,15 @@
         "cul-haofang",
         "cul-shufa",
         "cul-wenrenhua",
+        "lit-canglangshihua",
         "lit-chibi-fu",
+        "lit-jihuangjifu",
         "lit-niannujiao",
+        "lit-pai-linjiangxian",
+        "lit-pai-shuilongyin",
         "lit-shuidiao",
         "lit-tixilinbi",
+        "tec-yangma",
         "tho-shuxue",
         "tl-1057",
         "tl-1079"
@@ -17297,14 +21027,15 @@
       "detail": "著《新仪象法要》，详细记载天文仪器结构与星图。",
       "refs": null,
       "tags": [
-        "水运仪象台",
-        "天文"
+        "天文",
+        "水运仪象台"
       ],
       "groups": [
         "科学家"
       ],
       "related": [
-        "tec-shuiyun"
+        "tec-shuiyun",
+        "tec-xingtu"
       ]
     },
     {
@@ -17353,6 +21084,9 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "cul-xishan"
       ]
     },
     {
@@ -17375,6 +21109,9 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "lit-sishitianyuan"
       ]
     },
     {
@@ -17397,6 +21134,91 @@
       ],
       "groups": [
         "名臣"
+      ]
+    },
+    {
+      "id": "cus-chasi",
+      "cat": "customs",
+      "type": "饮食",
+      "name": "茶肆与茶馆",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代城市茶肆遍布，供人饮茶、歇脚、谈生意，兼有娱乐与信息交流功能。",
+      "detail": "汴京、临安的茶肆多临街开设，挂招牌、设雅座，供应点茶、散茶、花果茶与茶点；有的茶肆兼营说书、弈棋、听曲，成为市民社交空间。茶肆还承担行业聚会、雇佣中介与消息传递的功能，是宋代城市公共生活的重要场所。",
+      "refs": "《东京梦华录》；《梦粱录》",
+      "tags": [
+        "饮食",
+        "两宋",
+        "城市",
+        "茶肆"
+      ],
+      "related": [
+        "cus-diancha",
+        "cus-jiulou",
+        "cus-washe",
+        "cus-yinshi",
+        "eco-chama",
+        "lit-menglianglu"
+      ]
+    },
+    {
+      "id": "geo-jinghubei",
+      "cat": "geography",
+      "type": "路制",
+      "name": "荆湖北路",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代荆湖北路辖今湖北中部，控扼长江中游，是南北交通与军事要冲。",
+      "detail": "荆湖北路以江陵、鄂州、岳州为中心，长江、汉水与洞庭湖水系交汇，漕运与商旅繁盛。鄂州（今武汉）是长江中游大港，江陵为军事重镇。宋金、宋元战争中，荆湖北路多次成为拉锯战场，襄阳、鄂州尤其关键。",
+      "refs": "《宋史·地理志》；《舆地纪胜》",
+      "tags": [
+        "两宋",
+        "地理",
+        "路制",
+        "长江"
+      ],
+      "related": [
+        "eco-caoyun",
+        "geo-ezhou",
+        "geo-xiangyang",
+        "mil-changjiang",
+        "pol-lu"
+      ]
+    },
+    {
+      "id": "pol-yinbu",
+      "cat": "politics",
+      "type": "官制",
+      "name": "荫补制度",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代官员子弟、亲属凭恩荫入仕的制度，是科举之外最重要的入官途径。",
+      "detail": "荫补名目有郊祀、致仕、遗表、登极等，按官员品级与身份补授子弟、期亲甚至门客，初授多为低阶武官、监当或祠庙官。荫补人数庞大，造成“冗官”与入仕者素质参差；仁宗以后屡加限制，规定考试、年甲与限额，但难以根本裁抑。",
+      "refs": "《宋史·职官志》；《宋会要辑稿·选举》",
+      "tags": [
+        "官制",
+        "冗官",
+        "恩荫",
+        "入仕"
+      ],
+      "related": [
+        "pol-guanzhi",
+        "pol-keju",
+        "pol-zhishi",
+        "pol-zongshi",
+        "soc-xingshi"
       ]
     },
     {
@@ -17569,6 +21391,9 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "tl-1259b"
       ]
     },
     {
@@ -17686,8 +21511,39 @@
         "名臣"
       ],
       "related": [
+        "mil-caishi",
         "tl-1161",
         "tl-1161b"
+      ]
+    },
+    {
+      "id": "ppl-yuanshu",
+      "cat": "people",
+      "type": "文豪",
+      "name": "袁枢",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "文豪",
+      "birth": 1131,
+      "death": 1205,
+      "summary": "南宋史学家，创“纪事本末体”，将《资治通鉴》改编为《通鉴纪事本末》。",
+      "detail": "袁枢字机仲，建州建安人，隆兴元年进士。他喜读《资治通鉴》，因编年体一事散见诸卷，遂以事件为中心，辑成《通鉴纪事本末》四十二卷，开纪事本末体先河。该体以事为纲、首尾完整，对后世史学编纂影响深远。",
+      "refs": "《宋史·袁枢传》；《通鉴纪事本末》",
+      "tags": [
+        "资治通鉴",
+        "南宋",
+        "史学家",
+        "纪事本末"
+      ],
+      "groups": [
+        "文豪"
+      ],
+      "related": [
+        "ppl-litao",
+        "ppl-simaguang",
+        "tho-shixue",
+        "tl-1084"
       ]
     },
     {
@@ -17713,6 +21569,34 @@
       ]
     },
     {
+      "id": "lit-pai-linjiangxian",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·临江仙",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调五十四字或五十八字，原为唐教坊曲，宋代多用于写羁旅、怀古与人生感慨。",
+      "detail": "临江仙句式灵活，有不同体格。苏轼“夜饮东坡醒复醉”、晏几道“梦后楼台高锁”皆为名篇。此调声情舒缓，宜于抒写超旷、感伤与历史兴亡之感，是宋代文人最喜爱的词牌之一。",
+      "refs": "《词律》；《钦定词谱》",
+      "tags": [
+        "两宋",
+        "怀古",
+        "词牌",
+        "中调"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-linjiangxian-sushi",
+        "lit-linjiangxian-yanjidao",
+        "ppl-sushi",
+        "ppl-yanjidao"
+      ]
+    },
+    {
       "id": "lit-pai-niannujiao",
       "cat": "literature",
       "type": "词牌",
@@ -17733,7 +21617,8 @@
         "念奴娇"
       ],
       "related": [
-        "cul-ci"
+        "cul-ci",
+        "lit-pai-shuilongyin"
       ]
     },
     {
@@ -17758,6 +21643,34 @@
       ],
       "related": [
         "cul-ci"
+      ]
+    },
+    {
+      "id": "lit-pai-shuilongyin",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·水龙吟",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "长调词牌，又名《龙吟曲》《庄椿岁》，双调一百二字上下，声情激越，宜写登临怀古。",
+      "detail": "水龙吟以苏轼《水龙吟·次韵章质夫杨花词》、辛弃疾《水龙吟·登建康赏心亭》最为著名。上片多写景，下片多抒怀，句式长短错落，适合表现豪放悲慨之情。此调在宋代词坛使用广泛，是豪放词的重要载体。",
+      "refs": "《词律》；《钦定词谱》",
+      "tags": [
+        "豪放",
+        "两宋",
+        "词牌",
+        "长调"
+      ],
+      "related": [
+        "cul-haofang",
+        "lit-pai-niannujiao",
+        "lit-shuilongyin",
+        "ppl-sushi",
+        "ppl-xinqiji"
       ]
     },
     {
@@ -17857,6 +21770,34 @@
       ]
     },
     {
+      "id": "lit-pai-zhegutian",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·鹧鸪天",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调五十五字，上片四句三平韵，下片五句三平韵，句式整齐，宜写相思、赠别与身世之感。",
+      "detail": "鹧鸪天由七言律诗变化而来，晏几道“彩袖殷勤捧玉钟”、辛弃疾“壮岁旌旗拥万夫”、姜夔“肥水东流无尽期”等均为名作。此调篇幅短小而容量较大，既能婉约言情，也能豪放抒志，是宋词中最常用的词牌之一。",
+      "refs": "《词律》；《钦定词谱》",
+      "tags": [
+        "两宋",
+        "词牌",
+        "小令",
+        "常用"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-zhegutian-yanjidao",
+        "ppl-jiangkuai",
+        "ppl-xinqiji",
+        "ppl-yanjidao"
+      ]
+    },
+    {
       "id": "ppl-xiefangde",
       "cat": "people",
       "type": "名臣",
@@ -17946,6 +21887,34 @@
       ]
     },
     {
+      "id": "tho-xiangshu",
+      "cat": "thought",
+      "type": "学派",
+      "name": "象数学（邵雍）",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "北宋邵雍以《易》数推演宇宙与历史，创“先天学”与“元会运世”体系。",
+      "detail": "邵雍居洛阳，著《皇极经世》，以象数推演天地生成、历史兴衰，把时间分为元、会、运、世，提出“皇帝王霸”的历史阶段说。其学融合易学、道家与儒家，神秘而系统，二程称其“内圣外王之学”，对宋明易学与术数影响深远。",
+      "refs": "《宋史·邵雍传》；《皇极经世》",
+      "tags": [
+        "北宋",
+        "易学",
+        "象数",
+        "邵雍"
+      ],
+      "related": [
+        "ppl-shaoyong",
+        "tho-erchheng",
+        "tho-lixue",
+        "tho-lixue-guan",
+        "tho-zhou"
+      ]
+    },
+    {
       "id": "ppl-hezhu",
       "cat": "people",
       "type": "文豪",
@@ -17990,6 +21959,8 @@
       ],
       "related": [
         "pol-gongtian",
+        "tl-1259b",
+        "tl-1263",
         "tl-1275"
       ]
     },
@@ -18085,6 +22056,9 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "ppl-lvmengzheng"
       ]
     },
     {
@@ -18108,6 +22082,40 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tho-qingyuan"
+      ]
+    },
+    {
+      "id": "ppl-zhaorushi",
+      "cat": "people",
+      "type": "名臣",
+      "name": "赵汝适",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "名臣",
+      "birth": 1170,
+      "death": 1231,
+      "summary": "南宋地理学家，任福建路市舶提举，据海外商旅见闻著《诸蕃志》。",
+      "detail": "赵汝适字伯可，宋太宗八世孙。嘉定至宝庆年间任福建路市舶提举，兼知泉州，接触大量海商与蕃客。他广询海外诸国方位、物产、风俗与航路，成《诸蕃志》二卷，记五十余国，是研究宋代海上丝绸之路的重要文献。",
+      "refs": "《宋史·宗室世系表》；《诸蕃志》",
+      "tags": [
+        "海外贸易",
+        "南宋",
+        "地理",
+        "诸蕃志"
+      ],
+      "groups": [
+        "名臣"
+      ],
+      "related": [
+        "eco-shibo",
+        "geo-dashi",
+        "geo-guangzhou",
+        "geo-quanzhou",
+        "ppl-zhouqufei"
       ]
     },
     {
@@ -18185,6 +22193,8 @@
         "文豪"
       ],
       "related": [
+        "lit-pai-shuilongyin",
+        "lit-pai-zhegutian",
         "lit-pozhenzi",
         "lit-yongyule"
       ]
@@ -18403,6 +22413,33 @@
       ]
     },
     {
+      "id": "pol-jinzouyuan",
+      "cat": "politics",
+      "type": "官制",
+      "name": "进奏院与邸报",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "进奏院负责传递地方章奏、抄发朝廷政令，其抄件形成早期的“邸报”。",
+      "detail": "宋初进奏院隶给事中，后由都进奏院统一收发各地奏状与诏令，并按事目抄送诸路。邸报内容以诏令、任免、章奏为主，士大夫借此了解朝政；南宋临安有“报摊”售卖朝报。进奏院还承担官员赴阙、文书稽程等事务，是中央与地方信息流通的枢纽。",
+      "refs": "《宋史·职官志》；《宋会要辑稿·职官》",
+      "tags": [
+        "官制",
+        "信息",
+        "邸报",
+        "文书"
+      ],
+      "related": [
+        "cul-cangshu",
+        "pol-lu",
+        "pol-zhuanyun",
+        "soc-youxu"
+      ]
+    },
+    {
       "id": "ppl-liao-shuluping",
       "cat": "people",
       "type": "女性",
@@ -18452,6 +22489,33 @@
       ]
     },
     {
+      "id": "soc-youxu",
+      "cat": "society",
+      "type": "交通",
+      "name": "邮驿与递铺",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代以步递、马递、急脚递构成全国邮驿网络，传递公文、军情与官员往来。",
+      "detail": "递铺每十里或二十里一置，铺兵接力传送，急脚递日行四百里，金字牌急脚递可日行五百里。驿站则供官员住宿、换马。宋代邮驿由枢密院与兵部管理，路线以汴京、临安为中心辐射全国。岳飞被十二道金牌召还，即是急脚递的著名事例。",
+      "refs": "《宋史·兵志》；《宋会要辑稿·方域》",
+      "tags": [
+        "交通",
+        "两宋",
+        "信息",
+        "邮驿"
+      ],
+      "related": [
+        "geo-kaifeng",
+        "mil-yuejiajun",
+        "pol-jinzouyuan",
+        "soc-xunjian"
+      ]
+    },
+    {
       "id": "ppl-shaoyong",
       "cat": "people",
       "type": "思想家",
@@ -18471,6 +22535,9 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "tho-xiangshu"
       ]
     },
     {
@@ -18494,6 +22561,38 @@
       ],
       "groups": [
         "艺术家"
+      ]
+    },
+    {
+      "id": "ppl-zhengqiao",
+      "cat": "people",
+      "type": "文豪",
+      "name": "郑樵",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "文豪",
+      "birth": 1104,
+      "death": 1162,
+      "summary": "南宋史学家、目录学家，隐居夹漈山三十年，著《通志》二百卷。",
+      "detail": "郑樵字渔仲，福建莆田人。他无意仕进，遍读群书，游历名山大川，晚年献《通志》于朝廷。《通志》分纪、谱、略、列传，其中“二十略”尤具卓识，涵盖天文、地理、礼乐、文字、校雠、金石等，是典章制度史的巨著。",
+      "refs": "《宋史·郑樵传》；《通志》",
+      "tags": [
+        "通志",
+        "南宋",
+        "目录学",
+        "史学家"
+      ],
+      "groups": [
+        "文豪"
+      ],
+      "related": [
+        "cul-cangshu",
+        "ppl-chaogongwu",
+        "ppl-chenzhensun",
+        "ppl-simaguang",
+        "ppl-wangyinglin",
+        "tho-shixue"
       ]
     },
     {
@@ -18543,6 +22642,39 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "cul-xishan"
+      ]
+    },
+    {
+      "id": "cus-jiulou",
+      "cat": "customs",
+      "type": "饮食",
+      "name": "酒楼与酒旗",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "宋代酒楼高张酒旗、夜不罢市，官营酒库与民营正店构成庞大的酒业网络。",
+      "detail": "汴京有“正店”七十二户，脚店、酒摊不计其数；临安酒楼以彩画、灯烛、器皿争胜，酒旗招展，昼夜营业。官府通过榷酒、卖酒曲控制酒利，酒楼也成为宴饮、饯别、谈判与娱乐的场所。宋词中大量送别、登楼之作，多以酒楼为背景。",
+      "refs": "《东京梦华录》；《梦粱录》",
+      "tags": [
+        "饮食",
+        "酒楼",
+        "两宋",
+        "酒业"
+      ],
+      "related": [
+        "cus-chasi",
+        "cus-jiu",
+        "cus-wudai-yanyin",
+        "cus-yinshi",
+        "eco-quejiu",
+        "geo-kaifeng",
+        "lit-yulinling"
       ]
     },
     {
@@ -18592,6 +22724,62 @@
       "related": [
         "tl-1161b",
         "tl-1189b"
+      ]
+    },
+    {
+      "id": "cus-jin-hunsu",
+      "cat": "customs",
+      "type": "婚俗",
+      "name": "金代女真婚俗",
+      "era": "金",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "金代女真婚俗保留收继婚、指腹为婚等旧习，入主中原后逐渐受汉礼影响。",
+      "detail": "女真旧俗有“父死则妻其母”的收继婚，也有指腹为婚、以马匹为聘等；婚礼有拜门、纳币、亲迎等程序。金代中期以后，受汉人礼制影响，婚俗渐趋隆重，但收继婚在民间仍存。金代婚姻制度反映了女真旧俗与汉文化的碰撞融合。",
+      "refs": "《金史·礼志》；《大金国志》",
+      "tags": [
+        "金",
+        "女真",
+        "民族",
+        "婚俗"
+      ],
+      "related": [
+        "cus-hunsu",
+        "cus-liao-hunsu",
+        "soc-hunyin",
+        "soc-jin-huju"
+      ]
+    },
+    {
+      "id": "soc-jin-huju",
+      "cat": "society",
+      "type": "阶层",
+      "name": "金代猛安谋克户与汉户",
+      "era": "金",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "金代社会以猛安谋克户为统治核心，汉人、契丹人编户则承担赋税与差役，形成双轨结构。",
+      "detail": "猛安谋克是女真军政合一组织，成员平时生产、战时出征，享有授田与免役优待。金灭辽、北宋后，大量汉人被编为州县户，承担夏秋两税与杂役；契丹、渤海等族另编。海陵王以后猛安谋克南迁、占地，与汉户矛盾加剧，金末签军与括地更激化民族与社会冲突。",
+      "refs": "《金史·食货志》；《金史·兵志》",
+      "tags": [
+        "金",
+        "民族",
+        "猛安谋克",
+        "社会"
+      ],
+      "related": [
+        "cus-jin-hunsu",
+        "geo-jin-zhongdu",
+        "mil-mengan",
+        "mil-qianjun",
+        "soc-zhuhu",
+        "tl-1214"
       ]
     },
     {
@@ -18662,9 +22850,9 @@
       "detail": "年号：收国、天辅。1114 年起兵反辽，宁江州、出河店连胜；1115 年建国号大金。与宋结“海上之盟”夹攻辽。1123 年病逝，弟吴乞买继位。",
       "refs": "《金史·太祖本纪》",
       "tags": [
+        "猛安谋克",
         "女真起兵",
-        "收国",
-        "猛安谋克"
+        "收国"
       ],
       "groups": [
         "帝王"
@@ -18824,6 +23012,37 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "tec-xiaoer"
+      ]
+    },
+    {
+      "id": "tec-xiaoer",
+      "cat": "tech",
+      "type": "医学",
+      "name": "钱乙与《小儿药证直诀》",
+      "era": "北宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "北宋钱乙专攻儿科，创立五脏辨证体系，所著《小儿药证直诀》是现存最早的儿科专著。",
+      "detail": "钱乙曾任太医丞，提出小儿“脏腑柔弱、易虚易实、易寒易热”，以五脏虚实辨治，创制六味地黄丸等名方。其弟子阎孝忠整理其医案与论述成书，系统总结小儿生理、病理、诊断与方药，对后世中医儿科影响极大。",
+      "refs": "《小儿药证直诀》；《宋史·钱乙传》",
+      "tags": [
+        "北宋",
+        "医学",
+        "儿科",
+        "钱乙"
+      ],
+      "related": [
+        "ppl-qianyi",
+        "soc-yiliao",
+        "tec-furen",
+        "tec-jufang",
+        "tec-yixue"
       ]
     },
     {
@@ -18872,6 +23091,11 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "lit-shufen",
+        "lit-sishitianyuan",
+        "lit-xiaochi"
       ]
     },
     {
@@ -18896,6 +23120,7 @@
         "名臣"
       ],
       "related": [
+        "mil-yashan",
         "tl-1278",
         "tl-1279"
       ]
@@ -18922,6 +23147,9 @@
         "思想家"
       ],
       "related": [
+        "tho-wuxue",
+        "tho-yongjia",
+        "tho-yongkang",
         "tho-zhedong"
       ]
     },
@@ -18984,12 +23212,42 @@
       "detail": "其易学思想经周敦颐、邵雍发展，对宋代理学影响深远。",
       "refs": null,
       "tags": [
-        "道士",
         "易学",
+        "道士",
         "睡仙"
       ],
       "groups": [
         "思想家"
+      ]
+    },
+    {
+      "id": "ppl-chenzhensun",
+      "cat": "people",
+      "type": "文豪",
+      "name": "陈振孙",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": "文豪",
+      "birth": 1179,
+      "death": 1262,
+      "summary": "南宋目录学家，著《直斋书录解题》，以解题详赡、著录丰富著称。",
+      "detail": "陈振孙字伯玉，号直斋，湖州安吉人，官至宝章阁待制。他长期在福建、浙江等地任职，遍访藏书，编成《直斋书录解题》五十六卷，著录图书三千余种，每书详记卷数、作者、版本与内容得失。原书已佚，清人从《永乐大典》辑出，是研究宋代典籍流传的关键文献。",
+      "refs": "《直斋书录解题》；《宋史·艺文志》",
+      "tags": [
+        "南宋",
+        "藏书",
+        "目录学",
+        "书录解题"
+      ],
+      "groups": [
+        "文豪"
+      ],
+      "related": [
+        "cul-cangshu",
+        "ppl-chaogongwu",
+        "ppl-zhengqiao",
+        "tho-kaoju"
       ]
     },
     {
@@ -19059,6 +23317,36 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "tec-furen"
+      ]
+    },
+    {
+      "id": "tec-furen",
+      "cat": "tech",
+      "type": "医学",
+      "name": "陈自明与《妇人大全良方》",
+      "era": "南宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋陈自明所著妇科专著，系统总结调经、胎产、产后诸病，是古代妇产科的重要典籍。",
+      "detail": "陈自明任建康府明道书院医谕，博采《千金》《外台》及家传验方，编成《妇人大全良方》二十四卷，分调经、众疾、求嗣、胎教、妊娠、坐月、产难、产后等门。书中重视气血与冲任，记载大量方剂与助产技术，后世妇科多宗之。",
+      "refs": "《妇人大全良方》；《宋史·艺文志》",
+      "tags": [
+        "医学",
+        "南宋",
+        "妇科",
+        "陈自明"
+      ],
+      "related": [
+        "ppl-chenziming",
+        "soc-yiliao",
+        "tec-xiaoer",
+        "tec-yixue"
       ]
     },
     {
@@ -19083,6 +23371,8 @@
         "名将"
       ],
       "related": [
+        "ppl-liuguangshi",
+        "ppl-zhangjun2",
         "tl-1130"
       ]
     },
@@ -19108,6 +23398,7 @@
         "名臣"
       ],
       "related": [
+        "tho-qingyuan",
         "tl-1195",
         "tl-1206"
       ]
@@ -19132,6 +23423,9 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "tec-xingtu"
       ]
     },
     {
@@ -19206,6 +23500,34 @@
       ]
     },
     {
+      "id": "pol-guange",
+      "cat": "politics",
+      "type": "官制",
+      "name": "馆阁与三馆秘阁",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "昭文馆、史馆、集贤院与秘阁合称馆阁，是宋代储备人才、编修典籍的清要之地。",
+      "detail": "三馆秘阁掌藏书、校勘、编修，馆职如直馆、直阁、校理、检讨，虽官品不高却为士人荣衔，常由进士高第或制科入选。馆阁是宰辅与词臣的养成所，欧阳修、苏轼、司马光等都曾任职；元丰改制后馆职渐虚，南宋复设秘书省统之。",
+      "refs": "《宋史·职官志》；《南宋馆阁录》",
+      "tags": [
+        "官制",
+        "藏书",
+        "馆阁",
+        "清要"
+      ],
+      "related": [
+        "cul-cangshu",
+        "pol-hanlin",
+        "pol-keju",
+        "pol-sansheng",
+        "pol-zhishi"
+      ]
+    },
+    {
       "id": "ppl-mayuan",
       "cat": "people",
       "type": "艺术家",
@@ -19271,6 +23593,9 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1233b"
       ]
     },
     {
@@ -19311,14 +23636,15 @@
       "detail": "诗风奇崛瘦硬，讲究“点铁成金”。书法长枪大戟，自成一家。",
       "refs": null,
       "tags": [
-        "宋四家",
-        "江西诗派"
+        "江西诗派",
+        "宋四家"
       ],
       "groups": [
         "文豪"
       ],
       "related": [
-        "cul-jiangxi"
+        "cul-jiangxi",
+        "lit-jihuangjifu"
       ]
     },
     {

@@ -19,6 +19,7 @@ import json
 import os
 import re
 import sqlite3
+import subprocess
 import sys
 import time
 import urllib.error
@@ -32,6 +33,9 @@ CACHE = os.path.join(ROOT, "db", "wiki_cache.json")
 REPORT = os.path.join(ROOT, "db", "wiki_report.json")
 API = "https://zh.wikipedia.org/w/api.php"
 UA = "SongAtlas/1.0 (local history research; https://localhost) python-urllib"
+# 本机 DNS 会把 zh.wikipedia.org 解析到不可达地址；固定到一个可用边缘 IP。
+# 可用 WIKI_RESOLVE=host:port:ip 覆盖。
+WIKI_RESOLVE = os.environ.get("WIKI_RESOLVE", "zh.wikipedia.org:443:208.80.154.224")
 LICENSE = "CC BY-SA 4.0"
 MAX_CHARS = 4000
 SLEEP = 0.6
@@ -125,6 +129,7 @@ OVERRIDES = {
     "pol-liao-wolusuo": "斡耳朵",
     "ppl-zhaofujin": "茂德帝姬",
     "ppl-zhaomingcheng": "赵明诚",
+    "lit-ciyuan": "词源 (张炎)",
     "geo-mingzhou": "宁波市",
     "geo-luoyang": "洛阳市",
     "pol-lu": "路 (行政区划)",
@@ -136,7 +141,7 @@ OVERRIDES = {
 SKIP_IDS = {
     "cul-liao-fojiao", "cul-liao-sancai", "cul-liao-ci",
     "eco-liao-nongye", "eco-liao-xumu", "eco-liao-yantie", "eco-liao-huobi",
-    "cul-zaju", "soc-mengxue",
+    "cul-zaju", "soc-mengxue", "lit-qitianle",
 }
 
 
@@ -150,6 +155,7 @@ def clean_name(name):
 def candidates(name):
     """生成候选维基标题，按可信度排序。"""
     raw = clean_name(name)
+    raw = re.sub(r"^词牌\s*[·・]\s*", "", raw)
     out = []
 
     def add(x):
@@ -248,25 +254,44 @@ def api(params):
     params.setdefault("formatversion", "2")
     params.setdefault("redirects", "1")
     url = API + "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers={
-        "User-Agent": UA,
-        "Accept": "application/json",
-        "Accept-Encoding": "identity",
-    })
+
+    def fetch_curl():
+        cmd = ["curl", "-sS", "--max-time", "30",
+               "--resolve", WIKI_RESOLVE,
+               "-H", "User-Agent: " + UA,
+               "-H", "Accept: application/json",
+               "-H", "Accept-Encoding: identity",
+               url]
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        if r.returncode != 0:
+            raise RuntimeError((r.stderr or "curl failed").strip())
+        return json.loads(r.stdout)
+
+    def fetch_urllib():
+        req = urllib.request.Request(url, headers={
+            "User-Agent": UA,
+            "Accept": "application/json",
+            "Accept-Encoding": "identity",
+        })
+        with urllib.request.urlopen(req, timeout=25) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+
     for attempt in range(5):
         try:
-            with urllib.request.urlopen(req, timeout=25) as resp:
-                return json.loads(resp.read().decode("utf-8"))
-        except urllib.error.HTTPError as exc:
-            if exc.code == 429:
+            return fetch_curl()
+        except Exception as exc:  # noqa: BLE001
+            msg = str(exc)
+            if "429" in msg:
                 wait = 15 * (attempt + 1)
                 print(f"    429 限流，等待 {wait}s …")
                 time.sleep(wait)
                 continue
-            if attempt == 4:
-                raise
-            time.sleep(2 * (attempt + 1))
-        except Exception:  # noqa: BLE001
+            if attempt == 2:
+                # curl 不通时退回 urllib（例如环境没有 curl）
+                try:
+                    return fetch_urllib()
+                except Exception:
+                    pass
             if attempt == 4:
                 raise
             time.sleep(2 * (attempt + 1))
@@ -310,11 +335,25 @@ def search_pages(q, full=False):
     return [order[k] for k in sorted(order)]
 
 
+BAD_TITLE = ("植物", "专辑", "專輯", "电视剧", "電視劇", "电影", "電影",
+             "歌曲", "乐队", "樂隊", "乐团", "樂團", "游戏", "遊戲", "动漫", "動漫",
+             "漫画", "漫畫", "小说", "小說", "综艺", "綜藝")
+
+
 def usable(page, cands, item):
     ex = (page.get("extract") or "").strip()
+    title = page.get("title", "")
     if len(ex) < MIN_EXTRACT:
         return False, "extract too short"
-    if "消歧义" in page.get("title", "") or "可以指" in ex[:120]:
+    if any(w in title for w in BAD_TITLE):
+        return False, "wrong-type-title"
+    # 词/词牌条目：正文必须确实是词或词牌，避免“虞美人(植物)”这类同名条目
+    if item.get("category_id") == "literature" and item.get("type") in ("词", "词牌"):
+        head = ex[:80]
+        if "词牌" not in head and "词" not in head and "·" not in title:
+            return False, "not-ci"
+    if ("消歧义" in title or "可以指" in ex[:120]
+            or "可能指" in ex[:120]):
         return False, "disambiguation"
     # 年代粗校验：人物生卒、事件年份都不在导言里，降权而非直接拒绝
     years = []
