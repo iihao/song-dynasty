@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-04T11:47:10",
+ "generated_at": "2026-11-04T14:30:07",
  "license": "维基百科内容遵循 CC BY-SA 4.0，使用时请保留署名与链接",
  "items": [
   {
@@ -3139,6 +3139,21 @@
    "fetched_at": "2026-11-04T11:45:42"
   },
   {
+   "item_id": "lit-pai-basheng",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "八声甘州",
+   "url": "https://zh.wikipedia.org/wiki/%E5%85%AB%E5%A3%B0%E7%94%98%E5%B7%9E",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 53494561,
+   "qid": "Q10892062",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "八声甘州，词牌名。亦称《甘州》、《潇潇雨》、《宴瑶池》。此调取自唐教坊大曲《甘州》中的一段，全词上下阙共八韵，故称八声甘州。\n双调九十七字，上下阕各九句，四平韵。",
+   "fetched_at": "2026-11-04T14:29:38"
+  },
+  {
    "item_id": "lit-pai-busuanzi",
    "source": "wikipedia",
    "lang": "zh",
@@ -3169,6 +3184,21 @@
    "fetched_at": "2026-11-04T11:33:12"
   },
   {
+   "item_id": "lit-pai-dingfengbo",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "定风波",
+   "url": "https://zh.wikipedia.org/wiki/%E5%AE%9A%E9%A3%8E%E6%B3%A2",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 89294392,
+   "qid": "Q10948762",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "定风波，词牌名。双调六十二字，前阕三平韵，两仄韵，后阕四仄韵，两平韵。平仄换韵方式为“甲乙甲丙甲丁甲”。以平声韵为主，间以仄声韵。",
+   "fetched_at": "2026-11-04T14:29:45"
+  },
+  {
    "item_id": "lit-pai-hexinglang",
    "source": "wikipedia",
    "lang": "zh",
@@ -3197,6 +3227,21 @@
    "note": "ok",
    "extract": "浣溪沙，词牌名。双调四十二字，上阕三句三平韵，下阕三句两平韵，一韵到底。下阕开始两句一般要求对仗。\n本为唐代教坊曲名。取自西施在若耶溪浣纱故事。",
    "fetched_at": "2026-11-04T11:33:08"
+  },
+  {
+   "item_id": "lit-pai-jiangchengzi",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "江城子",
+   "url": "https://zh.wikipedia.org/wiki/%E6%B1%9F%E5%9F%8E%E5%AD%90",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94144324,
+   "qid": "Q11134092",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "江城子，词牌名。亦称《江神子》。单调三十五字或双调七十字，前后阕格式相同，各五平韵，一韵到底。唐时本为单调，宋人将其改为双调。",
+   "fetched_at": "2026-11-04T14:29:49"
   },
   {
    "item_id": "lit-pai-linjiangxian",
@@ -3274,6 +3319,36 @@
    "fetched_at": "2026-11-04T11:33:04"
   },
   {
+   "item_id": "lit-pai-pusaman",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "菩萨蛮",
+   "url": "https://zh.wikipedia.org/wiki/%E8%8F%A9%E8%90%A8%E8%9B%AE",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 87260596,
+   "qid": "Q15904142",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "菩萨蛮，词牌名。本为唐朝教坊曲。《宋史·乐志》称为“女弟子舞队名”。唐唐苏鄂《杜阳杂编》称，唐宣宗大中年间，女蛮国遣使者进贡，她们身上披挂着珠宝，梳着高高的发髻，号称菩萨蛮队，当时教坊因此制成《菩萨蛮曲》。唐宣宗爱唱《菩萨蛮》词，令狐绹特命温庭筠撰写以进，即今《花间集》温词十四首。\n双调四十四字，上下阙各四句，两仄韵、两平韵。",
+   "fetched_at": "2026-11-04T14:29:58"
+  },
+  {
+   "item_id": "lit-pai-qingpingyue",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "清平乐",
+   "url": "https://zh.wikipedia.org/wiki/%E6%B8%85%E5%B9%B3%E4%B9%90",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94144070,
+   "qid": "Q15949703",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "清平乐，词牌名。亦称《清平乐令》、《醉东风》。\n双调四十六字，前阕四仄韵，后阕三平韵，平仄换韵。\n前阕四仄韵 / 后阕三平韵 - 平仄换韵。仄",
+   "fetched_at": "2026-11-04T14:29:52"
+  },
+  {
    "item_id": "lit-pai-qingyuan",
    "source": "wikipedia",
    "lang": "zh",
@@ -3287,6 +3362,21 @@
    "note": "ok",
    "extract": "青玉案，著名的词牌名，其名源自于东汉张衡的七言古诗《四愁诗》结尾的“美人赠我锦绣段，何以报之青玉案。路远莫致倚增叹，何为怀忧心烦惋。” 青玉案，原本的意思是指青玉（和田玉）所制的短脚盘子，是一种名贵的食用器具。 词牌《青玉案》属于“中调”（意思是介于59至90字之间的宋词），分上下两片，全词总共有六十七字，双调，前后阇各五仄韵，上去通押。 在宋词中，双调最常见，通常用于“场景到情感”的过渡。在《青玉案‧元夕》中，两节（叫做“阕”或“片”）的对称结构营造出强烈的“镜像效果”；辛弃疾用前半部建构了“喧嚣之墙”（烟火、人群），而用后半部则“打破寂静”（在安静的角落里寻找那个人）。",
    "fetched_at": "2026-11-04T11:33:13"
+  },
+  {
+   "item_id": "lit-pai-queqiaoxian",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "鹊桥仙",
+   "url": "https://zh.wikipedia.org/wiki/%E9%B9%8A%E6%A1%A5%E4%BB%99",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94815986,
+   "qid": "Q11174636",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "鹊桥仙，词牌名。亦称《鹊桥仙令》、《金风玉露相逢曲》、《广寒秋》。最初是咏牛郎织女在七夕藉鹊桥相会故事的，因欧阳修的“鹊迎桥路接天津”得名。\n双调五十六字，前后阕各两仄韵，一韵到底。前后句首两句要求对仗。",
+   "fetched_at": "2026-11-04T14:30:07"
   },
   {
    "item_id": "lit-pai-rumengling",
@@ -3364,6 +3454,21 @@
    "fetched_at": "2026-11-04T11:45:45"
   },
   {
+   "item_id": "lit-pai-sumuzhe",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "苏幕遮",
+   "url": "https://zh.wikipedia.org/wiki/%E8%8B%8F%E5%B9%95%E9%81%AE",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94983625,
+   "qid": "Q17029924",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "苏幕遮，词牌名。亦称《鬓云松令》。前后阕无异，四仄韵。名字来自高昌回鹘妇女所戴的油帽。",
+   "fetched_at": "2026-11-04T14:29:55"
+  },
+  {
    "item_id": "lit-pai-tasuoxing",
    "source": "wikipedia",
    "lang": "zh",
@@ -3379,6 +3484,36 @@
    "fetched_at": "2026-11-04T11:45:48"
   },
   {
+   "item_id": "lit-pai-wanghaichao",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "望海潮",
+   "url": "https://zh.wikipedia.org/wiki/%E6%9C%9B%E6%B5%B7%E6%BD%AE",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 48346463,
+   "qid": "Q11092452",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "望海潮，词牌名。此曲是柳永所创，平韵双调。亦一百零七字，双调，上阙五平韵、下阙六平韵，一韵到底。",
+   "fetched_at": "2026-11-04T14:29:47"
+  },
+  {
+   "item_id": "lit-pai-xijiangyue",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "西江月",
+   "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%B1%9F%E6%9C%88",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94144143,
+   "qid": "Q15940697",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "西江月是一个词牌名。亦称《步虚词》、《白苹香》、《江月令》、《西江月慢》。取自李白的诗句《苏台览古》“只今惟有西江月，曾照吴王宫里人”。西江是长江的别称。唐教坊曲，用作词调。\n双调五十字，前后阕各两平韵，一仄韵，同部平仄互押，前后阕起首两句例用对仗。",
+   "fetched_at": "2026-11-04T14:30:04"
+  },
+  {
    "item_id": "lit-pai-yangzhouman",
    "source": "wikipedia",
    "lang": "zh",
@@ -3392,6 +3527,36 @@
    "note": "ok",
    "extract": "扬州慢，词牌名，为南宋词人姜夔自创。\n双调九十八字，其中上片50字，下片48字。",
    "fetched_at": "2026-11-04T11:45:40"
+  },
+  {
+   "item_id": "lit-pai-yijianmei",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "一翦梅",
+   "url": "https://zh.wikipedia.org/wiki/%E4%B8%80%E7%BF%A6%E6%A2%85",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 91126433,
+   "qid": "Q10864054",
+   "confidence": 0.95,
+   "match": "exact",
+   "note": "ok",
+   "extract": "《一翦梅》，词牌名，得名于周邦彦词之起句“一翦梅花万样娇”。双调，六十字。前后阕各六句、三平韵，一韵到底。另有变体数种。",
+   "fetched_at": "2026-11-04T14:29:36"
+  },
+  {
+   "item_id": "lit-pai-yujiaao",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "渔家傲",
+   "url": "https://zh.wikipedia.org/wiki/%E6%B8%94%E5%AE%B6%E5%82%B2",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94836825,
+   "qid": "Q17038647",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "渔家傲，词牌名。此调始于晏殊词“神仙一曲渔家傲”，是北宋时期的流行曲调。\n双调六十二字，前后阕各五仄韵，句句用韵，一韵到底。",
+   "fetched_at": "2026-11-04T14:29:53"
   },
   {
    "item_id": "lit-pai-yulinling",
