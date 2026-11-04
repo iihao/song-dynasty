@@ -85,7 +85,7 @@
     }
     if (r.view === 'browse') state.cat = r.arg || 'all';
     if (r.view === 'people' && r.arg) peopleType = decodeURIComponent(r.arg);
-    if (['overview', 'timeline', 'browse', 'people', 'data', 'about'].indexOf(r.view) < 0) r.view = 'overview';
+    if (['overview', 'timeline', 'map', 'browse', 'people', 'data', 'about'].indexOf(r.view) < 0) r.view = 'overview';
     state.view = r.view;
     $$('.view').forEach(function (v) { v.classList.toggle('active', v.id === 'view-' + r.view); });
     $$('[data-nav]').forEach(function (a) {
@@ -95,6 +95,7 @@
     window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
     if (r.view === 'browse') renderBrowse();
     if (r.view === 'timeline') renderTimeline();
+    if (r.view === 'map') renderMap(r.arg);
     if (r.view === 'people') renderPeople();
     if (r.view === 'data') renderData();
   }
@@ -253,10 +254,26 @@
     bindOpen('#browseGrid .card');
   }
 
-  /* ---------------- 年表 ---------------- */
+  /* ---------------- 舆图 ---------------- */
+  function renderMap(year) {
+    window.__songItems = byId;
+    if (window.renderSongMap) {
+      window.renderSongMap({ openItem: openItem, year: year ? parseInt(year, 10) : null });
+    }
+  }
+
+  /* ---------------- 年表 · 图谱 ---------------- */
   var TL_ERA_FALLBACK = { '五代': '#8a6a55', '大理': '#7a7f5a', '元': '#4a4a52', '两宋': '#7a7a7a' };
   var tlEra = 'all';
   var tlMajor = false;
+  var tlView = 'graph';
+  var tlZoom = 1;
+  var TG = {
+    rowH: 30, subRows: 3, lanePad: 12, gutter: 96,
+    basePPY: 6, minPPY: 2.5, maxPPY: 26,
+    top: 34, axisH: 30, nodeR: 5.2
+  };
+  var tgState = { selected: null, hovered: null, nodes: [], edges: [], ppy: TG.basePPY, minY: 900, maxY: 1290 };
 
   function eraColor(era) {
     var hit = (D.dynasties || []).filter(function (d) { return d.name === era; })[0];
@@ -264,90 +281,244 @@
   }
   function decadeOf(y) { return Math.floor(y / 10) * 10; }
 
-  /* 年代轴：所有节点按年份定位，颜色=政权，线高=重要性；切换筛选时未命中者变淡 */
-  function tlAxisHTML(all, visible) {
-    var years = all.map(function (it) { return it.year; }).filter(function (y) { return y != null; });
-    if (!years.length) return { ticks: '', labels: '' };
-    var min = decadeOf(Math.min.apply(null, years));
-    var max = Math.ceil((Math.max.apply(null, years) + 1) / 10) * 10;
-    var span = max - min || 1;
-    var ticks = all.map(function (it) {
-      var pos = ((it.year - min) / span * 100).toFixed(3);
-      var h = it.minor ? 12 : 26;
-      var dim = visible.indexOf(it.id) < 0 ? ' dim' : '';
-      return '<i class="tl-tick' + (it.minor ? ' minor' : '') + dim + '"' +
-        ' data-tl="' + esc(it.id) + '" title="' + esc(it.year + ' · ' + it.name) + '"' +
-        ' style="left:' + pos + '%;height:' + h + 'px;background:' + eraColor(it.era) + '"></i>';
-    }).join('');
-    var labels = '';
-    for (var y = min; y <= max; y += 50) {
-      labels += '<span style="left:' + ((y - min) / span * 100).toFixed(3) + '%">' + y + '</span>';
+  function textWidth(str, size) {
+    var w = 0;
+    for (var i = 0; i < str.length; i++) {
+      w += str.charCodeAt(i) > 255 ? size : size * 0.55;
     }
-    return { ticks: ticks, labels: labels };
+    return w;
   }
 
-  function jumpToTimeline(id) {
-    var el = document.querySelector('#timelineList [data-tl-id="' + id + '"]');
-    if (!el) { openItem(id); return; }  // 被当前筛选隐藏时，直接开详情
-    el.scrollIntoView({ block: 'center' });
-    el.classList.remove('flash');
-    void el.offsetWidth;
-    el.classList.add('flash');
-    setTimeout(function () { el.classList.remove('flash'); }, 1500);
-  }
-
-  function renderTimeline() {
-    var all = D.items.filter(function (it) { return it.cat === 'timeline'; })
-      .sort(function (a, b) { return a.year - b.year; });
-
+  /* 泳道顺序：按政权先后，稳定的哈希色 */
+  function laneOrder(items) {
     var counts = {};
-    all.forEach(function (it) { counts[it.era] = (counts[it.era] || 0) + 1; });
-    var eraOrder = (D.dynasties || []).map(function (d) { return d.name; })
-      .filter(function (n) { return counts[n]; });
-    Object.keys(counts).forEach(function (n) {
-      if (eraOrder.indexOf(n) < 0) eraOrder.push(n);
+    items.forEach(function (it) { counts[it.era] = (counts[it.era] || 0) + 1; });
+    var order = (D.dynasties || []).map(function (d) { return d.name; });
+    var extras = Object.keys(counts).filter(function (n) { return order.indexOf(n) < 0; })
+      .sort(function (a, b) { return counts[b] - counts[a]; });
+    return order.concat(extras).filter(function (n) { return counts[n]; })
+      .map(function (n) { return { era: n, count: counts[n], color: eraColor(n) }; });
+  }
+
+  function buildGraphModel(items, visibleIds) {
+    var lanes = laneOrder(items);
+    var years = items.map(function (it) { return it.year; }).filter(function (y) { return y != null; });
+    var minY = decadeOf(Math.min.apply(null, years)) - 20;
+    var maxY = Math.ceil((Math.max.apply(null, years) + 1) / 10) * 10 + 10;
+    var px = function (year) { return (year - minY) * tgState.ppy; };
+
+    var nodes = [], nodeMap = {}, laneMeta = [], top = 0;
+
+    lanes.forEach(function (lane) {
+      var laneItems = items.filter(function (it) { return it.era === lane.era; })
+        .sort(function (a, b) {
+          return a.year - b.year || (a.minor ? 1 : -1) || a.name.localeCompare(b.name, 'zh-Hans-CN');
+        });
+      var rowsEnd = [];
+      var local = [];
+      laneItems.forEach(function (it) {
+        var x = px(it.year);
+        // 低缩放时次要事件只留圆点，避免泳道被标签撑高
+        var compact = tgState.ppy < 4.6;
+        var label = (it.minor && compact) ? '' : (it.minor ? String(it.year) : it.year + ' ' + it.name);
+        var w = label ? textWidth(label, it.minor ? 9.5 : 10.5) + 16 : 0;
+        var row = -1;
+        // 优先放在已有行里第一个不重叠的位置
+        for (var k = 0; k < rowsEnd.length; k++) {
+          if (x > rowsEnd[k] + 10) { row = k; break; }
+        }
+        if (row < 0) { row = rowsEnd.length; rowsEnd.push(-1e9); }
+        rowsEnd[row] = x + w;
+
+        var fitVisible = visibleIds && visibleIds.indexOf(it.id) >= 0;
+        local.push({
+          id: it.id, item: it, x: x, row: row, label: label,
+          r: it.minor ? TG.nodeR - 1.8 : TG.nodeR,
+          color: eraColor(it.era), on: !!fitVisible
+        });
+      });
+
+      var rows = Math.max(1, rowsEnd.length);
+      var h = rows * TG.rowH;
+      local.forEach(function (n) {
+        n.laneTop = top;
+        n.y = top + n.row * TG.rowH + TG.rowH / 2 + 2;
+        nodes.push(n);
+        nodeMap[n.id] = n;
+      });
+      laneMeta.push({ era: lane.era, color: lane.color, count: lane.count, top: top, h: h, rows: rows });
+      top += h + TG.lanePad;
     });
 
-    var list = all.filter(function (it) {
-      if (tlEra !== 'all' && it.era !== tlEra) return false;
-      return !(tlMajor && it.minor);
-    });
-    state.list = list;
-
-    var chips = '<button class="chip ' + (tlEra === 'all' ? 'on' : '') + '" data-era="all">全部<em>' + all.length + '</em></button>';
-    chips += eraOrder.map(function (n) {
-      return '<button class="chip ' + (tlEra === n ? 'on' : '') + '" data-era="' + esc(n) + '"' +
-        ' style="--era:' + eraColor(n) + '"><i class="dot"></i>' + esc(n) +
-        '<em>' + counts[n] + '</em></button>';
-    }).join('');
-    chips += '<button class="chip toggle ' + (tlMajor ? 'on' : '') + '" data-major="1">仅看大事</button>';
-    $('#timelineFilters').innerHTML = chips;
-
-    $$('#timelineFilters .chip').forEach(function (b) {
-      b.addEventListener('click', function () {
-        if (b.hasAttribute('data-major')) tlMajor = !tlMajor;
-        else tlEra = b.getAttribute('data-era');
-        renderTimeline();
+    var edges = [];
+    items.forEach(function (it) {
+      var a = nodeMap[it.id];
+      if (!a) return;
+      (it.related || []).forEach(function (rid) {
+        var id = typeof rid === 'string' ? rid : rid && rid.id;
+        var b = nodeMap[id];
+        if (!b || b === a) return;
+        if (edges.some(function (e) {
+          return (e.a === a.id && e.b === b.id) || (e.a === b.id && e.b === a.id);
+        })) return;
+        edges.push({ a: a.id, b: b.id });
       });
     });
 
-    var axis = tlAxisHTML(all, list.map(function (it) { return it.id; }));
-    $('#tlAxis').innerHTML = axis.ticks;
-    $('#tlAxisLabels').innerHTML = axis.labels;
-    $('#tlLegend').innerHTML = eraOrder.map(function (n) {
-      return '<span><i style="background:' + eraColor(n) + '"></i><b>' + esc(n) + '</b></span>';
-    }).join('') + '<span style="margin-left:auto;opacity:.85">共 ' + list.length + ' 条 · 长线为大事，细线为次要事件 · 点击定位</span>';
-    $$('#tlAxis .tl-tick').forEach(function (t) {
-      t.addEventListener('click', function () { jumpToTimeline(t.getAttribute('data-tl')); });
+    return { lanes: lanes, laneMeta: laneMeta, nodes: nodes, nodeMap: nodeMap,
+      edges: edges, minY: minY, maxY: maxY, lanesH: top };
+  }
+
+  function tgWidth() { return (tgState.maxY - tgState.minY) * tgState.ppy + 180; }
+
+  function renderGraph(items, visibleIds) {
+    var m = buildGraphModel(items, visibleIds);
+    tgState.nodes = m.nodes;
+    tgState.edges = m.edges;
+    tgState.nodeMap = m.nodeMap;
+    tgState.minY = m.minY;
+    tgState.maxY = m.maxY;
+
+    var maxLabel = 0;
+    m.nodes.forEach(function (n) { maxLabel = Math.max(maxLabel, textWidth(n.label, 10.5) + 24); });
+    var W = (m.maxY - m.minY) * tgState.ppy + Math.max(160, maxLabel);
+    var H = m.lanesH + TG.top + TG.axisH;
+    var svg = $('#tgSvg');
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    svg.setAttribute('width', W);
+    svg.setAttribute('height', H);
+
+    var px = function (year) { return (year - m.minY) * tgState.ppy; };
+    var parts = [];
+
+    // 泳道底色 + 政权存续区间
+    m.laneMeta.forEach(function (lane, li) {
+      var y0 = TG.top + lane.top;
+      parts.push('<rect class="tg-lane-bg' + (li % 2 ? ' alt' : '') + '" x="0" y="' + y0 +
+        '" width="' + W + '" height="' + lane.h + '"/>');
+      var dy = (D.dynasties || []).filter(function (d) { return d.name === lane.era; })[0];
+      if (dy) {
+        var x1 = Math.max(0, px(dy.start)), x2 = Math.min(W, px(dy.end));
+        if (x2 > x1) {
+          parts.push('<rect class="tg-lane-span" x="' + x1 + '" y="' + (y0 + lane.h - 4) +
+            '" width="' + (x2 - x1) + '" height="3" rx="1.5" fill="' + lane.color + '" opacity=".3"/>');
+        }
+      }
     });
 
-    if (!list.length) {
-      $('#timelineList').innerHTML = '<div class="empty">没有符合条件的条目。</div>';
-      return;
+    // 十年网格 + 世纪刻度
+    for (var y = m.minY; y <= m.maxY; y += 10) {
+      var x = px(y);
+      var major = y % 50 === 0;
+      parts.push('<line class="tg-grid' + (major ? ' major' : '') + '" x1="' + x + '" y1="' + TG.top +
+        '" x2="' + x + '" y2="' + (TG.top + m.lanesH) + '"/>');
+      if (major) {
+        parts.push('<text class="tg-year" x="' + x + '" y="' + (TG.top + m.lanesH + 18) + '">' + y + '</text>');
+      }
     }
 
+    // 关联线（先画，压在节点下）
+    m.edges.forEach(function (e) {
+      var a = m.nodeMap[e.a], b = m.nodeMap[e.b];
+      if (!a || !b) return;
+      var mx = (a.x + b.x) / 2;
+      var lift = Math.min(70, Math.abs(b.x - a.x) * 0.08) + 12;
+      var my = Math.min(a.y, b.y) - lift;
+      parts.push('<path class="tg-edge" data-a="' + a.id + '" data-b="' + b.id + '" d="M' + a.x + ',' + a.y +
+        ' Q' + mx + ',' + my + ' ' + b.x + ',' + b.y + '"/>');
+    });
+
+    // 节点
+    m.nodes.forEach(function (n) {
+      var cls = 'tg-node' + (n.item.minor ? ' minor' : '') + (n.on ? '' : ' dim');
+      parts.push('<g class="' + cls + '" data-id="' + esc(n.id) + '" tabindex="0" role="button"' +
+        ' aria-label="' + esc(n.item.year + ' ' + n.item.name) + '">');
+      parts.push('<circle class="tg-hit" cx="' + n.x + '" cy="' + n.y + '" r="10"/>');
+      parts.push('<circle class="tg-dot" cx="' + n.x + '" cy="' + n.y + '" r="' + n.r +
+        '" fill="' + n.color + '"/>');
+      if (n.label) {
+        parts.push('<text class="tg-label" x="' + (n.x + n.r + 5) + '" y="' + (n.y + 3.4) + '">' +
+          esc(n.label) + '</text>');
+      }
+      parts.push('<title>' + esc(n.item.year + ' · ' + n.item.name) + '</title>');
+      parts.push('</g>');
+    });
+
+    svg.innerHTML = parts.join('');
+
+    // 左侧固定泳道表头（与 svg 行高一致）
+    $('#tgLanes').innerHTML = m.laneMeta.map(function (l) {
+      return '<div class="tg-lane" style="height:' + (l.h + TG.lanePad) + 'px">' +
+        '<i style="background:' + l.color + '"></i>' +
+        '<span>' + esc(l.era) + '</span><em>' + l.count + '</em></div>';
+    }).join('');
+    $('#tgLanes').style.paddingTop = TG.top + 'px';
+
+    bindGraphEvents();
+    $('#tgZoomLabel').textContent = Math.round(tgState.ppy / TG.basePPY * 100) + '%';
+  }
+
+  /* 只在悬停时淡出无关节点；选中只做标记，避免关闭弹窗后整图仍是灰的 */
+  function tgHighlight(id) {
+    var svg = $('#tgSvg');
+    var on = !!id;
+    var near = {};
+    if (id) {
+      near[id] = true;
+      tgState.edges.forEach(function (e) {
+        if (e.a === id) near[e.b] = true;
+        if (e.b === id) near[e.a] = true;
+      });
+    }
+    $$('.tg-node', svg).forEach(function (g) {
+      var nid = g.getAttribute('data-id');
+      var hit = !on || near[nid];
+      g.classList.toggle('faded', on && !hit);
+      g.classList.toggle('near', on && hit && nid !== id);
+      g.classList.toggle('sel', nid === tgState.selected);
+    });
+    $$('.tg-edge', svg).forEach(function (p) {
+      var related = on && (p.getAttribute('data-a') === id || p.getAttribute('data-b') === id);
+      p.classList.toggle('hl', !!related);
+      p.classList.toggle('faded', on && !related);
+    });
+    var tip = $('#tgTip');
+    if (id && tgState.nodeMap && tgState.nodeMap[id]) {
+      var it = tgState.nodeMap[id].item;
+      tip.innerHTML = '<b>' + it.year + '</b> · ' + esc(it.era || '') + ' · ' + esc(it.name);
+      tip.hidden = false;
+    } else {
+      tip.hidden = true;
+    }
+  }
+
+  function bindGraphEvents() {
+    var svg = $('#tgSvg');
+    $$('.tg-node', svg).forEach(function (g) {
+      var id = g.getAttribute('data-id');
+      g.addEventListener('click', function (e) {
+        e.stopPropagation();
+        tgState.selected = id;
+        tgHighlight(null);   // 清掉悬停淡出，只留 sel 标记
+        openItem(id);
+      });
+      g.addEventListener('mouseenter', function () { tgState.hovered = id; tgHighlight(id); });
+      g.addEventListener('mouseleave', function () {
+        tgState.hovered = null;
+        tgHighlight(null);
+      });
+      g.addEventListener('focus', function () { tgHighlight(id); });
+      g.addEventListener('blur', function () { tgHighlight(null); });
+      g.addEventListener('keydown', function (ev) {
+        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); openItem(id); }
+      });
+    });
+    svg.addEventListener('mouseleave', function () { tgHighlight(null); });
+  }
+
+  function renderTimelineList(items) {
     var lastDec = null;
-    $('#timelineList').innerHTML = list.map(function (it) {
+    $('#timelineList').innerHTML = items.map(function (it) {
       var dec = decadeOf(it.year);
       var head = dec !== lastDec ? '<div class="tl-decade">' + dec + '年代</div>' : '';
       lastDec = dec;
@@ -375,7 +546,106 @@
     });
   }
 
-  /* ---------------- 人物 ---------------- */
+  function jumpToTimeline(id) {
+    if (tlView === 'graph') {
+      var n = tgState.nodeMap && tgState.nodeMap[id];
+      if (!n) { openItem(id); return; }
+      tgState.selected = id;
+      tgHighlight(id);
+      var sc = $('#tgScroll');
+      sc.scrollTo({ left: Math.max(0, n.x - sc.clientWidth / 2), behavior: 'smooth' });
+      return;
+    }
+    var el = document.querySelector('#timelineList [data-tl-id="' + id + '"]');
+    if (!el) { openItem(id); return; }
+    el.scrollIntoView({ block: 'center' });
+    el.classList.remove('flash');
+    void el.offsetWidth;
+    el.classList.add('flash');
+    setTimeout(function () { el.classList.remove('flash'); }, 1500);
+  }
+
+  function renderTimeline() {
+    var all = D.items.filter(function (it) { return it.cat === 'timeline'; })
+      .sort(function (a, b) { return a.year - b.year; });
+
+    var counts = {};
+    all.forEach(function (it) { counts[it.era] = (counts[it.era] || 0) + 1; });
+    var lanes = laneOrder(all);
+
+    var list = all.filter(function (it) {
+      if (tlEra !== 'all' && it.era !== tlEra) return false;
+      return !(tlMajor && it.minor);
+    });
+    state.list = list;
+    var visibleIds = list.map(function (it) { return it.id; });
+
+    var chips = '<button class="chip ' + (tlEra === 'all' ? 'on' : '') + '" data-era="all">全部<em>' + all.length + '</em></button>';
+    chips += lanes.map(function (l) {
+      return '<button class="chip ' + (tlEra === l.era ? 'on' : '') + '" data-era="' + esc(l.era) + '"' +
+        ' style="--era:' + l.color + '"><i class="dot"></i>' + esc(l.era) +
+        '<em>' + l.count + '</em></button>';
+    }).join('');
+    chips += '<button class="chip toggle ' + (tlMajor ? 'on' : '') + '" data-major="1">仅看大事</button>';
+    $('#timelineFilters').innerHTML = chips;
+
+    $$('#timelineFilters .chip').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (b.hasAttribute('data-major')) tlMajor = !tlMajor;
+        else tlEra = b.getAttribute('data-era');
+        renderTimeline();
+      });
+    });
+
+    $('#tgLegend').innerHTML = lanes.map(function (l) {
+      return '<span><i style="background:' + l.color + '"></i>' + esc(l.era) + '</span>';
+    }).join('') + '<span class="tg-count">' + list.length + ' / ' + all.length + ' 条</span>';
+
+    // 视图切换
+    $$('[data-tlview]').forEach(function (b) {
+      b.classList.toggle('on', b.getAttribute('data-tlview') === tlView);
+      b.onclick = function () {
+        tlView = b.getAttribute('data-tlview');
+        renderTimeline();
+      };
+    });
+    var graphOn = tlView === 'graph';
+    $('#tgCard').hidden = !graphOn;
+    $('#tlListWrap').hidden = graphOn;
+    $('#tgZoom').hidden = !graphOn;
+
+    if (graphOn) {
+      if (!tgState.fitted) {
+        var avail = $('#tgScroll').clientWidth - 16;
+        if (avail > 240) {
+          var span0 = (tgState.maxY || 1100) - (tgState.minY || 900);
+          tgState.ppy = Math.max(TG.minPPY, Math.min(TG.maxPPY, avail / (span0 || 380)));
+          tgState.fitted = true;
+        }
+      }
+      renderGraph(all, visibleIds);
+      tgHighlight(null);
+    } else {
+      renderTimelineList(list);
+      $('#tgTip').hidden = true;
+    }
+
+    // 缩放
+    $$('#tgZoom [data-zoom]').forEach(function (b) {
+      b.onclick = function () {
+        var mode = b.getAttribute('data-zoom');
+        if (mode === 'in') tgState.ppy = Math.min(TG.maxPPY, tgState.ppy * 1.45);
+        else if (mode === 'out') tgState.ppy = Math.max(TG.minPPY, tgState.ppy / 1.45);
+        else {
+          var avail = $('#tgScroll').clientWidth - 24;
+          tgState.ppy = Math.max(TG.minPPY, Math.min(TG.maxPPY, avail / (tgState.maxY - tgState.minY)));
+        }
+        renderTimeline();
+      };
+    });
+  }
+
+  /* ---------------- 人物 ---------------- */  /* ---------------- 人物 ---------------- */
   var peopleType = 'all';
   var peopleQ = '';
   function renderPeople() {
@@ -585,6 +855,12 @@
   function closeModal() {
     $('#modal').hidden = true;
     document.body.style.overflow = '';
+    // 图谱页：关闭弹窗后复原所有节点，避免整页仍是灰的
+    if (typeof tgState !== 'undefined' && tgState && tgState.nodes && tgState.nodes.length) {
+      tgState.selected = null;
+      tgState.hovered = null;
+      tgHighlight(null);
+    }
   }
   function stepModal(d) {
     var ni = state.modalIndex + d;

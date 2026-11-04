@@ -3,26 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>《持械入宋》人物·年份图谱</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/chixie.css?v=1">
+<title>《持械入宋》人物·年份图谱 · 大宋全局志</title>
+<link rel="stylesheet" href="css/style.css?v=6">
+<link rel="stylesheet" href="css/chixie.css?v=5">
 </head>
 <body class="cx-body">
 
+<!-- 顶栏：与主站完全一致 -->
 <header class="topbar">
+  <button class="icon-btn menu-toggle" aria-label="菜单">☰</button>
   <a class="brand" href="index.html">
     <span class="seal">宋</span>
     <span class="brand-text">
-      <strong>持械入宋图谱</strong>
-      <small>CHIXIE RUSONG · CHARACTER ATLAS</small>
+      <strong>大宋全局志</strong>
+      <small>SONG DYNASTY ATLAS · 960—1279</small>
     </span>
   </a>
-  <nav class="mainnav">
-    <a href="index.html">大宋全局志</a>
+  <nav class="mainnav" id="mainnav">
+    <a href="index.html#overview">总览</a>
     <a href="index.html#timeline">年表</a>
+    <a href="index.html#map">舆图</a>
+    <a href="index.html#browse">典藏</a>
     <a href="index.html#people">人物</a>
     <a href="chixie.html" class="active">持械图谱</a>
+    <a href="index.html#data">数据</a>
+    <a href="index.html#about">凡例</a>
   </nav>
+  <button class="search-btn" id="cxSearchBtn"><span>检索全库</span><kbd>⌘K</kbd></button>
 </header>
 
 <main class="cx-wrap">
@@ -33,14 +40,24 @@
     <p class="cx-lead">
       现代五人小队穿越到 <b>北宋宣和四年（1122）</b>，从西北边陲清河村起家，
       经陇城、秦州，卷入宋夏、宋金战争，直至靖康之变。
-      下图把<b>叙事年份、阵营、人物关系</b>放在同一张图里；年份为根据卷名、章节目录与公开资料所做的推定。
+      本页把<b>四卷结构、叙事年份、人物关系、章节目录</b>放在一起；
+      年份为根据卷名、章节目录与公开资料所做的推定。
     </p>
     <div class="cx-meta">
-      <span>502 章 · 四卷</span>
+      <span>502 章 · 四卷 · 约 172 万字</span>
       <span>起点：宣和四年（1122）</span>
       <span>终点：靖康二年（1127）</span>
       <span class="warn">含架空改编，非史实年表</span>
     </div>
+  </section>
+
+  <!-- 四卷结构 -->
+  <section class="cx-volumes">
+    <div class="block-head">
+      <h2>四卷结构</h2>
+      <p>点击卷卡可跳到年份筛选；章号为卷内编号（1—502 为全书总序）。</p>
+    </div>
+    <div class="cx-vol-grid" id="volGrid"></div>
   </section>
 
   <section class="cx-controls">
@@ -67,12 +84,60 @@
     <div class="cx-detail-empty">选择图中的人物，查看身份、登场与关系。</div>
   </section>
 
+  <!-- 人物名录 -->
+  <section class="cx-roster-section">
+    <div class="block-head">
+      <h2>人物名录</h2>
+      <p>与上图同一套数据；小屏建议用名录而非图谱。</p>
+    </div>
+    <div class="cx-roster" id="roster"></div>
+  </section>
+
+  <!-- 小说人物 × 史实对照 -->
+  <section class="cx-map-section">
+    <div class="block-head">
+      <h2>小说人物 × 史实对照</h2>
+      <p>「全局志」列可直接跳转到主站条目；架空角色无对应史实。</p>
+    </div>
+    <div class="cx-map-wrap">
+      <table class="cx-map">
+        <thead>
+          <tr><th>原著人物</th><th>身份</th><th>史实原型</th><th>生卒 / 存续</th><th>全局志条目</th></tr>
+        </thead>
+        <tbody id="mapBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 年份对照 -->
   <section class="cx-timeline-section">
     <div class="block-head">
       <h2>年份对照</h2>
       <p>左列为小说叙事线，右列为真实历史背景；二者并不完全一致。</p>
     </div>
     <div class="cx-timeline" id="timeline"></div>
+  </section>
+
+  <!-- 关键章节 -->
+  <section class="cx-landmarks-section">
+    <div class="block-head">
+      <h2>关键章节</h2>
+      <p>点击可在下方章节目录中定位。</p>
+    </div>
+    <div class="cx-landmarks" id="landmarks"></div>
+  </section>
+
+  <!-- 章节目录 -->
+  <section class="cx-chapters-section">
+    <div class="block-head">
+      <h2>章节目录</h2>
+      <p>502 章全目录（来源：番茄小说），可按关键词检索。</p>
+    </div>
+    <div class="cx-chapter-search">
+      <input type="search" id="chapterSearch" placeholder="检索章节标题：岳飞 / 李清照 / 西夏 / 汴梁…">
+      <span class="result-count" id="chapterCount"></span>
+    </div>
+    <div class="cx-chapters" id="chapterList"></div>
   </section>
 
   <section class="cx-notes">
@@ -82,6 +147,9 @@
       <li><b>人物名以原著为主，括号内为短剧改编名。</b>如赵福金／赵宜宁、岳飞／岳武、李清照／李清棠；赵九为短剧角色，原型赵构。</li>
       <li><b>“灭西夏”是小说架空线。</b>真实历史中西夏亡于 1227 年；小说第三卷让主角团提前介入西北战局。</li>
       <li><b>关系为剧情定位，不是逐章考据。</b>“婚约”“CP”“招揽”等依据章节目录与公开剧情介绍，细节以原著为准。</li>
+      <li><b>章节目录仅为标题层。</b>正文存在字体混淆，本页不复制、不存储原著正文。</li>
+      <li><b>可直接分享定位。</b>在地址后加 <code>#p=岳飞节点的英文 id</code> 或 <code>#year=1126</code>，如 <code>chixie.html#p=yuefei</code>、<code>chixie.html#year=1127</code>。</li>
+      <li><b>词条在本页弹出。</b>点击「查看条目 / 史实对照」会直接在当前页弹窗，不离开图谱；需要完整页面时可点弹窗底部的「在主站打开」。</li>
     </ul>
   </section>
 
@@ -102,8 +170,37 @@
 <footer class="footer">
   <span class="seal small">宋</span>
   <p>大宋全局志 · 持械入宋人物图谱</p>
+  <p class="muted">主站：<a href="index.html">index.html</a></p>
 </footer>
 
-<script src="js/chixie.js?v=1"></script>
+<!-- 检索面板：与主站一致 -->
+<div class="palette" id="palette" hidden>
+  <div class="palette-box" role="dialog" aria-modal="true" aria-label="全库检索">
+    <div class="palette-input">
+      <span>⌕</span>
+      <input id="paletteInput" placeholder="检索人物、战役、制度、风俗、名篇…" autocomplete="off">
+      <kbd>ESC</kbd>
+    </div>
+    <div class="palette-results" id="paletteResults"></div>
+    <div class="palette-foot">
+      <span>↑↓ 选择</span><span>↵ 打开（主站详情）</span><span>⌘K 开关</span>
+    </div>
+  </div>
+</div>
+
+<!-- 词条弹窗：在本页内打开，不跳转首页 -->
+<div class="modal" id="cxModal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="cxModalTitle">
+    <button class="modal-close" id="cxModalClose" aria-label="关闭">✕</button>
+    <div class="modal-body" id="cxModalBody"></div>
+    <div class="modal-nav">
+      <span class="cxm-note">按 ESC 关闭 · 内容来自本地数据库</span>
+      <a class="cxm-main" id="cxModalFull" href="#" target="_blank" rel="noopener">在主站打开 ↗</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/chixie-chapters.js"></script>
+<script src="js/chixie.js?v=6"></script>
 </body>
 </html>

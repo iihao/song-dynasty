@@ -297,10 +297,15 @@ def main():
     v_css = asset_hash(os.path.join(ROOT, "css", "style.css"))
     v_cx_css = asset_hash(os.path.join(ROOT, "css", "chixie.css"))
     v_cx_js = asset_hash(os.path.join(ROOT, "js", "chixie.js"))
+    v_cx_ch = asset_hash(os.path.join(ROOT, "js", "chixie-chapters.js"))
     v_js = asset_hash(os.path.join(ROOT, "js", "app.js"))
+    v_mapdata = asset_hash(os.path.join(ROOT, "js", "map-data.js"))
+    v_map = asset_hash(os.path.join(ROOT, "js", "map.js"))
     html = read(os.path.join(ROOT, "index.html")).decode("utf-8")
     html = re.sub(r"css/style\.css(\?v=[^\"]*)?", f"css/style.css?v={v_css}", html)
     html = re.sub(r"js/app\.js(\?v=[^\"]*)?", f"js/app.js?v={v_js}", html)
+    html = re.sub(r"js/map-data\.js(\?v=[^\"]*)?", f"js/map-data.js?v={v_mapdata}", html)
+    html = re.sub(r"js/map\.js(\?v=[^\"]*)?", f"js/map.js?v={v_map}", html)
     write_text(os.path.join(out, "index.html"), html)
 
     # 独立页面：持械入宋图谱
@@ -309,6 +314,7 @@ def main():
         cx = read(cx_src).decode("utf-8")
         cx = re.sub(r"css/chixie\.css(\?v=[^\"]*)?", f"css/chixie.css?v={v_cx_css}", cx)
         cx = re.sub(r"js/chixie\.js(\?v=[^\"]*)?", f"js/chixie.js?v={v_cx_js}", cx)
+        cx = re.sub(r"js/chixie-chapters\.js(\?v=[^\"]*)?", f"js/chixie-chapters.js?v={v_cx_ch}", cx)
         write_text(os.path.join(out, "chixie.html"), cx)
 
     # 数据

@@ -123,6 +123,8 @@ OVERRIDES = {
     "tec-diaoban": "雕版印刷",
     "soc-huozang": "火葬",
     "pol-liao-wolusuo": "斡耳朵",
+    "ppl-zhaofujin": "茂德帝姬",
+    "ppl-zhaomingcheng": "赵明诚",
     "geo-mingzhou": "宁波市",
     "geo-luoyang": "洛阳市",
     "pol-lu": "路 (行政区划)",

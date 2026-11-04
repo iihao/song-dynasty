@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-03T17:23:18",
+  "generatedAt": "2026-11-04T11:07:35",
   "categories": [
     {
       "id": "politics",
@@ -4852,6 +4852,30 @@
       ]
     },
     {
+      "id": "lit-wanghaichao",
+      "cat": "literature",
+      "type": "词",
+      "name": "《望海潮·东南形胜》",
+      "era": "北宋",
+      "year": 1003,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "以词写杭州繁华，从形胜、市井写到湖山，是宋词中最早的都市长调。",
+      "detail": "“东南形胜，三吴都会，钱塘自古繁华”，开篇即定格局；中段写“市列珠玑，户盈罗绮”的商业气象；下片转入西湖，“三秋桂子，十里荷花”成为写杭州的千古名句。相传金主完颜亮读此词而兴南侵之念，虽属传闻，可见其感染力。",
+      "refs": "《乐章集》",
+      "tags": [
+        "柳永",
+        "杭州",
+        "都市词",
+        "三秋桂子十里荷花"
+      ],
+      "related": [
+        "ppl-liuyong"
+      ]
+    },
+    {
       "id": "cul-jingdezhen",
       "cat": "culture",
       "type": "瓷器",
@@ -5175,6 +5199,30 @@
       ]
     },
     {
+      "id": "lit-hetianchong",
+      "cat": "literature",
+      "type": "词",
+      "name": "《鹤冲天·黄金榜上》",
+      "era": "北宋",
+      "year": 1015,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "落第后所作，以“忍把浮名，换了浅斟低唱”表达对功名的疏离。",
+      "detail": "据传柳永因“忍把浮名”一句触怒宋仁宗，被批“且去填词”，遂自称“奉旨填词柳三变”。词中“才子词人，自是白衣卿相”既是自负，也是失意者的自我安顿，反映北宋科举社会的另一面。",
+      "refs": "《乐章集》；吴曾《能改斋漫录》",
+      "tags": [
+        "柳永",
+        "落第",
+        "牢骚",
+        "忍把浮名换了浅斟低唱"
+      ],
+      "related": [
+        "ppl-liuyong"
+      ]
+    },
+    {
       "id": "cul-liao-jinyinqi",
       "cat": "culture",
       "type": "工艺",
@@ -5396,6 +5444,30 @@
       ]
     },
     {
+      "id": "lit-dielianhua-liuyong",
+      "cat": "literature",
+      "type": "词",
+      "name": "《蝶恋花·伫倚危楼风细细》",
+      "era": "北宋",
+      "year": 1025,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写登楼远望与执着的相思，“衣带渐宽终不悔”被王国维借作治学第二境。",
+      "detail": "上片以“伫倚危楼”写孤寂，末句“强乐还无味”转折；下片直抒胸臆，“衣带渐宽终不悔，为伊消得人憔悴”把痴情写到极致。王国维《人间词话》以此句喻“衣带渐宽”的执着追求。",
+      "refs": "《乐章集》",
+      "tags": [
+        "登高",
+        "柳永",
+        "相思",
+        "衣带渐宽终不悔"
+      ],
+      "related": [
+        "ppl-liuyong"
+      ]
+    },
+    {
       "id": "tec-zhenjiu",
       "cat": "tech",
       "type": "医学",
@@ -5440,6 +5512,55 @@
       "minor": true
     },
     {
+      "id": "lit-bashengganzhou",
+      "cat": "literature",
+      "type": "词",
+      "name": "《八声甘州·对潇潇暮雨洒江天》",
+      "era": "北宋",
+      "year": 1030,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "柳永羁旅词代表作，写秋日登高望远的漂泊之感，被苏轼评为“不减唐人高处”。",
+      "detail": "上片写雨后江天、霜风残照，“渐霜风凄紧，关河冷落，残照当楼”三句气象阔大；下片转入思乡与怀人，“想佳人妆楼颙望，误几回、天际识归舟”以对方视角写思念。全词铺叙层层推进，是慢词由小令向长调过渡的成熟样本。",
+      "refs": "《乐章集》",
+      "tags": [
+        "柳永",
+        "慢词",
+        "羁旅",
+        "秋景",
+        "渐霜风凄紧"
+      ],
+      "related": [
+        "ppl-liuyong"
+      ]
+    },
+    {
+      "id": "lit-huanxisha-yanshu",
+      "cat": "literature",
+      "type": "词",
+      "name": "《浣溪沙·一曲新词酒一杯》",
+      "era": "北宋",
+      "year": 1030,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "以伤春写时光流逝，“无可奈何花落去，似曾相识燕归来”对仗天成。",
+      "detail": "晏殊词以闲雅温润著称，此词由宴饮起兴，转入对时光不可挽留的怅惘。“无可奈何花落去，似曾相识燕归来”以落花与归燕写消长之理，工整而不着力，是宋词中最著名的对句之一。",
+      "refs": "《珠玉词》",
+      "tags": [
+        "晏殊",
+        "伤春",
+        "无可奈何花落去",
+        "闲雅"
+      ],
+      "related": [
+        "ppl-yanshu"
+      ]
+    },
+    {
       "id": "tl-liao-1031",
       "cat": "timeline",
       "type": "事件",
@@ -5459,6 +5580,54 @@
         "亲政"
       ],
       "minor": true
+    },
+    {
+      "id": "lit-shengchazi",
+      "cat": "literature",
+      "type": "词",
+      "name": "《生查子·元夕》",
+      "era": "北宋",
+      "year": 1035,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "以元宵为背景写今昔之变，“月上柳梢头，人约黄昏后”是宋词中最著名的约会场景。",
+      "detail": "上片写去年元夜的欢会，下片写今年“月与灯依旧，不见去年人”，以同景写异情。此词作者有争议，一说是朱淑真作，学界多归欧阳修，本库从通行说法并加标注。",
+      "refs": "《欧阳文忠公近体乐府》（作者一说朱淑真）",
+      "tags": [
+        "欧阳修",
+        "存疑",
+        "元宵",
+        "月上柳梢头"
+      ],
+      "related": [
+        "ppl-ouyangxiu"
+      ]
+    },
+    {
+      "id": "lit-dielianhua-yanshu",
+      "cat": "literature",
+      "type": "词",
+      "name": "《蝶恋花·槛菊愁烟兰泣露》",
+      "era": "北宋",
+      "year": 1035,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写秋日离恨，“昨夜西风凋碧树。独上高楼，望尽天涯路”被王国维列为治学第一境。",
+      "detail": "上片写秋晨景物，以“愁烟”“泣露”移情于物；下片“独上高楼，望尽天涯路”境界陡然开阔，由闺阁离愁上升为一种普遍的追寻姿态。王国维借此句喻“立志”阶段的孤独求索。",
+      "refs": "《珠玉词》",
+      "tags": [
+        "晏殊",
+        "离恨",
+        "昨夜西风凋碧树",
+        "治学三境"
+      ],
+      "related": [
+        "ppl-yanshu"
+      ]
     },
     {
       "id": "pol-liao-falu",
@@ -5759,6 +5928,78 @@
       ]
     },
     {
+      "id": "lit-yujiaao",
+      "cat": "literature",
+      "type": "词",
+      "name": "《渔家傲·秋思》",
+      "era": "北宋",
+      "year": 1040,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写西北边塞秋景与戍边之苦，开宋代边塞词先声。",
+      "detail": "范仲淹任陕西经略副使时作。“塞下秋来风景异，衡阳雁去无留意”以雁写荒寒；“浊酒一杯家万里，燕然未勒归无计”写功业未成；结句“人不寐，将军白发征夫泪”把将帅与士卒的悲慨合为一体。",
+      "refs": "《范文正公集》",
+      "tags": [
+        "西北",
+        "范仲淹",
+        "边塞词",
+        "将军白发征夫泪"
+      ],
+      "related": [
+        "ppl-fanzhongyan"
+      ]
+    },
+    {
+      "id": "lit-sumuzhe-fanzhongyan",
+      "cat": "literature",
+      "type": "词",
+      "name": "《苏幕遮·碧云天》",
+      "era": "北宋",
+      "year": 1040,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "上片写秾丽秋色，下片写羁旅乡愁，是宋词中写秋的名篇。",
+      "detail": "“碧云天，黄叶地，秋色连波，波上寒烟翠”以浓墨重彩写秋，色彩层叠；下片“黯乡魂，追旅思”转入愁绪，结句“酒入愁肠，化作相思泪”以物理化的想象写愁。王实甫《西厢记》“碧云天，黄花地”即由此化出。",
+      "refs": "《范文正公集》",
+      "tags": [
+        "秋景",
+        "范仲淹",
+        "思乡",
+        "酒入愁肠化作相思泪"
+      ],
+      "related": [
+        "ppl-fanzhongyan"
+      ]
+    },
+    {
+      "id": "lit-dielianhua-ouyangxiu",
+      "cat": "literature",
+      "type": "词",
+      "name": "《蝶恋花·庭院深深深几许》",
+      "era": "北宋",
+      "year": 1040,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写深闺孤寂，“泪眼问花花不语，乱红飞过秋千去”为层层递进的写法典范。",
+      "detail": "开篇连用三个“深”字写庭院幽闭；下片“雨横风狂三月暮，门掩黄昏，无计留春住”写留春不住；结句以问花、花不语、花飞过秋千三层推进，把无可告诉的孤独写到极处。李清照极爱此词首句，曾作“庭院深深”数阕。",
+      "refs": "《欧阳文忠公近体乐府》",
+      "tags": [
+        "欧阳修",
+        "闺怨",
+        "泪眼问花花不语",
+        "深婉"
+      ],
+      "related": [
+        "ppl-ouyangxiu"
+      ]
+    },
+    {
       "id": "mil-sanrong",
       "cat": "military",
       "type": "军政",
@@ -5799,6 +6040,30 @@
         "西夏",
         "宋夏战争",
         "延州"
+      ]
+    },
+    {
+      "id": "lit-tianxianzi",
+      "cat": "literature",
+      "type": "词",
+      "name": "《天仙子·水调数声持酒听》",
+      "era": "北宋",
+      "year": 1041,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写暮春病中之愁，“云破月来花弄影”为张先赢得“张三影”之名。",
+      "detail": "词前小序交代病中不能赴会，故以词遣怀。上片“送春春去几时回”以问句写时光；下片“沙上并禽池上暝，云破月来花弄影”以云月花影的瞬间变化写静中之动，一字“弄”而全句皆活。",
+      "refs": "《张子野词》",
+      "tags": [
+        "伤春",
+        "张三影",
+        "张先",
+        "云破月来花弄影"
+      ],
+      "related": [
+        "ppl-zhangxian"
       ]
     },
     {
@@ -6157,6 +6422,30 @@
         "大藏经",
         "刻经",
         "应县木塔"
+      ]
+    },
+    {
+      "id": "lit-langtaosha-ouyangxiu",
+      "cat": "literature",
+      "type": "词",
+      "name": "《浪淘沙·把酒祝东风》",
+      "era": "北宋",
+      "year": 1050,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写与友人的聚散之叹，“可惜明年花更好，知与谁同”以问作结，余味悠长。",
+      "detail": "上片写与友携酒游春，“垂杨紫陌洛城东”点出洛阳；下片由花之盛衰想到人事聚散。全词语言平易而情感深挚，体现欧词“疏隽”的一面。",
+      "refs": "《欧阳文忠公近体乐府》",
+      "tags": [
+        "欧阳修",
+        "惜春",
+        "聚散",
+        "今年花胜去年红"
+      ],
+      "related": [
+        "ppl-ouyangxiu"
       ]
     },
     {
@@ -6930,6 +7219,54 @@
       ]
     },
     {
+      "id": "lit-jiangchengzi-yimao",
+      "cat": "literature",
+      "type": "词",
+      "name": "《江城子·乙卯正月二十日夜记梦》",
+      "era": "北宋",
+      "year": 1075,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "悼念亡妻王弗之作，“十年生死两茫茫”开悼亡词先河。",
+      "detail": "苏轼梦见亡妻王弗而作。“不思量，自难忘”写记忆之深；“千里孤坟，无处话凄凉”写远谪之痛；下片记梦中“小轩窗，正梳妆”的日常细节，结句“料得年年肠断处，明月夜，短松冈”将思念落实于具体的坟茔景象。",
+      "refs": "《东坡乐府》",
+      "tags": [
+        "苏轼",
+        "悼亡",
+        "十年生死两茫茫",
+        "记梦"
+      ],
+      "related": [
+        "ppl-sushi"
+      ]
+    },
+    {
+      "id": "lit-jiangchengzi-mizhou",
+      "cat": "literature",
+      "type": "词",
+      "name": "《江城子·密州出猎》",
+      "era": "北宋",
+      "year": 1075,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写密州出猎的壮观场面，是苏轼豪放词的发轫之作。",
+      "detail": "“老夫聊发少年狂，左牵黄，右擎苍”开篇即见气势；“会挽雕弓如满月，西北望，射天狼”以射天狼喻抵御西夏。苏轼自谓此词“自是一家”，与柳永的婉约一路分道，被视为豪放词的开端。",
+      "refs": "《东坡乐府》",
+      "tags": [
+        "苏轼",
+        "豪放",
+        "出猎",
+        "会挽雕弓如满月"
+      ],
+      "related": [
+        "ppl-sushi"
+      ]
+    },
+    {
       "id": "lit-bochuan",
       "cat": "literature",
       "type": "诗",
@@ -6944,8 +7281,8 @@
       "detail": "名句：“春风又绿江南岸，明月何时照我还。”据载“绿”字几经修改，成为炼字典范。",
       "refs": "《王文公文集》《全宋诗》",
       "tags": [
-        "王安石",
         "思乡",
+        "王安石",
         "春风又绿"
       ]
     },
@@ -7176,6 +7513,30 @@
       ]
     },
     {
+      "id": "lit-linjiangxian-yanjidao",
+      "cat": "literature",
+      "type": "词",
+      "name": "《临江仙·梦后楼台高锁》",
+      "era": "北宋",
+      "year": 1080,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "追忆旧欢，“落花人独立，微雨燕双飞”以景写孤独，被誉为“千古不能有二”。",
+      "detail": "晏几道为晏殊幼子，家道中落后多写忆旧怀人。此词由梦回酒醒写起，“去年春恨却来时”点出时间；结句“当时明月在，曾照彩云归”以不变的明月对照消逝的人事，含蓄深婉。",
+      "refs": "《小山词》",
+      "tags": [
+        "小山词",
+        "晏几道",
+        "怀人",
+        "落花人独立"
+      ],
+      "related": [
+        "ppl-yanjidao"
+      ]
+    },
+    {
       "id": "mil-wujingqishu",
       "cat": "military",
       "type": "著作",
@@ -7263,6 +7624,54 @@
       ]
     },
     {
+      "id": "lit-linjiangxian-sushi",
+      "cat": "literature",
+      "type": "词",
+      "name": "《临江仙·夜饮东坡醒复醉》",
+      "era": "北宋",
+      "year": 1082,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "夜饮归来得句，“小舟从此逝，江海寄余生”写归隐之想。",
+      "detail": "据载此词写成后传唱，黄州守臣以为苏轼要乘舟逃走，急往查看，方知他正酣睡。词中“长恨此身非我有，何时忘却营营”写身不由己之叹，结句以想象中的江湖远遁作结。",
+      "refs": "《东坡乐府》；叶梦得《避暑录话》",
+      "tags": [
+        "苏轼",
+        "黄州",
+        "旷达",
+        "小舟从此逝江海寄余生"
+      ],
+      "related": [
+        "ppl-sushi"
+      ]
+    },
+    {
+      "id": "lit-dingfenbo",
+      "cat": "literature",
+      "type": "词",
+      "name": "《定风波·莫听穿林打叶声》",
+      "era": "北宋",
+      "year": 1082,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "黄州道中遇雨所作，“一蓑烟雨任平生”“也无风雨也无晴”写尽旷达。",
+      "detail": "词前小序记沙湖道中遇雨、同行狼狈而己独不觉。上片写雨中从容，“竹杖芒鞋轻胜马”以简朴写自在；下片写雨霁回望，“也无风雨也无晴”把晴雨、得失一并勘破，是苏轼黄州时期人生境界的凝练表达。",
+      "refs": "《东坡乐府》",
+      "tags": [
+        "苏轼",
+        "黄州",
+        "旷达",
+        "一蓑烟雨任平生"
+      ],
+      "related": [
+        "ppl-sushi"
+      ]
+    },
+    {
       "id": "lit-niannujiao",
       "cat": "literature",
       "type": "词",
@@ -7326,6 +7735,30 @@
         "宋夏战争",
         "永乐城",
         "徐禧"
+      ]
+    },
+    {
+      "id": "lit-busuanzi-sushi",
+      "cat": "literature",
+      "type": "词",
+      "name": "《卜算子·缺月挂疏桐》",
+      "era": "北宋",
+      "year": 1083,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "以孤鸿自况，写贬谪黄州时的孤高与自守。",
+      "detail": "“缺月挂疏桐，漏断人初静”营造清冷夜色；“拣尽寒枝不肯栖，寂寞沙洲冷”以孤鸿不肯栖枝喻不肯苟合。黄庭坚评此词“语意高妙，似非吃烟火食人语”。",
+      "refs": "《东坡乐府》",
+      "tags": [
+        "苏轼",
+        "黄州",
+        "孤鸿",
+        "寂寞沙洲冷"
+      ],
+      "related": [
+        "ppl-sushi"
       ]
     },
     {
@@ -7414,6 +7847,54 @@
         "通志",
         "文献通考",
         "长编"
+      ]
+    },
+    {
+      "id": "lit-sumuzhe-zhou",
+      "cat": "literature",
+      "type": "词",
+      "name": "《苏幕遮·燎沉香》",
+      "era": "北宋",
+      "year": 1085,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写夏日荷塘与思乡，“水面清圆，一一风荷举”被王国维评为“真能得荷之神理”。",
+      "detail": "上片写燎香消暑、鸟雀呼晴，“叶上初阳干宿雨，水面清圆，一一风荷举”以“举”字写荷的动态；下片转入“故乡遥，何日去”的乡愁，以渔郎、小楫轻舟作结，清丽疏朗。",
+      "refs": "《片玉集》",
+      "tags": [
+        "周邦彦",
+        "思乡",
+        "荷花",
+        "水面清圆一一风荷举"
+      ],
+      "related": [
+        "ppl-zhoubangyan"
+      ]
+    },
+    {
+      "id": "lit-zhegutian-yanjidao",
+      "cat": "literature",
+      "type": "词",
+      "name": "《鹧鸪天·彩袖殷勤捧玉钟》",
+      "era": "北宋",
+      "year": 1085,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写与旧日歌女重逢，“舞低杨柳楼心月，歌尽桃花扇底风”以歌舞写尽昔日繁华。",
+      "detail": "上片追忆当年欢宴，以月落、风尽写彻夜歌舞；下片写久别重逢，“今宵剩把银釭照，犹恐相逢是梦中”把疑真疑幻的心理写得极细腻。",
+      "refs": "《小山词》",
+      "tags": [
+        "晏几道",
+        "婉约",
+        "重逢",
+        "舞低杨柳楼心月"
+      ],
+      "related": [
+        "ppl-yanjidao"
       ]
     },
     {
@@ -7511,6 +7992,78 @@
       ]
     },
     {
+      "id": "lit-huanxisha-qinguan",
+      "cat": "literature",
+      "type": "词",
+      "name": "《浣溪沙·漠漠轻寒上小楼》",
+      "era": "北宋",
+      "year": 1090,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写春日闲愁，“自在飞花轻似梦，无边丝雨细如愁”以抽象写具象，比喻新奇。",
+      "detail": "全词写晓阴、画屏、宝帘，境极清冷；“自在飞花轻似梦，无边丝雨细如愁”把飞花比作梦、丝雨比作愁，本体与喻体都是无形之物，却因此更见空灵。梁启超称其为“奇语”。",
+      "refs": "《淮海居士长短句》",
+      "tags": [
+        "婉约",
+        "秦观",
+        "春愁",
+        "自在飞花轻似梦"
+      ],
+      "related": [
+        "ppl-qinguan"
+      ]
+    },
+    {
+      "id": "lit-mantingfang-qinguan",
+      "cat": "literature",
+      "type": "词",
+      "name": "《满庭芳·山抹微云》",
+      "era": "北宋",
+      "year": 1090,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写离别之情，“山抹微云，天连衰草”开篇即被苏轼称为“山抹微云秦学士”。",
+      "detail": "上片以“山抹微云”写远景，“斜阳外，寒鸦万点，流水绕孤村”被誉为其时绝唱；下片写“销魂，当此际，香囊暗解，罗带轻分”的离别细节，结句“高城望断，灯火已黄昏”以景收束。",
+      "refs": "《淮海居士长短句》",
+      "tags": [
+        "离别",
+        "婉约",
+        "秦观",
+        "山抹微云"
+      ],
+      "related": [
+        "ppl-qinguan"
+      ]
+    },
+    {
+      "id": "lit-dielianhua-sushi",
+      "cat": "literature",
+      "type": "词",
+      "name": "《蝶恋花·花褪残红青杏小》",
+      "era": "北宋",
+      "year": 1090,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写暮春景色与墙里墙外的错过，“天涯何处无芳草”成为流传最广的宽慰语。",
+      "detail": "上片写花落杏小、燕子飞时；下片写墙里秋千、墙外行人，“笑渐不闻声渐悄，多情却被无情恼”写单方面的情意。相传朝云常歌此词，唱到“枝上柳绵吹又少”即泪满衣襟。",
+      "refs": "《东坡乐府》",
+      "tags": [
+        "伤春",
+        "苏轼",
+        "婉约",
+        "天涯何处无芳草"
+      ],
+      "related": [
+        "ppl-sushi"
+      ]
+    },
+    {
       "id": "lit-queqiaoxian",
       "cat": "literature",
       "type": "词",
@@ -7578,6 +8131,30 @@
       ]
     },
     {
+      "id": "lit-tasuoxing-qinguan",
+      "cat": "literature",
+      "type": "词",
+      "name": "《踏莎行·雾失楼台》",
+      "era": "南宋",
+      "year": 1097,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "贬谪郴州时所作，写孤馆春寒与无望的愁绪。",
+      "detail": "“雾失楼台，月迷津渡，桃源望断无寻处”以迷离之景写找不到出路的心境；“可堪孤馆闭春寒，杜鹃声里斜阳暮”被王国维评为“凄厉”。结句“郴江幸自绕郴山，为谁流下潇湘去”以江水设问，无理而有情。",
+      "refs": "《淮海居士长短句》",
+      "tags": [
+        "秦观",
+        "贬谪",
+        "郴州",
+        "可堪孤馆闭春寒"
+      ],
+      "related": [
+        "ppl-qinguan"
+      ]
+    },
+    {
       "id": "tl-1098",
       "cat": "timeline",
       "type": "事件",
@@ -7623,6 +8200,103 @@
       ],
       "related": [
         "ppl-liqingzhao"
+      ]
+    },
+    {
+      "id": "lit-shaonianyou-zhou",
+      "cat": "literature",
+      "type": "词",
+      "name": "《少年游·并刀如水》",
+      "era": "北宋",
+      "year": 1100,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写冬夜情事，“并刀如水，吴盐胜雪，纤手破新橙”以物写人，白描精工。",
+      "detail": "全词以室内细节构成场景：刀、盐、橙、锦幄、兽烟；下片“低声问：向谁行宿？城上已三更”以对话入词，声口毕肖。周邦彦长于以叙事笔法写词，此篇是其代表。",
+      "refs": "《片玉集》",
+      "tags": [
+        "周邦彦",
+        "白描",
+        "艳情",
+        "并刀如水"
+      ],
+      "related": [
+        "ppl-zhoubangyan"
+      ]
+    },
+    {
+      "id": "lit-dianjiangchun-li",
+      "cat": "literature",
+      "type": "词",
+      "name": "《点绛唇·蹴罢秋千》",
+      "era": "北宋",
+      "year": 1100,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写少女荡秋千后遇客的娇羞情态，是李清照早期小令的代表。",
+      "detail": "“蹴罢秋千，起来慵整纤纤手”写动作；“见客入来，袜刬金钗溜”写慌乱；“和羞走，倚门回首，却把青梅嗅”以“嗅青梅”掩饰回望，把一个少女的好奇与矜持写得活灵活现。",
+      "refs": "《漱玉词》（一说无名氏）",
+      "tags": [
+        "李清照",
+        "少女",
+        "和羞走",
+        "青梅"
+      ],
+      "related": [
+        "ppl-liqingzhao"
+      ]
+    },
+    {
+      "id": "lit-cilun",
+      "cat": "literature",
+      "type": "词论",
+      "name": "《词论》",
+      "era": "北宋",
+      "year": 1100,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "李清照所撰词学专论，提出“词别是一家”，是宋代最重要的词体辨体文献。",
+      "detail": "文中历评唐五代至北宋诸家，谓柳永“词语尘下”、张先宋祁“破碎”、晏殊欧阳修苏轼“句读不葺之诗”，主张词须协律、典雅、铺叙、故实。其批评虽苛，却第一次系统地为词争取独立的文体地位，是研究宋词观念的核心材料。",
+      "refs": "《苕溪渔隐丛话》后集卷三十三",
+      "tags": [
+        "李清照",
+        "词论",
+        "别是一家"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-pai-huanxisha",
+        "ppl-liqingzhao"
+      ]
+    },
+    {
+      "id": "lit-qingyuan-hezhu",
+      "cat": "literature",
+      "type": "词",
+      "name": "《青玉案·凌波不过横塘路》",
+      "era": "北宋",
+      "year": 1100,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写横塘路遇美人而生的闲愁，“一川烟草，满城风絮，梅子黄时雨”为其赢得“贺梅子”之称。",
+      "detail": "上片写“凌波不过横塘路”的擦肩而过；下片以“试问闲愁都几许”设问，连用三种景物作答，将无形的愁量化、景化。黄庭坚极赏此词，作诗称“解作江南断肠句，只今唯有贺方回”。",
+      "refs": "《东山词》",
+      "tags": [
+        "贺梅子",
+        "贺铸",
+        "闲愁",
+        "一川烟草"
+      ],
+      "related": [
+        "ppl-hezhu"
       ]
     },
     {
@@ -8000,6 +8674,30 @@
       ]
     },
     {
+      "id": "lit-yijianmei",
+      "cat": "literature",
+      "type": "词",
+      "name": "《一剪梅·红藕香残玉簟秋》",
+      "era": "北宋",
+      "year": 1103,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写与赵明诚离别后的相思，“才下眉头，却上心头”写愁之无可回避。",
+      "detail": "上片写“轻解罗裳，独上兰舟”的独处，“云中谁寄锦书来”盼书不至；下片“花自飘零水自流”以景物写时光，结句把愁在眉间与心头的转移写成可见的动作，语言浅近而体察入微。",
+      "refs": "《漱玉词》",
+      "tags": [
+        "李清照",
+        "相思",
+        "此情无计可消除",
+        "才下眉头却上心头"
+      ],
+      "related": [
+        "ppl-liqingzhao"
+      ]
+    },
+    {
       "id": "tec-yingzao",
       "cat": "tech",
       "type": "著作",
@@ -8044,6 +8742,78 @@
       ],
       "related": [
         "ppl-lijie"
+      ]
+    },
+    {
+      "id": "lit-lanlingwang",
+      "cat": "literature",
+      "type": "词",
+      "name": "《兰陵王·柳》",
+      "era": "北宋",
+      "year": 1105,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "借柳写别情，三片铺陈，是周邦彦长调章法的代表。",
+      "detail": "第一片咏柳，“柳阴直，烟里丝丝弄碧”写隋堤柳色；第二片写送别场景，“登临望故国，谁识京华倦客”点出倦游；第三片写别后追忆，“沉思前事，似梦里，泪暗滴”。全词结构回环，被推为“词中老杜”的典型。",
+      "refs": "《片玉集》",
+      "tags": [
+        "周邦彦",
+        "咏柳",
+        "送别",
+        "登临望故国"
+      ],
+      "related": [
+        "ppl-zhoubangyan"
+      ]
+    },
+    {
+      "id": "lit-qingpingyue-huang",
+      "cat": "literature",
+      "type": "词",
+      "name": "《清平乐·春归何处》",
+      "era": "北宋",
+      "year": 1105,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "以拟人手法追问春之归处，是黄庭坚晚年难得的清丽之作。",
+      "detail": "“春归何处？寂寞无行路”发问；下片“春无踪迹谁知？除非问取黄鹂。百啭无人能解，因风飞过蔷薇”层层设想，以黄鹂、蔷薇作答，构思新奇而不失自然。",
+      "refs": "《山谷琴趣外篇》",
+      "tags": [
+        "惜春",
+        "黄庭坚",
+        "问春",
+        "清新"
+      ],
+      "related": [
+        "ppl-huangtingjian"
+      ]
+    },
+    {
+      "id": "lit-zuihuayin",
+      "cat": "literature",
+      "type": "词",
+      "name": "《醉花阴·薄雾浓云愁永昼》",
+      "era": "北宋",
+      "year": 1109,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "重阳思念赵明诚之作，“莫道不销魂，帘卷西风，人比黄花瘦”为全词警策。",
+      "detail": "上片写“薄雾浓云愁永昼”的漫长白昼与“玉枕纱厨，半夜凉初透”的独眠；下片写东篱把酒，“莫道不销魂，帘卷西风，人比黄花瘦”以人比菊，瘦字收束全篇。相传赵明诚闭门三日作词五十阕，杂以此词请友人评，友人独赏此三句。",
+      "refs": "《漱玉词》",
+      "tags": [
+        "李清照",
+        "重阳",
+        "人比黄花瘦",
+        "思念"
+      ],
+      "related": [
+        "ppl-liqingzhao"
       ]
     },
     {
@@ -8670,6 +9440,30 @@
       ]
     },
     {
+      "id": "lit-yujiaao-liqingzhao",
+      "cat": "literature",
+      "type": "词",
+      "name": "《渔家傲·天接云涛连晓雾》",
+      "era": "南宋",
+      "year": 1130,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "记梦之作，气象壮阔，是李清照少见的豪放一路。",
+      "detail": "“天接云涛连晓雾，星河欲转千帆舞”写梦境中的海天；下片“我报路长嗟日暮，学诗谩有惊人句”自伤才高命蹇，结句“九万里风鹏正举。风休住，蓬舟吹取三山去”化用《庄子》，把无处可归的处境写成远举高飞的想象。",
+      "refs": "《漱玉词》",
+      "tags": [
+        "李清照",
+        "记梦",
+        "豪放",
+        "九万里风鹏正举"
+      ],
+      "related": [
+        "ppl-liqingzhao"
+      ]
+    },
+    {
       "id": "mil-shuijun",
       "cat": "military",
       "type": "兵制",
@@ -8981,6 +9775,54 @@
       ]
     },
     {
+      "id": "lit-wulingchun",
+      "cat": "literature",
+      "type": "词",
+      "name": "《武陵春·风住尘香花已尽》",
+      "era": "南宋",
+      "year": 1135,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南渡后避难金华所作，“只恐双溪舴艋舟，载不动许多愁”把愁写成可称量的重物。",
+      "detail": "上片“物是人非事事休，欲语泪先流”写国破家亡后的失语；下片“闻说双溪春尚好，也拟泛轻舟”一转，随即以“只恐”推翻，愁绪之重竟至舟不能载。李攀龙称其“与‘载取断魂’同为绝唱”。",
+      "refs": "《漱玉词》",
+      "tags": [
+        "李清照",
+        "南渡",
+        "愁",
+        "载不动许多愁"
+      ],
+      "related": [
+        "ppl-liqingzhao"
+      ]
+    },
+    {
+      "id": "lit-xiaochongshan",
+      "cat": "literature",
+      "type": "词",
+      "name": "《小重山·昨夜寒蛩不住鸣》",
+      "era": "南宋",
+      "year": 1138,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写深夜不寐、壮志难酬的孤愤，“知音少，弦断有谁听”道尽主战派的处境。",
+      "detail": "上片写“昨夜寒蛩不住鸣。惊回千里梦，已三更”的失眠，“起来独自绕阶行”写辗转；下片“白首为功名”写半生征战，结句以“欲将心事付瑶琴。知音少，弦断有谁听”收束，与《满江红》的激昂形成互补。",
+      "refs": "《岳忠武王文集》",
+      "tags": [
+        "岳飞",
+        "主战",
+        "知音少",
+        "悲慨"
+      ],
+      "related": [
+        "ppl-yuefei"
+      ]
+    },
+    {
       "id": "geo-linan",
       "cat": "geography",
       "type": "都城",
@@ -9041,9 +9883,9 @@
       "detail": "名句：“莫等闲，白了少年头，空悲切。”此词作者与创作年代学界有争议，一说为明人伪托，但已深入人心。",
       "refs": "《全宋词》（作者有争议，一说岳飞，一说明人伪托）",
       "tags": [
+        "存疑",
         "岳飞",
-        "爱国",
-        "存疑"
+        "爱国"
       ]
     },
     {
@@ -9326,6 +10168,29 @@
       ]
     },
     {
+      "id": "lit-bijimanzhi",
+      "cat": "literature",
+      "type": "词论",
+      "name": "《碧鸡漫志》",
+      "era": "南宋",
+      "year": 1150,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "王灼所撰，考订词调源流与唐宋词人，是宋代重要的词学笔记。",
+      "detail": "全书五卷，前三卷探究词曲源流、乐律变迁，后二卷评骘唐五代至南宋词人。书中保留了大量词调本事，对研究词与音乐的关系尤有价值。",
+      "refs": "《碧鸡漫志》",
+      "tags": [
+        "词论",
+        "王灼",
+        "源流"
+      ],
+      "related": [
+        "cul-ci"
+      ]
+    },
+    {
       "id": "cul-gelv",
       "cat": "culture",
       "type": "文学",
@@ -9465,6 +10330,30 @@
         "陆游",
         "爱情",
         "唐婉"
+      ]
+    },
+    {
+      "id": "lit-dielianhua-zhushuzhen",
+      "cat": "literature",
+      "type": "词",
+      "name": "《蝶恋花·送春》",
+      "era": "南宋",
+      "year": 1160,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写送春之情，以春拟人，寄托婚姻不幸的幽怨。",
+      "detail": "“楼外垂杨千万缕，欲系青春，少住春还去”写留春不住；“把酒送春春不语，黄昏却下潇潇雨”以拟人写春之无情，实写人之孤寂。朱淑真词多写个人情感苦闷，此篇为其代表。",
+      "refs": "《断肠词》",
+      "tags": [
+        "女性",
+        "朱淑真",
+        "送春",
+        "把酒送春春不语"
+      ],
+      "related": [
+        "ppl-zhushuzhen"
       ]
     },
     {
@@ -9608,6 +10497,30 @@
       ]
     },
     {
+      "id": "lit-busuanzi-luyou",
+      "cat": "literature",
+      "type": "词",
+      "name": "《卜算子·咏梅》",
+      "era": "南宋",
+      "year": 1165,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "以梅自况，写受排挤而不改其节的品格。",
+      "detail": "“驿外断桥边，寂寞开无主”写梅之处境；“已是黄昏独自愁，更著风和雨”写受摧折；下片“无意苦争春，一任群芳妒”明志，结句“零落成泥碾作尘，只有香如故”把气节写到不可摧毁。",
+      "refs": "《放翁词》",
+      "tags": [
+        "陆游",
+        "梅花",
+        "咏物",
+        "只有香如故"
+      ],
+      "related": [
+        "ppl-luyou"
+      ]
+    },
+    {
       "id": "lit-youshanxicun",
       "cat": "literature",
       "type": "诗",
@@ -9700,6 +10613,54 @@
       ]
     },
     {
+      "id": "lit-shuilongyin",
+      "cat": "literature",
+      "type": "词",
+      "name": "《水龙吟·登建康赏心亭》",
+      "era": "南宋",
+      "year": 1174,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "登建康赏心亭远望，抒报国无路的悲愤。",
+      "detail": "上片“楚天千里清秋，水随天去秋无际”写阔大江天，继而“把吴钩看了，栏杆拍遍，无人会，登临意”以动作写激愤；下片连用张翰、许汜、桓温三典，层层否定，结句“倩何人唤取，红巾翠袖，揾英雄泪”以柔语收悲慨。",
+      "refs": "《稼轩长短句》",
+      "tags": [
+        "辛弃疾",
+        "登临",
+        "把吴钩看了",
+        "英雄失路"
+      ],
+      "related": [
+        "ppl-xinqiji"
+      ]
+    },
+    {
+      "id": "lit-qingyuan-xinqiji",
+      "cat": "literature",
+      "type": "词",
+      "name": "《青玉案·元夕》",
+      "era": "南宋",
+      "year": 1174,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写元宵灯会的繁华与“那人”的孤高，被王国维列为治学第三境。",
+      "detail": "上片极写灯市之盛：“东风夜放花千树”“凤箫声动，玉壶光转，一夜鱼龙舞”；下片写观灯女子“蛾儿雪柳黄金缕”，而“众里寻他千百度，蓦然回首，那人却在，灯火阑珊处”突然转冷，以繁华反衬孤高。",
+      "refs": "《稼轩长短句》",
+      "tags": [
+        "元宵",
+        "辛弃疾",
+        "众里寻他千百度",
+        "境界"
+      ],
+      "related": [
+        "ppl-xinqiji"
+      ]
+    },
+    {
       "id": "tho-ehu",
       "cat": "thought",
       "type": "事件",
@@ -9744,6 +10705,102 @@
       ]
     },
     {
+      "id": "lit-pusaman",
+      "cat": "literature",
+      "type": "词",
+      "name": "《菩萨蛮·书江西造口壁》",
+      "era": "南宋",
+      "year": 1176,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "题于造口壁，借江水写南渡之痛与恢复之志。",
+      "detail": "“郁孤台下清江水，中间多少行人泪”以江水起兴，追忆金兵南侵时流离之苦；“西北望长安，可怜无数山”写中原阻隔；结句“青山遮不住，毕竟东流去”以江水东流喻大势与人心，成为传诵最广的句子之一。",
+      "refs": "《稼轩长短句》",
+      "tags": [
+        "辛弃疾",
+        "造口",
+        "青山遮不住",
+        "家国之痛"
+      ],
+      "related": [
+        "ppl-xinqiji"
+      ]
+    },
+    {
+      "id": "lit-moyuer-xinqiji",
+      "cat": "literature",
+      "type": "词",
+      "name": "《摸鱼儿·更能消几番风雨》",
+      "era": "南宋",
+      "year": 1179,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "以惜春、宫怨寄托政治失意，是辛词婉约一路的代表。",
+      "detail": "上片写“更能消、几番风雨，匆匆春又归去”的惜春，托物言志；下片借陈皇后失宠故事写被弃之感，“君莫舞，君不见、玉环飞燕皆尘土”警告得势者；结句“休去倚危栏，斜阳正在，烟柳断肠处”以斜阳收束。梁启超评其“回肠荡气”。",
+      "refs": "《稼轩长短句》",
+      "tags": [
+        "惜春",
+        "辛弃疾",
+        "宫怨",
+        "玉环飞燕皆尘土"
+      ],
+      "related": [
+        "ppl-xinqiji"
+      ]
+    },
+    {
+      "id": "lit-busuanzi-yanrui",
+      "cat": "literature",
+      "type": "词",
+      "name": "《卜算子·不是爱风尘》",
+      "era": "南宋",
+      "year": 1180,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "受朱熹案牵连下狱时所作，自辩身世，不卑不亢。",
+      "detail": "“不是爱风尘，似被前缘误”写身不由己；“花落花开自有时，总赖东君主”以花喻命运；下片“去也终须去，住也如何住”写去留两难，结句“若得山花插满头，莫问奴归处”写对自由的向往。",
+      "refs": "《齐东野语》",
+      "tags": [
+        "严蕊",
+        "营妓",
+        "自辩",
+        "花开花落自有时"
+      ],
+      "related": [
+        "ppl-yanrui"
+      ]
+    },
+    {
+      "id": "lit-xijiangyue",
+      "cat": "literature",
+      "type": "词",
+      "name": "《西江月·夜行黄沙道中》",
+      "era": "南宋",
+      "year": 1181,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写夏夜行经黄沙岭的田园景象，是辛弃疾闲居上饶时的清丽之作。",
+      "detail": "“明月别枝惊鹊，清风半夜鸣蝉”以动写静；“稻花香里说丰年，听取蛙声一片”把丰年之喜托于蛙声；下片“七八个星天外，两三点雨山前”用数字写疏淡夜景，结句“路转溪桥忽见”写意外之喜。",
+      "refs": "《稼轩长短句》",
+      "tags": [
+        "辛弃疾",
+        "田园",
+        "夏夜",
+        "稻花香里说丰年"
+      ],
+      "related": [
+        "ppl-xinqiji"
+      ]
+    },
+    {
       "id": "lit-pozhenzi",
       "cat": "literature",
       "type": "词",
@@ -9764,6 +10821,54 @@
       ],
       "related": [
         "ppl-xinqiji"
+      ]
+    },
+    {
+      "id": "lit-chounuer",
+      "cat": "literature",
+      "type": "词",
+      "name": "《丑奴儿·书博山道中壁》",
+      "era": "南宋",
+      "year": 1189,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "以“愁”字贯串少年与中年，写尽历尽沧桑后的沉默。",
+      "detail": "上片“少年不识愁滋味，爱上层楼”写少年强说愁；下片“而今识尽愁滋味，欲说还休”转折，结句“却道天凉好个秋”以闲语遮掩，愈见沉痛。全词以口语入词，明白如话而余味极厚。",
+      "refs": "《稼轩长短句》",
+      "tags": [
+        "辛弃疾",
+        "闲愁",
+        "欲说还休",
+        "博山"
+      ],
+      "related": [
+        "ppl-xinqiji"
+      ]
+    },
+    {
+      "id": "lit-suzhongqing",
+      "cat": "literature",
+      "type": "词",
+      "name": "《诉衷情·当年万里觅封侯》",
+      "era": "南宋",
+      "year": 1189,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "晚年闲居所作，写报国无门的悲愤。",
+      "detail": "“当年万里觅封侯，匹马戍梁州”追忆南郑军旅；“关河梦断何处，尘暗旧貂裘”写理想落空；下片“胡未灭，鬓先秋，泪空流”三短句层层递进，结句“此生谁料，心在天山，身老沧洲”以空间的对立写尽不甘。",
+      "refs": "《放翁词》",
+      "tags": [
+        "陆游",
+        "爱国",
+        "壮志未酬",
+        "心在天山身老沧洲"
+      ],
+      "related": [
+        "ppl-luyou"
       ]
     },
     {
@@ -9815,6 +10920,54 @@
       ]
     },
     {
+      "id": "lit-anxiang",
+      "cat": "literature",
+      "type": "词",
+      "name": "《暗香·旧时月色》",
+      "era": "南宋",
+      "year": 1191,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "自度曲咏梅，怀人兼怀国，是姜夔“清空”词风的代表。",
+      "detail": "词前小序记石湖范成大索新声，遂作《暗香》《疏影》两曲。全词以“旧时月色”起，写梅而处处有人在；“何逊而今渐老，都忘却、春风词笔”自伤才尽，结句“又片片、吹尽也，几时见得”以梅落收束。张炎称其“不惟清空，又且骚雅”。",
+      "refs": "《白石道人歌曲》",
+      "tags": [
+        "姜夔",
+        "咏梅",
+        "自度曲",
+        "清空"
+      ],
+      "related": [
+        "ppl-jiangkuai"
+      ]
+    },
+    {
+      "id": "lit-shuying",
+      "cat": "literature",
+      "type": "词",
+      "name": "《疏影·苔枝缀玉》",
+      "era": "南宋",
+      "year": 1191,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "《暗香》姊妹篇，以昭君、寿阳公主等典写梅，寄托故国之思。",
+      "detail": "开篇“苔枝缀玉，有翠禽小小，枝上同宿”写梅之清冷；中段用昭君出塞、寿阳公主梅花妆等典；“还教一片随波去，又却怨、玉龙哀曲”写梅落，结句“等恁时、重觅幽香，已入小窗横幅”归于画境。",
+      "refs": "《白石道人歌曲》",
+      "tags": [
+        "姜夔",
+        "咏梅",
+        "用典",
+        "昭君"
+      ],
+      "related": [
+        "ppl-jiangkuai"
+      ]
+    },
+    {
       "id": "tl-1194",
       "cat": "timeline",
       "type": "事件",
@@ -9861,6 +11014,78 @@
       "related": [
         "ppl-hantuozhou",
         "ppl-zhuxi"
+      ]
+    },
+    {
+      "id": "lit-qitianle",
+      "cat": "literature",
+      "type": "词",
+      "name": "《齐天乐·庾郎先自吟愁赋》",
+      "era": "南宋",
+      "year": 1196,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "咏蟋蟀之作，以物写人，寄托身世之悲。",
+      "detail": "全词紧扣蟋蟀之声：从“露湿铜铺，苔侵石井”的听觉环境，写到“哀音似诉”的愁绪，再以“候馆吟秋，离宫吊月”拓开境界。姜夔咏物不即不离，此篇被视为南宋咏物词的典范。",
+      "refs": "《白石道人歌曲》",
+      "tags": [
+        "姜夔",
+        "咏物",
+        "自度曲",
+        "蟋蟀"
+      ],
+      "related": [
+        "ppl-jiangkuai"
+      ]
+    },
+    {
+      "id": "lit-caotangshiyu",
+      "cat": "literature",
+      "type": "选本",
+      "name": "《草堂诗余》",
+      "era": "南宋",
+      "year": 1200,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋书坊所编词选，选录唐宋名作，是宋元之际流传最广的词选本。",
+      "detail": "全书分前、后集，按题材季节编排，选词以婉约为宗，兼收苏轼、辛弃疾豪放之作。因便于诵习，元明两代屡经翻刻，对词的普及影响极大，也影响了后人对“宋词”面貌的想象。",
+      "refs": "《草堂诗余》",
+      "tags": [
+        "词选",
+        "选本",
+        "流传"
+      ],
+      "related": [
+        "cul-ci",
+        "cul-wanyue"
+      ]
+    },
+    {
+      "id": "lit-hexinglang",
+      "cat": "literature",
+      "type": "词",
+      "name": "《贺新郎·别茂嘉十二弟》",
+      "era": "南宋",
+      "year": 1203,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "送族弟茂嘉远行，连用古人离别故事，沉郁苍凉。",
+      "detail": "词中接连用王昭君、陈皇后、卫庄姜、李陵、荆轲等离别典故，“算世间、那有平分月”写国土分裂之痛；结句“啼鸟还知如许恨，料不啼清泪长啼血”以鸟写人。辛弃疾自谓此词“比前人所作，为尤高”。",
+      "refs": "《稼轩长短句》",
+      "tags": [
+        "辛弃疾",
+        "送别",
+        "用典",
+        "啼鸟还知如许恨"
+      ],
+      "related": [
+        "ppl-xinqiji"
       ]
     },
     {
@@ -10255,6 +11480,30 @@
       ],
       "related": [
         "tl-1234"
+      ]
+    },
+    {
+      "id": "lit-fengrusong",
+      "cat": "literature",
+      "type": "词",
+      "name": "《风入松·听风听雨过清明》",
+      "era": "南宋",
+      "year": 1240,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "写清明怀人，“黄蜂频扑秋千索，有当时、纤手香凝”以痴语写深情。",
+      "detail": "上片写听风听雨、葬花伤春，“料峭春寒中酒，交加晓梦啼莺”写醉梦；下片“西园日日扫林亭”写旧地重游，结句以黄蜂扑索的错觉写人去楼空。陈洵评此词“倒装之妙，人所难及”。",
+      "refs": "《梦窗词》",
+      "tags": [
+        "怀人",
+        "吴文英",
+        "清明",
+        "黄蜂频扑秋千索"
+      ],
+      "related": [
+        "ppl-wuwenying"
       ]
     },
     {
@@ -10685,6 +11934,78 @@
       ]
     },
     {
+      "id": "lit-yijianmei-jiangjie",
+      "cat": "literature",
+      "type": "词",
+      "name": "《一剪梅·舟过吴江》",
+      "era": "南宋",
+      "year": 1276,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "舟过吴江时所作，“流光容易把人抛，红了樱桃，绿了芭蕉”为传诵名句。",
+      "detail": "上片写“一片春愁待酒浇”的羁旅之愁，“风又飘飘，雨又萧萧”写飘零；下片“何日归家洗客袍”盼归，结句以樱桃红、芭蕉绿的物候变化写时光流逝，色彩明丽而感伤。",
+      "refs": "《竹山词》",
+      "tags": [
+        "羁旅",
+        "蒋捷",
+        "流光容易把人抛",
+        "红了樱桃绿了芭蕉"
+      ],
+      "related": [
+        "ppl-jiangjie"
+      ]
+    },
+    {
+      "id": "lit-mantingfang-xu",
+      "cat": "literature",
+      "type": "词",
+      "name": "《满庭芳·汉上繁华》",
+      "era": "南宋",
+      "year": 1276,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "被元军掳掠至杭州，题词于壁后投水而死，是宋末最惨烈的绝笔词。",
+      "detail": "“汉上繁华，江南人物，尚遗宣政风流”追忆承平；“一旦刀兵齐举，旌旗拥、百万貔貅”写兵祸；“破鉴徐郎何在？空惆怅、相见无由”写夫妻离散，结句“从今后，断魂千里，夜夜岳阳楼”以身殉作结。",
+      "refs": "《辍耕录》",
+      "tags": [
+        "绝笔",
+        "亡国",
+        "徐君宝妻",
+        "汉上繁华"
+      ],
+      "related": [
+        "ppl-xujunbaoyi"
+      ]
+    },
+    {
+      "id": "lit-manjianghong-wang",
+      "cat": "literature",
+      "type": "词",
+      "name": "《满江红·太液芙蓉》",
+      "era": "南宋",
+      "year": 1276,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "南宋灭亡后被掳北上，题于驿壁，写宫人国破之痛。",
+      "detail": "“太液芙蓉，浑不似、旧时颜色”以荷花写自身与故国；“忽一声、鼙鼓揭天来，繁华歇”写兵祸骤至；下片“问姮娥、于我肯从容，同圆缺”以问月作结。此词传诵一时，文天祥、邓剡等皆有和作。",
+      "refs": "《浩然斋雅谈》",
+      "tags": [
+        "亡国",
+        "王清惠",
+        "宫人",
+        "太液芙蓉"
+      ],
+      "related": [
+        "ppl-wangqinghui"
+      ]
+    },
+    {
       "id": "tl-1276",
       "cat": "timeline",
       "type": "事件",
@@ -10756,6 +12077,30 @@
       ]
     },
     {
+      "id": "lit-leijiangyue",
+      "cat": "literature",
+      "type": "词",
+      "name": "《酹江月·和友驿中言别》",
+      "era": "南宋",
+      "year": 1279,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "被囚燕京时和友人邓剡之作，“镜里朱颜都变尽，只有丹心难灭”表气节。",
+      "detail": "上片写“乾坤能大，算蛟龙、元不是池中物”的豪气与囚居之困；下片“去去龙沙，江山回首，一线青如发”写北行回望，结句以丹心不灭作结，与其《过零丁洋》互为表里。",
+      "refs": "《文山乐府》",
+      "tags": [
+        "文天祥",
+        "丹心",
+        "狱中",
+        "和词"
+      ],
+      "related": [
+        "ppl-wentianxiang"
+      ]
+    },
+    {
       "id": "tl-1279",
       "cat": "timeline",
       "type": "事件",
@@ -10782,6 +12127,30 @@
       ]
     },
     {
+      "id": "lit-yuefuzhimi",
+      "cat": "literature",
+      "type": "词论",
+      "name": "《乐府指迷》",
+      "era": "南宋",
+      "year": 1280,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "沈义父所撰词法著作，讲论作词的具体门径，为吴文英一派的创作总结。",
+      "detail": "全书二十九则，主张“音律欲其协，下字欲其雅，用字不可太露，发意不可太高”，并强调用事、咏物、起结之法。张炎《词源》多承其说。",
+      "refs": "《乐府指迷》",
+      "tags": [
+        "词论",
+        "沈义父",
+        "作词法"
+      ],
+      "related": [
+        "lit-ciyuan",
+        "ppl-wuwenying"
+      ]
+    },
+    {
       "id": "lit-zhengqige",
       "cat": "literature",
       "type": "诗",
@@ -10802,6 +12171,79 @@
       ],
       "related": [
         "ppl-wentianxiang"
+      ]
+    },
+    {
+      "id": "lit-yumeiren-jiangjie",
+      "cat": "literature",
+      "type": "词",
+      "name": "《虞美人·听雨》",
+      "era": "南宋",
+      "year": 1290,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "以听雨贯串少年、壮年、老年，写尽一生与一个时代的衰亡。",
+      "detail": "“少年听雨歌楼上，红烛昏罗帐”写承平欢娱；“壮年听雨客舟中，江阔云低、断雁叫西风”写乱世漂泊；“而今听雨僧庐下，鬓已星星也”写亡国后的枯寂。结句“悲欢离合总无情，一任阶前、点滴到天明”以无情写至情。",
+      "refs": "《竹山词》",
+      "tags": [
+        "蒋捷",
+        "听雨",
+        "人生三境",
+        "阶前点滴到天明"
+      ],
+      "related": [
+        "ppl-jiangjie"
+      ]
+    },
+    {
+      "id": "lit-jielianhuan",
+      "cat": "literature",
+      "type": "词",
+      "name": "《解连环·孤雁》",
+      "era": "南宋",
+      "year": 1290,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "咏孤雁自况，张炎因此得号“张孤雁”。",
+      "detail": "“楚江空晚，怅离群万里，恍然惊散”写孤雁失群；“写不成书，只寄得、相思一点”以雁字不成书喻音信难通；结句“未羞他、双燕归来，画帘半卷”以双燕反衬。全词咏物而不滞于物，寄托亡国身世。",
+      "refs": "《山中白云词》",
+      "tags": [
+        "咏物",
+        "张炎",
+        "孤雁",
+        "写不成书"
+      ],
+      "related": [
+        "ppl-zhangyan"
+      ]
+    },
+    {
+      "id": "lit-ciyuan",
+      "cat": "literature",
+      "type": "词论",
+      "name": "《词源》",
+      "era": "南宋",
+      "year": 1300,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "张炎所撰词学著作，标举“清空”“骚雅”，是南宋格律词派的理论总结。",
+      "detail": "全书二卷，上卷论音律、拍眼、制曲，下卷论词法、句法、用事、咏物与历代词人得失。张炎推崇姜夔“清空骚雅”，批评吴文英“质实”，其说深刻影响清代浙西词派。",
+      "refs": "《词源》",
+      "tags": [
+        "词论",
+        "张炎",
+        "清空骚雅"
+      ],
+      "related": [
+        "cul-gelv",
+        "ppl-jiangkuai",
+        "ppl-zhangyan"
       ]
     },
     {
@@ -13081,8 +14523,8 @@
       "detail": "与柳永齐名，善写朦胧影绰之美，苏轼曾为其作词。",
       "refs": null,
       "tags": [
-        "婉约",
-        "张三影"
+        "张三影",
+        "婉约"
       ],
       "groups": [
         "文豪"
@@ -13499,8 +14941,8 @@
       "detail": "代表作《临江仙·梦后楼台高锁》。",
       "refs": "《宋史·文苑传》《小山词》自序",
       "tags": [
-        "婉约",
-        "小山词"
+        "小山词",
+        "婉约"
       ],
       "groups": [
         "文豪"
@@ -14962,8 +16404,8 @@
       "detail": "其词寄托亡国之痛，含蓄深婉，为清初词家所推崇。",
       "refs": null,
       "tags": [
-        "碧山词",
-        "咏物"
+        "咏物",
+        "碧山词"
       ],
       "groups": [
         "文豪"
@@ -16268,6 +17710,150 @@
       ],
       "groups": [
         "科学家"
+      ]
+    },
+    {
+      "id": "lit-pai-niannujiao",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·念奴娇",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调一百字，前后段各十句四仄韵，因唐代歌女念奴得名，又名《百字令》《大江东去》。",
+      "detail": "苏轼《赤壁怀古》奠定此调的豪放气质，后世多用它登临怀古、抒写兴亡之感。",
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "苏轼",
+        "怀古",
+        "词牌",
+        "念奴娇"
+      ],
+      "related": [
+        "cul-ci"
+      ]
+    },
+    {
+      "id": "lit-pai-shuidiao",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·水调歌头",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调九十五字，前段九句四平韵，后段十句四平韵。唐大曲《水调》之歌头，宋代成为最常用的长调词牌之一。",
+      "detail": "苏轼“明月几时有”为千古绝唱，辛弃疾、张孝祥等皆有名作。此调声情较宽，既可写中秋怀人，也可抒豪迈之志。",
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "苏轼",
+        "中秋",
+        "词牌",
+        "水调歌头"
+      ],
+      "related": [
+        "cul-ci"
+      ]
+    },
+    {
+      "id": "lit-pai-huanxisha",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·浣溪沙",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调四十二字，上片三句三平韵，下片三句两平韵，是宋词中最常用的小令之一。",
+      "detail": "由唐教坊曲来，音节和婉，宜写闲情与伤春。晏殊“一曲新词酒一杯”、秦观“漠漠轻寒上小楼”皆用此调。",
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "晏殊",
+        "词牌",
+        "浣溪沙",
+        "小令"
+      ],
+      "related": [
+        "cul-ci"
+      ]
+    },
+    {
+      "id": "lit-pai-manjianghong",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·满江红",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调九十三字，前段八句四仄韵，后段十句五仄韵，声情激越，多用于抒写壮怀。",
+      "detail": "以岳飞“怒发冲冠”最著名，宋末王清惠、文天祥等亦用此调写亡国之痛，遂成为家国之情的代表性词牌。",
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "豪放",
+        "岳飞",
+        "满江红",
+        "词牌"
+      ],
+      "related": [
+        "cul-ci"
+      ]
+    },
+    {
+      "id": "lit-pai-dielianhua",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·蝶恋花",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调六十字，前后段各五句四仄韵，本名《鹊踏枝》，晏殊取梁简文帝“翻阶蛱蝶恋花情”句改今名。",
+      "detail": "此调宜写深婉之情，欧阳修“庭院深深深几许”、柳永“伫倚危楼风细细”、苏轼“花褪残红青杏小”皆为名篇。",
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "欧阳修",
+        "婉约",
+        "词牌",
+        "蝶恋花"
+      ],
+      "related": [
+        "cul-ci"
+      ]
+    },
+    {
+      "id": "lit-pai-qingyuan",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·青玉案",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调六十七字，前后段各六句五仄韵，取汉张衡《四愁诗》“美人赠我锦绣段，何以报之青玉案”为名。",
+      "detail": "贺铸“凌波不过横塘路”、辛弃疾“东风夜放花千树”两首最负盛名，一写闲愁，一写元宵，均成绝唱。",
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "辛弃疾",
+        "贺铸",
+        "词牌",
+        "青玉案"
+      ],
+      "related": [
+        "cul-ci"
       ]
     },
     {

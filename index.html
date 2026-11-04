@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>大宋全局志 · Song Dynasty Atlas</title>
 <meta name="description" content="两宋政治、军事、经济、文化、科技、社会、风俗全量结构化资料库">
-<link rel="stylesheet" href="css/style.css?v=6">
+<link rel="stylesheet" href="css/style.css?v=8">
 </head>
 <body>
 
@@ -21,6 +21,7 @@
   <nav class="mainnav" id="mainnav">
     <a href="#overview" data-nav="overview">总览</a>
     <a href="#timeline" data-nav="timeline">年表</a>
+    <a href="#map" data-nav="map">舆图</a>
     <a href="#browse" data-nav="browse">典藏</a>
     <a href="#people" data-nav="people">人物</a>
     <a href="chixie.html">持械图谱</a>
@@ -93,20 +94,88 @@
 
 <!-- ================= 年表 ================= -->
 <section class="view" id="view-timeline">
-  <div class="wrap narrow">
+  <div class="wrap">
     <div class="page-head">
-      <p class="eyebrow">CHRONOLOGY · 907—1279</p>
-      <h1>大宋大事年表</h1>
-      <p>自 907 年唐亡、916 年契丹建国，至 1279 年崖山海战。上方年代轴按政权着色，可点击定位；下方按年代分段排列。</p>
+      <p class="eyebrow">CHRONOLOGY ATLAS · 907—1279</p>
+      <h1>大宋大事图谱</h1>
+      <p>横轴为年份，纵向按政权分道。每个节点是一件事，连线来自条目之间的关联；点击节点看详情，悬停可追踪相邻事件。</p>
     </div>
+
     <div class="filterbar" id="timelineFilters"></div>
-    <figure class="tl-atlas" aria-label="年表年代轴">
-      <div class="tl-axis" id="tlAxis"></div>
-      <div class="tl-axis-labels" id="tlAxisLabels"></div>
-      <div class="tl-legend" id="tlLegend"></div>
-    </figure>
-    <div class="timeline-wrap">
+
+    <div class="tg-toolbar">
+      <div class="tg-seg" role="group" aria-label="视图切换">
+        <button class="tg-seg-btn on" data-tlview="graph">图谱</button>
+        <button class="tg-seg-btn" data-tlview="list">列表</button>
+      </div>
+      <div class="tg-zoom" id="tgZoom" hidden>
+        <button data-zoom="out" aria-label="缩小">−</button>
+        <span id="tgZoomLabel">100%</span>
+        <button data-zoom="in" aria-label="放大">＋</button>
+        <button data-zoom="fit" class="tg-fit">适应</button>
+      </div>
+      <div class="tg-legend" id="tgLegend"></div>
+    </div>
+
+    <div class="tg-card" id="tgCard">
+      <div class="tg-body">
+        <div class="tg-lanes" id="tgLanes" aria-hidden="true"></div>
+        <div class="tg-scroll" id="tgScroll">
+          <svg id="tgSvg" role="img" aria-label="大事年表图谱"></svg>
+        </div>
+      </div>
+      <div class="tg-tip" id="tgTip"></div>
+      <p class="tg-hint">拖动或滚动横向浏览 · 点击节点打开词条 · 圆点越大越是大事</p>
+    </div>
+
+    <div class="timeline-wrap" id="tlListWrap" hidden>
       <div class="timeline" id="timelineList"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= 舆图 ================= -->
+<section class="view" id="view-map">
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">TERRITORY · 960—1279</p>
+      <h1>宋代舆图与势力分布</h1>
+      <p>按年份切换，看两宋、辽、西夏、金、大理、西辽与蒙古的疆域消长与都城、战场位置。边界为简化示意，非精确历史地理测绘。</p>
+    </div>
+
+    <div class="mp-toolbar">
+      <div class="mp-years" id="mapYears"></div>
+      <div class="mp-playwrap">
+        <button id="mapPlay" class="mp-play">播放</button>
+        <input type="range" id="mapSlider" min="0" max="10" value="0" aria-label="年份">
+      </div>
+    </div>
+
+    <div class="mp-layout">
+      <figure class="mp-card">
+        <div class="mp-stage">
+          <svg id="mapSvg" role="img" aria-label="宋代疆域示意地图"></svg>
+        </div>
+        <figcaption class="mp-cap">
+          <b id="mapEraLabel">公元 1127 年</b>
+          <span id="mapEraNote"></span>
+        </figcaption>
+      </figure>
+      <aside class="mp-side">
+        <div class="mp-legend" id="mapLegend"></div>
+        <div class="mp-panel" id="mapPanel"></div>
+      </aside>
+    </div>
+
+    <div class="mp-notes">
+      <h2>读图说明</h2>
+      <ul>
+        <li><b>边界为示意。</b>按政权核心区与主要都城位置手绘简化，用于看势力消长，不作疆界考据。</li>
+        <li><b>面积占比</b>按当前视窗内各政权多边形投影面积计算，仅表示相对大小。</li>
+        <li><b>时间轴</b>取 960、1000、1044、1111、1120、1125、1127、1142、1200、1234、1279 等关键年份，可直接点年份或拖滑杆。</li>
+        <li><b>点城市</b>可跳到对应词条；点政权可看其简介与相关条目。</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -257,6 +326,8 @@
   </div>
 </div>
 
-<script src="js/app.js?v=7"></script>
+<script src="js/map-data.js"></script>
+<script src="js/map.js"></script>
+<script src="js/app.js?v=8"></script>
 </body>
 </html>
