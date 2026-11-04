@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-04T14:30:52",
+  "generatedAt": "2026-11-04T15:35:04",
   "categories": [
     {
       "id": "politics",
@@ -629,7 +629,8 @@
       "related": [
         "mil-wudai-yabing",
         "pol-keju",
-        "soc-liudong"
+        "soc-liudong",
+        "soc-sinong"
       ]
     },
     {
@@ -733,6 +734,10 @@
         "贵族",
         "耶律",
         "萧氏"
+      ],
+      "related": [
+        "cus-liao-hunsu",
+        "pol-liao-houzu"
       ]
     },
     {
@@ -831,7 +836,9 @@
         "通婚"
       ],
       "related": [
-        "cus-jin-hunsu"
+        "cus-jin-hunsu",
+        "pol-liao-houzu",
+        "pol-liao-shixuan"
       ]
     },
     {
@@ -919,6 +926,10 @@
         "精锐",
         "后族",
         "私甲"
+      ],
+      "related": [
+        "mil-beiweijun",
+        "mil-liao-pishi"
       ]
     },
     {
@@ -940,6 +951,10 @@
         "契丹",
         "太阳崇拜",
         "东向"
+      ],
+      "related": [
+        "cul-liao-sancai",
+        "cus-liao-kunfa"
       ]
     },
     {
@@ -1009,6 +1024,10 @@
         "耶律",
         "萧氏",
         "通婚"
+      ],
+      "related": [
+        "cus-liao-hunsu",
+        "pol-liao-shixuan"
       ]
     },
     {
@@ -1030,6 +1049,10 @@
         "精锐",
         "契丹",
         "亲军"
+      ],
+      "related": [
+        "mil-beiweijun",
+        "mil-liao-shushan"
       ]
     },
     {
@@ -1122,6 +1145,10 @@
         "燕云",
         "辽东",
         "农耕"
+      ],
+      "related": [
+        "geo-liao-nanjing",
+        "tl-liao-1010"
       ]
     },
     {
@@ -1169,6 +1196,9 @@
         "马",
         "羊",
         "游牧"
+      ],
+      "related": [
+        "eco-chama"
       ]
     },
     {
@@ -1190,6 +1220,10 @@
         "冶铁",
         "官营",
         "盐池"
+      ],
+      "related": [
+        "eco-sizhi",
+        "eco-xixia-yanchi"
       ]
     },
     {
@@ -1261,6 +1295,7 @@
       ],
       "related": [
         "cul-liao-wenzi",
+        "cus-liao-bairi",
         "cus-xixia-tufa"
       ]
     },
@@ -1336,8 +1371,10 @@
         "耶律倍"
       ],
       "related": [
+        "geo-liao-dongjing",
         "ppl-liao-shuluping",
-        "ppl-liao-yelubei"
+        "ppl-liao-yelubei",
+        "tl-liao-1029"
       ]
     },
     {
@@ -1359,6 +1396,10 @@
         "渤海",
         "辽阳",
         "东丹"
+      ],
+      "related": [
+        "tl-liao-1029",
+        "tl-liao-926"
       ]
     },
     {
@@ -1430,6 +1471,10 @@
         "佛教",
         "云南",
         "南诏"
+      ],
+      "related": [
+        "cul-dazu",
+        "cul-liao-fojiao"
       ]
     },
     {
@@ -1453,6 +1498,7 @@
         "北京"
       ],
       "related": [
+        "eco-liao-nongye",
         "geo-jin-zhongdu"
       ]
     },
@@ -1560,6 +1606,8 @@
         "大同"
       ],
       "related": [
+        "geo-liao-xijing",
+        "tl-liao-1066",
         "tl-liao-936"
       ]
     },
@@ -1583,7 +1631,10 @@
         "辽世宗",
         "穆宗"
       ],
-      "minor": true
+      "minor": true,
+      "related": [
+        "emp-liao-shizong"
+      ]
     },
     {
       "id": "tl-wd-954",
@@ -1822,8 +1873,10 @@
       ],
       "related": [
         "cul-kesi",
+        "eco-liao-yantie",
         "geo-chengdufu",
-        "geo-liangzhe"
+        "geo-liangzhe",
+        "tec-fangzhi"
       ]
     },
     {
@@ -1870,6 +1923,11 @@
         "饮食",
         "三餐",
         "夜市"
+      ],
+      "related": [
+        "cus-chasi",
+        "cus-jiulou",
+        "geo-yangzhou"
       ]
     },
     {
@@ -1938,6 +1996,7 @@
         "放河灯"
       ],
       "related": [
+        "cus-dongzhi",
         "cus-yufo"
       ]
     },
@@ -2010,6 +2069,7 @@
         "西北"
       ],
       "related": [
+        "mil-zhongjia",
         "soc-xunjian"
       ]
     },
@@ -2085,6 +2145,10 @@
         "边防",
         "越南",
         "熙宁战争"
+      ],
+      "related": [
+        "geo-hebeidong",
+        "geo-hedonglu"
       ]
     },
     {
@@ -2106,6 +2170,9 @@
         "傀儡",
         "皮影",
         "木偶"
+      ],
+      "related": [
+        "ppl-liuyu"
       ]
     },
     {
@@ -2179,6 +2246,9 @@
         "祭祖",
         "贺冬",
         "馄饨"
+      ],
+      "related": [
+        "cus-zhongyuan"
       ]
     },
     {
@@ -2324,6 +2394,9 @@
       "tags": [
         "副相",
         "分权"
+      ],
+      "related": [
+        "pol-tongpan"
       ]
     },
     {
@@ -2421,6 +2494,10 @@
         "社会流动",
         "四民",
         "商人"
+      ],
+      "related": [
+        "soc-hanghui",
+        "soc-wudai-wuren"
       ]
     },
     {
@@ -2674,39 +2751,100 @@
       "related": [
         "cul-huajian",
         "emp-nantang-houzhu",
+        "lit-bijimanzhi",
+        "lit-caotangshiyu",
+        "lit-cilun",
+        "lit-huajian",
+        "lit-ji-baishi",
+        "lit-ji-bishan",
+        "lit-ji-caochuang",
+        "lit-ji-dongpo",
+        "lit-ji-dongshan",
+        "lit-ji-dongze",
+        "lit-ji-duanchang",
+        "lit-ji-fangweng",
+        "lit-ji-fanwenzheng",
+        "lit-ji-houcun",
+        "lit-ji-huaihai",
+        "lit-ji-jiaxuan",
+        "lit-ji-liuyi",
+        "lit-ji-longchuan",
+        "lit-ji-longzhou",
+        "lit-ji-meixi",
+        "lit-ji-mengchuang",
+        "lit-ji-pianyu",
+        "lit-ji-shangu",
+        "lit-ji-shanzhong",
+        "lit-ji-shuyu",
+        "lit-ji-wenshan",
+        "lit-ji-xiaoshan",
+        "lit-ji-xuxi",
+        "lit-ji-yuezhang",
+        "lit-ji-yuhu",
+        "lit-ji-zhangziye",
+        "lit-ji-zhushan",
+        "lit-ji-zhuyu",
+        "lit-juexiao",
         "lit-pai-anxiang",
         "lit-pai-basheng",
         "lit-pai-busuanzi",
+        "lit-pai-chaitoufeng",
+        "lit-pai-chounuer",
+        "lit-pai-dianjiangchun",
         "lit-pai-dielianhua",
         "lit-pai-dingfengbo",
+        "lit-pai-fengrusong",
+        "lit-pai-hetianchong",
         "lit-pai-hexinglang",
         "lit-pai-huanxisha",
         "lit-pai-jiangchengzi",
+        "lit-pai-jiangyue",
+        "lit-pai-jielianhuan",
+        "lit-pai-langtaosha",
         "lit-pai-lanlingwang",
         "lit-pai-linjiangxian",
+        "lit-pai-liuchou",
         "lit-pai-liuzhou",
         "lit-pai-manjianghong",
         "lit-pai-mantingfang",
+        "lit-pai-meiwu",
+        "lit-pai-moyuer",
         "lit-pai-niannujiao",
+        "lit-pai-pozhenzi",
         "lit-pai-pusaman",
         "lit-pai-qingpingyue",
         "lit-pai-qingyuan",
+        "lit-pai-qitianle",
         "lit-pai-queqiaoxian",
         "lit-pai-rumengling",
+        "lit-pai-shaonianyou",
+        "lit-pai-shengchazi",
         "lit-pai-shengshengman",
+        "lit-pai-shuangshuangyan",
         "lit-pai-shuidiao",
         "lit-pai-shuilongyin",
+        "lit-pai-shulian",
         "lit-pai-shuying",
         "lit-pai-sumuzhe",
+        "lit-pai-suzhongqing",
+        "lit-pai-tangduoling",
         "lit-pai-tasuoxing",
+        "lit-pai-tianxianzi",
         "lit-pai-wanghaichao",
+        "lit-pai-wulingchun",
+        "lit-pai-xiaochongshan",
         "lit-pai-xijiangyue",
         "lit-pai-yangzhouman",
+        "lit-pai-yiehong",
         "lit-pai-yijianmei",
+        "lit-pai-yongyule",
         "lit-pai-yujiaao",
         "lit-pai-yulinling",
         "lit-pai-yumeiren",
         "lit-pai-zhegutian",
+        "lit-pai-zuihuayin",
+        "lit-yangchun",
+        "lit-yuefu-yaci",
         "lit-yumeiren-liyu"
       ]
     },
@@ -2873,7 +3011,8 @@
         "俸禄"
       ],
       "related": [
-        "pol-mokan"
+        "pol-mokan",
+        "tl-1076"
       ]
     },
     {
@@ -2955,7 +3094,9 @@
         "守城"
       ],
       "related": [
+        "mil-huihpao",
         "mil-shenbimgong",
+        "mil-shouchenglu",
         "pol-junqijian",
         "ppl-liao-xiaotalin",
         "tl-1005"
@@ -2980,6 +3121,10 @@
         "江防",
         "陪都",
         "南京"
+      ],
+      "related": [
+        "geo-ezhou",
+        "geo-luoyang"
       ]
     },
     {
@@ -3079,6 +3224,10 @@
         "夜市",
         "运河",
         "商业"
+      ],
+      "related": [
+        "cus-sancan",
+        "geo-ezhou"
       ]
     },
     {
@@ -3121,6 +3270,10 @@
         "府州",
         "党项",
         "世袭"
+      ],
+      "related": [
+        "ppl-lideming",
+        "ppl-lijiqian"
       ]
     },
     {
@@ -3211,6 +3364,10 @@
         "禅宗",
         "贸易",
         "文化交流"
+      ],
+      "related": [
+        "geo-gaoli",
+        "geo-sanfoqi"
       ]
     },
     {
@@ -3478,6 +3635,9 @@
         "长沙",
         "湖湘",
         "书院"
+      ],
+      "related": [
+        "tho-huxiang"
       ]
     },
     {
@@ -3499,6 +3659,10 @@
         "佛教",
         "火葬",
         "丧葬"
+      ],
+      "related": [
+        "cul-dazu",
+        "cus-yufo"
       ]
     },
     {
@@ -3524,6 +3688,7 @@
       ],
       "related": [
         "cul-dingyao",
+        "cul-jianyao",
         "cus-chasi",
         "eco-chama"
       ]
@@ -3547,6 +3712,10 @@
         "贸易",
         "中介",
         "契约"
+      ],
+      "related": [
+        "eco-zudian",
+        "geo-gaoli"
       ]
     },
     {
@@ -3568,6 +3737,10 @@
         "科举",
         "恩科",
         "士人"
+      ],
+      "related": [
+        "pol-huming",
+        "pol-keju"
       ]
     },
     {
@@ -3836,6 +4009,7 @@
         "eco-qingmiao",
         "lit-sishitianyuan",
         "soc-siguan",
+        "soc-yaren",
         "soc-zhuhu"
       ]
     },
@@ -3908,7 +4082,8 @@
         "立法"
       ],
       "related": [
-        "pol-dengwen"
+        "pol-dengwen",
+        "soc-xingtong"
       ]
     },
     {
@@ -4036,6 +4211,7 @@
       "related": [
         "cus-chasi",
         "cus-diancha",
+        "eco-liao-xumu",
         "eco-qucha",
         "geo-chengdu",
         "geo-qinfeng"
@@ -4138,7 +4314,8 @@
         "市场"
       ],
       "related": [
-        "eco-caoshi"
+        "eco-caoshi",
+        "soc-sinong"
       ]
     },
     {
@@ -4184,6 +4361,10 @@
         "园林",
         "陪都",
         "西京"
+      ],
+      "related": [
+        "geo-jiankang",
+        "geo-liao-xijing"
       ]
     },
     {
@@ -4209,6 +4390,8 @@
       "related": [
         "cul-taixue",
         "pol-guange",
+        "pol-huming",
+        "pol-tesouming",
         "pol-yinbu",
         "ppl-lvmengzheng",
         "soc-liudong",
@@ -4349,6 +4532,9 @@
         "轿子",
         "出行",
         "交通"
+      ],
+      "related": [
+        "soc-youxu"
       ]
     },
     {
@@ -4372,7 +4558,8 @@
         "中京"
       ],
       "related": [
-        "geo-liao-shangjing"
+        "geo-liao-shangjing",
+        "geo-liao-zhongjing"
       ]
     },
     {
@@ -4394,6 +4581,9 @@
         "分权",
         "通判",
         "监州"
+      ],
+      "related": [
+        "pol-canzheng"
       ]
     },
     {
@@ -4441,8 +4631,10 @@
         "武昌"
       ],
       "related": [
+        "geo-jiankang",
         "geo-jinghubei",
         "geo-xiangyang",
+        "geo-yangzhou",
         "tl-1259b"
       ]
     },
@@ -4490,6 +4682,9 @@
         "登高",
         "菊花",
         "茱萸"
+      ],
+      "related": [
+        "lit-dielianhua-liuyong"
       ]
     },
     {
@@ -4610,6 +4805,11 @@
         "贸易",
         "朝鲜",
         "朝贡"
+      ],
+      "related": [
+        "geo-japan",
+        "geo-sanfoqi",
+        "soc-yaren"
       ]
     },
     {
@@ -4710,6 +4910,10 @@
         "敕",
         "法典",
         "律"
+      ],
+      "related": [
+        "pol-xingtong",
+        "soc-bianchi"
       ]
     },
     {
@@ -4731,6 +4935,10 @@
         "敕",
         "法典",
         "法律"
+      ],
+      "related": [
+        "pol-liao-falu",
+        "soc-xingtong"
       ]
     },
     {
@@ -4753,7 +4961,11 @@
         "荆南",
         "湖南"
       ],
-      "minor": true
+      "minor": true,
+      "related": [
+        "tl-965",
+        "tl-971"
+      ]
     },
     {
       "id": "tl-965",
@@ -4774,6 +4986,10 @@
         "统一战争",
         "后蜀",
         "孟昶"
+      ],
+      "related": [
+        "tl-963",
+        "tl-971"
       ]
     },
     {
@@ -4796,7 +5012,11 @@
         "萧绰",
         "中兴"
       ],
-      "minor": true
+      "minor": true,
+      "related": [
+        "tl-liao-1009",
+        "tl-liao-982"
+      ]
     },
     {
       "id": "tl-971",
@@ -4817,6 +5037,10 @@
         "统一战争",
         "南汉",
         "潘美"
+      ],
+      "related": [
+        "tl-963",
+        "tl-965"
       ]
     },
     {
@@ -4928,6 +5152,9 @@
       "tags": [
         "赵光义",
         "烛影斧声"
+      ],
+      "related": [
+        "tl-979"
       ]
     },
     {
@@ -4984,7 +5211,8 @@
         "geo-wudai-shiguo",
         "mil-gaolianghe",
         "ppl-liao-yeluxiezhen",
-        "ppl-liao-yeluxiuge"
+        "ppl-liao-yeluxiuge",
+        "tl-976"
       ]
     },
     {
@@ -5035,6 +5263,11 @@
         "杨业",
         "杨延昭",
         "杨文广"
+      ],
+      "related": [
+        "tl-980",
+        "tl-986",
+        "tl-liao-999"
       ]
     },
     {
@@ -5056,6 +5289,10 @@
         "辽",
         "杨业",
         "雁门关"
+      ],
+      "related": [
+        "mil-yangjiajiang",
+        "tl-986"
       ]
     },
     {
@@ -5104,7 +5341,9 @@
       ],
       "related": [
         "ppl-liao-handrang",
-        "ppl-xiaochuo"
+        "ppl-xiaochuo",
+        "tl-liao-1031",
+        "tl-liao-969"
       ]
     },
     {
@@ -5127,7 +5366,10 @@
         "类书",
         "李昉"
       ],
-      "minor": true
+      "minor": true,
+      "related": [
+        "emp-song-taizong"
+      ]
     },
     {
       "id": "tho-leishu",
@@ -5215,7 +5457,9 @@
         "雍熙"
       ],
       "related": [
-        "ppl-liao-yeluxiuge"
+        "mil-yangjiajiang",
+        "ppl-liao-yeluxiuge",
+        "tl-980"
       ]
     },
     {
@@ -5262,6 +5506,10 @@
         "科举",
         "防弊",
         "公平"
+      ],
+      "related": [
+        "pol-keju",
+        "pol-tesouming"
       ]
     },
     {
@@ -5285,6 +5533,7 @@
         "均贫富"
       ],
       "related": [
+        "ppl-wangxiaobo",
         "ppl-zhangyong"
       ]
     },
@@ -5328,7 +5577,11 @@
         "遂城",
         "宋辽"
       ],
-      "minor": true
+      "minor": true,
+      "related": [
+        "mil-yangjiajiang",
+        "tl-liao-1042"
+      ]
     },
     {
       "id": "cul-sanjiao",
@@ -5349,6 +5602,10 @@
         "理学",
         "儒释道",
         "融合"
+      ],
+      "related": [
+        "ppl-weiliaoweng",
+        "ppl-zhendexiu"
       ]
     },
     {
@@ -5397,6 +5654,8 @@
       ],
       "related": [
         "cul-huajian",
+        "lit-caotangshiyu",
+        "lit-huajian",
         "lit-yumeiren-liyu",
         "ppl-liqingzhao"
       ]
@@ -5445,6 +5704,10 @@
         "契丹",
         "三彩",
         "陶瓷"
+      ],
+      "related": [
+        "cul-liao-ci",
+        "cus-liao-bairi"
       ]
     },
     {
@@ -5469,6 +5732,7 @@
       ],
       "related": [
         "cul-dazu",
+        "geo-dali",
         "tho-liao-ruxue"
       ]
     },
@@ -5491,6 +5755,9 @@
         "陶瓷",
         "鸡冠壶",
         "皮囊壶"
+      ],
+      "related": [
+        "cul-liao-sancai"
       ]
     },
     {
@@ -5699,7 +5966,8 @@
       ],
       "related": [
         "eco-quechang",
-        "geo-hebeidong"
+        "geo-hebeidong",
+        "geo-liao-zhongjing"
       ]
     },
     {
@@ -5721,6 +5989,10 @@
         "澶渊",
         "中京",
         "宁城"
+      ],
+      "related": [
+        "eco-liao-quechang",
+        "geo-wujing"
       ]
     },
     {
@@ -5745,7 +6017,8 @@
       ],
       "related": [
         "ppl-xiaochuo",
-        "tl-1005"
+        "tl-1005",
+        "tl-liao-969"
       ]
     },
     {
@@ -5791,6 +6064,11 @@
         "辽东",
         "高丽",
         "战争"
+      ],
+      "related": [
+        "eco-liao-nongye",
+        "tl-liao-1019",
+        "tl-liao-1116"
       ]
     },
     {
@@ -5892,6 +6170,7 @@
       ],
       "related": [
         "lit-ji-yuezhang",
+        "lit-pai-hetianchong",
         "ppl-liuyong"
       ]
     },
@@ -5914,6 +6193,9 @@
         "金银器",
         "陈国公主墓",
         "工艺"
+      ],
+      "related": [
+        "cul-kesi"
       ]
     },
     {
@@ -5937,7 +6219,8 @@
         "萧排押"
       ],
       "related": [
-        "mil-liao-guizhou"
+        "mil-liao-guizhou",
+        "tl-liao-1010"
       ]
     },
     {
@@ -5983,6 +6266,9 @@
         "林逋",
         "梅花",
         "隐逸"
+      ],
+      "related": [
+        "lit-busuanzi-luyou"
       ]
     },
     {
@@ -6157,6 +6443,7 @@
         "衣带渐宽终不悔"
       ],
       "related": [
+        "cus-chongyang",
         "lit-ji-yuezhang",
         "lit-pai-dielianhua",
         "ppl-liuyong"
@@ -6207,7 +6494,12 @@
         "东京",
         "兴辽"
       ],
-      "minor": true
+      "minor": true,
+      "related": [
+        "geo-liao-dongjing",
+        "tl-liao-1116",
+        "tl-liao-926"
+      ]
     },
     {
       "id": "lit-bashengganzhou",
@@ -6284,7 +6576,11 @@
         "辽兴宗",
         "亲政"
       ],
-      "minor": true
+      "minor": true,
+      "related": [
+        "tl-liao-1042",
+        "tl-liao-982"
+      ]
     },
     {
       "id": "lit-ji-yuezhang",
@@ -6339,6 +6635,7 @@
       ],
       "related": [
         "lit-ji-liuyi",
+        "lit-pai-shengchazi",
         "ppl-ouyangxiu"
       ]
     },
@@ -6388,6 +6685,10 @@
         "法律",
         "重熙",
         "蕃汉分治"
+      ],
+      "related": [
+        "emp-liao-xingzong",
+        "pol-xingtong"
       ]
     },
     {
@@ -6416,6 +6717,7 @@
         "emp-xixia-jingzong",
         "geo-heishuicheng",
         "lit-fanhan",
+        "ppl-yelirenrong",
         "tec-xixia-lifa",
         "tho-xixia-ruxue"
       ]
@@ -6443,7 +6745,8 @@
       "related": [
         "emp-xixia-jingzong",
         "geo-xingqingfu",
-        "pol-xixia-guanzhi"
+        "pol-xixia-guanzhi",
+        "tl-1048"
       ]
     },
     {
@@ -6575,6 +6878,7 @@
         "榷禁"
       ],
       "related": [
+        "eco-liao-yantie",
         "eco-yan",
         "geo-xingqingfu",
         "tl-1044"
@@ -6629,7 +6933,9 @@
       "related": [
         "emp-xixia-jingzong",
         "mil-tieyaozi",
-        "pol-xixia-guanzhi"
+        "pol-xixia-guanzhi",
+        "ppl-lideming",
+        "ppl-lijiqian"
       ]
     },
     {
@@ -6759,6 +7065,7 @@
         "酒入愁肠化作相思泪"
       ],
       "related": [
+        "lit-bochuan",
         "lit-ji-fanwenzheng",
         "lit-pai-sumuzhe",
         "ppl-fanzhongyan"
@@ -6837,7 +7144,8 @@
         "延州"
       ],
       "related": [
-        "mil-haoshuichuan"
+        "mil-haoshuichuan",
+        "tl-1082"
       ]
     },
     {
@@ -6857,12 +7165,13 @@
       "refs": "《张子野词》",
       "tags": [
         "伤春",
-        "张三影",
         "张先",
+        "张三影",
         "云破月来花弄影"
       ],
       "related": [
         "lit-ji-zhangziye",
+        "lit-pai-tianxianzi",
         "ppl-zhangxian"
       ]
     },
@@ -6888,7 +7197,8 @@
       ],
       "related": [
         "geo-qinfeng",
-        "mil-haoshuichuan"
+        "mil-haoshuichuan",
+        "tl-1082"
       ]
     },
     {
@@ -7017,7 +7327,9 @@
         "辽兴宗"
       ],
       "related": [
-        "tl-1005"
+        "tl-1005",
+        "tl-liao-1031",
+        "tl-liao-999"
       ]
     },
     {
@@ -7116,7 +7428,9 @@
         "兴宗"
       ],
       "related": [
-        "mil-liao-hequ"
+        "mil-liao-hequ",
+        "tl-1048",
+        "tl-liao-1055"
       ]
     },
     {
@@ -7188,6 +7502,10 @@
         "大同",
         "西京",
         "云州"
+      ],
+      "related": [
+        "geo-luoyang",
+        "tl-liao-947"
       ]
     },
     {
@@ -7255,6 +7573,10 @@
       "tags": [
         "西夏",
         "李元昊"
+      ],
+      "related": [
+        "tl-1038",
+        "tl-liao-1044"
       ]
     },
     {
@@ -7332,6 +7654,7 @@
       ],
       "related": [
         "lit-ji-liuyi",
+        "lit-pai-langtaosha",
         "ppl-ouyangxiu"
       ]
     },
@@ -7538,6 +7861,7 @@
         "通书"
       ],
       "related": [
+        "lit-ailian",
         "ppl-zhoudunyi",
         "tho-jinsilu",
         "tho-xiangshu"
@@ -7593,6 +7917,10 @@
         "边防",
         "西北",
         "种世衡"
+      ],
+      "related": [
+        "geo-hebeidong",
+        "mil-xiangbing"
       ]
     },
     {
@@ -7717,6 +8045,9 @@
         "狄青",
         "侬智高",
         "昆仑关"
+      ],
+      "related": [
+        "ppl-diqing"
       ]
     },
     {
@@ -7739,7 +8070,10 @@
         "辽道宗",
         "耶律洪基"
       ],
-      "minor": true
+      "minor": true,
+      "related": [
+        "tl-liao-1044"
+      ]
     },
     {
       "id": "cul-liao-yingxian",
@@ -7760,6 +8094,10 @@
         "建筑",
         "佛宫寺释迦塔",
         "木构"
+      ],
+      "related": [
+        "cul-jiehua",
+        "cul-jinci"
       ]
     },
     {
@@ -7815,6 +8153,7 @@
       ],
       "related": [
         "cul-songshi",
+        "lit-bochuan",
         "ppl-ouyangxiu",
         "ppl-simaguang",
         "ppl-wanganshi",
@@ -7867,6 +8206,9 @@
         "周敦颐",
         "莲花",
         "君子"
+      ],
+      "related": [
+        "tho-zhou"
       ]
     },
     {
@@ -7936,7 +8278,11 @@
         "道宗",
         "咸雍"
       ],
-      "minor": true
+      "minor": true,
+      "related": [
+        "tl-liao-1083",
+        "tl-liao-947"
+      ]
     },
     {
       "id": "tl-1067",
@@ -8041,6 +8387,7 @@
       "related": [
         "eco-caoyun",
         "eco-shangshui",
+        "pol-tichang",
         "pol-zhuanyun",
         "ppl-wanganshi",
         "tl-1069"
@@ -8148,6 +8495,10 @@
         "赈济",
         "新法",
         "常平"
+      ],
+      "related": [
+        "eco-fangtian",
+        "eco-junshu"
       ]
     },
     {
@@ -8381,6 +8732,7 @@
       "related": [
         "eco-buyijianbing",
         "eco-liangshui",
+        "pol-tichang",
         "ppl-wanganshi",
         "soc-xingshi",
         "tl-1069"
@@ -8508,6 +8860,10 @@
         "思乡",
         "王安石",
         "春风又绿"
+      ],
+      "related": [
+        "lit-mingfeiqu",
+        "lit-sumuzhe-fanzhongyan"
       ]
     },
     {
@@ -8533,7 +8889,8 @@
       "related": [
         "lit-liao-huiyuan",
         "ppl-liao-xiaoguanyin",
-        "ppl-liao-yeluyixin"
+        "ppl-liao-yeluyixin",
+        "tl-liao-1083"
       ]
     },
     {
@@ -8580,6 +8937,10 @@
       "tags": [
         "官制",
         "元丰改制"
+      ],
+      "related": [
+        "emp-song-shenzong",
+        "pol-jiluguan"
       ]
     },
     {
@@ -9043,6 +9404,7 @@
       ],
       "related": [
         "lit-ji-dongpo",
+        "lit-nenggai",
         "lit-pai-niannujiao",
         "ppl-sushi"
       ]
@@ -9090,6 +9452,11 @@
         "宋夏战争",
         "永乐城",
         "徐禧"
+      ],
+      "related": [
+        "emp-xixia-huizong",
+        "tl-1040",
+        "tl-1041"
       ]
     },
     {
@@ -9139,7 +9506,11 @@
         "耶律乙辛",
         "平反"
       ],
-      "minor": true
+      "minor": true,
+      "related": [
+        "tl-liao-1066",
+        "tl-liao-1075"
+      ]
     },
     {
       "id": "tl-1084",
@@ -9266,8 +9637,8 @@
       "body": "彩袖殷勤捧玉钟。\n当年拼却醉颜红。\n舞低杨柳楼心月，歌尽桃花扇底风。\n从别后，忆相逢。\n几回魂梦与君同。\n今宵剩把银缸照，犹恐相逢是梦中。",
       "refs": "《小山词》",
       "tags": [
-        "晏几道",
         "婉约",
+        "晏几道",
         "重逢",
         "舞低杨柳楼心月"
       ],
@@ -9453,8 +9824,8 @@
       "refs": "《东坡乐府》",
       "tags": [
         "伤春",
-        "苏轼",
         "婉约",
+        "苏轼",
         "天涯何处无芳草"
       ],
       "related": [
@@ -9691,8 +10062,8 @@
       "refs": "《小山词》",
       "tags": [
         "词集",
-        "晏几道",
-        "婉约"
+        "婉约",
+        "晏几道"
       ],
       "related": [
         "cul-ci",
@@ -9724,6 +10095,8 @@
       ],
       "related": [
         "lit-ji-pianyu",
+        "lit-pai-shaonianyou",
+        "ppl-ligonglin",
         "ppl-zhoubangyan"
       ]
     },
@@ -9750,6 +10123,7 @@
       ],
       "related": [
         "lit-ji-shuyu",
+        "lit-pai-dianjiangchun",
         "ppl-liqingzhao"
       ]
     },
@@ -9776,6 +10150,7 @@
       "related": [
         "cul-ci",
         "lit-pai-huanxisha",
+        "lit-yuefu-yaci",
         "ppl-liqingzhao"
       ]
     },
@@ -9925,6 +10300,9 @@
         "斗茶",
         "黑釉",
         "茶盏"
+      ],
+      "related": [
+        "cus-diancha"
       ]
     },
     {
@@ -9970,6 +10348,10 @@
         "纺织",
         "水力",
         "机械"
+      ],
+      "related": [
+        "eco-sizhi",
+        "ppl-hangonglian"
       ]
     },
     {
@@ -10022,6 +10404,7 @@
         "cul-fengsu",
         "geo-kaifeng",
         "lit-dongjingmenghualu",
+        "mil-zongze",
         "ppl-zhangzeduan"
       ]
     },
@@ -10046,7 +10429,8 @@
         "张择端"
       ],
       "related": [
-        "cul-jinci"
+        "cul-jinci",
+        "cul-liao-yingxian"
       ]
     },
     {
@@ -10213,6 +10597,10 @@
         "天祚帝",
         "辽末",
         "延禧"
+      ],
+      "related": [
+        "tl-1125",
+        "tl-liao-1112"
       ]
     },
     {
@@ -10340,6 +10728,7 @@
       ],
       "related": [
         "lit-ji-pianyu",
+        "lit-pai-liuchou",
         "ppl-zhoubangyan"
       ]
     },
@@ -10477,6 +10866,7 @@
       ],
       "related": [
         "lit-ji-shuyu",
+        "lit-pai-zuihuayin",
         "ppl-liqingzhao"
       ]
     },
@@ -10500,7 +10890,11 @@
         "女真",
         "阿骨打"
       ],
-      "minor": true
+      "minor": true,
+      "related": [
+        "tl-liao-1101",
+        "tl-liao-1114"
+      ]
     },
     {
       "id": "cul-qianli",
@@ -10551,7 +10945,8 @@
         "起兵"
       ],
       "related": [
-        "mil-liao-ningjiangzhou"
+        "mil-liao-ningjiangzhou",
+        "tl-liao-1112"
       ]
     },
     {
@@ -10601,7 +10996,8 @@
       "related": [
         "emp-jin-taizu",
         "emp-jin-xizong",
-        "pol-liao-nanbeimian"
+        "pol-liao-nanbeimian",
+        "ppl-hanyanhui"
       ]
     },
     {
@@ -10754,7 +11150,9 @@
       ],
       "minor": true,
       "related": [
-        "emp-jin-taizu"
+        "emp-jin-taizu",
+        "tl-liao-1010",
+        "tl-liao-1029"
       ]
     },
     {
@@ -10831,7 +11229,8 @@
         "辽亡"
       ],
       "related": [
-        "emp-jin-taizu"
+        "emp-jin-taizu",
+        "emp-liao-tianzuo"
       ]
     },
     {
@@ -10881,7 +11280,8 @@
         "耶律大石"
       ],
       "related": [
-        "ppl-yeludashi"
+        "ppl-yeludashi",
+        "tl-liao-1141"
       ]
     },
     {
@@ -10906,7 +11306,8 @@
       ],
       "related": [
         "emp-jin-taizong",
-        "ppl-yeludashi"
+        "ppl-yeludashi",
+        "tl-liao-1101"
       ]
     },
     {
@@ -10928,6 +11329,10 @@
         "汴京",
         "李纲",
         "宗泽"
+      ],
+      "related": [
+        "cul-qingming",
+        "tl-1126"
       ]
     },
     {
@@ -10952,8 +11357,10 @@
         "靖康"
       ],
       "related": [
+        "mil-zongze",
         "ppl-ligang",
-        "ppl-wanyanzongwang"
+        "ppl-wanyanzongwang",
+        "ppl-zhangbangchang"
       ]
     },
     {
@@ -11157,7 +11564,8 @@
       "related": [
         "geo-huainan",
         "geo-jinghubei",
-        "geo-xiangyang"
+        "geo-xiangyang",
+        "mil-han"
       ]
     },
     {
@@ -11187,7 +11595,9 @@
         "mil-zhongyijun",
         "ppl-lixinchuan",
         "ppl-wanyanzonghan",
-        "ppl-wanyanzongwang"
+        "ppl-wanyanzongwang",
+        "ppl-zhaofujin",
+        "ppl-zhaomingcheng"
       ]
     },
     {
@@ -11230,6 +11640,10 @@
         "苗傅",
         "刘正彦",
         "高宗"
+      ],
+      "related": [
+        "ppl-yangcunzhong",
+        "tl-1141"
       ]
     },
     {
@@ -11251,6 +11665,9 @@
         "守城",
         "陈规",
         "火炮"
+      ],
+      "related": [
+        "mil-chuangzin"
       ]
     },
     {
@@ -11325,6 +11742,10 @@
         "金军",
         "川陕",
         "张浚"
+      ],
+      "related": [
+        "mil-wujiajun",
+        "tl-1134"
       ]
     },
     {
@@ -11374,7 +11795,8 @@
         "杨幺"
       ],
       "related": [
-        "mil-caishi"
+        "mil-caishi",
+        "mil-han"
       ]
     },
     {
@@ -11423,6 +11845,10 @@
         "水军",
         "韩世忠",
         "黄天荡"
+      ],
+      "related": [
+        "mil-changjiang",
+        "mil-chechuan"
       ]
     },
     {
@@ -11469,6 +11895,11 @@
         "川陕",
         "吴玠",
         "吴璘"
+      ],
+      "related": [
+        "mil-fuping",
+        "tl-1131",
+        "tl-1134"
       ]
     },
     {
@@ -11492,7 +11923,9 @@
         "吴璘"
       ],
       "related": [
-        "ppl-wujie"
+        "mil-wujiajun",
+        "ppl-wujie",
+        "tl-1134"
       ]
     },
     {
@@ -11616,6 +12049,11 @@
         "金军",
         "川陕",
         "吴玠"
+      ],
+      "related": [
+        "mil-fuping",
+        "mil-wujiajun",
+        "tl-1131"
       ]
     },
     {
@@ -11641,6 +12079,7 @@
       ],
       "related": [
         "lit-ji-shuyu",
+        "lit-pai-wulingchun",
         "ppl-liqingzhao"
       ]
     },
@@ -11694,6 +12133,7 @@
         "悲慨"
       ],
       "related": [
+        "lit-pai-xiaochongshan",
         "ppl-yuefei"
       ]
     },
@@ -11796,6 +12236,8 @@
         "岳家军"
       ],
       "related": [
+        "mil-liao-pishi",
+        "mil-liao-shushan",
         "mil-shunchang",
         "mil-yancheng",
         "mil-yuejiajun",
@@ -11897,6 +12339,10 @@
         "西辽",
         "中亚",
         "塞尔柱"
+      ],
+      "related": [
+        "ppl-yeludashi",
+        "tl-liao-1124"
       ]
     },
     {
@@ -11946,7 +12392,8 @@
       ],
       "related": [
         "ppl-qinhui",
-        "ppl-yuefei"
+        "ppl-yuefei",
+        "tl-1129"
       ]
     },
     {
@@ -12106,7 +12553,9 @@
       ],
       "minor": true,
       "related": [
-        "ppl-mengyuanlao"
+        "ppl-lisong",
+        "ppl-mengyuanlao",
+        "ppl-suhanchen"
       ]
     },
     {
@@ -12235,6 +12684,10 @@
         "周邦彦",
         "姜夔",
         "吴文英"
+      ],
+      "related": [
+        "lit-ciyuan",
+        "lit-juexiao"
       ]
     },
     {
@@ -12260,6 +12713,7 @@
       ],
       "related": [
         "emp-jin-hailing",
+        "emp-xixia-yizong",
         "geo-jin-shangjing",
         "geo-jin-zhongdu"
       ]
@@ -12368,6 +12822,7 @@
       ],
       "related": [
         "lit-ji-fangweng",
+        "lit-pai-chaitoufeng",
         "ppl-luyou"
       ]
     },
@@ -12762,6 +13217,7 @@
       "related": [
         "lit-ji-fangweng",
         "lit-pai-busuanzi",
+        "lit-shanyuan",
         "ppl-luyou"
       ]
     },
@@ -13080,6 +13536,7 @@
       ],
       "related": [
         "lit-ji-jiaxuan",
+        "lit-pai-moyuer",
         "ppl-xinqiji"
       ]
     },
@@ -13214,6 +13671,7 @@
       ],
       "related": [
         "lit-ji-jiaxuan",
+        "lit-pai-pozhenzi",
         "ppl-xinqiji"
       ]
     },
@@ -13266,6 +13724,7 @@
       ],
       "related": [
         "lit-ji-jiaxuan",
+        "lit-pai-chounuer",
         "ppl-xinqiji"
       ]
     },
@@ -13292,6 +13751,7 @@
       ],
       "related": [
         "lit-ji-fangweng",
+        "lit-pai-suzhongqing",
         "ppl-luyou"
       ]
     },
@@ -13315,6 +13775,7 @@
         "赵惇"
       ],
       "related": [
+        "emp-song-guangzong",
         "emp-song-xiaozong"
       ]
     },
@@ -13591,6 +14052,7 @@
       ],
       "related": [
         "lit-ji-baishi",
+        "lit-pai-qitianle",
         "ppl-jiangkuai"
       ]
     },
@@ -13617,6 +14079,7 @@
       ],
       "related": [
         "lit-ji-meixi",
+        "lit-pai-shuangshuangyan",
         "ppl-shidazu"
       ]
     },
@@ -13809,6 +14272,7 @@
       ],
       "related": [
         "lit-ji-longzhou",
+        "lit-pai-tangduoling",
         "ppl-liuguo"
       ]
     },
@@ -13834,6 +14298,7 @@
       ],
       "related": [
         "cul-zhugongdiao",
+        "lit-pai-moyuer",
         "ppl-yuanhaowen"
       ]
     },
@@ -13859,6 +14324,7 @@
       ],
       "related": [
         "lit-ji-jiaxuan",
+        "lit-pai-yongyule",
         "ppl-xinqiji"
       ]
     },
@@ -13884,7 +14350,8 @@
       ],
       "minor": true,
       "related": [
-        "emp-xixia-huanzong"
+        "emp-xixia-huanzong",
+        "tl-1227"
       ]
     },
     {
@@ -13909,7 +14376,8 @@
         "蒙古"
       ],
       "related": [
-        "ppl-hantuozhou"
+        "ppl-hantuozhou",
+        "tl-liao-1218"
       ]
     },
     {
@@ -13981,7 +14449,9 @@
         "蒙古"
       ],
       "related": [
-        "emp-jin-weishao"
+        "emp-jin-weishao",
+        "tl-1227",
+        "tl-liao-1218"
       ]
     },
     {
@@ -14055,6 +14525,10 @@
         "蒙古",
         "屈出律",
         "西辽亡"
+      ],
+      "related": [
+        "tl-1206",
+        "tl-1211"
       ]
     },
     {
@@ -14106,6 +14580,7 @@
       ],
       "related": [
         "lit-ji-dongze",
+        "lit-pai-shulian",
         "ppl-zhangji"
       ]
     },
@@ -14179,6 +14654,11 @@
         "成吉思汗",
         "蒙古",
         "西夏亡"
+      ],
+      "related": [
+        "emp-xixia-modi",
+        "tl-1205",
+        "tl-1211"
       ]
     },
     {
@@ -14225,8 +14705,8 @@
       "refs": "《后村长短句》",
       "tags": [
         "词集",
-        "刘克庄",
-        "辛派"
+        "辛派",
+        "刘克庄"
       ],
       "related": [
         "cul-ci",
@@ -14336,6 +14816,7 @@
       ],
       "related": [
         "emp-jin-aizong",
+        "emp-jin-modi",
         "ppl-mengong",
         "tl-1235"
       ]
@@ -14412,6 +14893,7 @@
       ],
       "related": [
         "lit-ji-mengchuang",
+        "lit-pai-fengrusong",
         "ppl-wuwenying"
       ]
     },
@@ -14860,6 +15342,7 @@
       ],
       "related": [
         "geo-xiangyang",
+        "mil-huihpao",
         "mil-shuijun",
         "ppl-liuzheng",
         "ppl-lvwenhuan",
@@ -14945,6 +15428,7 @@
       ],
       "related": [
         "lit-ji-bishan",
+        "lit-pai-meiwu",
         "ppl-wangyisun"
       ]
     },
@@ -15018,6 +15502,10 @@
         "攻城",
         "襄阳",
         "配重投石机"
+      ],
+      "related": [
+        "mil-chuangzin",
+        "mil-xiangfan"
       ]
     },
     {
@@ -15148,6 +15636,7 @@
       ],
       "related": [
         "lit-ji-caochuang",
+        "lit-pai-yiehong",
         "ppl-zhoumi"
       ]
     },
@@ -15174,6 +15663,7 @@
       ],
       "related": [
         "lit-ji-xuxi",
+        "lit-pai-yongyule",
         "ppl-liuchenweng"
       ]
     },
@@ -15246,8 +15736,8 @@
       "refs": "《草窗词》",
       "tags": [
         "词集",
-        "周密",
-        "遗民"
+        "遗民",
+        "周密"
       ],
       "related": [
         "cul-ci",
@@ -15297,8 +15787,8 @@
       "refs": "《须溪词》",
       "tags": [
         "词集",
-        "刘辰翁",
-        "遗民"
+        "遗民",
+        "刘辰翁"
       ],
       "related": [
         "cul-ci",
@@ -15329,7 +15819,8 @@
       "related": [
         "emp-song-gongdi",
         "ppl-boyan",
-        "ppl-wentianxiang"
+        "ppl-wentianxiang",
+        "ppl-xiedaoqing"
       ]
     },
     {
@@ -15353,6 +15844,7 @@
         "流亡"
       ],
       "related": [
+        "ppl-chenyizhong",
         "ppl-luxiufu"
       ]
     },
@@ -15429,6 +15921,7 @@
       ],
       "related": [
         "lit-ji-wenshan",
+        "lit-pai-jiangyue",
         "ppl-wentianxiang"
       ]
     },
@@ -15556,8 +16049,8 @@
       "refs": "《竹山词》",
       "tags": [
         "词集",
-        "蒋捷",
-        "遗民"
+        "遗民",
+        "蒋捷"
       ],
       "related": [
         "cul-ci",
@@ -15642,6 +16135,7 @@
       ],
       "related": [
         "lit-ji-shanzhong",
+        "lit-pai-jielianhuan",
         "ppl-zhangyan"
       ]
     },
@@ -15694,6 +16188,7 @@
       ],
       "related": [
         "cul-gelv",
+        "lit-yuefuzhimi",
         "ppl-jiangkuai",
         "ppl-zhangyan"
       ]
@@ -15724,6 +16219,7 @@
         "cul-songshi",
         "cul-xikun",
         "lit-canglangshihua",
+        "lit-tiaoxi",
         "ppl-ouyangxiu"
       ]
     },
@@ -15925,6 +16421,7 @@
         "cul-chanzong",
         "cul-songshi",
         "lit-liuyishihua",
+        "lit-tiaoxi",
         "ppl-sushi",
         "ppl-yanyu"
       ]
@@ -15955,6 +16452,7 @@
         "cul-xixia-wenzi",
         "emp-xixia-renzong",
         "geo-heishuicheng",
+        "ppl-yelirenrong",
         "tho-xixia-ruxue"
       ]
     },
@@ -16010,7 +16508,9 @@
       "related": [
         "eco-shibo",
         "geo-dashi",
+        "geo-gaoli",
         "geo-guangzhou",
+        "geo-japan",
         "geo-quanzhou",
         "ppl-zhouqufei"
       ]
@@ -16117,7 +16617,8 @@
         "女性"
       ],
       "related": [
-        "lit-busuanzi-yanrui"
+        "lit-busuanzi-yanrui",
+        "ppl-wushuji"
       ]
     },
     {
@@ -16350,6 +16851,7 @@
       ],
       "related": [
         "mil-diaoyucheng",
+        "ppl-wangxiaobo",
         "tl-1259"
       ]
     },
@@ -16571,6 +17073,9 @@
       "groups": [
         "名臣",
         "女性"
+      ],
+      "related": [
+        "ppl-lvyijian"
       ]
     },
     {
@@ -16594,6 +17099,9 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "ppl-zhangcongzheng"
       ]
     },
     {
@@ -16643,6 +17151,11 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "ppl-litang",
+        "ppl-mayuan",
+        "ppl-xiaqui"
       ]
     },
     {
@@ -16693,7 +17206,8 @@
       ],
       "related": [
         "emp-liao-taizong",
-        "ppl-guowei"
+        "ppl-guowei",
+        "ppl-zhongshizhong"
       ]
     },
     {
@@ -16717,6 +17231,9 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "cus-kuilei"
       ]
     },
     {
@@ -16763,14 +17280,15 @@
       "body": null,
       "refs": null,
       "tags": [
-        "龙洲道人",
-        "辛派"
+        "辛派",
+        "龙洲道人"
       ],
       "groups": [
         "文豪"
       ],
       "related": [
         "lit-ji-longzhou",
+        "lit-pai-tangduoling",
         "lit-tangduoling"
       ]
     },
@@ -16935,6 +17453,7 @@
         "帝王"
       ],
       "related": [
+        "emp-xixia-huizong",
         "tl-1211"
       ]
     },
@@ -16992,6 +17511,7 @@
       ],
       "related": [
         "lit-ji-meixi",
+        "lit-pai-shuangshuangyan",
         "lit-shuangshuangyan",
         "ppl-jiangkuai"
       ]
@@ -17107,6 +17627,11 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "ppl-fanchunren",
+        "ppl-lihang",
+        "ppl-liue"
       ]
     },
     {
@@ -17191,6 +17716,7 @@
       "related": [
         "emp-song-taizong",
         "pol-keju",
+        "ppl-fanchunren",
         "ppl-kouzhun",
         "ppl-zhaopu"
       ]
@@ -17219,7 +17745,9 @@
       ],
       "related": [
         "lit-fengrusong",
-        "lit-ji-mengchuang"
+        "lit-ji-mengchuang",
+        "lit-pai-fengrusong",
+        "lit-yuefuzhimi"
       ]
     },
     {
@@ -17245,6 +17773,12 @@
       "groups": [
         "文豪",
         "女性"
+      ],
+      "related": [
+        "ppl-weiwan",
+        "ppl-xujunbaoyi",
+        "ppl-yanrui",
+        "ppl-zhangyuniang"
       ]
     },
     {
@@ -17271,6 +17805,8 @@
       ],
       "related": [
         "mil-chuanshan",
+        "ppl-quduan",
+        "ppl-wulin",
         "tl-1131"
       ]
     },
@@ -17295,6 +17831,10 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-quduan",
+        "ppl-wujie"
       ]
     },
     {
@@ -17379,6 +17919,7 @@
       ],
       "related": [
         "lit-ji-caochuang",
+        "lit-pai-yiehong",
         "lit-yiehong"
       ]
     },
@@ -17434,6 +17975,11 @@
         "lit-ji-pianyu",
         "lit-lanlingwang",
         "lit-liuchou",
+        "lit-pai-lanlingwang",
+        "lit-pai-liuchou",
+        "lit-pai-mantingfang",
+        "lit-pai-shaonianyou",
+        "lit-pai-sumuzhe",
         "lit-shaonianyou-zhou",
         "lit-sumuzhe-zhou"
       ]
@@ -17459,6 +18005,9 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-zhaopu"
       ]
     },
     {
@@ -17511,6 +18060,9 @@
       "groups": [
         "文豪",
         "女性"
+      ],
+      "related": [
+        "lit-pai-chaitoufeng"
       ]
     },
     {
@@ -17560,6 +18112,10 @@
       ],
       "groups": [
         "僧道"
+      ],
+      "related": [
+        "ppl-daoji",
+        "ppl-hongzhizhengjue"
       ]
     },
     {
@@ -17612,6 +18168,10 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "ppl-liusongnian",
+        "ppl-mayuan"
       ]
     },
     {
@@ -17660,6 +18220,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "emp-jin-weishao",
+        "tl-1082"
       ]
     },
     {
@@ -17719,6 +18283,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1227"
       ]
     },
     {
@@ -17744,6 +18311,7 @@
         "帝王"
       ],
       "related": [
+        "emp-liao-tianzuo",
         "tl-1205"
       ]
     },
@@ -17768,6 +18336,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "ppl-liao-yelubei",
+        "tl-1153"
       ]
     },
     {
@@ -17861,6 +18433,10 @@
       ],
       "groups": [
         "僧道"
+      ],
+      "related": [
+        "ppl-daoji",
+        "ppl-hongzhizhengjue"
       ]
     },
     {
@@ -17889,6 +18465,8 @@
         "cul-jinci",
         "cul-liao-fojiao",
         "cul-xixia-fojiao",
+        "geo-dali",
+        "soc-huozang",
         "soc-xinyang"
       ]
     },
@@ -17946,6 +18524,10 @@
       ],
       "groups": [
         "僧道"
+      ],
+      "related": [
+        "ppl-daoji",
+        "ppl-hongzhizhengjue"
       ]
     },
     {
@@ -18002,11 +18584,17 @@
       ],
       "related": [
         "lit-anxiang",
+        "lit-ciyuan",
         "lit-ji-baishi",
+        "lit-pai-anxiang",
+        "lit-pai-qitianle",
+        "lit-pai-shuying",
+        "lit-pai-yangzhouman",
         "lit-pai-zhegutian",
         "lit-qitianle",
         "lit-shuying",
-        "lit-yangzhouman"
+        "lit-yangzhouman",
+        "ppl-shidazu"
       ]
     },
     {
@@ -18030,6 +18618,12 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-litingzhi",
+        "ppl-wentianxiang",
+        "ppl-xiefangde",
+        "ppl-zhangjue"
       ]
     },
     {
@@ -18140,6 +18734,10 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-xinqiji",
+        "ppl-zongze2"
       ]
     },
     {
@@ -18192,6 +18790,7 @@
         "帝王"
       ],
       "related": [
+        "ppl-hanqi",
         "tl-1022"
       ]
     },
@@ -18307,6 +18906,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-1189"
       ]
     },
     {
@@ -18333,6 +18935,7 @@
         "帝王"
       ],
       "related": [
+        "ppl-gaotaotao",
         "tl-1085"
       ]
     },
@@ -18361,7 +18964,8 @@
       ],
       "related": [
         "ppl-lvmengzheng",
-        "ppl-zhangyong"
+        "ppl-zhangyong",
+        "tl-983"
       ]
     },
     {
@@ -18446,6 +19050,7 @@
         "帝王"
       ],
       "related": [
+        "ppl-bizaiyu",
         "tl-1194",
         "tl-1224"
       ]
@@ -18474,6 +19079,13 @@
         "帝王"
       ],
       "related": [
+        "emp-song-duanzong",
+        "ppl-chenrong",
+        "ppl-liangkai",
+        "ppl-litiong",
+        "ppl-xushuwei",
+        "ppl-yangwujiu",
+        "ppl-yueke",
         "tl-1264"
       ]
     },
@@ -18504,6 +19116,7 @@
       "related": [
         "cul-qianli",
         "cul-shoujin",
+        "ppl-zhaofujin",
         "tl-1100",
         "tl-1127"
       ]
@@ -18531,6 +19144,7 @@
         "帝王"
       ],
       "related": [
+        "ppl-xiedaoqing",
         "tl-1274",
         "tl-1276"
       ]
@@ -18667,6 +19281,7 @@
         "帝王"
       ],
       "related": [
+        "emp-liao-shengzong",
         "ppl-wangdan",
         "tl-1004",
         "tl-1005"
@@ -18723,7 +19338,8 @@
       ],
       "related": [
         "pol-yuanfeng",
-        "tl-1067"
+        "tl-1067",
+        "tl-1076"
       ]
     },
     {
@@ -18747,6 +19363,16 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "emp-song-duzong",
+        "emp-song-gaozong",
+        "ppl-chenrong",
+        "ppl-liangkai",
+        "ppl-litiong",
+        "ppl-xushuwei",
+        "ppl-yangwujiu",
+        "ppl-yueke"
       ]
     },
     {
@@ -18825,6 +19451,7 @@
         "帝王"
       ],
       "related": [
+        "emp-song-duanzong",
         "ppl-liuguangshi",
         "ppl-yangcunzhong",
         "ppl-zhangjun2",
@@ -18881,6 +19508,7 @@
         "外族"
       ],
       "related": [
+        "ppl-zhangbangchang",
         "tl-1126",
         "tl-1127"
       ]
@@ -18981,6 +19609,12 @@
       ],
       "groups": [
         "僧道"
+      ],
+      "related": [
+        "ppl-daoji",
+        "ppl-qisong",
+        "ppl-yuanwukeqin",
+        "ppl-zonggao"
       ]
     },
     {
@@ -19007,7 +19641,8 @@
       ],
       "related": [
         "mil-bazijun",
-        "mil-zhongyijun"
+        "mil-zhongyijun",
+        "ppl-mengzongzheng"
       ]
     },
     {
@@ -19086,6 +19721,10 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "ppl-chaogongwu",
+        "ppl-chenzhensun"
       ]
     },
     {
@@ -19109,6 +19748,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "emp-song-duanzong",
+        "emp-song-duzong"
       ]
     },
     {
@@ -19136,6 +19779,7 @@
       ],
       "related": [
         "lit-manjianghong",
+        "lit-pai-xiaochongshan",
         "lit-xiaochongshan",
         "mil-bazijun",
         "mil-beiweijun",
@@ -19228,6 +19872,9 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "ppl-dongyuan"
       ]
     },
     {
@@ -19367,6 +20014,9 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "ppl-liuwnansu"
       ]
     },
     {
@@ -19391,6 +20041,10 @@
       ],
       "groups": [
         "僧道"
+      ],
+      "related": [
+        "ppl-baiyuchan",
+        "ppl-wangchongyang"
       ]
     },
     {
@@ -19440,14 +20094,15 @@
       "body": null,
       "refs": null,
       "tags": [
-        "张三影",
-        "婉约"
+        "婉约",
+        "张三影"
       ],
       "groups": [
         "文豪"
       ],
       "related": [
         "lit-ji-zhangziye",
+        "lit-pai-tianxianzi",
         "lit-tianxianzi"
       ]
     },
@@ -19507,7 +20162,8 @@
       "related": [
         "lit-ji-yuhu",
         "lit-liuzhou-zhang",
-        "lit-niannujiao-dongting"
+        "lit-niannujiao-dongting",
+        "lit-pai-liuzhou"
       ]
     },
     {
@@ -19611,6 +20267,7 @@
         "名臣"
       ],
       "related": [
+        "ppl-huquan",
         "ppl-liuguangshi",
         "tl-1163",
         "tl-1164"
@@ -19639,8 +20296,11 @@
         "文豪"
       ],
       "related": [
+        "lit-ciyuan",
         "lit-ji-shanzhong",
-        "lit-jielianhuan"
+        "lit-jielianhuan",
+        "lit-pai-jielianhuan",
+        "ppl-zhengsixiao"
       ]
     },
     {
@@ -19665,6 +20325,10 @@
       "groups": [
         "文豪",
         "女性"
+      ],
+      "related": [
+        "ppl-wushuji",
+        "ppl-xujunbaoyi"
       ]
     },
     {
@@ -19688,6 +20352,10 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-jiangcai",
+        "ppl-litingzhi"
       ]
     },
     {
@@ -19742,6 +20410,7 @@
       ],
       "related": [
         "lit-ji-dongze",
+        "lit-pai-shulian",
         "lit-shulian"
       ]
     },
@@ -19766,6 +20435,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "ppl-wanyanzongwang",
+        "tl-1126"
       ]
     },
     {
@@ -19792,7 +20465,10 @@
         "女性"
       ],
       "related": [
-        "lit-mantingfang-xu"
+        "lit-mantingfang-xu",
+        "ppl-weiwan",
+        "ppl-wushuji",
+        "ppl-zhangyuniang"
       ]
     },
     {
@@ -19874,6 +20550,10 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-caowei",
+        "ppl-yangwenguang"
       ]
     },
     {
@@ -19926,7 +20606,10 @@
         "lit-guolingdingyang",
         "lit-ji-wenshan",
         "lit-leijiangyue",
+        "lit-pai-jiangyue",
         "lit-zhengqige",
+        "ppl-jiangcai",
+        "ppl-litingzhi",
         "tl-1276",
         "tl-1279"
       ]
@@ -19952,6 +20635,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "ppl-fanchunren",
+        "ppl-lihang"
       ]
     },
     {
@@ -20032,6 +20719,7 @@
       "related": [
         "cul-cangshu",
         "ppl-chenzhensun",
+        "ppl-yumao",
         "ppl-zhengqiao",
         "tho-kaoju"
       ]
@@ -20060,6 +20748,7 @@
       "related": [
         "cul-dazu",
         "cul-jiehua",
+        "cul-liao-yingxian",
         "cus-fushi",
         "tec-yingzao"
       ]
@@ -20080,8 +20769,8 @@
       "body": null,
       "refs": "《宋史·文苑传》《小山词》自序",
       "tags": [
-        "小山词",
-        "婉约"
+        "婉约",
+        "小山词"
       ],
       "groups": [
         "文豪"
@@ -20143,6 +20832,10 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-wujie",
+        "ppl-wulin"
       ]
     },
     {
@@ -20166,6 +20859,9 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-panmei"
       ]
     },
     {
@@ -20190,6 +20886,10 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-yangwenguang",
+        "ppl-zhekeshi"
       ]
     },
     {
@@ -20213,6 +20913,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "ppl-fanchunren",
+        "ppl-lihang"
       ]
     },
     {
@@ -20360,6 +21064,10 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "emp-song-duanzong",
+        "emp-song-duzong"
       ]
     },
     {
@@ -20383,6 +21091,9 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "lit-shaonianyou-zhou"
       ]
     },
     {
@@ -20406,6 +21117,10 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "ppl-liusongnian",
+        "ppl-mayuan"
       ]
     },
     {
@@ -20456,6 +21171,10 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "ppl-suhanchen",
+        "tl-1147"
       ]
     },
     {
@@ -20479,6 +21198,12 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-jiangcai",
+        "ppl-wentianxiang",
+        "ppl-xiefangde",
+        "ppl-zhangjue"
       ]
     },
     {
@@ -20502,6 +21227,11 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "mil-zhejia",
+        "ppl-lijiqian",
+        "soc-xixia-buluo"
       ]
     },
     {
@@ -20556,6 +21286,10 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "ppl-fankuan",
+        "ppl-guoxi"
       ]
     },
     {
@@ -20605,7 +21339,12 @@
         "名臣"
       ],
       "related": [
-        "ppl-wangdan"
+        "ppl-fanchunren",
+        "ppl-lvyijian",
+        "ppl-wangdan",
+        "ppl-wangzeng",
+        "ppl-wenyianbo",
+        "ppl-zenggongliang"
       ]
     },
     {
@@ -20634,14 +21373,24 @@
       ],
       "related": [
         "cul-wanyue",
+        "lit-cilun",
         "lit-dianjiangchun-li",
         "lit-ji-shuyu",
+        "lit-pai-dianjiangchun",
+        "lit-pai-rumengling",
+        "lit-pai-shengshengman",
+        "lit-pai-wulingchun",
+        "lit-pai-yijianmei",
+        "lit-pai-yongyule",
+        "lit-pai-yujiaao",
+        "lit-pai-zuihuayin",
         "lit-rumengling",
         "lit-shengshengman",
         "lit-wulingchun",
         "lit-yijianmei",
         "lit-yujiaao-liqingzhao",
-        "lit-zuihuayin"
+        "lit-zuihuayin",
+        "ppl-zhaomingcheng"
       ]
     },
     {
@@ -20723,6 +21472,11 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "mil-zhejia",
+        "ppl-lideming",
+        "soc-xixia-buluo"
       ]
     },
     {
@@ -20769,6 +21523,9 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-jiangwanli"
       ]
     },
     {
@@ -20870,7 +21627,8 @@
         "名将"
       ],
       "related": [
-        "ppl-liao-yeluxiezhen"
+        "ppl-liao-yeluxiezhen",
+        "ppl-yangyanzhao"
       ]
     },
     {
@@ -20902,7 +21660,8 @@
         "mil-jinjun",
         "mil-sanya",
         "mil-zhegao",
-        "ppl-yuefei"
+        "ppl-yuefei",
+        "tl-1129"
       ]
     },
     {
@@ -20953,6 +21712,10 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-yangwenguang",
+        "ppl-yangye"
       ]
     },
     {
@@ -20976,6 +21739,11 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-caowei",
+        "ppl-yangyanzhao",
+        "ppl-zhekeshi"
       ]
     },
     {
@@ -20999,6 +21767,10 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "emp-song-duanzong",
+        "emp-song-duzong"
       ]
     },
     {
@@ -21023,6 +21795,9 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "ppl-youchu"
       ]
     },
     {
@@ -21101,6 +21876,11 @@
         "lit-dielianhua-liuyong",
         "lit-hetianchong",
         "lit-ji-yuezhang",
+        "lit-nenggai",
+        "lit-pai-basheng",
+        "lit-pai-hetianchong",
+        "lit-pai-wanghaichao",
+        "lit-pai-yulinling",
         "lit-wanghaichao",
         "lit-yulinling"
       ]
@@ -21157,6 +21937,10 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "emp-song-duanzong",
+        "emp-song-duzong"
       ]
     },
     {
@@ -21269,8 +22053,11 @@
         "lit-langtaosha-ouyangxiu",
         "lit-liuyishihua",
         "lit-mingfeiqu",
+        "lit-pai-shengchazi",
         "lit-shengchazi",
         "lit-zuiweng",
+        "ppl-suxun",
+        "ppl-suzhe",
         "tl-1057",
         "tl-1060"
       ]
@@ -21296,6 +22083,10 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "emp-song-ningzong",
+        "ppl-hantuozhou"
       ]
     },
     {
@@ -21404,6 +22195,9 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "ppl-lifu"
       ]
     },
     {
@@ -21429,7 +22223,8 @@
         "文豪"
       ],
       "related": [
-        "lit-zuige"
+        "lit-zuige",
+        "ppl-xieao"
       ]
     },
     {
@@ -21483,6 +22278,7 @@
         "路制"
       ],
       "related": [
+        "geo-jiaozhi",
         "geo-jin-zhongdu",
         "geo-yanyun",
         "mil-zhongyijun",
@@ -21513,7 +22309,9 @@
       ],
       "related": [
         "eco-liao-quechang",
+        "geo-jiaozhi",
         "geo-yanyun",
+        "mil-zhongjia",
         "mil-zhongyijun",
         "pol-lu",
         "tl-1005"
@@ -21601,6 +22399,7 @@
         "cul-chanzong",
         "cus-qixi",
         "cus-zhongyuan",
+        "soc-huozang",
         "soc-xinyang"
       ]
     },
@@ -21656,6 +22455,9 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "ppl-yangshi"
       ]
     },
     {
@@ -21681,6 +22483,7 @@
       ],
       "related": [
         "cul-shuyuan",
+        "geo-tanzhou",
         "ppl-huhong",
         "ppl-zhangshi",
         "ppl-zhuxi",
@@ -21736,6 +22539,9 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-caobin"
       ]
     },
     {
@@ -21783,6 +22589,9 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "mil-diqing"
       ]
     },
     {
@@ -21870,6 +22679,10 @@
       ],
       "groups": [
         "起义"
+      ],
+      "related": [
+        "ppl-yujie",
+        "tl-993"
       ]
     },
     {
@@ -22028,6 +22841,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "ppl-fanchunren",
+        "ppl-lihang"
       ]
     },
     {
@@ -22077,7 +22894,8 @@
       ],
       "related": [
         "lit-ji-bishan",
-        "lit-meiwu"
+        "lit-meiwu",
+        "lit-pai-meiwu"
       ]
     },
     {
@@ -22175,6 +22993,10 @@
       ],
       "groups": [
         "僧道"
+      ],
+      "related": [
+        "ppl-baiyuchan",
+        "ppl-zhangboduan"
       ]
     },
     {
@@ -22281,6 +23103,10 @@
       ],
       "groups": [
         "僧道"
+      ],
+      "related": [
+        "ppl-wangchongyang",
+        "ppl-zhangboduan"
       ]
     },
     {
@@ -22306,6 +23132,7 @@
         "名臣"
       ],
       "related": [
+        "cul-sanjiao",
         "tl-1233b",
         "tl-1241"
       ]
@@ -22525,6 +23352,9 @@
       ],
       "groups": [
         "名将"
+      ],
+      "related": [
+        "ppl-liuzhiyuan"
       ]
     },
     {
@@ -22660,6 +23490,9 @@
         "lit-huanxisha-qinguan",
         "lit-ji-huaihai",
         "lit-mantingfang-qinguan",
+        "lit-pai-mantingfang",
+        "lit-pai-queqiaoxian",
+        "lit-pai-tasuoxing",
         "lit-queqiaoxian",
         "lit-tasuoxing-qinguan"
       ]
@@ -22875,6 +23708,9 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "ppl-mifu"
       ]
     },
     {
@@ -22900,7 +23736,9 @@
         "艺术家"
       ],
       "related": [
-        "cul-wenfang"
+        "cul-wenfang",
+        "ppl-caixiang",
+        "ppl-miyouren"
       ]
     },
     {
@@ -22957,6 +23795,7 @@
       ],
       "related": [
         "cul-huayuan",
+        "cul-liao-jinyinqi",
         "cul-shanshui",
         "cus-fushi",
         "eco-sizhi"
@@ -23094,6 +23933,7 @@
       ],
       "related": [
         "cul-liao-wenzi",
+        "emp-xixia-yizong",
         "tl-liao-926"
       ]
     },
@@ -23123,7 +23963,8 @@
         "geo-liao-xiliao",
         "tl-1125",
         "tl-liao-1124",
-        "tl-liao-1132"
+        "tl-liao-1132",
+        "tl-liao-1141"
       ]
     },
     {
@@ -23312,6 +24153,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "ppl-zhangjun",
+        "ppl-zhaoding"
       ]
     },
     {
@@ -23392,6 +24237,10 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "ppl-lisong",
+        "tl-1147"
       ]
     },
     {
@@ -23415,6 +24264,10 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "ppl-ouyangxiu",
+        "ppl-suzhe"
       ]
     },
     {
@@ -23479,6 +24332,9 @@
         "lit-jihuangjifu",
         "lit-linjiangxian-sushi",
         "lit-niannujiao",
+        "lit-pai-busuanzi",
+        "lit-pai-dingfengbo",
+        "lit-pai-jiangchengzi",
         "lit-pai-linjiangxian",
         "lit-pai-shuilongyin",
         "lit-shuidiao",
@@ -23510,6 +24366,10 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "ppl-ouyangxiu",
+        "ppl-suxun"
       ]
     },
     {
@@ -23563,9 +24423,12 @@
       ],
       "related": [
         "lit-ji-fanwenzheng",
+        "lit-pai-sumuzhe",
+        "lit-pai-yujiaao",
         "lit-sumuzhe-fanzhongyan",
         "lit-yueyang",
         "lit-yujiaao",
+        "ppl-hanqi",
         "tl-1043"
       ]
     },
@@ -23592,7 +24455,8 @@
         "艺术家"
       ],
       "related": [
-        "cul-xishan"
+        "cul-xishan",
+        "ppl-licheng"
       ]
     },
     {
@@ -23642,6 +24506,14 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "ppl-lihang",
+        "ppl-lvmengzheng",
+        "ppl-lvyijian",
+        "ppl-wangzeng",
+        "ppl-wenyianbo",
+        "ppl-zenggongliang"
       ]
     },
     {
@@ -23668,6 +24540,7 @@
       "related": [
         "cus-diancha",
         "cus-jiulou",
+        "cus-sancan",
         "cus-washe",
         "cus-yinshi",
         "eco-chama",
@@ -23756,6 +24629,7 @@
         "外族"
       ],
       "related": [
+        "emp-liao-shengzong",
         "tl-1005",
         "tl-liao-1009",
         "tl-liao-982"
@@ -23837,6 +24711,9 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "ppl-juran"
       ]
     },
     {
@@ -23889,8 +24766,10 @@
       ],
       "related": [
         "lit-ji-zhushan",
+        "lit-pai-yijianmei",
         "lit-yijianmei-jiangjie",
-        "lit-yumeiren-jiangjie"
+        "lit-yumeiren-jiangjie",
+        "ppl-zhengsixiao"
       ]
     },
     {
@@ -23942,6 +24821,7 @@
         "名臣"
       ],
       "related": [
+        "ppl-zhaofujin",
         "tl-1093",
         "tl-1102",
         "tl-1120"
@@ -23968,6 +24848,10 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "ppl-caishen",
+        "ppl-chenchun"
       ]
     },
     {
@@ -23991,6 +24875,10 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "ppl-caiyuanding",
+        "ppl-chenchun"
       ]
     },
     {
@@ -24014,6 +24902,10 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "ppl-huangtingjian",
+        "ppl-mifu"
       ]
     },
     {
@@ -24040,6 +24932,7 @@
       ],
       "related": [
         "mil-caishi",
+        "ppl-zhaoding",
         "tl-1161",
         "tl-1161b"
       ]
@@ -24096,6 +24989,10 @@
       ],
       "groups": [
         "科学家"
+      ],
+      "related": [
+        "emp-song-duanzong",
+        "emp-song-duzong"
       ]
     },
     {
@@ -24125,6 +25022,59 @@
         "lit-yijianmei-jiangjie",
         "ppl-jiangjie",
         "ppl-liqingzhao"
+      ]
+    },
+    {
+      "id": "lit-pai-yiehong",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·一萼红",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调一百八字，前段十一句五平韵，后段十句四平韵。",
+      "detail": "周密“步深幽”登蓬莱阁有感，苍茫悲凉，是宋末此调名作。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "周密",
+        "词牌",
+        "一萼红"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-yiehong",
+        "ppl-zhoumi"
+      ]
+    },
+    {
+      "id": "lit-pai-chounuer",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·丑奴儿",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调四十四字，前后段各四句三平韵。又名《采桑子》《罗敷媚》。",
+      "detail": "辛弃疾“少年不识愁滋味”以“却道天凉好个秋”收束；欧阳修“群芳过后西湖好”亦用此调写颍州西湖。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "欧阳修",
+        "辛弃疾",
+        "词牌",
+        "丑奴儿"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-chounuer",
+        "ppl-xinqiji"
       ]
     },
     {
@@ -24180,6 +25130,32 @@
         "cul-ci",
         "lit-bashengganzhou",
         "ppl-liuyong"
+      ]
+    },
+    {
+      "id": "lit-pai-liuchou",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·六丑",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调一百四十字，前段十四句八仄韵，后段十三句九仄韵。周邦彦自度曲。",
+      "detail": "周邦彦《六丑·蔷薇谢后作》咏落花而寄身世，章法回环。调名据传因“此曲犯六调，皆声之美者，然绝难歌”而得。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "周邦彦",
+        "词牌",
+        "六丑"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-liuchou",
+        "ppl-zhoubangyan"
       ]
     },
     {
@@ -24266,6 +25242,58 @@
       ]
     },
     {
+      "id": "lit-pai-shuangshuangyan",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·双双燕",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "史达祖自度曲，双调九十八字，前段九句五仄韵，后段十句七仄韵。",
+      "detail": "史达祖“过春社了”以燕写人，形神兼备，是南宋咏物词的典范，曲名亦由此篇而得。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "史达祖",
+        "双双燕",
+        "词牌"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-shuangshuangyan",
+        "ppl-shidazu"
+      ]
+    },
+    {
+      "id": "lit-pai-tangduoling",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·唐多令",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调六十字，前后段各五句四平韵。又名《糖多令》《南楼令》。",
+      "detail": "刘过“芦叶满汀洲”以“终不似，少年游”写重游之慨，为此调最著名的作品。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "刘过",
+        "词牌",
+        "唐多令"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-tangduoling",
+        "ppl-liuguo"
+      ]
+    },
+    {
       "id": "lit-pai-shengshengman",
       "cat": "literature",
       "type": "词牌",
@@ -24289,6 +25317,32 @@
         "cul-ci",
         "lit-shengshengman",
         "ppl-liqingzhao"
+      ]
+    },
+    {
+      "id": "lit-pai-tianxianzi",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·天仙子",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调六十八字，前后段各六句五仄韵。唐教坊曲，本名《万斯年》。",
+      "detail": "张先“水调数声持酒听”以“云破月来花弄影”名世，为其赢得“张三影”之称。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "张先",
+        "词牌",
+        "天仙子"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-tianxianzi",
+        "ppl-zhangxian"
       ]
     },
     {
@@ -24344,6 +25398,58 @@
       ]
     },
     {
+      "id": "lit-pai-xiaochongshan",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·小重山",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调五十八字，前后段各四句四平韵。又名《小冲山》《柳色新》。",
+      "detail": "岳飞“昨夜寒蛩不住鸣”以“知音少，弦断有谁听”写壮志难酬，与此调常写的闺情形成反差。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "岳飞",
+        "词牌",
+        "小重山"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-xiaochongshan",
+        "ppl-yuefei"
+      ]
+    },
+    {
+      "id": "lit-pai-shaonianyou",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·少年游",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调五十字，前段五句三平韵，后段五句两平韵。又名《玉腊梅枝》。",
+      "detail": "周邦彦“并刀如水”以白描写冬夜情事，声口毕肖，是此调代表作。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "周邦彦",
+        "词牌",
+        "少年游"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-shaonianyou-zhou",
+        "ppl-zhoubangyan"
+      ]
+    },
+    {
       "id": "lit-pai-niannujiao",
       "cat": "literature",
       "type": "词牌",
@@ -24369,6 +25475,7 @@
         "lit-niannujiao",
         "lit-niannujiao-dongting",
         "lit-niannujiao-duojing",
+        "lit-pai-jiangyue",
         "lit-pai-shuilongyin"
       ]
     },
@@ -24396,6 +25503,34 @@
         "cul-ci",
         "lit-yangzhouman",
         "ppl-jiangkuai"
+      ]
+    },
+    {
+      "id": "lit-pai-moyuer",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·摸鱼儿",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调一百十六字，前段十句六仄韵，后段十一句七仄韵。又名《迈陂塘》《陂塘柳》。",
+      "detail": "辛弃疾“更能消几番风雨”以惜春寄托政治失意；元好问“雁丘词”以“问世间情为何物”写生死之情，皆用此调。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "辛弃疾",
+        "元好问",
+        "词牌",
+        "摸鱼儿"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-jin-yanqiu",
+        "lit-moyuer-xinqiji",
+        "ppl-xinqiji"
       ]
     },
     {
@@ -24448,6 +25583,32 @@
         "cul-ci",
         "lit-wanghaichao",
         "ppl-liuyong"
+      ]
+    },
+    {
+      "id": "lit-pai-wulingchun",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·武陵春",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调四十八字，前后段各四句三平韵。又名《武林春》。",
+      "detail": "李清照“风住尘香花已尽”以“载不动许多愁”写国破家亡之痛，为此调压卷之作。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "李清照",
+        "词牌",
+        "武陵春"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-wulingchun",
+        "ppl-liqingzhao"
       ]
     },
     {
@@ -24507,6 +25668,35 @@
       ]
     },
     {
+      "id": "lit-pai-yongyule",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·永遇乐",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调一百四字，前后段各十一句四仄韵。又名《消息》。",
+      "detail": "辛弃疾“千古江山”怀古伤今；李清照“落日熔金”写元宵今昔；刘辰翁“璧月初晴”追和易安，皆用此调。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "李清照",
+        "辛弃疾",
+        "永遇乐",
+        "词牌"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-yongyule",
+        "lit-yongyule-liuchenweng",
+        "ppl-liqingzhao",
+        "ppl-xinqiji"
+      ]
+    },
+    {
       "id": "lit-pai-jiangchengzi",
       "cat": "literature",
       "type": "词牌",
@@ -24556,8 +25746,35 @@
       ],
       "related": [
         "cul-ci",
+        "lit-cilun",
         "lit-huanxisha-qinguan",
         "lit-huanxisha-yanshu"
+      ]
+    },
+    {
+      "id": "lit-pai-langtaosha",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·浪淘沙",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调五十四字，前后段各五句四平韵。原为唐教坊曲，刘禹锡、白居易有《浪淘沙》七言绝句。",
+      "detail": "李煜“帘外雨潺潺”以此调写亡国之痛；欧阳修“把酒祝东风”写聚散之叹，皆为此调名作。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "李煜",
+        "欧阳修",
+        "词牌",
+        "浪淘沙"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-langtaosha-ouyangxiu"
       ]
     },
     {
@@ -24672,6 +25889,85 @@
       ]
     },
     {
+      "id": "lit-pai-dianjiangchun",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·点绛唇",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调四十一字，前段四句三仄韵，后段五句四仄韵。",
+      "detail": "李清照“蹴罢秋千”以“和羞走，倚门回首，却把青梅嗅”写少女情态，为此调名作。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "李清照",
+        "词牌",
+        "点绛唇"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-dianjiangchun-li",
+        "ppl-liqingzhao"
+      ]
+    },
+    {
+      "id": "lit-pai-shengchazi",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·生查子",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调四十字，前后段各四句两仄韵。又名《楚云深》《梅和柳》。",
+      "detail": "欧阳修（一说朱淑真）《生查子·元夕》以“月上柳梢头，人约黄昏后”写元宵约会，是此调最脍炙人口的作品。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "欧阳修",
+        "词牌",
+        "生查子"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-shengchazi",
+        "ppl-ouyangxiu"
+      ]
+    },
+    {
+      "id": "lit-pai-shulian",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·疏帘淡月",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "即《桂枝香》，双调一百一字，前后段各十句五仄韵。张辑寓声改题。",
+      "detail": "王安石《桂枝香·金陵怀古》为此调压卷之作；张辑以《疏帘淡月》为名写秋思，故两题并存。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "王安石",
+        "张辑",
+        "疏帘淡月",
+        "词牌"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-shulian",
+        "ppl-zhangji"
+      ]
+    },
+    {
       "id": "lit-pai-shuying",
       "cat": "literature",
       "type": "词牌",
@@ -24695,6 +25991,59 @@
         "cul-ci",
         "lit-shuying",
         "ppl-jiangkuai"
+      ]
+    },
+    {
+      "id": "lit-pai-meiwu",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·眉妩",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "姜夔自度曲，双调一百三字，前段十一句五仄韵，后段十一句七仄韵。又名《百宜娇》。",
+      "detail": "王沂孙“渐新痕悬柳”咏新月寄托亡国，是此调代表作。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "姜夔",
+        "王沂孙",
+        "词牌",
+        "眉妩"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-meiwu",
+        "ppl-wangyisun"
+      ]
+    },
+    {
+      "id": "lit-pai-pozhenzi",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·破阵子",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调六十二字，前后段各五句三平韵。又名《十拍子》，原为唐大曲《破阵乐》之一段。",
+      "detail": "辛弃疾“醉里挑灯看剑”以壮语写悲情，“可怜白发生”一句陡转，是此调最著名的作品。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "辛弃疾",
+        "词牌",
+        "破阵子"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-pozhenzi",
+        "ppl-xinqiji"
       ]
     },
     {
@@ -24836,6 +26185,58 @@
       ]
     },
     {
+      "id": "lit-pai-jielianhuan",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·解连环",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调一百六字，前段十一句五仄韵，后段十句五仄韵。又名《望梅》《杏梁燕》。",
+      "detail": "张炎“楚江空晚”咏孤雁，以“写不成书，只寄得、相思一点”名世，故张炎有“张孤雁”之称。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "张炎",
+        "词牌",
+        "解连环"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-jielianhuan",
+        "ppl-zhangyan"
+      ]
+    },
+    {
+      "id": "lit-pai-suzhongqing",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·诉衷情",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调四十四字，前段四句三平韵，后段六句三平韵。唐教坊曲。",
+      "detail": "陆游“当年万里觅封侯”以“心在天山，身老沧洲”写壮志未酬，是此调名作。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "陆游",
+        "词牌",
+        "诉衷情"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-suzhongqing",
+        "ppl-luyou"
+      ]
+    },
+    {
       "id": "lit-pai-hexinglang",
       "cat": "literature",
       "type": "词牌",
@@ -24886,6 +26287,88 @@
         "cul-ci",
         "lit-tasuoxing-qinguan",
         "ppl-qinguan"
+      ]
+    },
+    {
+      "id": "lit-pai-jiangyue",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·酹江月",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "即《念奴娇》，双调一百字。因苏轼“一尊还酹江月”句得名。",
+      "detail": "文天祥“乾坤能大”以此调写囚居不屈；黄庭坚、张孝祥等亦有用此题者。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "苏轼",
+        "文天祥",
+        "词牌",
+        "酹江月"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-leijiangyue",
+        "lit-pai-niannujiao",
+        "ppl-wentianxiang"
+      ]
+    },
+    {
+      "id": "lit-pai-zuihuayin",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·醉花阴",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调五十二字，前后段各五句三仄韵。",
+      "detail": "李清照“薄雾浓云愁永昼”以“人比黄花瘦”收束，是重阳词的名篇。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "李清照",
+        "词牌",
+        "醉花阴"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-zuihuayin",
+        "ppl-liqingzhao"
+      ]
+    },
+    {
+      "id": "lit-pai-chaitoufeng",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·钗头凤",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调六十字，前后段各十句七仄韵。又名《折红英》《惜分钗》。",
+      "detail": "陆游“红酥手”与唐婉和词皆用此调，写沈园重逢之痛，是宋词中最著名的爱情悲剧。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "陆游",
+        "唐婉",
+        "钗头凤",
+        "词牌"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-chaitoufeng",
+        "ppl-luyou",
+        "ppl-tangwan"
       ]
     },
     {
@@ -24942,6 +26425,32 @@
       ]
     },
     {
+      "id": "lit-pai-fengrusong",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·风入松",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调七十四字，前后段各六句四平韵。又名《风入松慢》。",
+      "detail": "吴文英“听风听雨过清明”以“黄蜂频扑秋千索”写痴情，是此调名作。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "吴文英",
+        "词牌",
+        "风入松"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-fengrusong",
+        "ppl-wuwenying"
+      ]
+    },
+    {
       "id": "lit-pai-queqiaoxian",
       "cat": "literature",
       "type": "词牌",
@@ -24965,6 +26474,32 @@
         "cul-ci",
         "lit-queqiaoxian",
         "ppl-qinguan"
+      ]
+    },
+    {
+      "id": "lit-pai-hetianchong",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·鹤冲天",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调八十四字，前段九句五仄韵，后段八句五仄韵。",
+      "detail": "柳永“黄金榜上”以“忍把浮名，换了浅斟低唱”写落第后的疏狂，相传因此触怒宋仁宗。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "柳永",
+        "词牌",
+        "鹤冲天"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-hetianchong",
+        "ppl-liuyong"
       ]
     },
     {
@@ -24998,6 +26533,33 @@
       ]
     },
     {
+      "id": "lit-pai-qitianle",
+      "cat": "literature",
+      "type": "词牌",
+      "name": "词牌·齐天乐",
+      "era": "两宋",
+      "year": null,
+      "endYear": null,
+      "ptype": null,
+      "birth": null,
+      "death": null,
+      "summary": "双调一百二字，前段十句五仄韵，后段十一句五仄韵。又名《台城路》《五福降中天》。",
+      "detail": "姜夔“庾郎先自吟愁赋”咏蟋蟀；王沂孙《齐天乐·蝉》借蝉写亡国，皆为咏物名篇。",
+      "body": null,
+      "refs": "《钦定词谱》；龙榆生《唐宋词格律》",
+      "tags": [
+        "姜夔",
+        "王沂孙",
+        "词牌",
+        "齐天乐"
+      ],
+      "related": [
+        "cul-ci",
+        "lit-qitianle",
+        "ppl-jiangkuai"
+      ]
+    },
+    {
       "id": "ppl-xiefangde",
       "cat": "people",
       "type": "名臣",
@@ -25019,6 +26581,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "ppl-jiangcai",
+        "ppl-litingzhi"
       ]
     },
     {
@@ -25042,6 +26608,9 @@
       ],
       "groups": [
         "文豪"
+      ],
+      "related": [
+        "ppl-wangyuanliang"
       ]
     },
     {
@@ -25088,6 +26657,10 @@
       ],
       "groups": [
         "女性"
+      ],
+      "related": [
+        "emp-song-gongdi",
+        "tl-1276"
       ]
     },
     {
@@ -25112,6 +26685,7 @@
         "邵雍"
       ],
       "related": [
+        "ppl-chentuan",
         "ppl-shaoyong",
         "tho-erchheng",
         "tho-lixue",
@@ -25220,6 +26794,9 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "ppl-zhengsixiao"
       ]
     },
     {
@@ -25274,6 +26851,7 @@
         "名臣"
       ],
       "related": [
+        "ppl-huyanzan",
         "ppl-lvmengzheng"
       ]
     },
@@ -25388,6 +26966,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "ppl-huquan",
+        "ppl-yuyunwen"
       ]
     },
     {
@@ -25418,14 +27000,22 @@
         "lit-hexinglang",
         "lit-ji-jiaxuan",
         "lit-moyuer-xinqiji",
+        "lit-pai-chounuer",
+        "lit-pai-hexinglang",
+        "lit-pai-moyuer",
+        "lit-pai-pozhenzi",
+        "lit-pai-pusaman",
         "lit-pai-shuilongyin",
+        "lit-pai-xijiangyue",
+        "lit-pai-yongyule",
         "lit-pai-zhegutian",
         "lit-pozhenzi",
         "lit-pusaman",
         "lit-qingyuan-xinqiji",
         "lit-shuilongyin",
         "lit-xijiangyue",
-        "lit-yongyule"
+        "lit-yongyule",
+        "ppl-mengzongzheng"
       ]
     },
     {
@@ -25449,6 +27039,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "tl-liao-951"
       ]
     },
     {
@@ -25472,6 +27065,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "pol-liao-falu"
       ]
     },
     {
@@ -25496,6 +27092,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "emp-song-zhenzong",
+        "ppl-xiaochuo"
       ]
     },
     {
@@ -25520,6 +27120,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "emp-xixia-huanzong",
+        "tl-liao-1120"
       ]
     },
     {
@@ -25598,6 +27202,9 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "ppl-liao-handrang"
       ]
     },
     {
@@ -25727,6 +27334,12 @@
       ],
       "groups": [
         "僧道"
+      ],
+      "related": [
+        "ppl-hongzhizhengjue",
+        "ppl-qisong",
+        "ppl-yuanwukeqin",
+        "ppl-zonggao"
       ]
     },
     {
@@ -25751,6 +27364,7 @@
         "邮驿"
       ],
       "related": [
+        "cus-jiaozi",
         "geo-kaifeng",
         "mil-yuejiajun",
         "pol-jinzouyuan",
@@ -25805,6 +27419,11 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "ppl-jiangjie",
+        "ppl-zhangyan",
+        "ppl-zhaomengjian"
       ]
     },
     {
@@ -25891,7 +27510,8 @@
         "艺术家"
       ],
       "related": [
-        "cul-xishan"
+        "cul-xishan",
+        "ppl-licheng"
       ]
     },
     {
@@ -25918,6 +27538,7 @@
       "related": [
         "cus-chasi",
         "cus-jiu",
+        "cus-sancan",
         "cus-wudai-yanyin",
         "cus-yinshi",
         "eco-quejiu",
@@ -25946,6 +27567,10 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "cul-xixia-wenzi",
+        "lit-fanhan"
       ]
     },
     {
@@ -26058,6 +27683,7 @@
         "帝王"
       ],
       "related": [
+        "emp-jin-modi",
         "tl-1234"
       ]
     },
@@ -26169,6 +27795,10 @@
       ],
       "groups": [
         "帝王"
+      ],
+      "related": [
+        "emp-jin-aizong",
+        "tl-1234"
       ]
     },
     {
@@ -26360,6 +27990,9 @@
         "lit-busuanzi-luyou",
         "lit-chaitoufeng",
         "lit-ji-fangweng",
+        "lit-pai-busuanzi",
+        "lit-pai-chaitoufeng",
+        "lit-pai-suzhongqing",
         "lit-shufen",
         "lit-sishitianyuan",
         "lit-suzhongqing",
@@ -26446,6 +28079,9 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "tl-1278"
       ]
     },
     {
@@ -26469,6 +28105,10 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "emp-song-duanzong",
+        "emp-song-duzong"
       ]
     },
     {
@@ -26493,6 +28133,9 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "tho-xiangshu"
       ]
     },
     {
@@ -26522,6 +28165,7 @@
       "related": [
         "cul-cangshu",
         "ppl-chaogongwu",
+        "ppl-yumao",
         "ppl-zhengqiao",
         "tho-kaoju"
       ]
@@ -26573,6 +28217,10 @@
       ],
       "groups": [
         "思想家"
+      ],
+      "related": [
+        "ppl-caishen",
+        "ppl-caiyuanding"
       ]
     },
     {
@@ -26680,6 +28328,7 @@
         "名臣"
       ],
       "related": [
+        "ppl-bizaiyu",
         "tho-qingyuan",
         "tl-1195",
         "tl-1206"
@@ -26708,6 +28357,7 @@
         "科学家"
       ],
       "related": [
+        "tec-fangzhi",
         "tec-xingtu"
       ]
     },
@@ -26732,6 +28382,9 @@
       ],
       "groups": [
         "外族"
+      ],
+      "related": [
+        "pol-jin-bojilie"
       ]
     },
     {
@@ -26758,6 +28411,7 @@
         "名臣"
       ],
       "related": [
+        "emp-liao-jingzong",
         "tl-1005",
         "tl-liao-982"
       ]
@@ -26783,6 +28437,10 @@
       ],
       "groups": [
         "名臣"
+      ],
+      "related": [
+        "emp-song-renzong",
+        "ppl-fanzhongyan"
       ]
     },
     {
@@ -26835,6 +28493,11 @@
       ],
       "groups": [
         "艺术家"
+      ],
+      "related": [
+        "ppl-litang",
+        "ppl-liusongnian",
+        "ppl-xiaqui"
       ]
     },
     {
@@ -26860,6 +28523,9 @@
       "groups": [
         "名臣",
         "女性"
+      ],
+      "related": [
+        "emp-song-zhezong"
       ]
     },
     {
@@ -26885,6 +28551,7 @@
         "名臣"
       ],
       "related": [
+        "cul-sanjiao",
         "tl-1233b"
       ]
     },
@@ -26910,6 +28577,10 @@
       "groups": [
         "文豪",
         "女性"
+      ],
+      "related": [
+        "ppl-wushuji",
+        "ppl-xujunbaoyi"
       ]
     },
     {
@@ -26938,8 +28609,10 @@
         "cul-jiangxi",
         "lit-ji-shangu",
         "lit-jihuangjifu",
+        "lit-pai-qingpingyue",
         "lit-qingpingyue-huang",
-        "lit-zhegutian-huang"
+        "lit-zhegutian-huang",
+        "ppl-caixiang"
       ]
     },
     {

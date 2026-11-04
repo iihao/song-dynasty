@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-04T15:14:57",
+ "generated_at": "2026-11-04T15:33:51",
  "license": "维基百科内容遵循 CC BY-SA 4.0，使用时请保留署名与链接",
  "items": [
   {
@@ -2599,6 +2599,21 @@
    "fetched_at": "2026-11-04T11:32:37"
   },
   {
+   "item_id": "lit-niannujiao",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "念奴娇·赤壁怀古",
+   "url": "https://zh.wikipedia.org/wiki/%E5%BF%B5%E5%A5%B4%E5%A8%87%C2%B7%E8%B5%A4%E5%A3%81%E6%80%80%E5%8F%A4",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94528765,
+   "qid": "Q18827698",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "《念奴娇·赤壁怀古》，北宋大文豪苏轼的词作，词牌为念奴娇，写于1082年（元丰五年七月），同时还有著名的《赤壁赋》。",
+   "fetched_at": "2026-11-04T15:28:21"
+  },
+  {
    "item_id": "lit-pai-basheng",
    "source": "wikipedia",
    "lang": "zh",
@@ -2629,6 +2644,36 @@
    "fetched_at": "2026-11-04T11:45:35"
   },
   {
+   "item_id": "lit-pai-chaitoufeng",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "钗头凤",
+   "url": "https://zh.wikipedia.org/wiki/%E9%92%97%E5%A4%B4%E5%87%A4",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94163431,
+   "qid": "Q17027990",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "钗头凤，词牌名。又名《撷芳词》、《折红英》、《摘红英》，双调60字，前后段各30字。",
+   "fetched_at": "2026-11-04T15:32:44"
+  },
+  {
+   "item_id": "lit-pai-dianjiangchun",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "点绛唇",
+   "url": "https://zh.wikipedia.org/wiki/%E7%82%B9%E7%BB%9B%E5%94%87",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94143915,
+   "qid": "Q15930215",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "点绛唇，词牌名。亦称《点樱桃》、《十八香》、《南浦月》、《沙头雨》、《寻瑶草》。双调四十一字，上阙四句，押三仄韵；下阕五句，押四仄韵。\n因梁江淹《咏美人春游》诗中有“白雪凝琼貌，明珠点绛唇”句得名。",
+   "fetched_at": "2026-11-04T15:32:25"
+  },
+  {
    "item_id": "lit-pai-dielianhua",
    "source": "wikipedia",
    "lang": "zh",
@@ -2657,6 +2702,21 @@
    "note": "ok",
    "extract": "定风波，词牌名。双调六十二字，前阕三平韵，两仄韵，后阕四仄韵，两平韵。平仄换韵方式为“甲乙甲丙甲丁甲”。以平声韵为主，间以仄声韵。",
    "fetched_at": "2026-11-04T14:29:45"
+  },
+  {
+   "item_id": "lit-pai-fengrusong",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "风入松",
+   "url": "https://zh.wikipedia.org/wiki/%E9%A3%8E%E5%85%A5%E6%9D%BE",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 73158490,
+   "qid": "Q117438497",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "风入松指的可能是：\n\n古琴曲〈风入松 (古琴曲)〉\n北管曲牌〈风入松 (北管)〉\n宋词词牌\n流行歌曲〈风入松 (流行歌曲)〉，林生祥创作",
+   "fetched_at": "2026-11-04T15:32:46"
   },
   {
    "item_id": "lit-pai-hexinglang",
@@ -2702,6 +2762,36 @@
    "note": "ok",
    "extract": "江城子，词牌名。亦称《江神子》。单调三十五字或双调七十字，前后阕格式相同，各五平韵，一韵到底。唐时本为单调，宋人将其改为双调。",
    "fetched_at": "2026-11-04T14:29:49"
+  },
+  {
+   "item_id": "lit-pai-jiangyue",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "念奴娇",
+   "url": "https://zh.wikipedia.org/wiki/%E5%BF%B5%E5%A5%B4%E5%A8%87",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 88060895,
+   "qid": "Q24841825",
+   "confidence": 0.95,
+   "match": "exact",
+   "note": "ok",
+   "extract": "念奴娇，词牌名，相传是根据唐代一位叫念奴的歌姬取的调名。亦称《百字令》、《酹江月》、《大江东去》、《壶中天》、《湘月》等。目前最早所见的作品，为北宋的沈唐、苏轼所作。双调一百字，前后段各四仄韵，用律十分规整，一韵到底，常用入声韵。上下阕后七句字数平仄相同。",
+   "fetched_at": "2026-11-04T15:32:41"
+  },
+  {
+   "item_id": "lit-pai-langtaosha",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "浪淘沙",
+   "url": "https://zh.wikipedia.org/wiki/%E6%B5%AA%E6%B7%98%E6%B2%99",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94143737,
+   "qid": "Q11149272",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "浪淘沙，词牌名。亦称《浪淘沙令》、《卖花声》《过龙门》。双调五十四字，前后阕各四平韵，一韵到底。",
+   "fetched_at": "2026-11-04T15:32:24"
   },
   {
    "item_id": "lit-pai-linjiangxian",
@@ -2764,6 +2854,21 @@
    "fetched_at": "2026-11-04T11:45:44"
   },
   {
+   "item_id": "lit-pai-moyuer",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "迈陂塘",
+   "url": "https://zh.wikipedia.org/wiki/%E8%BF%88%E9%99%82%E5%A1%98",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 68750938,
+   "qid": "Q15942393",
+   "confidence": 0.95,
+   "match": "exact",
+   "note": "ok",
+   "extract": "迈陂塘，词牌名。亦称《摸鱼儿》、《陂塘柳》。双调一百一十六字，前后阕各七仄韵，上去通压。",
+   "fetched_at": "2026-11-04T15:32:17"
+  },
+  {
    "item_id": "lit-pai-niannujiao",
    "source": "wikipedia",
    "lang": "zh",
@@ -2777,6 +2882,21 @@
    "note": "ok",
    "extract": "念奴娇，词牌名，相传是根据唐代一位叫念奴的歌姬取的调名。亦称《百字令》、《酹江月》、《大江东去》、《壶中天》、《湘月》等。目前最早所见的作品，为北宋的沈唐、苏轼所作。双调一百字，前后段各四仄韵，用律十分规整，一韵到底，常用入声韵。上下阕后七句字数平仄相同。",
    "fetched_at": "2026-11-04T11:33:04"
+  },
+  {
+   "item_id": "lit-pai-pozhenzi",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "破陣子",
+   "url": "https://zh.wikipedia.org/wiki/%E7%A0%B4%E9%99%A3%E5%AD%90",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94144421,
+   "qid": "Q15925754",
+   "confidence": 0.92,
+   "match": "search",
+   "note": "ok",
+   "extract": "破阵子，又称《十拍子》，词牌名，唐教坊曲名，最初是伴随慷慨激昂的武舞《秦王破阵乐》而生的曲调。到了宋代，它演变为双调、六十二字的词牌名，因其节奏明快、格律严整，常被文人用来抒发英雄志气或清新春景，上下阗的前四句通常由两组对仗组成，读起来极具韵律感。 《破阵子》的别名称为《十拍子》是因为这个词牌上下阗各五句，全首词总共有十句。在音乐节奏上，每一句对应一个强拍（拍子），故名《十拍子》。 在众多作品中，以辛弃疾的《破阵子·为陈同甫赋壮词以寄之》、晏殊的《破阵子·燕子来时新社》和李煜的《破阵子·四十年来家国》三首破阵子最为出名。\n陈旸《乐书》：“唐《破阵乐》属龟兹部，秦王所制，舞用二千人，皆画衣甲，执旗旆，外藩镇春衣犒军设乐，亦舞此曲，兼马军引入场，尤壮观也。”\n按唐《破阵乐》乃七言绝句，此原来是以旧曲之名，另度制新配乐。元朝高拭词注“正宫”。",
+   "fetched_at": "2026-11-04T15:32:33"
   },
   {
    "item_id": "lit-pai-pusaman",
@@ -2824,6 +2944,21 @@
    "fetched_at": "2026-11-04T11:33:13"
   },
   {
+   "item_id": "lit-pai-qitianle",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "齐天乐 (词牌)",
+   "url": "https://zh.wikipedia.org/wiki/%E9%BD%90%E5%A4%A9%E4%B9%90_(%E8%AF%8D%E7%89%8C)",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 90565024,
+   "qid": null,
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "齐天乐，词牌名。一百二字，前后片各六仄韵。",
+   "fetched_at": "2026-11-04T15:32:50"
+  },
+  {
    "item_id": "lit-pai-queqiaoxian",
    "source": "wikipedia",
    "lang": "zh",
@@ -2854,6 +2989,21 @@
    "fetched_at": "2026-11-04T11:45:38"
   },
   {
+   "item_id": "lit-pai-shengchazi",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "生查子",
+   "url": "https://zh.wikipedia.org/wiki/%E7%94%9F%E6%9F%A5%E5%AD%90",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 90125584,
+   "qid": "Q15079674",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "生查子，词牌名。本为唐代教坊曲。双调四十字，上下阙各四句、两仄韵，上去通押。",
+   "fetched_at": "2026-11-04T15:32:27"
+  },
+  {
    "item_id": "lit-pai-shengshengman",
    "source": "wikipedia",
    "lang": "zh",
@@ -2867,6 +3017,21 @@
    "note": "ok",
    "extract": "声声慢，词牌名。据传蒋捷作此慢词俱用“声”字入韵，故称此名。亦称《胜胜慢》、《凤示凰》、《寒松叹》、《人在楼上》。双调，上片十句，押四平韵，四十九字；下片九句，押四平韵，四十八字，共九十七字,长调。又有仄韵体（一般押入声）。用“仙吕调”。",
    "fetched_at": "2026-11-04T11:45:37"
+  },
+  {
+   "item_id": "lit-pai-shuangshuangyan",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "双双燕",
+   "url": "https://zh.wikipedia.org/wiki/%E5%8F%8C%E5%8F%8C%E7%87%95",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 69925698,
+   "qid": "Q10911825",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "双双燕，词牌名，为史达祖首制，内容为吟咏双燕，故名。双调，上片九句，押五仄韵，四十八字；下片十句，押七仄韵，五十字，共九十八字。",
+   "fetched_at": "2026-11-04T15:32:09"
   },
   {
    "item_id": "lit-pai-shuidiao",
@@ -2899,6 +3064,21 @@
    "fetched_at": "2026-11-04T11:33:07"
   },
   {
+   "item_id": "lit-pai-shulian",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "桂枝香",
+   "url": "https://zh.wikipedia.org/wiki/%E6%A1%82%E6%9E%9D%E9%A6%99",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 56758014,
+   "qid": "Q11111662",
+   "confidence": 0.95,
+   "match": "exact",
+   "note": "ok",
+   "extract": "桂枝香，词牌名。亦称《疏帘淡月》。双调一百零一字，前后阕各五仄韵，押入声韵。一韵到底。",
+   "fetched_at": "2026-11-04T15:32:28"
+  },
+  {
    "item_id": "lit-pai-shuying",
    "source": "wikipedia",
    "lang": "zh",
@@ -2929,6 +3109,36 @@
    "fetched_at": "2026-11-04T14:29:55"
   },
   {
+   "item_id": "lit-pai-suzhongqing",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "诉衷情",
+   "url": "https://zh.wikipedia.org/wiki/%E8%AF%89%E8%A1%B7%E6%83%85",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 53944284,
+   "qid": "Q17026641",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "诉衷情，词牌名。\n双调四十五字，前后阕各三平韵，一韵到底。又一体四十四字，将前阕四五句变为“[平]仄仄平平”。",
+   "fetched_at": "2026-11-04T15:32:40"
+  },
+  {
+   "item_id": "lit-pai-tangduoling",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "唐多令",
+   "url": "https://zh.wikipedia.org/wiki/%E5%94%90%E5%A4%9A%E4%BB%A4",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94625702,
+   "qid": "Q10922642",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "唐多令，词牌名，又名糖多令、南楼令、箜篌曲，自南宋中期兴起。本调六十字，通常一韵到底。",
+   "fetched_at": "2026-11-04T15:32:10"
+  },
+  {
    "item_id": "lit-pai-tasuoxing",
    "source": "wikipedia",
    "lang": "zh",
@@ -2944,6 +3154,21 @@
    "fetched_at": "2026-11-04T11:45:48"
   },
   {
+   "item_id": "lit-pai-tianxianzi",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "天仙子",
+   "url": "https://zh.wikipedia.org/wiki/%E5%A4%A9%E4%BB%99%E5%AD%90",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 68626700,
+   "qid": "Q10939068",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "天仙子，词牌名。又名〈万斯年〉。原为咏天仙的。因皇甫松词有“懊恼天仙应有以”句，取以为名。唐时为仄韵单调，宋人改用双调。\n双调六十八字，前后阕各五[仄]韵，上去通押。第四、第五两句，[平][仄]多不定，但是第二句第二字必用去声。",
+   "fetched_at": "2026-11-04T15:32:12"
+  },
+  {
    "item_id": "lit-pai-wanghaichao",
    "source": "wikipedia",
    "lang": "zh",
@@ -2957,6 +3182,36 @@
    "note": "ok",
    "extract": "望海潮，词牌名。此曲是柳永所创，平韵双调。亦一百零七字，双调，上阙五平韵、下阙六平韵，一韵到底。",
    "fetched_at": "2026-11-04T14:29:47"
+  },
+  {
+   "item_id": "lit-pai-wulingchun",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "武陵春",
+   "url": "https://zh.wikipedia.org/wiki/%E6%AD%A6%E9%99%B5%E6%98%A5",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 94144171,
+   "qid": "Q30949683",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "武陵春，词牌名。双调四十九字，八句六平韵。",
+   "fetched_at": "2026-11-04T15:32:21"
+  },
+  {
+   "item_id": "lit-pai-xiaochongshan",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "小重山",
+   "url": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E9%87%8D%E5%B1%B1",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 93360345,
+   "qid": "Q11034934",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "小重山，词牌名。亦称《小冲山》、《小重山令》。双调五十八字，前后阕各四平韵，一韵到底。",
+   "fetched_at": "2026-11-04T15:32:13"
   },
   {
    "item_id": "lit-pai-xijiangyue",
@@ -3004,6 +3259,21 @@
    "fetched_at": "2026-11-04T14:29:36"
   },
   {
+   "item_id": "lit-pai-yongyule",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "永遇乐",
+   "url": "https://zh.wikipedia.org/wiki/%E6%B0%B8%E9%81%87%E4%B9%90",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 21522210,
+   "qid": "Q11132772",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "永遇乐，词牌名。亦称《消息》。双调一百零四字，二十二句，首起两句，第四、五、七、八句均为四字对，前后阕各四仄韵，上去通押。",
+   "fetched_at": "2026-11-04T15:32:22"
+  },
+  {
    "item_id": "lit-pai-yujiaao",
    "source": "wikipedia",
    "lang": "zh",
@@ -3047,6 +3317,21 @@
    "note": "ok",
    "extract": "鹧鸪天，词牌名。亦称《思佳客》、《思越人》、《醉梅花》。双调五十五字，前后阕各三平韵，一韵到底。上阕第三四句、下阕第一二句一般要求对仗。",
    "fetched_at": "2026-11-04T11:33:15"
+  },
+  {
+   "item_id": "lit-pai-zuihuayin",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "醉花阴",
+   "url": "https://zh.wikipedia.org/wiki/%E9%86%89%E8%8A%B1%E9%98%B4",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 93360330,
+   "qid": "Q17038521",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "醉花阴，词牌名。为北宋毛滂的自度曲，得名于词中“人在翠阴中”句。\n双调五十二字，前后阕各三仄韵，一韵到底。",
+   "fetched_at": "2026-11-04T15:32:43"
   },
   {
    "item_id": "lit-rongzhaibiji",
@@ -3109,6 +3394,21 @@
    "fetched_at": "2026-11-03T14:39:39"
   },
   {
+   "item_id": "lit-yangzhouman",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "扬州慢·淮左名都",
+   "url": "https://zh.wikipedia.org/wiki/%E6%89%AC%E5%B7%9E%E6%85%A2%C2%B7%E6%B7%AE%E5%B7%A6%E5%90%8D%E9%83%BD",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 92976931,
+   "qid": "Q18836875",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "《扬州慢》，南宋词人姜夔的词作，写于宋孝宗淳熙丙申（1176年）。\n扬州慢为南宋词人姜夔自创的词牌，双调九十八字，其中上片50字，下片48字。",
+   "fetched_at": "2026-11-04T15:30:05"
+  },
+  {
    "item_id": "lit-yiehong",
    "source": "wikipedia",
    "lang": "zh",
@@ -3122,6 +3422,21 @@
    "note": "year-mismatch",
    "extract": "《一萼红·登蓬莱阁有感》是南宋词人周密的一首词作。",
    "fetched_at": "2026-11-04T11:45:08"
+  },
+  {
+   "item_id": "lit-yongyule",
+   "source": "wikipedia",
+   "lang": "zh",
+   "title": "永遇乐·京口北固亭怀古",
+   "url": "https://zh.wikipedia.org/wiki/%E6%B0%B8%E9%81%87%E4%B9%90%C2%B7%E4%BA%AC%E5%8F%A3%E5%8C%97%E5%9B%BA%E4%BA%AD%E6%80%80%E5%8F%A4",
+   "license": "CC BY-SA 4.0",
+   "revision_id": 95233266,
+   "qid": "Q11132775",
+   "confidence": 1.0,
+   "match": "exact",
+   "note": "ok",
+   "extract": "《永遇乐·京口北固亭怀古》，南宋词人辛弃疾的词作，写于1205年（宋宁宗开禧元年）。",
+   "fetched_at": "2026-11-04T15:30:58"
   },
   {
    "item_id": "lit-yueyang",

@@ -83,7 +83,35 @@ TUNES = {
     "清平乐": "lit-pai-qingpingyue",
     "菩萨蛮": "lit-pai-pusaman",
     "西江月": "lit-pai-xijiangyue",
+    "生查子": "lit-pai-shengchazi",
+    "天仙子": "lit-pai-tianxianzi",
+    "浪淘沙": "lit-pai-langtaosha",
+    "少年游": "lit-pai-shaonianyou",
+    "点绛唇": "lit-pai-dianjiangchun",
+    "六丑": "lit-pai-liuchou",
+    "醉花阴": "lit-pai-zuihuayin",
+    "武陵春": "lit-pai-wulingchun",
+    "小重山": "lit-pai-xiaochongshan",
+    "钗头凤": "lit-pai-chaitoufeng",
+    "摸鱼儿": "lit-pai-moyuer",
+    "破阵子": "lit-pai-pozhenzi",
+    "丑奴儿": "lit-pai-chounuer",
+    "诉衷情": "lit-pai-suzhongqing",
+    "齐天乐": "lit-pai-qitianle",
+    "双双燕": "lit-pai-shuangshuangyan",
+    "唐多令": "lit-pai-tangduoling",
+    "永遇乐": "lit-pai-yongyule",
+    "疏帘淡月": "lit-pai-shulian",
+    "风入松": "lit-pai-fengrusong",
+    "眉妩": "lit-pai-meiwu",
+    "一萼红": "lit-pai-yiehong",
+    "酹江月": "lit-pai-jiangyue",
+    "解连环": "lit-pai-jielianhuan",
+    "鹤冲天": "lit-pai-hetianchong",
 }
+
+# 这些不是词牌，不能因为标题里带“词”就找词牌。
+NON_TUNE_WORKS = {"回心院词"}
 
 # 原标题里没有作者关联的，显式补齐
 AUTHOR_FALLBACK = {
@@ -174,6 +202,8 @@ def main():
             edges += add(wid, author) + add(author, wid)
 
         tune = tune_of(w["name"])
+        if tune in NON_TUNE_WORKS:
+            tune = ""
         pai = TUNES.get(tune)
         if pai and pai in items:
             edges += add(wid, pai) + add(pai, wid)
@@ -212,7 +242,7 @@ def main():
     print("总关联:", count("select count(*) from item_relations"))
     missing_tunes = sorted({
         tune_of(w["name"]) for w in works
-        if tune_of(w["name"]) not in TUNES
+        if tune_of(w["name"]) not in TUNES and tune_of(w["name"]) not in NON_TUNE_WORKS
     })
     if missing_tunes:
         print("未映射词牌（可补 TUNES 或新增词牌条目）:", "、".join(missing_tunes))

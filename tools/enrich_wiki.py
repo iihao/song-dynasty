@@ -392,6 +392,11 @@ def usable(page, cands, item):
         return False, "extract too short"
     if any(w in title for w in BAD_TITLE):
         return False, "wrong-type-title"
+    # 文献条目：标题比原名长太多，通常是人名/机构等同名条目
+    if item.get("category_id") == "literature":
+        shortest = min((len(norm(c)) for c in cands if c), default=0)
+        if shortest and len(norm(title)) - shortest > 3:
+            return False, "title-too-long"
     ok, reason = source_ok(item, page)
     if not ok:
         return False, reason

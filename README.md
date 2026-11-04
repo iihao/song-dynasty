@@ -7,8 +7,8 @@
 
 | 门类 | 条目 |
 |---|---:|
-| 人物（含 55 位帝王，含五代） | 311 |
-| 名篇（词作、词牌、词集、词论、选本、笔记） | 179 |
+| 人物（含 54 位帝王，含五代） | 311 |
+| 名篇（词作、词牌、词集、词论、选本、笔记） | 204 |
 | 大事年表（含五代、辽、西辽） | 134 |
 | 军事 | 55 |
 | 文化 | 54 |
@@ -19,13 +19,13 @@
 | 社会民生 | 38 |
 | 科技 | 34 |
 | 思想学术 | 28 |
-| **合计** | **1017** |
+| **合计** | **1042** |
 
-另有 1,819 个标签、2,469 条条目关联、13 个身份分组、11 组统计面板。
+另有 1,840 个标签、2,712 条条目关联、13 个身份分组、11 组统计面板。
 
-已富化维基百科条目 **633 条 / 1017 条（62.2%）**；保留修订号、Wikidata QID 与 CC BY-SA 4.0 署名。
+已富化维基百科条目 **654 条 / 1042 条（62.8%）**；保留修订号、Wikidata QID 与 CC BY-SA 4.0 署名。
 
-**宋词专题**：名篇类共 179 条 —— 词作 **82 首**、词牌 **33 个**、词集 **29 部**、词论 4 种、选本 5 种、笔记 6 种。词人、词集、词作、词牌之间已建立双向关联（`tools/link_ci.py`）。
+**宋词专题**：名篇类共 204 条 —— 词作 **82 首**、词牌 **58 个**、词集 **29 部**、词论 4 种、选本 5 种、笔记 6 种。词人、词集、词作、词牌之间已建立双向关联（`tools/link_ci.py`），82 首词作全部有作者，81 首有对应词牌。
 
 **名篇全文**：82 首词、13 首诗、3 篇散文、1 篇辞赋均附正文（`body` 字段），在条目详情弹窗与独立条目页优先展示；词牌、词论、笔记、词集、选本等书目类条目仍以提要为主。
 
@@ -262,6 +262,9 @@ python3 tools/audit.py
 python3 tools/audit.py --orphans      # 只列出无任何关联的 id
 python3 tools/audit.py --strict       # 重名或字段异常时非零退出（可接 CI）
 
+# 一键 CI：临时库 + audit --strict + 静态构建
+bash tools/check.sh
+
 # 新增（准备 item.json）
 python3 tools/manage.py add item.json
 python3 tools/manage.py add batch.json --upsert
@@ -281,6 +284,12 @@ python3 db/init_db.py --upgrade
 
 # 词学关联：词人 ↔ 词集 ↔ 词作 ↔ 词牌（幂等，默认自动 export；--no-export 可跳过）
 python3 tools/link_ci.py
+
+# 把单向关联补成双向（幂等，默认自动 export）
+python3 tools/symmetrize_relations.py
+
+# 为完全孤立条目补 1–2 条基于标签/门类/政权的兜底关联（默认自动 export）
+python3 tools/auto_link_orphans.py
 
 # 清理维基同名误配来源（不联网）
 python3 tools/enrich_wiki.py --prune
@@ -324,6 +333,10 @@ python3 tools/enrich_wiki.py --prune
 4. **谱系图**：人物关系已入 `item_relations`，可做力导向图。
 5. **版本化**：`items` 增加 revisions 表，保留编辑历史。
 6. **多语言**：条目增加 `lang` 维度。
+
+## 持续集成
+
+`.github/workflows/ci.yml` 在 push / pull request 时运行 `bash tools/check.sh`：临时建库、`audit.py --strict`、`build.py --strict`。本地可先跑同一条命令，避免把悬空关联或非法字段带进提交。
 
 ## 许可与免责
 
