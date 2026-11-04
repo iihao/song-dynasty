@@ -13,6 +13,7 @@
   python3 tools/enrich_wiki.py --refresh           # 重新抓取
   python3 tools/enrich_wiki.py --cat people        # 只做人物
   python3 tools/enrich_wiki.py --dry-run           # 只报告，不写库
+  python3 tools/enrich_wiki.py --prune             # 清理已确认的误配来源，不联网
 """
 import argparse
 import json
@@ -146,6 +147,21 @@ SKIP_IDS = {
     "cul-liao-fojiao", "cul-liao-sancai", "cul-liao-ci",
     "eco-liao-nongye", "eco-liao-xumu", "eco-liao-yantie", "eco-liao-huobi",
     "cul-zaju", "soc-mengxue", "lit-qitianle", "lit-mingfeiqu",
+}
+
+# 已确认会误导的“同名但不同事物”来源：标题包含这些词时一律不写入。
+WRONG_ENTITY_MARKERS = (
+    "小池百合子", "毛泽东", "琵琶大曲", "阳春白雪（乐曲", "阳春白雪 (乐曲)",
+)
+
+# 逐条封禁：用于标题本身看不出问题、但内容确属另一作品的条目。
+BLOCK_SOURCE = {
+    "lit-busuanzi-luyou": ("卜算子·咏梅",),
+    "lit-xiaochi": ("小池百合子",),
+    "lit-yangchun": ("阳春白雪 (樂曲)", "阳春白雪（乐曲）"),
+    "lit-fengrusong": ("风入松",),
+    "lit-huajian": ("花间派",),
+    "lit-pai-anxiang": ("暗香·旧时月色",),
 }
 
 
@@ -344,6 +360,31 @@ BAD_TITLE = ("植物", "专辑", "專輯", "电视剧", "電視劇", "电影", "
              "漫画", "漫畫", "小说", "小說", "综艺", "綜藝")
 
 
+def source_ok(item, page):
+    """校验匹配结果是否真的对应条目，而不只是同名。"""
+    title = page.get("title", "")
+    ex = (page.get("extract") or "").strip()
+    head = ex[:300]
+    if any(m in title or m in head for m in WRONG_ENTITY_MARKERS):
+        return False, "wrong-entity"
+    for blocked in BLOCK_SOURCE.get(item["id"], ()):
+        if blocked in title:
+            return False, "blocked-source"
+    if item.get("category_id") == "literature":
+        typ = item.get("type")
+        name = clean_name(item.get("name", ""))
+        if typ == "词" and "·" in name:
+            first = name.split("·", 1)[1].strip()
+            if "·" not in title and first not in title:
+                return False, "generic-tune"
+            if "·" in title and first not in title:
+                return False, "different-work"
+        elif typ == "词牌":
+            if "·" in title:
+                return False, "work-not-tune"
+    return True, "ok"
+
+
 def usable(page, cands, item):
     ex = (page.get("extract") or "").strip()
     title = page.get("title", "")
@@ -351,6 +392,9 @@ def usable(page, cands, item):
         return False, "extract too short"
     if any(w in title for w in BAD_TITLE):
         return False, "wrong-type-title"
+    ok, reason = source_ok(item, page)
+    if not ok:
+        return False, reason
     # 词/词牌条目：正文必须确实是词或词牌，避免“虞美人(植物)”这类同名条目
     if item.get("category_id") == "literature" and item.get("type") in ("词", "词牌"):
         head = ex[:80]
@@ -488,6 +532,8 @@ def main():
                     help="只升级缓存中正文短于该字数的条目，例如 --upgrade-short 600")
     ap.add_argument("--missing-only", action="store_true",
                     help="只处理尚无外部来源的条目")
+    ap.add_argument("--prune", action="store_true",
+                    help="按 source_ok 规则清理缓存与库中已确认的误配来源，不联网")
     args = ap.parse_args()
 
     if not os.path.exists(args.db):
@@ -509,6 +555,31 @@ def main():
         items = items[: args.limit]
 
     cache = load_cache()
+
+    if args.prune:
+        removed = []
+        for it in items:
+            rec = cache.get(it["id"])
+            if not rec:
+                continue
+            ok, reason = source_ok(it, {
+                "title": rec.get("title", ""),
+                "extract": rec.get("extract", ""),
+            })
+            if not ok:
+                removed.append((it["id"], it["name"], rec.get("title", ""), reason))
+                if not args.dry_run:
+                    cache.pop(it["id"], None)
+                    conn.execute("DELETE FROM item_sources WHERE item_id=?", (it["id"],))
+        if not args.dry_run:
+            conn.commit()
+            save_cache(cache)
+        print(("干跑：" if args.dry_run else "") + f"清理误配来源 {len(removed)} 条")
+        for iid, name, title, reason in removed:
+            print(f"  - {iid} {name} ← {title} [{reason}]")
+        conn.close()
+        return
+
     report = {"ok": [], "unmatched": [], "skipped": 0, "failed": []}
     todo = []
     for it in items:

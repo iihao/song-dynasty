@@ -106,7 +106,7 @@ def row_to_item(row, full=False):
     }
     if full:
         d["detail"] = row["detail"]
-        d["body"] = row["body"]
+        d["body"] = row["body"] if "body" in row.keys() else None
         d["refs"] = row["refs"]
         d["categoryName"] = row["category_name"]
         d["createdAt"] = row["created_at"]
@@ -166,7 +166,7 @@ def bootstrap(conn):
             "groups": split_tags(r["groups"]),
             "related": rels.get(r["id"], []),
         }
-        if r["body"]:
+        if "body" in r.keys() and r["body"]:
             d["body"] = r["body"]
         items.append(d)
     base = meta(conn)
@@ -441,6 +441,16 @@ def main():
     DB_PATH = os.path.abspath(args.db)
     if not os.path.exists(DB_PATH):
         sys.exit(f"数据库不存在：{DB_PATH}\n请先运行：python3 db/init_db.py")
+
+    try:
+        _conn = connect(DB_PATH)
+        _cols = {r[1] for r in _conn.execute("PRAGMA table_info(items)")}
+        _conn.close()
+        if "body" not in _cols:
+            print("⚠ 数据库缺少 items.body 列；名篇正文将不可用。"
+                  "请运行：python3 db/init_db.py --upgrade")
+    except Exception as exc:  # noqa: BLE001
+        print(f"⚠ 数据库结构检查失败：{exc}")
 
     httpd = ThreadingHTTPServer((args.host, args.port), Handler)
     httpd.daemon_threads = True

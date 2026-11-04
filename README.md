@@ -7,7 +7,7 @@
 
 | 门类 | 条目 |
 |---|---:|
-| 人物（含 54 位帝王，含五代） | 311 |
+| 人物（含 55 位帝王，含五代） | 311 |
 | 名篇（词作、词牌、词集、词论、选本、笔记） | 179 |
 | 大事年表（含五代、辽、西辽） | 134 |
 | 军事 | 55 |
@@ -23,11 +23,11 @@
 
 另有 1,819 个标签、2,469 条条目关联、13 个身份分组、11 组统计面板。
 
-已富化维基百科条目 **706 条 / 1017 条（69.4%）**；保留修订号、Wikidata QID 与 CC BY-SA 4.0 署名。
+已富化维基百科条目 **633 条 / 1017 条（62.2%）**；保留修订号、Wikidata QID 与 CC BY-SA 4.0 署名。
 
-**宋词专题**：名篇类共 179 条 —— 词作 **83 首**、词牌 **33 个**、词集 **29 部**、词论 4 种、选本 5 种、笔记 6 种。词人、词集、词作、词牌之间已建立双向关联（`tools/link_ci.py`）。
+**宋词专题**：名篇类共 179 条 —— 词作 **82 首**、词牌 **33 个**、词集 **29 部**、词论 4 种、选本 5 种、笔记 6 种。词人、词集、词作、词牌之间已建立双向关联（`tools/link_ci.py`）。
 
-**名篇全文**：83 首词、12 首诗、3 篇散文、1 篇辞赋均附正文（`body` 字段），在条目详情弹窗与独立条目页优先展示；词牌、词论、笔记、词集、选本等书目类条目仍以提要为主。
+**名篇全文**：82 首词、13 首诗、3 篇散文、1 篇辞赋均附正文（`body` 字段），在条目详情弹窗与独立条目页优先展示；词牌、词论、笔记、词集、选本等书目类条目仍以提要为主。
 
 人物支持**多身份分组**：如李清照同时属于「女性」「文豪」，梁红玉同时属于「女性」「名将」。
 
@@ -41,7 +41,7 @@ cd song-dynasty
 # 1) 初始化数据库（只需一次）
 python3 db/init_db.py
 
-# 2) 启动（自动建库 + 起服务）
+# 2) 启动（自动建库/升级旧库 + 起服务）
 ./start.sh
 # 或指定端口
 ./start.sh --port 9000
@@ -160,7 +160,7 @@ dynasties / sources / data_panels / meta   辅助展示
 
 | 方法 | 路径 | 说明 |
 |---|---|---|
-| GET | `/api/bootstrap` | 全量数据，前端一次加载（gzip 后约 96 KB） |
+| GET | `/api/bootstrap` | 全量数据，前端一次加载（gzip 后约 200 KB） |
 | GET | `/api/meta` | 分类、政权、来源、计数 |
 | GET | `/api/items?cat=&era=&type=&q=&sort=&limit=&offset=` | 列表 / 筛选 / 搜索 |
 | GET | `/api/items/<id>` | 详情，含标签、关联、`body` 正文与外部来源 |
@@ -186,6 +186,7 @@ curl 'http://127.0.0.1:8000/api/items/ppl-yuefei'
 - 许可（CC BY-SA 4.0）与抓取时间
 - 维基数据 QID，可跳转 Wikidata
 - 匹配置信度，低于阈值的条目不写入
+- 类型校验：词作只接受具体词作页，词牌只接受词牌页；同名但不同类型（如「小池」→「小池百合子」）会被拒绝
 
 ```bash
 # 小批量试跑
@@ -204,6 +205,9 @@ python3 tools/enrich_wiki.py --full --upgrade-short 600
 python3 tools/enrich_wiki.py --cat people
 python3 tools/enrich_wiki.py --refresh
 python3 tools/enrich_wiki.py --dry-run
+
+# 清理历史误配来源（不联网）
+python3 tools/enrich_wiki.py --prune
 ```
 
 抓取结果同时写入 `db/wiki_cache.json`，重建数据库时会自动导入，因此离线也能保留富化内容；报告见 `db/wiki_report.json`（含未命中与低置信度候选）。
@@ -244,7 +248,7 @@ python3 tools/enrich_wiki.py --dry-run
 
 ## 长期维护
 
-用 CLI 维护，避免手改二进制。日常流程是：`manage.py` 改库 → `manage.py export` 刷新 `db/seed.json` 快照 → `python3 build.py` 出静态站。`seed.json` + `wiki_cache.json` 是随仓库分发的可复现内容源，`song.db` 可随时删掉重建：
+用 CLI 维护，避免手改二进制。日常流程是：`manage.py` 改库 → `manage.py export` 刷新 `db/seed.json` 快照 → `python3 build.py` 出静态站；`tools/link_ci.py` 在默认库上会自动执行 export。`seed.json` + `wiki_cache.json` 是随仓库分发的可复现内容源，`song.db` 可随时删掉重建：
 
 ```bash
 # 查看
@@ -271,6 +275,15 @@ python3 tools/manage.py rm ppl-yuefei --yes
 # 备份 / 迁移
 python3 tools/manage.py export --out db/seed.json
 python3 tools/manage.py import db/seed.json
+
+# 旧库升级：只补缺失列（如 items.body），不重建、不丢数据
+python3 db/init_db.py --upgrade
+
+# 词学关联：词人 ↔ 词集 ↔ 词作 ↔ 词牌（幂等，默认自动 export；--no-export 可跳过）
+python3 tools/link_ci.py
+
+# 清理维基同名误配来源（不联网）
+python3 tools/enrich_wiki.py --prune
 ```
 
 新增条目最小 JSON：

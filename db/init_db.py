@@ -20,6 +20,7 @@ DB = os.path.join(ROOT, "db", "song.db")
 
 GROUP_ORDER = ["帝王", "名臣", "名将", "文豪", "思想家", "科学家",
                "艺术家", "女性", "僧道", "起义", "外族", "人物"]
+SCHEMA_VERSION = "2"
 
 
 def load_seed(path):
@@ -150,7 +151,7 @@ def build(conn, seed):
             print(f"  维基缓存导入失败（可忽略）：{exc}")
 
     meta = {
-        "schema_version": "1",
+        "schema_version": SCHEMA_VERSION,
         "seed_generated_at": seed.get("generatedAt", ""),
         "built_at": datetime.now().isoformat(timespec="seconds"),
         "title": "大宋全局志",
@@ -160,18 +161,42 @@ def build(conn, seed):
     conn.commit()
 
 
+def ensure_schema(conn):
+    """轻量升级已有数据库：只补缺失列，不重建、不丢数据。"""
+    cols = {r[1] for r in conn.execute("PRAGMA table_info(items)")}
+    if "body" not in cols:
+        conn.execute("ALTER TABLE items ADD COLUMN body TEXT")
+        print("  + items.body")
+    conn.execute("INSERT OR REPLACE INTO meta(key,value) VALUES('schema_version',?)",
+                 (SCHEMA_VERSION,))
+    conn.commit()
+
+
 def main():
     ap = argparse.ArgumentParser(description="初始化大宋全局志数据库")
     ap.add_argument("--db", default=DB)
     ap.add_argument("--seed", default=SEED)
     ap.add_argument("--force", action="store_true", help="删除已有数据库后重建")
+    ap.add_argument("--upgrade", action="store_true",
+                    help="仅补齐已有数据库的缺失列（如 items.body），不重建")
     args = ap.parse_args()
+
+    if args.upgrade:
+        if not os.path.exists(args.db):
+            sys.exit(f"数据库不存在：{args.db}\n请先运行 python3 db/init_db.py")
+        conn = sqlite3.connect(args.db)
+        try:
+            ensure_schema(conn)
+        finally:
+            conn.close()
+        print(f"✓ 数据库已升级：{args.db}")
+        return
 
     if not os.path.exists(args.seed):
         sys.exit(f"种子文件不存在：{args.seed}\n请先运行 node tools/export_seed.js")
     if os.path.exists(args.db):
         if not args.force:
-            sys.exit(f"数据库已存在：{args.db}\n如需重建请加 --force")
+            sys.exit(f"数据库已存在：{args.db}\n如需重建请加 --force，或加 --upgrade 只补列")
         os.remove(args.db)
 
     seed = load_seed(args.seed)

@@ -2,11 +2,14 @@
 """补齐词学关联：词人 ↔ 词集 ↔ 词作 ↔ 词牌。
 
 幂等：已存在的关联不会重复插入；--dry-run 只报告不写库。
+默认在默认数据库上运行后会执行 manage.py export，避免 seed 与库脱节；
+--no-export 可跳过。
 """
 import argparse
 import os
 import re
 import sqlite3
+import subprocess
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -107,6 +110,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--db", default=DB)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--no-export", action="store_true",
+                    help="不要自动运行 manage.py export（仅默认库会自动导出）")
     args = ap.parse_args()
     conn = sqlite3.connect(args.db)
     conn.row_factory = sqlite3.Row
@@ -145,6 +150,7 @@ def main():
     works = [i for i in items.values() if i["type"] == "词"]
     for w in works:
         wid = w["id"]
+        before = edges
         r = rels(wid)
 
         author = None
@@ -176,7 +182,7 @@ def main():
         if coll:
             edges += add(wid, coll) + add(coll, wid)
 
-        if edges:
+        if edges > before:
             report.append(("词作", w["name"], items.get(author, {}).get("name", "—"),
                            tune, coll or "—"))
 
@@ -204,7 +210,18 @@ def main():
         and exists(select 1 from item_relations r join items p on p.id=r.related_id
                    where r.item_id=i.id and p.type='词牌')"""))
     print("总关联:", count("select count(*) from item_relations"))
+    missing_tunes = sorted({
+        tune_of(w["name"]) for w in works
+        if tune_of(w["name"]) not in TUNES
+    })
+    if missing_tunes:
+        print("未映射词牌（可补 TUNES 或新增词牌条目）:", "、".join(missing_tunes))
     conn.close()
+
+    # 直接写库后同步种子，避免 build.py 读到的还是旧关联。
+    if not args.dry_run and not args.no_export and os.path.abspath(args.db) == os.path.abspath(DB):
+        subprocess.run([sys.executable, os.path.join(ROOT, "tools", "manage.py"), "export"],
+                       check=True)
 
 
 if __name__ == "__main__":

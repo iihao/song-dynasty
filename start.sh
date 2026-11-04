@@ -10,6 +10,9 @@ PORT="${PORT:-8000}"
 if [ ! -f db/song.db ]; then
   echo "未发现数据库，正在初始化…"
   python3 db/init_db.py
+else
+  # 旧库可能缺少新列（如 items.body）；启动前做一次无痛升级。
+  python3 db/init_db.py --upgrade
 fi
 
 # 额外的命令行参数（如 --port 9000）会覆盖上面的默认值
