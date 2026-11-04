@@ -685,6 +685,373 @@
         '<div class="pdesc">' + esc(p.summary || '') + '</div></div></div>';
     }).join('');
     bindOpen('#peopleGrid .person');
+    setPeopleView(pgState.view);
+  }
+
+
+  /* ---------------- 人物关系图谱 ---------------- */
+  var PG = { W: 1400, H: 900, pad: 46 };
+  var pgState = { view: 'list', selected: null, hovered: null, zoom: 1, tx: 0, ty: 0, nodes: [], edges: [], nodeMap: {} };
+  var pgGroupColor = {
+    '帝王': '#a8352a', '名臣': '#2f6457', '名将': '#8a3b30', '文豪': '#6b5b8c',
+    '思想家': '#3f6b8a', '科学家': '#2f7a6b', '艺术家': '#9a5f2f', '女性': '#a8486a',
+    '僧道': '#6b6b52', '起义': '#8a5a2f', '外族': '#4a5a72', '宋室': '#9a6a35'
+  };
+
+  function pgColor(n) {
+    var gs = n.item.groups && n.item.groups.length ? n.item.groups : [n.item.ptype || '其他'];
+    for (var i = 0; i < gs.length; i++) {
+      if (gs[i] !== '人物' && pgGroupColor[gs[i]]) return pgGroupColor[gs[i]];
+    }
+    return '#6b6458';
+  }
+
+  function pgBuild() {
+    var people = D.items.filter(function (i) { return i.cat === 'people'; });
+    var ids = {};
+    people.forEach(function (p) { ids[p.id] = p; });
+
+    var edges = [], seen = {};
+    people.forEach(function (p) {
+      (p.related || []).forEach(function (r) {
+        var rid = typeof r === 'string' ? r : (r && r.id);
+        if (!rid || !ids[rid] || rid === p.id) return;
+        var key = p.id < rid ? p.id + '|' + rid : rid + '|' + p.id;
+        if (seen[key]) return;
+        seen[key] = 1;
+        edges.push({ a: p.id, b: rid });
+      });
+    });
+
+    var degree = {};
+    edges.forEach(function (e) { degree[e.a] = (degree[e.a] || 0) + 1; degree[e.b] = (degree[e.b] || 0) + 1; });
+
+    var nodes = Object.keys(degree).map(function (id, i) {
+      return { id: id, item: ids[id], deg: degree[id], x: 0, y: 0, vx: 0, vy: 0, i: i };
+    });
+    return { nodes: nodes, edges: edges, degree: degree, total: people.length };
+  }
+
+  /* 力导向：分簇（身份锚点）+ 斥力 + 弹簧，确定性初始化，跑固定轮数 */
+  function pgGroupKey(n) {
+    var gs = (n.item.groups && n.item.groups.length) ? n.item.groups : [n.item.ptype || '其他'];
+    for (var i = 0; i < gs.length; i++) {
+      if (gs[i] !== '人物' && pgGroupColor[gs[i]]) return gs[i];
+    }
+    return gs[0] || '其他';
+  }
+
+  function pgLayout(model) {
+    var nodes = model.nodes, edges = model.edges;
+    var n = nodes.length;
+    if (!n) return;
+    var cx = PG.W / 2, cy = PG.H / 2;
+
+    // 身份锚点：围绕中心排一圈，让同类聚在一处
+    var keys = [];
+    nodes.forEach(function (nd) {
+      var k = pgGroupKey(nd);
+      if (keys.indexOf(k) < 0) keys.push(k);
+    });
+    var anchors = {};
+    var AR = Math.min(PG.W, PG.H) * 0.34;
+    keys.forEach(function (k, i) {
+      var a = (i / keys.length) * Math.PI * 2 - Math.PI / 2;
+      anchors[k] = { x: cx + Math.cos(a) * AR, y: cy + Math.sin(a) * AR };
+    });
+
+    nodes.forEach(function (node, i) {
+      var k = pgGroupKey(node);
+      var an = anchors[k];
+      var a = i * 2.399963229728653;
+      var rr = 46 + (i % 11) * 5;
+      node.x = an.x + Math.cos(a) * rr;
+      node.y = an.y + Math.sin(a) * rr;
+      node.vx = node.vy = 0;
+      node.ax = an.x; node.ay = an.y;
+    });
+
+    var byId = {};
+    nodes.forEach(function (nd) { byId[nd.id] = nd; });
+    var links = edges.map(function (e) { return { s: byId[e.a], t: byId[e.b] }; });
+
+    var alpha = 1, decay = 0.972, iters = 520;
+    var repulse = 3000, springK = 0.06, springLen = 58;
+    var anchorK = 0.09, centerK = 0.010;
+
+    for (var it = 0; it < iters; it++) {
+      alpha *= decay;
+      for (var i = 0; i < n; i++) {
+        var a = nodes[i];
+        for (var j = i + 1; j < n; j++) {
+          var b = nodes[j];
+          var dx = b.x - a.x, dy = b.y - a.y;
+          var d2 = dx * dx + dy * dy;
+          if (d2 < 4) { d2 = 4; dx = (i % 9 - 4) * 0.4; dy = (j % 9 - 4) * 0.4; }
+          if (d2 > 200000) continue;
+          var f = repulse * alpha / d2;
+          var d = Math.sqrt(d2);
+          var fx = dx / d * f, fy = dy / d * f;
+          a.vx -= fx; a.vy -= fy;
+          b.vx += fx; b.vy += fy;
+        }
+      }
+      links.forEach(function (l) {
+        var dx = l.t.x - l.s.x, dy = l.t.y - l.s.y;
+        var d = Math.sqrt(dx * dx + dy * dy) || 1;
+        var f = (d - springLen) * springK * alpha;
+        var fx = dx / d * f, fy = dy / d * f;
+        l.s.vx += fx; l.s.vy += fy;
+        l.t.vx -= fx; l.t.vy -= fy;
+      });
+      nodes.forEach(function (node) {
+        node.vx += (node.ax - node.x) * anchorK * alpha;
+        node.vy += (node.ay - node.y) * anchorK * alpha;
+        node.vx += (cx - node.x) * centerK * alpha;
+        node.vy += (cy - node.y) * centerK * alpha;
+        node.vx *= 0.80; node.vy *= 0.80;
+        node.x += node.vx; node.y += node.vy;
+        node.x = Math.max(PG.pad, Math.min(PG.W - PG.pad, node.x));
+        node.y = Math.max(PG.pad, Math.min(PG.H - PG.pad, node.y));
+      });
+    }
+
+    // 归一化：把整簇缩放到画布中央，避免偏在一角
+    var minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+    nodes.forEach(function (nd) {
+      minX = Math.min(minX, nd.x); maxX = Math.max(maxX, nd.x);
+      minY = Math.min(minY, nd.y); maxY = Math.max(maxY, nd.y);
+    });
+    var w = Math.max(1, maxX - minX), h = Math.max(1, maxY - minY);
+    var k = Math.min((PG.W - PG.pad * 2) / w, (PG.H - PG.pad * 2) / h, 1.25);
+    var ox = (PG.W - w * k) / 2 - minX * k;
+    var oy = (PG.H - h * k) / 2 - minY * k;
+    nodes.forEach(function (nd) {
+      nd.x = nd.x * k + ox;
+      nd.y = nd.y * k + oy;
+      nd.k = k;
+    });
+  }
+
+  function pgVisibleIds() {
+    var q = ($('#peopleSearch') && $('#peopleSearch').value || '').trim().toLowerCase();
+    var out = {};
+    D.items.filter(function (i) { return i.cat === 'people'; }).forEach(function (i) {
+      if (peopleType !== 'all') {
+        var gs = (i.groups && i.groups.length) ? i.groups : [i.ptype || '其他'];
+        if (gs.indexOf(peopleType) < 0) return;
+      }
+      if (q) {
+        var hay = (i.name + ' ' + (i.ptype || '') + ' ' + (i.era || '') + ' ' +
+          (i.summary || '') + ' ' + (i.tags || []).join(' ')).toLowerCase();
+        if (hay.indexOf(q) < 0) return;
+      }
+      out[i.id] = 1;
+    });
+    return out;
+  }
+
+  function renderPeopleGraph() {
+    var svg = $('#pgSvg');
+    if (!svg) return;
+    var model = pgBuild();
+    pgState.nodes = model.nodes;
+    pgState.edges = model.edges;
+    var byId = {};
+    model.nodes.forEach(function (n) { byId[n.id] = n; });
+    pgState.nodeMap = byId;
+
+    if (!model.nodes.length) {
+      svg.innerHTML = '';
+      $('#pgDetail').innerHTML = '<div class="pg-detail-empty">还没有人物关联数据。</div>';
+      return;
+    }
+    if (!pgState.laid) { pgLayout(model); pgState.laid = true; }
+
+    var vis = pgVisibleIds();
+    var shown = 0;
+    var rOf = function (n) { return Math.min(9, 3.4 + Math.sqrt(n.deg) * 1.9); };
+
+    var parts = [];
+    parts.push('<g id="pgViewport">');
+    // 边
+    model.edges.forEach(function (e) {
+      var a = byId[e.a], b = byId[e.b];
+      if (!a || !b) return;
+      var on = vis[e.a] && vis[e.b];
+      if (on) shown++;
+      parts.push('<line class="pg-edge' + (on ? '' : ' dim') + '" data-a="' + e.a + '" data-b="' + e.b +
+        '" x1="' + a.x.toFixed(1) + '" y1="' + a.y.toFixed(1) + '" x2="' + b.x.toFixed(1) +
+        '" y2="' + b.y.toFixed(1) + '"/>');
+    });
+    // 节点
+    model.nodes.forEach(function (n) {
+      var on = !!vis[n.id];
+      var g = '<g class="pg-node' + (on ? '' : ' dim') + (n.deg < 4 ? ' minor' : '') +
+        '" data-id="' + n.id + '" tabindex="0" role="button"' +
+        ' aria-label="' + esc(n.item.name) + '">';
+      g += '<circle class="pg-halo" cx="' + n.x.toFixed(1) + '" cy="' + n.y.toFixed(1) + '" r="' + (rOf(n) + 4).toFixed(1) + '"/>';
+      g += '<circle class="pg-dot" cx="' + n.x.toFixed(1) + '" cy="' + n.y.toFixed(1) + '" r="' + rOf(n).toFixed(1) +
+        '" fill="' + pgColor(n) + '"/>';
+      g += '<text class="pg-label" x="' + (n.x + rOf(n) + 3).toFixed(1) + '" y="' + (n.y + 3.2).toFixed(1) + '">' +
+        esc(n.item.name) + '</text>';
+      g += '<title>' + esc(n.item.name + ' · ' + (n.item.era || '') + ' · ' + n.deg + ' 条关联') + '</title>';
+      g += '</g>';
+      parts.push(g);
+    });
+    parts.push('</g>');
+    svg.innerHTML = parts.join('');
+    svg.setAttribute('viewBox', '0 0 ' + PG.W + ' ' + PG.H);
+    svg.setAttribute('width', '100%');
+    svg.setAttribute('height', 'auto');
+    applyPgTransform();
+    bindPeopleGraph();
+    $('#pgCount').textContent = model.nodes.length + ' 位有互相关联 · ' + model.edges.length + ' 条关系 · 人物库共 ' + model.total + ' 位';
+    var usedKeys = [];
+    model.nodes.forEach(function (nd) {
+      var k = pgGroupKey(nd);
+      if (usedKeys.indexOf(k) < 0) usedKeys.push(k);
+    });
+    $('#pgLegend').innerHTML = usedKeys.map(function (k) {
+      return '<span><i style="background:' + (pgGroupColor[k] || '#6b6458') + '"></i>' + esc(k) + '</span>';
+    }).join('');
+    $('#pgZoomLabel').textContent = Math.round(pgState.zoom * 100) + '%';
+    pgHighlight(pgState.hovered);
+  }
+
+  function applyPgTransform() {
+    var vp = document.getElementById('pgViewport');
+    if (vp) vp.setAttribute('transform',
+      'translate(' + pgState.tx + ',' + pgState.ty + ') scale(' + pgState.zoom + ')');
+  }
+
+  function pgHighlight(id) {
+    var svg = $('#pgSvg');
+    if (!svg) return;
+    var near = {};
+    if (id) {
+      near[id] = 1;
+      pgState.edges.forEach(function (e) {
+        if (e.a === id) near[e.b] = 1;
+        if (e.b === id) near[e.a] = 1;
+      });
+    }
+    $$('.pg-node', svg).forEach(function (g) {
+      var nid = g.getAttribute('data-id');
+      g.classList.toggle('faded', !!id && !near[nid]);
+      g.classList.toggle('near', !!id && !!near[nid] && nid !== id);
+      g.classList.toggle('sel', nid === pgState.selected);
+    });
+    $$('.pg-edge', svg).forEach(function (l) {
+      var on = !!id && (l.getAttribute('data-a') === id || l.getAttribute('data-b') === id);
+      l.classList.toggle('hl', on);
+      l.classList.toggle('faded', !!id && !on);
+    });
+    var tip = $('#pgTip');
+    if (id && pgState.nodeMap[id]) {
+      var it = pgState.nodeMap[id].item;
+      tip.innerHTML = '<b>' + esc(it.name) + '</b> ' + esc((it.groups || []).slice(0, 2).join(' / '));
+      tip.hidden = false;
+    } else {
+      tip.hidden = true;
+    }
+  }
+
+  function pgSelect(id) {
+    pgState.selected = id;
+    pgHighlight(id);
+    var n = pgState.nodeMap[id];
+    if (!n) return;
+    var it = n.item;
+    var rels = [];
+    pgState.edges.forEach(function (e) {
+      if (e.a === id && pgState.nodeMap[e.b]) rels.push([pgState.nodeMap[e.b].item, '']);
+      else if (e.b === id && pgState.nodeMap[e.a]) rels.push([pgState.nodeMap[e.a].item, '']);
+    });
+    var life = (it.birth != null ? it.birth : '?') + '—' + (it.death != null ? it.death : '?');
+    $('#pgDetail').innerHTML =
+      '<div class="pgd-head"><i style="background:' + pgColor(n) + '"></i>' +
+        '<h3>' + esc(it.name) + '</h3>' +
+        '<span>' + esc(it.era || '') + ' · ' + life + '</span></div>' +
+      '<div class="pgd-tags">' + (it.groups || []).map(function (g) {
+        return '<span>' + esc(g) + '</span>';
+      }).join('') + '</div>' +
+      '<p class="pgd-summary">' + esc(it.summary || '') + '</p>' +
+      '<div class="pgd-rel"><b>关联 ' + rels.length + ' 人</b>' +
+        rels.map(function (r) {
+          return '<button data-goto="' + r[0].id + '">' + esc(r[0].name) + '</button>';
+        }).join('') + '</div>' +
+      '<button class="pgd-open" data-open="' + it.id + '">打开词条 ↗</button>';
+    $$('#pgDetail [data-goto]').forEach(function (b) {
+      b.addEventListener('click', function () { pgSelect(b.getAttribute('data-goto')); });
+    });
+    var openBtn = $('#pgDetail [data-open]');
+    if (openBtn) openBtn.addEventListener('click', function () { openItem(it.id); });
+  }
+
+  function bindPeopleGraph() {
+    var svg = $('#pgSvg');
+    $$('.pg-node', svg).forEach(function (g) {
+      var id = g.getAttribute('data-id');
+      g.addEventListener('mouseenter', function () { pgState.hovered = id; pgHighlight(id); });
+      g.addEventListener('mouseleave', function () { pgState.hovered = null; pgHighlight(null); });
+      g.addEventListener('click', function (e) { e.stopPropagation(); pgSelect(id); });
+      g.addEventListener('keydown', function (ev) {
+        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); pgSelect(id); }
+      });
+    });
+
+    $$('[data-pgzoom]').forEach(function (b) {
+      if (b.dataset.bound) return;
+      b.dataset.bound = '1';
+      b.addEventListener('click', function () {
+        var mode = b.getAttribute('data-pgzoom');
+        if (mode === 'in') pgState.zoom = Math.min(3, pgState.zoom * 1.2);
+        else if (mode === 'out') pgState.zoom = Math.max(0.5, pgState.zoom / 1.2);
+        else { pgState.zoom = 1; pgState.tx = 0; pgState.ty = 0; }
+        $('#pgZoomLabel').textContent = Math.round(pgState.zoom * 100) + '%';
+        applyPgTransform();
+      });
+    });
+
+    var stage = $('#pgStage');
+    if (stage.dataset.bound) return;
+    stage.dataset.bound = '1';
+    var drag = null;
+    svg.addEventListener('mousedown', function (e) {
+      drag = { x: e.clientX, y: e.clientY, tx: pgState.tx, ty: pgState.ty };
+      stage.classList.add('dragging');
+    });
+    window.addEventListener('mousemove', function (e) {
+      if (!drag) return;
+      var k = PG.W / (svg.getBoundingClientRect().width || PG.W);
+      pgState.tx = drag.tx + (e.clientX - drag.x) * k;
+      pgState.ty = drag.ty + (e.clientY - drag.y) * k;
+      applyPgTransform();
+    });
+    window.addEventListener('mouseup', function () {
+      drag = null;
+      stage.classList.remove('dragging');
+    });
+    svg.addEventListener('wheel', function (e) {
+      e.preventDefault();
+      var dir = e.deltaY > 0 ? -1 : 1;
+      pgState.zoom = Math.max(0.5, Math.min(3, pgState.zoom * (dir > 0 ? 1.12 : 0.89)));
+      $('#pgZoomLabel').textContent = Math.round(pgState.zoom * 100) + '%';
+      applyPgTransform();
+    }, { passive: false });
+  }
+
+  function setPeopleView(v) {
+    pgState.view = v;
+    $$('[data-pview]').forEach(function (b) {
+      b.classList.toggle('on', b.getAttribute('data-pview') === v);
+      b.onclick = function () { setPeopleView(b.getAttribute('data-pview')); };
+    });
+    var graphOn = v === 'graph';
+    $('#peopleGrid').hidden = graphOn;
+    $('#pgWrap').hidden = !graphOn;
+    if (graphOn) renderPeopleGraph();
   }
 
   /* ---------------- 数据 ---------------- */

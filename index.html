@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>大宋全局志 · Song Dynasty Atlas</title>
 <meta name="description" content="两宋政治、军事、经济、文化、科技、社会、风俗全量结构化资料库">
-<link rel="stylesheet" href="css/style.css?v=8">
+<link rel="stylesheet" href="css/style.css?v=13">
 </head>
 <body>
 
@@ -224,9 +224,35 @@
     </div>
     <div class="filterbar people-searchbar">
       <input type="search" id="peopleSearch" placeholder="检索人物：姓名、身份、标签、朝代…（如：李清照 / 名将 / 临安）">
+      <div class="pg-seg" role="group" aria-label="人物视图切换">
+        <button class="pg-seg-btn on" data-pview="list">列表</button>
+        <button class="pg-seg-btn" data-pview="graph">关系图谱</button>
+      </div>
     </div>
     <div class="filterbar" id="peopleFilters"></div>
+
     <div class="people-grid" id="peopleGrid"></div>
+
+    <div class="pg-wrap" id="pgWrap" hidden>
+      <div class="pg-toolbar">
+        <div class="pg-zoom">
+          <button data-pgzoom="out" aria-label="缩小">−</button>
+          <span id="pgZoomLabel">100%</span>
+          <button data-pgzoom="in" aria-label="放大">＋</button>
+          <button data-pgzoom="reset" class="pg-fit">重置</button>
+        </div>
+        <div class="pg-hint" id="pgHint">拖动画布平移 · 滚轮缩放 · 点击人物看关系</div>
+        <div class="pg-count" id="pgCount"></div>
+      </div>
+      <div class="pg-legend" id="pgLegend"></div>
+      <div class="pg-stage" id="pgStage">
+        <svg id="pgSvg" role="img" aria-label="两宋人物关系图谱"></svg>
+        <div class="pg-tip" id="pgTip" hidden></div>
+      </div>
+      <div class="pg-detail" id="pgDetail">
+        <div class="pg-detail-empty">点击图中人物，查看身份与关系。</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -328,6 +354,6 @@
 
 <script src="js/map-data.js"></script>
 <script src="js/map.js"></script>
-<script src="js/app.js?v=8"></script>
+<script src="js/app.js?v=9"></script>
 </body>
 </html>
