@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大宋全局志 · Song Dynasty Atlas</title>
+<meta name="description" content="两宋政治、军事、经济、文化、科技、社会、风俗全量结构化资料库">
+<link rel="stylesheet" href="css/style.css?v=b74ce6be">
+</head>
+<body>
+
+<header class="topbar">
+  <button class="icon-btn menu-toggle" aria-label="菜单">☰</button>
+  <a class="brand" href="#overview" data-nav="overview">
+    <span class="seal">宋</span>
+    <span class="brand-text">
+      <strong>大宋全局志</strong>
+      <small>SONG DYNASTY ATLAS · 960—1279</small>
+    </span>
+  </a>
+  <nav class="mainnav" id="mainnav">
+    <a href="#overview" data-nav="overview">总览</a>
+    <a href="#timeline" data-nav="timeline">年表</a>
+    <a href="#map" data-nav="map">舆图</a>
+    <a href="#lineage" data-nav="lineage">帝系</a>
+    <a href="#browse" data-nav="browse">典藏</a>
+    <a href="#people" data-nav="people">人物</a>
+    <a href="chixie.html">持械图谱</a>
+    <a href="#data" data-nav="data">数据</a>
+    <a href="#about" data-nav="about">凡例</a>
+  </nav>
+  <button class="search-btn" id="searchBtn"><span>检索全库</span><kbd>⌘K</kbd></button>
+</header>
+
+<main>
+
+<!-- ================= 总览 ================= -->
+<section class="view" id="view-overview">
+  <div class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">华夏文明的高峰 · 与士大夫共治天下</p>
+      <h1>大宋<span>全局志</span></h1>
+      <p class="hero-desc">
+        从陈桥兵变到崖山落日，三百一十九年。这里汇集两宋及辽、西夏、金的
+        <b>制度、战争、经济、思想、科技、风俗与人物</b>，以求呈现一个可检索、可对照的宋朝全貌。
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#browse" data-nav="browse">进入典藏</a>
+        <a class="btn" href="#timeline" data-nav="timeline">纵览年表</a>
+      </div>
+      <div class="hero-stats" id="heroStats"></div>
+    </div>
+    <div class="hero-mark" aria-hidden="true">
+      <span>宋</span>
+      <i>建隆元年 · 960</i>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="block">
+      <div class="block-head">
+        <h2>国祚与并立</h2>
+        <p>两宋并非孤立的王朝，而是多政权长期并立体系中的一环。</p>
+      </div>
+      <div class="dynasty-band" id="dynastyBand"></div>
+      <div class="dynasty-legend">拖动窗口可横向滚动 · 时间轴自 900 年至 1280 年</div>
+    </section>
+
+    <section class="block">
+      <div class="block-head">
+        <h2>十二门类</h2>
+        <p>点击任一分类进入对应典藏，或使用右上角全局检索。</p>
+      </div>
+      <div class="cat-grid" id="catGrid"></div>
+    </section>
+
+    <section class="block two-col">
+      <div>
+        <div class="block-head">
+          <h2>年表节选</h2>
+          <p>改变国运的那些年份。</p>
+        </div>
+        <ul class="mini-timeline" id="miniTimeline"></ul>
+      </div>
+      <div>
+        <div class="block-head">
+          <h2>随览</h2>
+          <p>每次刷新，从库中随机抽取。</p>
+        </div>
+        <div id="randomCards" class="random-cards"></div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- ================= 年表 ================= -->
+<section class="view" id="view-timeline">
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">CHRONOLOGY ATLAS · 907—1279</p>
+      <h1>大宋大事图谱</h1>
+      <p>横轴为年份，纵向按政权分道。每个节点是一件事，连线来自条目之间的关联；点击节点看详情，悬停可追踪相邻事件。</p>
+    </div>
+
+    <div class="filterbar" id="timelineFilters"></div>
+
+    <div class="tg-toolbar">
+      <div class="tg-seg" role="group" aria-label="视图切换">
+        <button class="tg-seg-btn on" data-tlview="graph">图谱</button>
+        <button class="tg-seg-btn" data-tlview="list">列表</button>
+      </div>
+      <div class="tg-zoom" id="tgZoom" hidden>
+        <button data-zoom="out" aria-label="缩小">−</button>
+        <span id="tgZoomLabel">100%</span>
+        <button data-zoom="in" aria-label="放大">＋</button>
+        <button data-zoom="fit" class="tg-fit">适应</button>
+      </div>
+      <div class="tg-legend" id="tgLegend"></div>
+    </div>
+
+    <div class="tg-card" id="tgCard">
+      <div class="tg-body">
+        <div class="tg-lanes" id="tgLanes" aria-hidden="true"></div>
+        <div class="tg-scroll" id="tgScroll">
+          <svg id="tgSvg" role="img" aria-label="大事年表图谱"></svg>
+        </div>
+      </div>
+      <div class="tg-tip" id="tgTip"></div>
+      <p class="tg-hint">拖动或滚动横向浏览 · 点击节点打开词条 · 圆点越大越是大事</p>
+    </div>
+
+    <div class="timeline-wrap" id="tlListWrap" hidden>
+      <div class="timeline" id="timelineList"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= 舆图 ================= -->
+<section class="view" id="view-map">
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">TERRITORY · 960—1279</p>
+      <h1>宋代舆图与势力分布</h1>
+      <p>按年份切换，看两宋、辽、西夏、金、大理、西辽与蒙古的疆域消长与都城、战场位置。边界为简化示意，非精确历史地理测绘。</p>
+    </div>
+
+    <div class="mp-toolbar">
+      <div class="mp-years" id="mapYears"></div>
+      <div class="mp-playwrap">
+        <button id="mapPlay" class="mp-play">播放</button>
+        <input type="range" id="mapSlider" min="0" max="10" value="0" aria-label="年份">
+      </div>
+    </div>
+
+    <div class="mp-layout">
+      <figure class="mp-card">
+        <div class="mp-stage">
+          <svg id="mapSvg" role="img" aria-label="宋代疆域示意地图"></svg>
+        </div>
+        <figcaption class="mp-cap">
+          <b id="mapEraLabel">公元 1127 年</b>
+          <span id="mapEraNote"></span>
+        </figcaption>
+      </figure>
+      <aside class="mp-side">
+        <div class="mp-legend" id="mapLegend"></div>
+        <div class="mp-panel" id="mapPanel"></div>
+      </aside>
+    </div>
+
+    <div class="mp-notes">
+      <h2>读图说明</h2>
+      <ul>
+        <li><b>边界为示意。</b>按政权核心区与主要都城位置手绘简化，用于看势力消长，不作疆界考据。</li>
+        <li><b>面积占比</b>按当前视窗内各政权多边形投影面积计算，仅表示相对大小。</li>
+        <li><b>时间轴</b>取 960、1000、1044、1111、1120、1125、1127、1142、1200、1234、1279 等关键年份，可直接点年份或拖滑杆。</li>
+        <li><b>点城市</b>可跳到对应词条；点政权可看其简介与相关条目。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 典藏 ================= -->
+
+<!-- ================= 帝系 ================= -->
+<section class="view" id="view-lineage">
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">IMPERIAL HOUSES · 各国帝系</p>
+      <h1>皇室族谱</h1>
+      <p>五朝帝系。金色「帝」为即位之君，右侧虚线小框为后妃，帝姬、公主随父入谱。点击可看详情。</p>
+    </div>
+    <div class="filterbar" id="lineageTabs"></div>
+    <div class="lg-toolbar">
+      <div class="lg-legend">
+        <span><i class="solid"></i>亲子</span>
+        <span><i class="dash"></i>旁支 / 追尊</span>
+        <span><i class="adopt"></i>过继 / 养子</span>
+        <span><i class="crown"></i>即位</span>
+        <span><i class="di"></i>嫡出</span>
+        <span><i class="shu"></i>庶出</span>
+        <span><i class="dashbox"></i>后妃</span>
+        <span class="lg-hint">＋ 或滚轮放大查看排行与支系</span>
+      </div>
+      <div class="lg-zoom" id="lgZoom">
+        <button type="button" data-lgzoom="out" aria-label="缩小">−</button>
+        <span id="lgZoomLabel">100%</span>
+        <button type="button" data-lgzoom="in" aria-label="放大">＋</button>
+        <button type="button" data-lgzoom="fit">还原</button>
+      </div>
+    </div>
+    <figure class="lg-card">
+      <div class="lg-scroll" id="lgScroll">
+        <svg id="lgSvg" role="img" aria-label="各国皇室谱系图"></svg>
+      </div>
+      <figcaption class="lg-note" id="lgNote"></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="view" id="view-browse">
+  <div class="wrap browse-layout">
+    <aside class="sidebar" id="sidebar">
+      <h3>分类</h3>
+      <ul id="catList"></ul>
+      <div class="sidebar-note">
+        <b>检索语法</b>
+        <p>直接输入关键词；用 <code>#军事</code> 限定分类，用 <code>@岳飞</code> 限定人物。</p>
+      </div>
+    </aside>
+    <div class="browse-main">
+      <div class="page-head compact">
+        <p class="eyebrow" id="browseEyebrow">COLLECTION</p>
+        <h1 id="browseTitle">全部典藏</h1>
+        <p id="browseDesc">全部条目，按分类与年代编排。</p>
+      </div>
+      <div class="filterbar" id="browseFilters">
+        <input type="search" id="browseSearch" placeholder="在本类中检索：人名、地名、事件、制度…">
+        <select id="filterEra"><option value="">全部政权</option></select>
+        <select id="filterType"><option value="">全部类型</option></select>
+        <select id="filterSort">
+          <option value="year">按年代</option>
+          <option value="name">按名称</option>
+          <option value="cat">按分类</option>
+        </select>
+        <span class="result-count" id="resultCount"></span>
+      </div>
+      <div class="card-grid" id="browseGrid"></div>
+      <div class="empty" id="browseEmpty" hidden>没有匹配的条目。试试放宽筛选条件。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 人物 ================= -->
+<section class="view" id="view-people">
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">BIOGRAPHIES</p>
+      <h1>两宋人物志</h1>
+      <p>帝王、名臣、将帅、文豪、思想家、科学家、艺术家与市井人物。</p>
+    </div>
+    <div class="filterbar people-searchbar">
+      <input type="search" id="peopleSearch" placeholder="检索人物：姓名、身份、标签、朝代…（如：李清照 / 名将 / 临安）">
+      <div class="pg-seg" role="group" aria-label="人物视图切换">
+        <button class="pg-seg-btn on" data-pview="list">列表</button>
+        <button class="pg-seg-btn" data-pview="graph">关系图谱</button>
+      </div>
+    </div>
+    <div class="filterbar" id="peopleFilters"></div>
+
+    <div class="people-grid" id="peopleGrid"></div>
+
+    <div class="pg-wrap" id="pgWrap" hidden>
+      <div class="pg-toolbar">
+        <div class="pg-zoom">
+          <button data-pgzoom="out" aria-label="缩小">−</button>
+          <span id="pgZoomLabel">100%</span>
+          <button data-pgzoom="in" aria-label="放大">＋</button>
+          <button data-pgzoom="reset" class="pg-fit">重置</button>
+        </div>
+        <div class="pg-hint" id="pgHint">拖动画布平移 · 滚轮缩放 · 点击人物看关系</div>
+        <div class="pg-count" id="pgCount"></div>
+      </div>
+      <div class="pg-legend" id="pgLegend"></div>
+      <div class="pg-stage" id="pgStage">
+        <svg id="pgSvg" role="img" aria-label="两宋人物关系图谱"></svg>
+        <div class="pg-tip" id="pgTip" hidden></div>
+      </div>
+      <div class="pg-detail" id="pgDetail">
+        <div class="pg-detail-empty">点击图中人物，查看身份与关系。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 数据 ================= -->
+<section class="view" id="view-data">
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">DATA</p>
+      <h1>数字里的宋朝</h1>
+      <p>人口、财政、军备、科举、城市、岁币、铸钱、官制规模与俸禄层级。各家估算差异较大，图表均标注出处与口径，仅作量级参考。</p>
+    </div>
+    <div id="dataPanels"></div>
+    <div class="callout warn">
+      <b>关于数据</b>
+      <p>宋代户口统计以“户”为主，口数与实际人口常不一致；财政数字因单位（贯、缗、石）与统计口径不同，学界分歧明显。本页数字为常见教科书/研究综述取值，不作为考据依据。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 凡例 ================= -->
+<section class="view" id="view-about">
+  <div class="wrap narrow">
+    <div class="page-head">
+      <p class="eyebrow">EDITORIAL</p>
+      <h1>凡例与参考</h1>
+    </div>
+    <div class="prose">
+      <h2>帝系谱牒</h2>
+      <p>「帝系」一页据《宋史·宗室世系表》《辽史·皇族表》《金史·宗室表》《西夏书事》《南诏野史》等梳理，只取承袭主线与关键旁支。排行、嫡庶、支系依正史与常见考订标注，遇记载歧异（如宋真宗、金章宗的嫡庶）从简，宁缺不臆断。节点下方的年份为在位起讫，非生卒年。</p>
+      <h2>收录范围</h2>
+      <p>本库以两宋（960—1279）为主体，兼收辽（916—1125，含西辽 1132—1218）、西夏、金、大理等并立政权，以便对照。辽的国史线索独立成条，不只在宋辽关系中出场。条目分为十二门类，每条含名称、类型、政权、年代、标签、提要、详述与参考出处。</p>
+
+      <h2>编排原则</h2>
+      <ul>
+        <li><b>年代</b>：统一使用公元纪年；跨年事件取起始年。</li>
+        <li><b>政权</b>：北宋、南宋、辽、西夏、金、五代、大理、元等，混融条目归入“两宋”。</li>
+        <li><b>表述</b>：有争议者（如《满江红》作者、缠足起源、宋江招安细节）在详述中注明“一说”。</li>
+        <li><b>数据</b>：人口、财政等取常见研究区间，附口径说明。</li>
+      </ul>
+
+      <h2>主要参考</h2>
+      <ul class="refs">
+        <li>脱脱等《宋史》《辽史》《金史》</li>
+        <li>李焘《续资治通鉴长编》</li>
+        <li>李心传《建炎以来系年要录》</li>
+        <li>徐梦莘《三朝北盟会编》</li>
+        <li>孟元老《东京梦华录》、吴自牧《梦粱录》、周密《武林旧事》</li>
+        <li>司马光《资治通鉴》、郑樵《通志》、马端临《文献通考》</li>
+        <li>沈括《梦溪笔谈》、李诫《营造法式》、宋慈《洗冤集录》</li>
+        <li>邓广铭《宋史十讲》、漆侠《宋代经济史》、王曾瑜《宋朝军制初探》</li>
+        <li>伊沛霞《内闱》、包伟民《宋代城市研究》、刘子健《中国转向内在》</li>
+      </ul>
+
+      <h2>外部富化与许可</h2>
+      <p>条目详情中的「百科条目」来自中文维基百科，通过 MediaWiki API 抓取正文（约 600–1250 字），保留标题、链接、修订号与许可（CC BY-SA 4.0）；维基数据 QID 用于关联开放知识库。外部内容与本站原创摘要分离存放在 <code>item_sources</code> 表，可随时重新抓取或停用。</p>
+      <p>百度百科仅作为外链跳转，不抓取、不复制正文：其内容没有类似 CC 的开放许可，且站点有反爬限制。直接批量搬运会有版权与合规风险。</p>
+
+      <h2>免责</h2>
+      <p>这是一个面向通览与检索的资料型站点，不是学术定本。若用于论文、教学或出版，请回到原始史料与专业研究核对。条目数据存放于 SQLite（<code>db/schema.sql</code> 定义结构），可自行增补。</p>
+
+      <h2>如何扩展</h2>
+      <p>用 <code>python3 tools/manage.py</code> 增删改查，改完后 <code>python3 tools/manage.py export</code> 刷新 <code>db/seed.json</code> 快照；若改动了 <code>db/schema.sql</code>，用 <code>python3 db/init_db.py --force</code> 重建（先 export）。公网发布用 <code>python3 build.py --base-url https://你的域名</code> 生成静态站点。</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <span class="seal small">宋</span>
+  <p>大宋全局志 · 本地静态资料库 · 数据可自由增补</p>
+  <p class="muted" id="footerCount"></p>
+</footer>
+
+<!-- 检索面板 -->
+<div class="palette" id="palette" hidden>
+  <div class="palette-box" role="dialog" aria-modal="true" aria-label="全库检索">
+    <div class="palette-input">
+      <span>⌕</span>
+      <input id="paletteInput" placeholder="检索人物、战役、制度、风俗、名篇…" autocomplete="off">
+      <kbd>ESC</kbd>
+    </div>
+    <div class="palette-results" id="paletteResults"></div>
+    <div class="palette-foot">
+      <span>↑↓ 选择</span><span>↵ 打开</span><span>⌘K 开关</span>
+    </div>
+  </div>
+</div>
+
+<!-- 详情 -->
+<div class="modal" id="modal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="关闭">✕</button>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-nav">
+      <button id="modalPrev">← 上一条</button>
+      <button id="modalNext">下一条 →</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/map-data.js?v=5f4559ee"></script>
+<script src="js/map.js?v=cd111fca"></script>
+<script src="js/app.js?v=775ef58e"></script>
+</body>
+</html>
