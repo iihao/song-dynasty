@@ -121,7 +121,7 @@
     }
     var nameY = n.temple ? y + 32 : y + 24;
     parts.push('<text class="lg-name" x="' + (x + w / 2) + '" y="' + nameY + '">' + esc(n.name) + '</text>');
-    var sub = [n.reign, n.house].filter(Boolean).join(' · ');
+    var sub = [n.reign, n.house, (!n.reign && n.role ? n.role : '')].filter(Boolean).join(' · ');
     if (sub) {
       parts.push('<text class="lg-sub" x="' + (x + w / 2) + '" y="' + (y + h - 9) + '">' +
         esc(sub.length > 18 ? sub.slice(0, 17) + '…' : sub) + '</text>');
@@ -254,7 +254,7 @@
     if (!lgState.manual) {
       var box = $('#lgScroll');
       var avail = box ? box.clientWidth : 0;
-      lgState.zoom = (avail && W > avail) ? Math.max(0.45, Math.min(1, avail / W)) : 1;
+      lgState.zoom = (avail && W > avail) ? Math.max(0.55, Math.min(1, avail / W)) : 1;
     }
     syncLgZoom();
 

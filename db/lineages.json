@@ -427,7 +427,53 @@
      "parent": "emp-song-renzong",
      "rk": "长女",
      "house": "太宗系",
-     "note": "仁宗长女，嫁李玮"
+     "note": "仁宗长女，嫁李玮",
+     "role": "公主"
+    },
+    {
+     "id": "ppl-zhaofujin",
+     "name": "赵福金",
+     "gen": 11,
+     "parent": "emp-song-huizong",
+     "rk": "第五女",
+     "role": "帝姬",
+     "note": "封茂德帝姬，嫁蔡鞗；靖康之变中被掳北上，殁于金营"
+    },
+    {
+     "id": "lg-song-roufu",
+     "name": "赵多富",
+     "gen": 11,
+     "parent": "emp-song-huizong",
+     "rk": "帝姬",
+     "role": "帝姬",
+     "note": "柔福帝姬，靖康北掳，后南归，以假冒之疑被杀"
+    },
+    {
+     "id": "lg-song-jiade",
+     "name": "赵玉盘",
+     "gen": 11,
+     "parent": "emp-song-huizong",
+     "rk": "帝姬",
+     "role": "帝姬",
+     "note": "嘉德帝姬，嫁曾夤"
+    },
+    {
+     "id": "lg-song-rongde",
+     "name": "赵金奴",
+     "gen": 11,
+     "parent": "emp-song-huizong",
+     "rk": "帝姬",
+     "role": "帝姬",
+     "note": "荣德帝姬，嫁曹晟"
+    },
+    {
+     "id": "lg-song-ande",
+     "name": "赵金罗",
+     "gen": 11,
+     "parent": "emp-song-huizong",
+     "rk": "帝姬",
+     "role": "帝姬",
+     "note": "安德帝姬，嫁宋邦光"
     }
    ]
   },
@@ -617,6 +663,15 @@
      "spouse_of": "emp-liao-daozong",
      "role": "懿德皇后",
      "note": "工诗善书"
+    },
+    {
+     "id": "lg-liao-zhigu",
+     "name": "耶律质古",
+     "gen": 3,
+     "parent": "emp-liao-taizu",
+     "rk": "长女",
+     "role": "公主",
+     "note": "太祖与述律平之女，嫁萧室鲁"
     }
    ]
   },
@@ -814,6 +869,15 @@
      "spouse_of": "lg-jin-yungong",
      "role": "孝懿皇后",
      "note": "章宗生母"
+    },
+    {
+     "id": "lg-jin-qiguo",
+     "name": "岐国公主",
+     "gen": 6,
+     "parent": "emp-jin-weishao",
+     "rk": "女",
+     "role": "公主",
+     "note": "卫绍王之女，贞祐和议嫁成吉思汗"
     }
    ]
   },
