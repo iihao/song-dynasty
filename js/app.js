@@ -216,6 +216,18 @@
         ' L' + px + ',' + midY + ' L' + cx + ',' + midY + ' L' + cx + ',' + cy + '"/>');
     });
 
+    // 过继 / 养父子：另画一条青绿点线，与血亲实线区分
+    treeNodes.forEach(function (n) {
+      var ap = n.adoptive_parent && byId2[n.adoptive_parent];
+      if (!ap) return;
+      var px = pos[ap.id], py = rowTop(ap.gen) + NH + 2;
+      var cx = pos[n.id] + 14, cy = rowTop(n.gen) - 2;
+      var midY = (py + cy) / 2;
+      parts.push('<path class="lg-adopt" d="M' + px + ',' + py +
+        ' L' + px + ',' + midY + ' L' + cx + ',' + midY + ' L' + cx + ',' + cy + '"/>');
+      parts.push('<text class="lg-adopt-label" x="' + ((px + cx) / 2) + '" y="' + (midY - 4) + '">嗣</text>');
+    });
+
     treeNodes.forEach(function (n) {
       var x = pos[n.id] - NW / 2, y = rowTop(n.gen);
       parts.push(lineageNodeSVG(n, x, y, NW, NH, lg.color || '#8a8073'));

@@ -75,11 +75,11 @@ def build(conn, seed):
             for j, n in enumerate(lg.get("nodes", [])):
                 conn.execute(
                     """INSERT OR REPLACE INTO lineage_nodes
-                       (lineage_id,node_id,name,temple,rk,born,house,reign,gen,parent,spouse_of,role,inher,note,sort)
-                       VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                       (lineage_id,node_id,name,temple,rk,born,house,reign,gen,parent,spouse_of,adoptive_parent,role,inher,note,sort)
+                       VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                     (lg["id"], n["id"], n["name"], n.get("temple"), n.get("rk"), n.get("born"),
                      n.get("house"), n.get("reign"), n["gen"], n.get("parent"),
-                     n.get("spouse_of"), n.get("role"),
+                     n.get("spouse_of"), n.get("adoptive_parent"), n.get("role"),
                      1 if n.get("inher") else 0, n.get("note"), j))
 
     group_cache = {}

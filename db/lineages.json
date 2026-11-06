@@ -158,7 +158,8 @@
      "house": "濮王系",
      "reign": "1063—1067",
      "inher": true,
-     "note": "过继仁宗"
+     "note": "过继仁宗",
+     "adoptive_parent": "emp-song-renzong"
     },
     {
      "id": "emp-song-shenzong",
@@ -240,7 +241,8 @@
      "house": "太祖系",
      "reign": "1162—1189",
      "inher": true,
-     "note": "高宗养子，还位太祖一系"
+     "note": "高宗养子，还位太祖一系",
+     "adoptive_parent": "emp-song-gaozong"
     },
     {
      "id": "emp-song-guangzong",
@@ -282,7 +284,8 @@
      "house": "太祖系",
      "reign": "1224—1264",
      "inher": true,
-     "note": "宁宗养子"
+     "note": "宁宗养子",
+     "adoptive_parent": "emp-song-ningzong"
     },
     {
      "id": "lg-song-yurui",
@@ -303,7 +306,8 @@
      "house": "太祖系",
      "reign": "1264—1274",
      "inher": true,
-     "note": "理宗养子（侄）"
+     "note": "理宗养子（侄）",
+     "adoptive_parent": "emp-song-lizong"
     },
     {
      "id": "emp-song-gongdi",

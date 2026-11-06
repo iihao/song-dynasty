@@ -152,7 +152,8 @@ def lineages(conn):
         d = dict(lg)
         rows = conn.execute(
             "SELECT node_id AS id,name,temple,rk,born,house,reign,gen,parent,"
-            "spouse_of,role,inher,note FROM lineage_nodes WHERE lineage_id=? ORDER BY gen, sort",
+            "spouse_of,adoptive_parent,role,inher,note FROM lineage_nodes "
+            "WHERE lineage_id=? ORDER BY gen, sort",
             (lg["id"],))
         d["nodes"] = [dict(r, inher=bool(r["inher"])) for r in rows]
         out.append(d)
