@@ -339,6 +339,95 @@
      "reign": "1278—1279",
      "inher": true,
      "note": "崖山殉国"
+    },
+    {
+     "id": "lg-song-dushi",
+     "name": "杜氏",
+     "gen": 4,
+     "parent": null,
+     "spouse_of": "lg-song-hongyin",
+     "role": "昭宪太后",
+     "note": "生太祖、太宗"
+    },
+    {
+     "id": "lg-song-lideshi",
+     "name": "李氏",
+     "gen": 5,
+     "parent": null,
+     "spouse_of": "emp-song-taizong",
+     "role": "元德皇后",
+     "note": "真宗生母"
+    },
+    {
+     "id": "lg-song-liuzhi",
+     "name": "刘氏",
+     "gen": 6,
+     "parent": null,
+     "spouse_of": "emp-song-zhenzong",
+     "role": "章献明肃皇后",
+     "note": "仁宗时垂帘十一年"
+    },
+    {
+     "id": "lg-song-chenfei",
+     "name": "李氏",
+     "gen": 6,
+     "parent": null,
+     "spouse_of": "emp-song-zhenzong",
+     "role": "章懿皇后·宸妃",
+     "note": "仁宗生母"
+    },
+    {
+     "id": "lg-song-gaoshi",
+     "name": "高氏",
+     "gen": 8,
+     "parent": null,
+     "spouse_of": "emp-song-yingzong",
+     "role": "宣仁圣烈皇后",
+     "note": "哲宗时垂帘，旧党所倚"
+    },
+    {
+     "id": "lg-song-mengshi",
+     "name": "孟氏",
+     "gen": 10,
+     "parent": null,
+     "spouse_of": "emp-song-zhezong",
+     "role": "昭慈圣献皇后",
+     "note": "两度垂帘"
+    },
+    {
+     "id": "lg-song-wushi",
+     "name": "吴氏",
+     "gen": 11,
+     "parent": null,
+     "spouse_of": "emp-song-gaozong",
+     "role": "宪圣慈烈皇后"
+    },
+    {
+     "id": "lg-song-xieshi",
+     "name": "谢氏",
+     "gen": 15,
+     "parent": null,
+     "spouse_of": "emp-song-lizong",
+     "role": "成肃皇后",
+     "note": "度宗时临朝"
+    },
+    {
+     "id": "lg-song-yangfei",
+     "name": "杨氏",
+     "gen": 16,
+     "parent": null,
+     "spouse_of": "emp-song-duzong",
+     "role": "淑妃",
+     "note": "端宗生母，宋末听政"
+    },
+    {
+     "id": "lg-song-fukang",
+     "name": "福康公主",
+     "gen": 8,
+     "parent": "emp-song-renzong",
+     "rk": "长女",
+     "house": "太宗系",
+     "note": "仁宗长女，嫁李玮"
     }
    ]
   },
@@ -492,6 +581,42 @@
      "reign": "1124—1143",
      "inher": true,
      "note": "西辽开国"
+    },
+    {
+     "id": "lg-liao-shulv",
+     "name": "述律平",
+     "gen": 2,
+     "parent": null,
+     "spouse_of": "emp-liao-taizu",
+     "role": "淳钦皇后",
+     "note": "太祖崩后摄政"
+    },
+    {
+     "id": "lg-liao-xiaoyan",
+     "name": "萧绰",
+     "gen": 5,
+     "parent": null,
+     "spouse_of": "emp-liao-jingzong",
+     "role": "承天太后",
+     "note": "圣宗时摄政，澶渊之盟"
+    },
+    {
+     "id": "lg-liao-xiaonoujin",
+     "name": "萧耨斤",
+     "gen": 6,
+     "parent": null,
+     "spouse_of": "emp-liao-shengzong",
+     "role": "钦哀皇后",
+     "note": "兴宗生母"
+    },
+    {
+     "id": "lg-liao-xiaoguanyin",
+     "name": "萧观音",
+     "gen": 8,
+     "parent": null,
+     "spouse_of": "emp-liao-daozong",
+     "role": "懿德皇后",
+     "note": "工诗善书"
     }
    ]
   },
@@ -672,6 +797,23 @@
      "reign": "1234",
      "inher": true,
      "note": "即位一日而亡"
+    },
+    {
+     "id": "lg-jin-peiman",
+     "name": "裴满氏",
+     "gen": 4,
+     "parent": null,
+     "spouse_of": "emp-jin-xizong",
+     "role": "悼平皇后"
+    },
+    {
+     "id": "lg-jin-tudan",
+     "name": "徒单氏",
+     "gen": 5,
+     "parent": null,
+     "spouse_of": "lg-jin-yungong",
+     "role": "孝懿皇后",
+     "note": "章宗生母"
     }
    ]
   },
@@ -834,6 +976,41 @@
      "reign": "1226—1227",
      "inher": true,
      "note": "降蒙，西夏亡"
+    },
+    {
+     "id": "lg-xixia-meizang",
+     "name": "没藏氏",
+     "gen": 3,
+     "parent": null,
+     "spouse_of": "emp-xixia-jingzong",
+     "role": "宣穆惠文皇后",
+     "note": "毅宗生母，摄政"
+    },
+    {
+     "id": "lg-xixia-daliang",
+     "name": "大梁氏",
+     "gen": 4,
+     "parent": null,
+     "spouse_of": "emp-xixia-yizong",
+     "role": "恭肃章宪皇后",
+     "note": "惠宗生母，摄政"
+    },
+    {
+     "id": "lg-xixia-xiaoliang",
+     "name": "小梁氏",
+     "gen": 5,
+     "parent": null,
+     "spouse_of": "emp-xixia-huizong",
+     "role": "昭简文穆皇后",
+     "note": "崇宗生母，摄政"
+    },
+    {
+     "id": "lg-xixia-luoshi",
+     "name": "罗氏",
+     "gen": 7,
+     "parent": null,
+     "spouse_of": "emp-xixia-renzong",
+     "role": "章献钦慈皇后"
     }
    ]
   },

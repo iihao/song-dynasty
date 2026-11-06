@@ -164,6 +164,8 @@ CREATE TABLE IF NOT EXISTS lineage_nodes (
   reign      TEXT,             -- 在位年
   gen        INTEGER NOT NULL, -- 世代
   parent     TEXT,             -- 父节点 node_id
+  spouse_of  TEXT,             -- 若为后妃：所系帝王 node_id
+  role       TEXT,             -- 后妃身份：皇后 / 太后 / 妃
   inher      INTEGER NOT NULL DEFAULT 0,
   note       TEXT,
   sort       INTEGER NOT NULL DEFAULT 0,

@@ -155,19 +155,27 @@
 
     var nodes = (lg.nodes || []).slice();
     var NW = 132, NH = 60, ROW = 118, L = 56, T = 58, GAP = 18;
-    var byId2 = {}, children = {};
+    var CW = 112, CH = 48, CGAP = 8;   // 后妃节点
+    var byId2 = {}, children = {}, consorts = {};
     nodes.forEach(function (n) { byId2[n.id] = n; });
     nodes.forEach(function (n) {
-      if (n.parent && byId2[n.parent]) (children[n.parent] = children[n.parent] || []).push(n.id);
+      if (n.spouse_of) (consorts[n.spouse_of] = consorts[n.spouse_of] || []).push(n);
+      else if (n.parent && byId2[n.parent]) (children[n.parent] = children[n.parent] || []).push(n.id);
     });
-    var roots = nodes.filter(function (n) { return !n.parent || !byId2[n.parent]; }).map(function (n) { return n.id; });
+    var treeNodes = nodes.filter(function (n) { return !n.spouse_of; });
+    var roots = treeNodes.filter(function (n) { return !n.parent || !byId2[n.parent]; }).map(function (n) { return n.id; });
+
+    function ownW(id) {
+      var cs = consorts[id];
+      return NW + (cs ? cs.length * (CW + CGAP) : 0);
+    }
 
     var cursor = L, pos = {};
     function walk(id) {
       var kids = children[id] || [];
       if (!kids.length) {
         var left = cursor;
-        cursor += NW + GAP;
+        cursor += ownW(id) + GAP;
         pos[id] = left + NW / 2;
         return pos[id];
       }
@@ -176,7 +184,7 @@
       var c = (Math.min.apply(null, xs) + Math.max.apply(null, xs)) / 2;
       c = Math.max(c, blockLeft + NW / 2);
       pos[id] = c;
-      cursor = Math.max(cursor, c + NW / 2 + GAP);
+      cursor = Math.max(cursor, c + ownW(id) / 2 + GAP);
       return c;
     }
     roots.forEach(walk);
@@ -208,9 +216,28 @@
         ' L' + px + ',' + midY + ' L' + cx + ',' + midY + ' L' + cx + ',' + cy + '"/>');
     });
 
-    nodes.forEach(function (n) {
+    treeNodes.forEach(function (n) {
       var x = pos[n.id] - NW / 2, y = rowTop(n.gen);
       parts.push(lineageNodeSVG(n, x, y, NW, NH, lg.color || '#8a8073'));
+    });
+    // 后妃：贴在帝王右侧，虚线婚线相连
+    treeNodes.forEach(function (n) {
+      var cs = consorts[n.id];
+      if (!cs) return;
+      var bx = pos[n.id] + NW / 2, by = rowTop(n.gen) + NH / 2;
+      cs.forEach(function (c, i) {
+        var cx0 = bx + CGAP + i * (CW + CGAP);
+        var cy0 = by - CH / 2;
+        parts.push('<path class="lg-marriage" d="M' + bx + ',' + by + ' L' + cx0 + ',' + by + '"/>');
+        var label = [c.name, c.role].filter(Boolean).join(' · ');
+        var aria2 = [c.name, c.role, c.note].filter(Boolean).join(' · ');
+        parts.push('<g class="lg-node consort" data-id="' + esc(c.id) + '" aria-label="' + esc(aria2) + '">' +
+          '<title>' + esc(aria2) + '</title>' +
+          '<rect x="' + cx0 + '" y="' + cy0 + '" width="' + CW + '" height="' + CH + '" rx="3" stroke="' + (lg.color || '#8a8073') + '"/>' +
+          '<text class="lg-name" x="' + (cx0 + CW / 2) + '" y="' + (cy0 + 20) + '">' + esc(c.name) + '</text>' +
+          '<text class="lg-sub" x="' + (cx0 + CW / 2) + '" y="' + (cy0 + CH - 9) + '">' +
+          esc((c.role || '').length > 12 ? (c.role || '').slice(0, 11) + '…' : (c.role || '')) + '</text></g>');
+      });
     });
 
     svg.innerHTML = parts.join('');
