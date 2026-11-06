@@ -232,7 +232,16 @@
     syncLgZoom();
 
     var sc = $('#lgScroll');
-    if (sc) sc.scrollLeft = 0;
+    if (sc) {
+      // 窄屏下画布比容器宽：把首代人物滚到视野中间，而不是停在最左边
+      requestAnimationFrame(function () {
+        if (!sc) return;
+        if (sc.scrollWidth <= sc.clientWidth + 4) { sc.scrollLeft = 0; return; }
+        var scale = (parseFloat(svg.style.width) || W) / W;
+        var rootX = pos[roots[0]] || W / 2;
+        sc.scrollLeft = Math.max(0, rootX * scale - sc.clientWidth / 2);
+      });
+    }
   }
 
   function syncLgZoom() {
