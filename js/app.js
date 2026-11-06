@@ -85,7 +85,7 @@
     }
     if (r.view === 'browse') state.cat = r.arg || 'all';
     if (r.view === 'people' && r.arg) peopleType = decodeURIComponent(r.arg);
-    if (['overview', 'timeline', 'map', 'browse', 'people', 'data', 'about'].indexOf(r.view) < 0) r.view = 'overview';
+    if (['overview', 'timeline', 'map', 'lineage', 'browse', 'people', 'data', 'about'].indexOf(r.view) < 0) r.view = 'overview';
     state.view = r.view;
     $$('.view').forEach(function (v) { v.classList.toggle('active', v.id === 'view-' + r.view); });
     $$('[data-nav]').forEach(function (a) {
@@ -96,8 +96,155 @@
     if (r.view === 'browse') renderBrowse();
     if (r.view === 'timeline') renderTimeline();
     if (r.view === 'map') renderMap(r.arg);
+    if (r.view === 'lineage') renderLineage(r.arg);
     if (r.view === 'people') renderPeople();
     if (r.view === 'data') renderData();
+  }
+
+  /* ---------------- 帝系（各国皇室族谱） ---------------- */
+  var lgState = { fam: '', zoom: 1, manual: false };
+
+  function lineageNodeSVG(n, x, y, w, h, color) {
+    var born = n.born === '庶' ? ' shu' : (n.born === '嫡' ? ' di' : '');
+    var cls = 'lg-node' + born + (n.inher ? ' inher' : '') + (n.temple ? '' : ' minor');
+    var aria = [n.temple, n.name, n.reign, n.rk, n.house, n.note].filter(Boolean).join(' · ');
+    var parts = ['<g class="' + cls + '" data-id="' + esc(n.id) + '" tabindex="0" role="button" aria-label="' + esc(aria) + '">',
+      '<title>' + esc(aria) + '</title>',
+      '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" rx="3" stroke="' + color + '"/>'];
+    if (born) {
+      parts.push('<rect class="lg-born' + born + '" x="' + (x + 1) + '" y="' + (y + 1) +
+        '" width="3" height="' + (h - 2) + '" rx="1.5"/>');
+    }
+    // 三行：庙号 / 姓名 / 在位年·支系
+    if (n.temple) {
+      parts.push('<text class="lg-temple" x="' + (x + w / 2) + '" y="' + (y + 15) + '">' + esc(n.temple) + '</text>');
+    }
+    var nameY = n.temple ? y + 32 : y + 24;
+    parts.push('<text class="lg-name" x="' + (x + w / 2) + '" y="' + nameY + '">' + esc(n.name) + '</text>');
+    var sub = [n.reign, n.house].filter(Boolean).join(' · ');
+    if (sub) {
+      parts.push('<text class="lg-sub" x="' + (x + w / 2) + '" y="' + (y + h - 9) + '">' +
+        esc(sub.length > 18 ? sub.slice(0, 17) + '…' : sub) + '</text>');
+    }
+    if (n.inher) {
+      parts.push('<rect class="lg-inher-badge" x="' + (x + w - 19) + '" y="' + (y + 4) + '" width="15" height="15" rx="2"/>' +
+        '<text class="lg-inher-t" x="' + (x + w - 11.5) + '" y="' + (y + 15) + '">帝</text>');
+    }
+    if (n.rk && n.rk !== '始祖') {
+      parts.push('<text class="lg-rk" x="' + (x + 3) + '" y="' + (y - 4) + '">' + esc(n.rk) + '</text>');
+    }
+    parts.push('</g>');
+    return parts.join('');
+  }
+
+  function renderLineage(fam) {
+    var list = D.lineages || [];
+    if (!list.length) return;
+    if (fam && list.some(function (l) { return l.id === fam; })) lgState.fam = fam;
+    if (!lgState.fam) lgState.fam = list[0].id;
+    var lg = list.filter(function (l) { return l.id === lgState.fam; })[0] || list[0];
+
+    $('#lineageTabs').innerHTML = list.map(function (l) {
+      return '<button class="chip' + (l.id === lg.id ? ' on' : '') + '" data-fam="' + l.id + '">' +
+        '<i class="dot" style="display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px;background:' +
+        esc(l.color || '#8a8073') + '"></i>' + esc(l.name) + '</button>';
+    }).join('');
+    $$('#lineageTabs .chip').forEach(function (b) {
+      b.addEventListener('click', function () { go('lineage', b.getAttribute('data-fam')); });
+    });
+
+    var nodes = (lg.nodes || []).slice();
+    var NW = 132, NH = 60, ROW = 118, L = 56, T = 58, GAP = 18;
+    var byId2 = {}, children = {};
+    nodes.forEach(function (n) { byId2[n.id] = n; });
+    nodes.forEach(function (n) {
+      if (n.parent && byId2[n.parent]) (children[n.parent] = children[n.parent] || []).push(n.id);
+    });
+    var roots = nodes.filter(function (n) { return !n.parent || !byId2[n.parent]; }).map(function (n) { return n.id; });
+
+    var cursor = L, pos = {};
+    function walk(id) {
+      var kids = children[id] || [];
+      if (!kids.length) {
+        var left = cursor;
+        cursor += NW + GAP;
+        pos[id] = left + NW / 2;
+        return pos[id];
+      }
+      var blockLeft = cursor;
+      var xs = kids.map(walk);
+      var c = (Math.min.apply(null, xs) + Math.max.apply(null, xs)) / 2;
+      c = Math.max(c, blockLeft + NW / 2);
+      pos[id] = c;
+      cursor = Math.max(cursor, c + NW / 2 + GAP);
+      return c;
+    }
+    roots.forEach(walk);
+
+    var maxGen = Math.max.apply(null, nodes.map(function (n) { return n.gen; }));
+    var W = Math.max(cursor + 36, 360);
+    var H = T + (maxGen - 1) * ROW + NH + 46;
+    var svg = $('#lgSvg');
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    svg.setAttribute('height', 'auto');
+
+    var parts = [];
+    for (var gi = 1; gi <= maxGen; gi++) {
+      var bandY = T + (gi - 1) * ROW - NH / 2 - 8;
+      parts.push('<rect class="lg-band" x="0" y="' + bandY + '" width="' + W + '" height="' + ROW + '"/>');
+      parts.push('<text class="lg-gen-label" x="18" y="' + (bandY + ROW / 2 + 4) + '">' +
+        (['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二', '十三', '十四', '十五', '十六', '十七', '十八'][gi - 1] || gi) + '世</text>');
+    }
+
+    function rowTop(gen) { return T + (gen - 1) * ROW; }
+    nodes.forEach(function (n) {
+      if (!n.parent || !byId2[n.parent]) return;
+      var p = byId2[n.parent];
+      var px = pos[p.id], cx = pos[n.id];
+      var py = rowTop(p.gen) + NH + 2, cy = rowTop(n.gen) - 2;
+      var midY = (py + cy) / 2;
+      var skip = n.gen - p.gen > 1;
+      parts.push('<path class="lg-link' + (skip ? ' skip' : '') + '" d="M' + px + ',' + py +
+        ' L' + px + ',' + midY + ' L' + cx + ',' + midY + ' L' + cx + ',' + cy + '"/>');
+    });
+
+    nodes.forEach(function (n) {
+      var x = pos[n.id] - NW / 2, y = rowTop(n.gen);
+      parts.push(lineageNodeSVG(n, x, y, NW, NH, lg.color || '#8a8073'));
+    });
+
+    svg.innerHTML = parts.join('');
+    $$('.lg-node[data-id]', svg).forEach(function (el) {
+      var id = el.getAttribute('data-id');
+      if (!byId[id]) { el.classList.add('nolink'); el.removeAttribute('tabindex'); return; }
+      el.addEventListener('click', function () { openItem(id); });
+      el.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openItem(id); }
+      });
+    });
+    $('#lgNote').textContent = lg.note || '';
+
+    if (!lgState.manual) {
+      var box = $('#lgScroll');
+      var avail = box ? box.clientWidth : 0;
+      lgState.zoom = (avail && W > avail) ? Math.max(0.45, Math.min(1, avail / W)) : 1;
+    }
+    syncLgZoom();
+
+    var sc = $('#lgScroll');
+    if (sc) sc.scrollLeft = 0;
+  }
+
+  function syncLgZoom() {
+    var svg = $('#lgSvg');
+    if (!svg) return;
+    var vb = (svg.getAttribute('viewBox') || '0 0 1000 500').split(/\s+/);
+    var vw = parseFloat(vb[2]) || 1000;
+    svg.style.width = Math.max(320, Math.round(vw * lgState.zoom)) + 'px';
+    svg.style.margin = '0 auto';
+    svg.style.minWidth = '0';
+    var lbl = $('#lgZoomLabel');
+    if (lbl) lbl.textContent = Math.round(lgState.zoom * 100) + '%';
   }
 
   /* ---------------- 总览 ---------------- */
@@ -1339,6 +1486,20 @@
     $('#peopleSearch').addEventListener('input', debounce(function (e) {
       peopleQ = e.target.value; renderPeople();
     }, 120));
+
+    // 帝系缩放
+    $$('#lgZoom [data-lgzoom]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var m = b.getAttribute('data-lgzoom');
+        if (m === 'in') { lgState.zoom = Math.min(2.6, lgState.zoom * 1.2); lgState.manual = true; }
+        else if (m === 'out') { lgState.zoom = Math.max(0.3, lgState.zoom / 1.2); lgState.manual = true; }
+        else { lgState.manual = false; renderLineage(lgState.fam); return; }
+        syncLgZoom();
+      });
+    });
+    window.addEventListener('resize', function () {
+      if (state.view === 'lineage' && !lgState.manual) renderLineage(lgState.fam);
+    });
 
     $('#searchBtn').addEventListener('click', openPalette);
     $('#paletteInput').addEventListener('input', function (e) { paletteSearch(e.target.value); });

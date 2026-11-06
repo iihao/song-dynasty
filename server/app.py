@@ -146,6 +146,18 @@ def panels(conn):
     return out
 
 
+def lineages(conn):
+    out = []
+    for lg in conn.execute("SELECT id,name,full_name AS full,color,note FROM lineages ORDER BY sort"):
+        d = dict(lg)
+        rows = conn.execute(
+            "SELECT node_id AS id,name,temple,rk,born,house,reign,gen,parent,inher,note "
+            "FROM lineage_nodes WHERE lineage_id=? ORDER BY gen, sort", (lg["id"],))
+        d["nodes"] = [dict(r, inher=bool(r["inher"])) for r in rows]
+        out.append(d)
+    return out
+
+
 def bootstrap(conn):
     tags = {}
     for r in conn.execute("SELECT item_id, name FROM item_tags JOIN tags ON tags.id=item_tags.tag_id"):
@@ -170,7 +182,8 @@ def bootstrap(conn):
             d["body"] = r["body"]
         items.append(d)
     base = meta(conn)
-    base.update({"version": 1, "items": items, "dataPanels": panels(conn)})
+    base.update({"version": 1, "items": items, "dataPanels": panels(conn),
+                 "lineages": lineages(conn)})
     return base
 
 

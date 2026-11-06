@@ -143,3 +143,30 @@ SELECT
     WHERE ig.item_id = i.id) AS groups
 FROM items i
 JOIN categories c ON c.id = i.category_id;
+-- 帝系：各国皇室谱系（宋/辽/金/西夏/大理）
+CREATE TABLE IF NOT EXISTS lineages (
+  id    TEXT PRIMARY KEY,
+  name  TEXT NOT NULL,
+  full_name TEXT,
+  color TEXT,
+  note  TEXT,
+  sort  INTEGER NOT NULL DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS lineage_nodes (
+  lineage_id TEXT NOT NULL REFERENCES lineages(id) ON DELETE CASCADE,
+  node_id    TEXT NOT NULL,
+  name       TEXT NOT NULL,
+  temple     TEXT,             -- 庙号：太祖 / 太宗 / 世宗…
+  rk         TEXT,             -- 排行：嫡长子 / 第三子 / 侄…
+  born       TEXT,             -- 嫡 / 庶
+  house      TEXT,             -- 支系：太祖系 / 东丹系 / 濮王系…
+  reign      TEXT,             -- 在位年
+  gen        INTEGER NOT NULL, -- 世代
+  parent     TEXT,             -- 父节点 node_id
+  inher      INTEGER NOT NULL DEFAULT 0,
+  note       TEXT,
+  sort       INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (lineage_id, node_id)
+);
+CREATE INDEX IF NOT EXISTS idx_lineage_nodes ON lineage_nodes(lineage_id, gen, sort);

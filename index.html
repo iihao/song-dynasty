@@ -22,6 +22,7 @@
     <a href="#overview" data-nav="overview">总览</a>
     <a href="#timeline" data-nav="timeline">年表</a>
     <a href="#map" data-nav="map">舆图</a>
+    <a href="#lineage" data-nav="lineage">帝系</a>
     <a href="#browse" data-nav="browse">典藏</a>
     <a href="#people" data-nav="people">人物</a>
     <a href="chixie.html">持械图谱</a>
@@ -181,6 +182,41 @@
 </section>
 
 <!-- ================= 典藏 ================= -->
+
+<!-- ================= 帝系 ================= -->
+<section class="view" id="view-lineage">
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">IMPERIAL HOUSES · 各国帝系</p>
+      <h1>皇室族谱</h1>
+      <p>宋、辽、金、西夏、大理五朝帝系。节点标出庙号、在位年、排行与嫡庶，金色「帝」角标为即位之君；实线为亲子，虚线为追尊或旁支承继，虚框为未即位的追尊与宗室。点击有词条的皇帝可看详情。</p>
+    </div>
+    <div class="filterbar" id="lineageTabs"></div>
+    <div class="lg-toolbar">
+      <div class="lg-legend">
+        <span><i class="solid"></i>亲子</span>
+        <span><i class="dash"></i>旁支 / 追尊</span>
+        <span><i class="crown"></i>即位</span>
+        <span><i class="di"></i>嫡出</span>
+        <span><i class="shu"></i>庶出</span>
+        <span class="lg-hint">＋ 或滚轮放大查看排行与支系</span>
+      </div>
+      <div class="lg-zoom" id="lgZoom">
+        <button type="button" data-lgzoom="out" aria-label="缩小">−</button>
+        <span id="lgZoomLabel">100%</span>
+        <button type="button" data-lgzoom="in" aria-label="放大">＋</button>
+        <button type="button" data-lgzoom="fit">还原</button>
+      </div>
+    </div>
+    <figure class="lg-card">
+      <div class="lg-scroll" id="lgScroll">
+        <svg id="lgSvg" role="img" aria-label="各国皇室谱系图"></svg>
+      </div>
+      <figcaption class="lg-note" id="lgNote"></figcaption>
+    </figure>
+  </div>
+</section>
+
 <section class="view" id="view-browse">
   <div class="wrap browse-layout">
     <aside class="sidebar" id="sidebar">
@@ -280,6 +316,8 @@
       <h1>凡例与参考</h1>
     </div>
     <div class="prose">
+      <h2>帝系谱牒</h2>
+      <p>「帝系」一页据《宋史·宗室世系表》《辽史·皇族表》《金史·宗室表》《西夏书事》《南诏野史》等梳理，只取承袭主线与关键旁支。排行、嫡庶、支系依正史与常见考订标注，遇记载歧异（如宋真宗、金章宗的嫡庶）从简，宁缺不臆断。节点下方的年份为在位起讫，非生卒年。</p>
       <h2>收录范围</h2>
       <p>本库以两宋（960—1279）为主体，兼收辽（916—1125，含西辽 1132—1218）、西夏、金、大理等并立政权，以便对照。辽的国史线索独立成条，不只在宋辽关系中出场。条目分为十二门类，每条含名称、类型、政权、年代、标签、提要、详述与参考出处。</p>
 

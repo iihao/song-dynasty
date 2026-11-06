@@ -16,6 +16,7 @@ from datetime import datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCHEMA = os.path.join(ROOT, "db", "schema.sql")
 SEED = os.path.join(ROOT, "db", "seed.json")
+LINEAGES = os.path.join(ROOT, "db", "lineages.json")
 DB = os.path.join(ROOT, "db", "song.db")
 
 GROUP_ORDER = ["帝王", "名臣", "名将", "文豪", "思想家", "科学家",
@@ -61,6 +62,24 @@ def build(conn, seed):
             (p["title"], p.get("desc"), p["kind"],
              json.dumps(payload, ensure_ascii=False), i),
         )
+
+    # 帝系（可选文件，缺失时跳过）
+    lineage_path = LINEAGES
+    if os.path.exists(lineage_path):
+        with open(lineage_path, encoding="utf-8") as f:
+            ldata = json.load(f)
+        for i, lg in enumerate(ldata.get("lineages", [])):
+            conn.execute(
+                "INSERT OR REPLACE INTO lineages(id,name,full_name,color,note,sort) VALUES(?,?,?,?,?,?)",
+                (lg["id"], lg["name"], lg.get("full"), lg.get("color"), lg.get("note"), i))
+            for j, n in enumerate(lg.get("nodes", [])):
+                conn.execute(
+                    """INSERT OR REPLACE INTO lineage_nodes
+                       (lineage_id,node_id,name,temple,rk,born,house,reign,gen,parent,inher,note,sort)
+                       VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                    (lg["id"], n["id"], n["name"], n.get("temple"), n.get("rk"), n.get("born"),
+                     n.get("house"), n.get("reign"), n["gen"], n.get("parent"),
+                     1 if n.get("inher") else 0, n.get("note"), j))
 
     group_cache = {}
     for i, name in enumerate(seed.get("groups") or GROUP_ORDER):

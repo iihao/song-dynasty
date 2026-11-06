@@ -1,0 +1,946 @@
+{
+ "lineages": [
+  {
+   "id": "song",
+   "name": "赵宋",
+   "full": "宋朝皇室 · 赵氏",
+   "color": "#a8352a",
+   "note": "自僖祖赵朓至末帝赵昺。北宋太祖、太宗两支相传，南宋孝宗以后还位于太祖一系，故树中出现「太祖系」旁支。",
+   "nodes": [
+    {
+     "id": "lg-song-tiao",
+     "name": "赵朓",
+     "gen": 1,
+     "parent": null,
+     "temple": "僖祖",
+     "rk": "始祖",
+     "note": "追尊"
+    },
+    {
+     "id": "lg-song-ting",
+     "name": "赵珽",
+     "gen": 2,
+     "parent": "lg-song-tiao",
+     "temple": "顺祖",
+     "rk": "长子",
+     "note": "追尊"
+    },
+    {
+     "id": "lg-song-jing",
+     "name": "赵敬",
+     "gen": 3,
+     "parent": "lg-song-ting",
+     "temple": "翼祖",
+     "rk": "长子",
+     "note": "追尊"
+    },
+    {
+     "id": "lg-song-hongyin",
+     "name": "赵弘殷",
+     "gen": 4,
+     "parent": "lg-song-jing",
+     "temple": "宣祖",
+     "rk": "长子",
+     "note": "追尊"
+    },
+    {
+     "id": "emp-song-taizu",
+     "name": "赵匡胤",
+     "gen": 5,
+     "parent": "lg-song-hongyin",
+     "temple": "太祖",
+     "rk": "嫡次子",
+     "born": "嫡",
+     "house": "太祖系",
+     "reign": "960—976",
+     "inher": true,
+     "note": "陈桥兵变，开国"
+    },
+    {
+     "id": "emp-song-taizong",
+     "name": "赵光义",
+     "gen": 5,
+     "parent": "lg-song-hongyin",
+     "temple": "太宗",
+     "rk": "嫡三子",
+     "born": "嫡",
+     "house": "太宗系",
+     "reign": "976—997",
+     "inher": true,
+     "note": "兄终弟及"
+    },
+    {
+     "id": "lg-song-tingmei",
+     "name": "赵廷美",
+     "gen": 5,
+     "parent": "lg-song-hongyin",
+     "temple": "魏王",
+     "rk": "庶四子",
+     "born": "庶",
+     "house": "太祖系"
+    },
+    {
+     "id": "lg-song-dezhao",
+     "name": "赵德昭",
+     "gen": 6,
+     "parent": "emp-song-taizu",
+     "temple": "燕王",
+     "rk": "次子",
+     "house": "太祖系"
+    },
+    {
+     "id": "lg-song-defang",
+     "name": "赵德芳",
+     "gen": 6,
+     "parent": "emp-song-taizu",
+     "temple": "秦王",
+     "rk": "四子",
+     "house": "太祖系"
+    },
+    {
+     "id": "lg-song-yuanzuo",
+     "name": "赵元佐",
+     "gen": 6,
+     "parent": "emp-song-taizong",
+     "temple": "汉王",
+     "rk": "长子",
+     "house": "太宗系"
+    },
+    {
+     "id": "emp-song-zhenzong",
+     "name": "赵恒",
+     "gen": 6,
+     "parent": "emp-song-taizong",
+     "temple": "真宗",
+     "rk": "第三子",
+     "house": "太宗系",
+     "reign": "997—1022",
+     "inher": true
+    },
+    {
+     "id": "lg-song-yuanfen",
+     "name": "赵元份",
+     "gen": 6,
+     "parent": "emp-song-taizong",
+     "temple": "商王",
+     "rk": "第四子",
+     "house": "太宗系"
+    },
+    {
+     "id": "lg-song-yunrang",
+     "name": "赵允让",
+     "gen": 7,
+     "parent": "lg-song-yuanfen",
+     "temple": "濮王",
+     "rk": "第十三子",
+     "house": "太宗系"
+    },
+    {
+     "id": "emp-song-renzong",
+     "name": "赵祯",
+     "gen": 7,
+     "parent": "emp-song-zhenzong",
+     "temple": "仁宗",
+     "rk": "庶六子",
+     "born": "庶",
+     "house": "太宗系",
+     "reign": "1022—1063",
+     "inher": true,
+     "note": "母李宸妃，刘后抚养"
+    },
+    {
+     "id": "emp-song-yingzong",
+     "name": "赵曙",
+     "gen": 8,
+     "parent": "lg-song-yunrang",
+     "temple": "英宗",
+     "rk": "第十三子",
+     "house": "濮王系",
+     "reign": "1063—1067",
+     "inher": true,
+     "note": "过继仁宗"
+    },
+    {
+     "id": "emp-song-shenzong",
+     "name": "赵顼",
+     "gen": 9,
+     "parent": "emp-song-yingzong",
+     "temple": "神宗",
+     "rk": "嫡长子",
+     "born": "嫡",
+     "house": "濮王系",
+     "reign": "1067—1085",
+     "inher": true
+    },
+    {
+     "id": "emp-song-zhezong",
+     "name": "赵煦",
+     "gen": 10,
+     "parent": "emp-song-shenzong",
+     "temple": "哲宗",
+     "rk": "第六子",
+     "house": "濮王系",
+     "reign": "1085—1100",
+     "inher": true
+    },
+    {
+     "id": "emp-song-huizong",
+     "name": "赵佶",
+     "gen": 10,
+     "parent": "emp-song-shenzong",
+     "temple": "徽宗",
+     "rk": "第十一子",
+     "born": "庶",
+     "house": "濮王系",
+     "reign": "1100—1126",
+     "inher": true,
+     "note": "兄终弟及"
+    },
+    {
+     "id": "emp-song-qinzong",
+     "name": "赵桓",
+     "gen": 11,
+     "parent": "emp-song-huizong",
+     "temple": "钦宗",
+     "rk": "嫡长子",
+     "born": "嫡",
+     "house": "濮王系",
+     "reign": "1126—1127",
+     "inher": true,
+     "note": "靖康之变"
+    },
+    {
+     "id": "emp-song-gaozong",
+     "name": "赵构",
+     "gen": 11,
+     "parent": "emp-song-huizong",
+     "temple": "高宗",
+     "rk": "第九子",
+     "born": "庶",
+     "house": "濮王系",
+     "reign": "1127—1162",
+     "inher": true,
+     "note": "南渡，禅位孝宗"
+    },
+    {
+     "id": "lg-song-zichen",
+     "name": "赵子偁",
+     "gen": 11,
+     "parent": null,
+     "house": "太祖系·德芳后",
+     "note": "太祖七世孙，孝宗生父"
+    },
+    {
+     "id": "emp-song-xiaozong",
+     "name": "赵昚",
+     "gen": 12,
+     "parent": "lg-song-zichen",
+     "temple": "孝宗",
+     "rk": "次子",
+     "house": "太祖系",
+     "reign": "1162—1189",
+     "inher": true,
+     "note": "高宗养子，还位太祖一系"
+    },
+    {
+     "id": "emp-song-guangzong",
+     "name": "赵惇",
+     "gen": 13,
+     "parent": "emp-song-xiaozong",
+     "temple": "光宗",
+     "rk": "第三子",
+     "house": "太祖系",
+     "reign": "1189—1194",
+     "inher": true
+    },
+    {
+     "id": "emp-song-ningzong",
+     "name": "赵扩",
+     "gen": 14,
+     "parent": "emp-song-guangzong",
+     "temple": "宁宗",
+     "rk": "次子",
+     "house": "太祖系",
+     "reign": "1194—1224",
+     "inher": true
+    },
+    {
+     "id": "lg-song-xilu",
+     "name": "赵希瓐",
+     "gen": 14,
+     "parent": null,
+     "house": "太祖系·希瓐后",
+     "note": "太祖十世孙，理宗生父"
+    },
+    {
+     "id": "emp-song-lizong",
+     "name": "赵昀",
+     "gen": 15,
+     "parent": "lg-song-xilu",
+     "temple": "理宗",
+     "rk": "子",
+     "house": "太祖系",
+     "reign": "1224—1264",
+     "inher": true,
+     "note": "宁宗养子"
+    },
+    {
+     "id": "lg-song-yurui",
+     "name": "赵与芮",
+     "gen": 15,
+     "parent": "lg-song-xilu",
+     "rk": "次子",
+     "house": "太祖系",
+     "note": "理宗弟，度宗生父"
+    },
+    {
+     "id": "emp-song-duzong",
+     "name": "赵禥",
+     "gen": 16,
+     "parent": "lg-song-yurui",
+     "temple": "度宗",
+     "rk": "子",
+     "house": "太祖系",
+     "reign": "1264—1274",
+     "inher": true,
+     "note": "理宗养子（侄）"
+    },
+    {
+     "id": "emp-song-gongdi",
+     "name": "赵㬎",
+     "gen": 17,
+     "parent": "emp-song-duzong",
+     "temple": "恭帝",
+     "rk": "次子",
+     "house": "太祖系",
+     "reign": "1274—1276",
+     "inher": true,
+     "note": "降元"
+    },
+    {
+     "id": "emp-song-duanzong",
+     "name": "赵昰",
+     "gen": 17,
+     "parent": "emp-song-duzong",
+     "temple": "端宗",
+     "rk": "长子",
+     "house": "太祖系",
+     "reign": "1276—1278",
+     "inher": true
+    },
+    {
+     "id": "emp-song-modi",
+     "name": "赵昺",
+     "gen": 17,
+     "parent": "emp-song-duzong",
+     "temple": "末帝",
+     "rk": "第三子",
+     "house": "太祖系",
+     "reign": "1278—1279",
+     "inher": true,
+     "note": "崖山殉国"
+    }
+   ]
+  },
+  {
+   "id": "liao",
+   "name": "耶律辽",
+   "full": "辽朝皇室 · 耶律氏",
+   "color": "#2f6457",
+   "note": "契丹迭剌部耶律氏。太祖阿保机之后，世宗出东丹王耶律倍一系，穆宗出太宗一系，两系交替；西辽耶律大石另立一支。",
+   "nodes": [
+    {
+     "id": "lg-liao-sala",
+     "name": "耶律撒剌的",
+     "gen": 1,
+     "parent": null,
+     "temple": "德祖",
+     "rk": "始祖",
+     "note": "追尊"
+    },
+    {
+     "id": "emp-liao-taizu",
+     "name": "耶律阿保机",
+     "gen": 2,
+     "parent": "lg-liao-sala",
+     "temple": "太祖",
+     "rk": "长子",
+     "house": "迭剌部",
+     "reign": "916—926",
+     "inher": true,
+     "note": "建契丹国"
+    },
+    {
+     "id": "lg-liao-yelubei",
+     "name": "耶律倍",
+     "gen": 3,
+     "parent": "emp-liao-taizu",
+     "temple": "东丹王",
+     "rk": "嫡长子",
+     "born": "嫡",
+     "house": "东丹系",
+     "note": "让国，追尊义宗"
+    },
+    {
+     "id": "emp-liao-taizong",
+     "name": "耶律德光",
+     "gen": 3,
+     "parent": "emp-liao-taizu",
+     "temple": "太宗",
+     "rk": "次子",
+     "house": "太宗系",
+     "reign": "926—947",
+     "inher": true,
+     "note": "改国号辽"
+    },
+    {
+     "id": "emp-liao-shizong",
+     "name": "耶律阮",
+     "gen": 4,
+     "parent": "lg-liao-yelubei",
+     "temple": "世宗",
+     "rk": "长子",
+     "house": "东丹系",
+     "reign": "947—951",
+     "inher": true
+    },
+    {
+     "id": "emp-liao-muzong",
+     "name": "耶律璟",
+     "gen": 4,
+     "parent": "emp-liao-taizong",
+     "temple": "穆宗",
+     "rk": "长子",
+     "house": "太宗系",
+     "reign": "951—969",
+     "inher": true
+    },
+    {
+     "id": "emp-liao-jingzong",
+     "name": "耶律贤",
+     "gen": 5,
+     "parent": "emp-liao-shizong",
+     "temple": "景宗",
+     "rk": "次子",
+     "house": "东丹系",
+     "reign": "969—982",
+     "inher": true
+    },
+    {
+     "id": "emp-liao-shengzong",
+     "name": "耶律隆绪",
+     "gen": 6,
+     "parent": "emp-liao-jingzong",
+     "temple": "圣宗",
+     "rk": "长子",
+     "house": "东丹系",
+     "reign": "982—1031",
+     "inher": true
+    },
+    {
+     "id": "emp-liao-xingzong",
+     "name": "耶律宗真",
+     "gen": 7,
+     "parent": "emp-liao-shengzong",
+     "temple": "兴宗",
+     "rk": "长子",
+     "house": "东丹系",
+     "reign": "1031—1055",
+     "inher": true
+    },
+    {
+     "id": "emp-liao-daozong",
+     "name": "耶律洪基",
+     "gen": 8,
+     "parent": "emp-liao-xingzong",
+     "temple": "道宗",
+     "rk": "长子",
+     "house": "东丹系",
+     "reign": "1055—1101",
+     "inher": true
+    },
+    {
+     "id": "lg-liao-yelujun",
+     "name": "耶律濬",
+     "gen": 9,
+     "parent": "emp-liao-daozong",
+     "temple": "顺宗",
+     "rk": "长子",
+     "house": "东丹系",
+     "note": "追尊，天祚帝之父"
+    },
+    {
+     "id": "emp-liao-tianzuo",
+     "name": "耶律延禧",
+     "gen": 10,
+     "parent": "lg-liao-yelujun",
+     "temple": "天祚帝",
+     "rk": "长子",
+     "house": "东丹系",
+     "reign": "1101—1125",
+     "inher": true,
+     "note": "被金所俘，辽亡"
+    },
+    {
+     "id": "lg-liao-dashi",
+     "name": "耶律大石",
+     "gen": 4,
+     "parent": "emp-liao-taizu",
+     "temple": "德宗",
+     "rk": "八世孙",
+     "house": "西辽",
+     "reign": "1124—1143",
+     "inher": true,
+     "note": "西辽开国"
+    }
+   ]
+  },
+  {
+   "id": "jin",
+   "name": "完颜金",
+   "full": "金朝皇室 · 完颜氏",
+   "color": "#9a6a35",
+   "note": "女真完颜部。太祖阿骨打诸子（宗峻、宗干、宗辅）之后轮流为帝，故熙宗、海陵、世宗同辈而异支。",
+   "nodes": [
+    {
+     "id": "lg-jin-helibo",
+     "name": "完颜劾里钵",
+     "gen": 1,
+     "parent": null,
+     "temple": "世祖",
+     "rk": "始祖",
+     "note": "追尊"
+    },
+    {
+     "id": "emp-jin-taizu",
+     "name": "完颜阿骨打",
+     "gen": 2,
+     "parent": "lg-jin-helibo",
+     "temple": "太祖",
+     "rk": "次子",
+     "house": "太祖系",
+     "reign": "1115—1123",
+     "inher": true,
+     "note": "建金"
+    },
+    {
+     "id": "emp-jin-taizong",
+     "name": "完颜晟",
+     "gen": 2,
+     "parent": "lg-jin-helibo",
+     "temple": "太宗",
+     "rk": "弟",
+     "house": "太祖系",
+     "reign": "1123—1135",
+     "inher": true,
+     "note": "兄终弟及"
+    },
+    {
+     "id": "lg-jin-zongjun",
+     "name": "完颜宗峻",
+     "gen": 3,
+     "parent": "emp-jin-taizu",
+     "temple": "景宣帝",
+     "rk": "嫡长子",
+     "born": "嫡",
+     "house": "太祖系",
+     "note": "追尊，熙宗之父"
+    },
+    {
+     "id": "lg-jin-zonggan",
+     "name": "完颜宗干",
+     "gen": 3,
+     "parent": "emp-jin-taizu",
+     "rk": "庶长子",
+     "born": "庶",
+     "house": "太祖系",
+     "note": "海陵王之父，追尊德宗"
+    },
+    {
+     "id": "lg-jin-zongfu",
+     "name": "完颜宗辅",
+     "gen": 3,
+     "parent": "emp-jin-taizu",
+     "temple": "睿宗",
+     "rk": "第三子",
+     "house": "太祖系",
+     "note": "追尊，世宗之父"
+    },
+    {
+     "id": "emp-jin-xizong",
+     "name": "完颜亶",
+     "gen": 4,
+     "parent": "lg-jin-zongjun",
+     "temple": "熙宗",
+     "rk": "嫡长孙",
+     "born": "嫡",
+     "house": "太祖系",
+     "reign": "1135—1150",
+     "inher": true
+    },
+    {
+     "id": "emp-jin-hailing",
+     "name": "完颜亮",
+     "gen": 4,
+     "parent": "lg-jin-zonggan",
+     "temple": "海陵王",
+     "rk": "次子",
+     "house": "太祖系",
+     "reign": "1150—1161",
+     "inher": true,
+     "note": "弑君自立，南征败死"
+    },
+    {
+     "id": "emp-jin-shizong",
+     "name": "完颜雍",
+     "gen": 4,
+     "parent": "lg-jin-zongfu",
+     "temple": "世宗",
+     "rk": "第三子",
+     "house": "太祖系",
+     "reign": "1161—1189",
+     "inher": true,
+     "note": "小尧舜"
+    },
+    {
+     "id": "lg-jin-yungong",
+     "name": "完颜允恭",
+     "gen": 5,
+     "parent": "emp-jin-shizong",
+     "temple": "显宗",
+     "rk": "嫡长子",
+     "born": "嫡",
+     "house": "太祖系",
+     "note": "追尊，章宗之父"
+    },
+    {
+     "id": "emp-jin-zhangzong",
+     "name": "完颜璟",
+     "gen": 6,
+     "parent": "lg-jin-yungong",
+     "temple": "章宗",
+     "rk": "嫡长子",
+     "born": "嫡",
+     "house": "太祖系",
+     "reign": "1189—1208",
+     "inher": true
+    },
+    {
+     "id": "emp-jin-weishao",
+     "name": "完颜永济",
+     "gen": 5,
+     "parent": "emp-jin-shizong",
+     "temple": "卫绍王",
+     "rk": "第七子",
+     "house": "太祖系",
+     "reign": "1208—1213",
+     "inher": true,
+     "note": "被弑"
+    },
+    {
+     "id": "emp-jin-xuanzong",
+     "name": "完颜珣",
+     "gen": 6,
+     "parent": "lg-jin-yungong",
+     "temple": "宣宗",
+     "rk": "长子",
+     "house": "太祖系",
+     "reign": "1213—1224",
+     "inher": true,
+     "note": "章宗兄"
+    },
+    {
+     "id": "emp-jin-aizong",
+     "name": "完颜守绪",
+     "gen": 7,
+     "parent": "emp-jin-xuanzong",
+     "temple": "哀宗",
+     "rk": "第三子",
+     "house": "太祖系",
+     "reign": "1224—1234",
+     "inher": true,
+     "note": "蔡州城破自缢"
+    },
+    {
+     "id": "emp-jin-modi",
+     "name": "完颜承麟",
+     "gen": 8,
+     "parent": null,
+     "temple": "末帝",
+     "rk": "宗室",
+     "house": "太祖系",
+     "reign": "1234",
+     "inher": true,
+     "note": "即位一日而亡"
+    }
+   ]
+  },
+  {
+   "id": "xixia",
+   "name": "嵬名西夏",
+   "full": "西夏皇室 · 李氏（嵬名氏）",
+   "color": "#6b5f8a",
+   "note": "党项拓跋部，唐赐姓李。景宗元昊称帝，此后多父死子继；襄宗、神宗皆以宗室夺位，故世系出现旁支。",
+   "nodes": [
+    {
+     "id": "lg-xixia-jiqian",
+     "name": "李继迁",
+     "gen": 1,
+     "parent": null,
+     "temple": "太祖",
+     "rk": "始祖",
+     "note": "追尊，党项拓跋部"
+    },
+    {
+     "id": "lg-xixia-deming",
+     "name": "李德明",
+     "gen": 2,
+     "parent": "lg-xixia-jiqian",
+     "temple": "太宗",
+     "rk": "长子",
+     "house": "李氏",
+     "note": "追尊"
+    },
+    {
+     "id": "emp-xixia-jingzong",
+     "name": "李元昊",
+     "gen": 3,
+     "parent": "lg-xixia-deming",
+     "temple": "景宗",
+     "rk": "长子",
+     "house": "李氏",
+     "reign": "1038—1048",
+     "inher": true,
+     "note": "称帝建大夏"
+    },
+    {
+     "id": "emp-xixia-yizong",
+     "name": "李谅祚",
+     "gen": 4,
+     "parent": "emp-xixia-jingzong",
+     "temple": "毅宗",
+     "rk": "长子",
+     "house": "李氏",
+     "reign": "1048—1068",
+     "inher": true
+    },
+    {
+     "id": "emp-xixia-huizong",
+     "name": "李秉常",
+     "gen": 5,
+     "parent": "emp-xixia-yizong",
+     "temple": "惠宗",
+     "rk": "长子",
+     "house": "李氏",
+     "reign": "1068—1086",
+     "inher": true
+    },
+    {
+     "id": "emp-xixia-chongzong",
+     "name": "李乾顺",
+     "gen": 6,
+     "parent": "emp-xixia-huizong",
+     "temple": "崇宗",
+     "rk": "长子",
+     "house": "李氏",
+     "reign": "1086—1139",
+     "inher": true
+    },
+    {
+     "id": "emp-xixia-renzong",
+     "name": "李仁孝",
+     "gen": 7,
+     "parent": "emp-xixia-chongzong",
+     "temple": "仁宗",
+     "rk": "长子",
+     "house": "李氏",
+     "reign": "1139—1193",
+     "inher": true,
+     "note": "崇文重教"
+    },
+    {
+     "id": "emp-xixia-huanzong",
+     "name": "李纯祐",
+     "gen": 8,
+     "parent": "emp-xixia-renzong",
+     "temple": "桓宗",
+     "rk": "长子",
+     "house": "李氏",
+     "reign": "1193—1206",
+     "inher": true,
+     "note": "被废"
+    },
+    {
+     "id": "lg-xixia-renyou",
+     "name": "李仁友",
+     "gen": 7,
+     "parent": "emp-xixia-chongzong",
+     "temple": "越王",
+     "rk": "次子",
+     "house": "李氏"
+    },
+    {
+     "id": "emp-xixia-xiangzong",
+     "name": "李安全",
+     "gen": 8,
+     "parent": "lg-xixia-renyou",
+     "temple": "襄宗",
+     "rk": "长子",
+     "house": "李氏",
+     "reign": "1206—1211",
+     "inher": true,
+     "note": "废桓宗自立"
+    },
+    {
+     "id": "lg-xixia-yanzong",
+     "name": "李彦宗",
+     "gen": 7,
+     "parent": "emp-xixia-chongzong",
+     "temple": "齐王",
+     "rk": "第三子",
+     "house": "李氏"
+    },
+    {
+     "id": "emp-xixia-shenzong",
+     "name": "李遵顼",
+     "gen": 8,
+     "parent": "lg-xixia-yanzong",
+     "temple": "神宗",
+     "rk": "长子",
+     "house": "李氏",
+     "reign": "1211—1223",
+     "inher": true,
+     "note": "废襄宗自立"
+    },
+    {
+     "id": "emp-xixia-xianzong",
+     "name": "李德旺",
+     "gen": 9,
+     "parent": "emp-xixia-shenzong",
+     "temple": "献宗",
+     "rk": "侄",
+     "house": "李氏",
+     "reign": "1223—1226",
+     "inher": true
+    },
+    {
+     "id": "emp-xixia-modi",
+     "name": "李睍",
+     "gen": 10,
+     "parent": null,
+     "temple": "末帝",
+     "rk": "神宗孙",
+     "house": "李氏",
+     "reign": "1226—1227",
+     "inher": true,
+     "note": "降蒙，西夏亡"
+    }
+   ]
+  },
+  {
+   "id": "dali",
+   "name": "段氏大理",
+   "full": "大理国皇室 · 段氏",
+   "color": "#3f8071",
+   "note": "段思平建大理国，传二十二世。此处列开国与末帝之间主要承袭，中段世系从略。",
+   "nodes": [
+    {
+     "id": "lg-dali-siping",
+     "name": "段思平",
+     "gen": 1,
+     "parent": null,
+     "temple": "太祖",
+     "rk": "始祖",
+     "house": "段氏",
+     "reign": "937—944",
+     "inher": true,
+     "note": "建大理国"
+    },
+    {
+     "id": "lg-dali-siying",
+     "name": "段思英",
+     "gen": 2,
+     "parent": "lg-dali-siping",
+     "temple": "文经帝",
+     "rk": "长子",
+     "house": "段氏",
+     "reign": "944—945"
+    },
+    {
+     "id": "lg-dali-siliang",
+     "name": "段思良",
+     "gen": 2,
+     "parent": "lg-dali-siping",
+     "rk": "弟",
+     "house": "段氏",
+     "reign": "945—952"
+    },
+    {
+     "id": "lg-dali-sicong",
+     "name": "段思聪",
+     "gen": 3,
+     "parent": "lg-dali-siliang",
+     "rk": "长子",
+     "house": "段氏",
+     "reign": "952—968"
+    },
+    {
+     "id": "lg-dali-sushun",
+     "name": "段素顺",
+     "gen": 4,
+     "parent": "lg-dali-sicong",
+     "rk": "长子",
+     "house": "段氏",
+     "reign": "968—985"
+    },
+    {
+     "id": "lg-dali-suying",
+     "name": "段素英",
+     "gen": 5,
+     "parent": "lg-dali-sushun",
+     "rk": "长子",
+     "house": "段氏",
+     "reign": "985—1009"
+    },
+    {
+     "id": "lg-dali-sulian",
+     "name": "段素廉",
+     "gen": 6,
+     "parent": "lg-dali-suying",
+     "rk": "长子",
+     "house": "段氏",
+     "reign": "1009—1022"
+    },
+    {
+     "id": "lg-dali-sulong",
+     "name": "段素隆",
+     "gen": 7,
+     "parent": "lg-dali-sulian",
+     "rk": "从弟",
+     "house": "段氏",
+     "reign": "1022—1026"
+    },
+    {
+     "id": "lg-dali-suzhen",
+     "name": "段素真",
+     "gen": 8,
+     "parent": "lg-dali-sulong",
+     "rk": "子",
+     "house": "段氏",
+     "reign": "1026—1041"
+    },
+    {
+     "id": "lg-dali-xingzhi",
+     "name": "段兴智",
+     "gen": 9,
+     "parent": null,
+     "temple": "末帝",
+     "house": "段氏",
+     "reign": "1253—1254",
+     "inher": true,
+     "note": "忽必烈征大理，国亡（中段世系从略）"
+    }
+   ]
+  }
+ ]
+}
