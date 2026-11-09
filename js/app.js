@@ -893,6 +893,26 @@
     '僧道': '#6b6b52', '起义': '#8a5a2f', '外族': '#4a5a72', '宋室': '#9a6a35'
   };
 
+  // 关系类别：按两端身份推断（本库关系无标签）
+  var PG_CAT = {
+    lord:   { label: '君臣', color: '#a8352a' },
+    civil:  { label: '同朝', color: '#2f6457' },
+    military: { label: '同袍', color: '#8a3b30' },
+    letters: { label: '文友', color: '#6b5b8c' },
+    other:  { label: '关联', color: '#8a7a5f' }
+  };
+  function pgCat(a, b) {
+    if (!a || !b) return 'other';
+    if (a.item.ptype === '帝王' || b.item.ptype === '帝王') return 'lord';
+    var ka = pgGroupKey(a), kb = pgGroupKey(b);
+    if (ka === kb) {
+      if (ka === '文豪' || ka === '思想家' || ka === '艺术家') return 'letters';
+      if (ka === '名将') return 'military';
+      if (ka === '名臣') return 'civil';
+    }
+    return 'other';
+  }
+
   function pgColor(n) {
     var gs = n.item.groups && n.item.groups.length ? n.item.groups : [n.item.ptype || '其他'];
     for (var i = 0; i < gs.length; i++) {
@@ -937,96 +957,63 @@
   }
 
   function pgLayout(model) {
-    var nodes = model.nodes, edges = model.edges;
-    var n = nodes.length;
-    if (!n) return;
-    var cx = PG.W / 2, cy = PG.H / 2;
+    var nodes = model.nodes;
+    if (!nodes.length) return;
+    var W = PG.W, H = PG.H, PAD = 50, GAP = 54;
 
-    // 身份锚点：围绕中心排一圈，让同类聚在一处
-    var keys = [];
+    // 按身份分组（与图例同一套 key）
+    var cmap = {}, clusters = [];
     nodes.forEach(function (nd) {
       var k = pgGroupKey(nd);
-      if (keys.indexOf(k) < 0) keys.push(k);
+      if (!cmap[k]) { cmap[k] = { key: k, nodes: [], color: pgGroupColor[k] || '#6b6458' }; clusters.push(cmap[k]); }
+      cmap[k].nodes.push(nd);
     });
-    var anchors = {};
-    var AR = Math.min(PG.W, PG.H) * 0.34;
-    keys.forEach(function (k, i) {
-      var a = (i / keys.length) * Math.PI * 2 - Math.PI / 2;
-      anchors[k] = { x: cx + Math.cos(a) * AR, y: cy + Math.sin(a) * AR };
-    });
-
-    nodes.forEach(function (node, i) {
-      var k = pgGroupKey(node);
-      var an = anchors[k];
-      var a = i * 2.399963229728653;
-      var rr = 46 + (i % 11) * 5;
-      node.x = an.x + Math.cos(a) * rr;
-      node.y = an.y + Math.sin(a) * rr;
-      node.vx = node.vy = 0;
-      node.ax = an.x; node.ay = an.y;
+    clusters.forEach(function (c) {
+      c.nodes.sort(function (a, b) { return b.deg - a.deg; });
+      c.R = c.nodes.length <= 3 ? 54 : 26 + 21 * Math.sqrt(c.nodes.length);
     });
 
-    var byId = {};
-    nodes.forEach(function (nd) { byId[nd.id] = nd; });
-    var links = edges.map(function (e) { return { s: byId[e.a], t: byId[e.b] }; });
-
-    var alpha = 1, decay = 0.972, iters = 520;
-    var repulse = 3000, springK = 0.06, springLen = 58;
-    var anchorK = 0.09, centerK = 0.010;
-
-    for (var it = 0; it < iters; it++) {
-      alpha *= decay;
-      for (var i = 0; i < n; i++) {
-        var a = nodes[i];
-        for (var j = i + 1; j < n; j++) {
-          var b = nodes[j];
-          var dx = b.x - a.x, dy = b.y - a.y;
-          var d2 = dx * dx + dy * dy;
-          if (d2 < 4) { d2 = 4; dx = (i % 9 - 4) * 0.4; dy = (j % 9 - 4) * 0.4; }
-          if (d2 > 200000) continue;
-          var f = repulse * alpha / d2;
-          var d = Math.sqrt(d2);
-          var fx = dx / d * f, fy = dy / d * f;
-          a.vx -= fx; a.vy -= fy;
-          b.vx += fx; b.vy += fy;
-        }
+    // 货架式排布：大岛在前，每行居中，最后整体缩放到一屏
+    var cs = clusters.slice().sort(function (a, b) { return b.R - a.R; });
+    var rows = [], row = { items: [], w: 0, h: 0 }, used = 0, availW = W - PAD * 2;
+    cs.forEach(function (c) {
+      var d = c.R * 2;
+      var add = (row.items.length ? GAP : 0) + d;
+      if (used + add > availW && row.items.length) {
+        rows.push(row); row = { items: [], w: 0, h: 0 }; used = 0; add = d;
       }
-      links.forEach(function (l) {
-        var dx = l.t.x - l.s.x, dy = l.t.y - l.s.y;
-        var d = Math.sqrt(dx * dx + dy * dy) || 1;
-        var f = (d - springLen) * springK * alpha;
-        var fx = dx / d * f, fy = dy / d * f;
-        l.s.vx += fx; l.s.vy += fy;
-        l.t.vx -= fx; l.t.vy -= fy;
-      });
-      nodes.forEach(function (node) {
-        node.vx += (node.ax - node.x) * anchorK * alpha;
-        node.vy += (node.ay - node.y) * anchorK * alpha;
-        node.vx += (cx - node.x) * centerK * alpha;
-        node.vy += (cy - node.y) * centerK * alpha;
-        node.vx *= 0.80; node.vy *= 0.80;
-        node.x += node.vx; node.y += node.vy;
-        node.x = Math.max(PG.pad, Math.min(PG.W - PG.pad, node.x));
-        node.y = Math.max(PG.pad, Math.min(PG.H - PG.pad, node.y));
-      });
-    }
+      row.items.push(c); row.w += add; row.h = Math.max(row.h, d); used += add;
+    });
+    if (row.items.length) rows.push(row);
 
-    // 归一化：把整簇缩放到画布中央，避免偏在一角
-    var minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
-    nodes.forEach(function (nd) {
-      minX = Math.min(minX, nd.x); maxX = Math.max(maxX, nd.x);
-      minY = Math.min(minY, nd.y); maxY = Math.max(maxY, nd.y);
+    var totalH = rows.reduce(function (a, r) { return a + r.h + GAP; }, -GAP);
+    var k = Math.min(1.05, (H - PAD * 2) / Math.max(1, totalH));
+    var y = PAD + ((H - PAD * 2) - totalH * k) / 2;
+    rows.forEach(function (r) {
+      var x = PAD + (availW - r.w * k) / 2;
+      r.items.forEach(function (c) {
+        c.R = c.R * k;
+        c.cx = x + c.R;
+        c.cy = y + (r.h * k) / 2;
+        x += c.R * 2 + GAP * k;
+      });
+      y += (r.h + GAP) * k;
     });
-    var w = Math.max(1, maxX - minX), h = Math.max(1, maxY - minY);
-    var k = Math.min((PG.W - PG.pad * 2) / w, (PG.H - PG.pad * 2) / h, 1.25);
-    var ox = (PG.W - w * k) / 2 - minX * k;
-    var oy = (PG.H - h * k) / 2 - minY * k;
-    nodes.forEach(function (nd) {
-      nd.x = nd.x * k + ox;
-      nd.y = nd.y * k + oy;
-      nd.k = k;
+
+    // 岛内向日葵式铺点，半径按人数开方
+    clusters.forEach(function (c) {
+      var maxR = Math.max(22, c.R * 0.84);
+      c.nodes.forEach(function (nd, i) {
+        var ang = i * 2.399963229728653;
+        var rad = maxR * Math.sqrt((i + 0.5) / c.nodes.length);
+        nd.x = c.cx + Math.cos(ang) * rad;
+        nd.y = c.cy + Math.sin(ang) * rad;
+        nd.k = 1;
+      });
     });
+    model.clusters = clusters;
   }
+
 
   function pgVisibleIds() {
     var q = ($('#peopleSearch') && $('#peopleSearch').value || '').trim().toLowerCase();
@@ -1080,20 +1067,39 @@
 
     var parts = [];
     parts.push('<g id="pgViewport">');
-    // 边
+
+    // 岛屿名（与分簇布局一致）
+    var clusters = model.clusters || [];
+    clusters.forEach(function (c) {
+      var top = Math.min.apply(null, c.nodes.map(function (nd) { return nd.y; }));
+      parts.push('<text class="pg-fam" x="' + c.cx.toFixed(1) + '" y="' + (top - 16).toFixed(1) +
+        '" fill="' + c.color + '">' + esc(c.key) + '</text>');
+    });
+
+    // 连线：按身份分类着色，跨类默认压暗
     model.edges.forEach(function (e) {
       var a = byId[e.a], b = byId[e.b];
       if (!a || !b) return;
       var on = vis[e.a] && vis[e.b];
       if (on) shown++;
-      parts.push('<line class="pg-edge' + (on ? '' : ' dim') + '" data-a="' + e.a + '" data-b="' + e.b +
-        '" x1="' + a.x.toFixed(1) + '" y1="' + a.y.toFixed(1) + '" x2="' + b.x.toFixed(1) +
-        '" y2="' + b.y.toFixed(1) + '"/>');
+      var cat = pgCat(a, b);
+      // 君臣连线与跨类连线一样是长射线，默认压暗，避免中心那个帝王枢纽把画面拉花
+      var cross = (cat === 'other' || cat === 'lord') ? ' cross' : '';
+      var mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+      parts.push('<g class="pg-edge-g ' + cat + cross + (on ? '' : ' dim') +
+        '" data-a="' + e.a + '" data-b="' + e.b + '" data-cat="' + cat + '">' +
+        '<line class="pg-edge-hit" x1="' + a.x.toFixed(1) + '" y1="' + a.y.toFixed(1) +
+        '" x2="' + b.x.toFixed(1) + '" y2="' + b.y.toFixed(1) + '"/>' +
+        '<line class="pg-edge" x1="' + a.x.toFixed(1) + '" y1="' + a.y.toFixed(1) +
+        '" x2="' + b.x.toFixed(1) + '" y2="' + b.y.toFixed(1) + '"/>' +
+        '<text class="pg-edge-label" x="' + mx.toFixed(1) + '" y="' + (my - 4).toFixed(1) + '">' +
+        (PG_CAT[cat] ? PG_CAT[cat].label : '关联') + '</text></g>');
     });
     // 节点
     model.nodes.forEach(function (n) {
       var on = !!vis[n.id];
-      var g = '<g class="pg-node' + (on ? '' : ' dim') + (n.deg < 4 ? ' minor' : '') +
+      var g = '<g class="pg-node' + (on ? '' : ' dim') +
+        (n.deg < (model.nodes.length > 100 ? 5 : 3) ? ' minor' : '') +
         '" data-id="' + n.id + '" tabindex="0" role="button"' +
         ' aria-label="' + esc(n.item.name) + '">';
       g += '<circle class="pg-halo" cx="' + n.x.toFixed(1) + '" cy="' + n.y.toFixed(1) + '" r="' + (rOf(n) + 4).toFixed(1) + '"/>';
@@ -1112,6 +1118,7 @@
     svg.setAttribute('height', 'auto');
     applyPgTransform();
     bindPeopleGraph();
+    pgBindEdgeHover();
     $('#pgCount').textContent = model.nodes.length + ' 位有互相关联 · ' + model.edges.length + ' 条关系 · 人物库共 ' + model.total + ' 位';
     var usedKeys = [];
     model.nodes.forEach(function (nd) {
@@ -1120,6 +1127,8 @@
     });
     $('#pgLegend').innerHTML = usedKeys.map(function (k) {
       return '<span><i style="background:' + (pgGroupColor[k] || '#6b6458') + '"></i>' + esc(k) + '</span>';
+    }).join('') + Object.keys(PG_CAT).map(function (c) {
+      return '<span class="el"><i style="border-color:' + PG_CAT[c].color + '"></i>' + PG_CAT[c].label + '</span>';
     }).join('');
     $('#pgZoomLabel').textContent = Math.round(pgState.zoom * 100) + '%';
     pgHighlight(pgState.hovered);
@@ -1148,33 +1157,623 @@
   function pgHighlight(id) {
     var svg = $('#pgSvg');
     if (!svg) return;
+    var eh = pgState.edgeHover;
     var near = {};
-    if (id) {
+    if (eh) {
+      near[eh.a] = 1; near[eh.b] = 1;
+    } else if (id) {
       near[id] = 1;
       pgState.edges.forEach(function (e) {
         if (e.a === id) near[e.b] = 1;
         if (e.b === id) near[e.a] = 1;
       });
     }
+    var any = !!eh || !!id;
+    $$('.pg-edge-g', svg).forEach(function (g) {
+      g.addEventListener('click', function (e) {
+        e.stopPropagation();
+        // 密集区多条线的 12px 命中区会互相遮挡：以「距离判定」得到的悬停线为准
+        var eh = pgState.edgeHover;
+        if (eh) pgSelectEdge(eh.a, eh.b);
+        else pgSelectEdge(g.getAttribute('data-a'), g.getAttribute('data-b'));
+      });
+    });
+
     $$('.pg-node', svg).forEach(function (g) {
       var nid = g.getAttribute('data-id');
-      g.classList.toggle('faded', !!id && !near[nid]);
-      g.classList.toggle('near', !!id && !!near[nid] && nid !== id);
+      g.classList.toggle('faded', any && !near[nid]);
+      g.classList.toggle('near', !eh && !!id && !!near[nid] && nid !== id);
+      g.classList.toggle('ehot', !!eh && (nid === eh.a || nid === eh.b));
       g.classList.toggle('sel', nid === pgState.selected);
     });
-    $$('.pg-edge', svg).forEach(function (l) {
-      var on = !!id && (l.getAttribute('data-a') === id || l.getAttribute('data-b') === id);
-      l.classList.toggle('hl', on);
-      l.classList.toggle('faded', !!id && !on);
-    });
+    pgPaintEdges();
     var tip = $('#pgTip');
-    if (id && pgState.nodeMap[id]) {
+    if (eh && pgState.nodeMap[eh.a] && pgState.nodeMap[eh.b]) {
+      var c = pgState.edgeHoverCat || 'other';
+      tip.innerHTML = '<b>' + esc(pgState.nodeMap[eh.a].item.name) + '</b> — ' +
+        esc(pgState.nodeMap[eh.b].item.name) + ' · ' + esc(PG_CAT[c] ? PG_CAT[c].label : '关联');
+      tip.hidden = false;
+    } else if (id && pgState.nodeMap[id]) {
       var it = pgState.nodeMap[id].item;
       tip.innerHTML = '<b>' + esc(it.name) + '</b> ' + esc((it.groups || []).slice(0, 2).join(' / '));
       tip.hidden = false;
     } else {
       tip.hidden = true;
     }
+  }
+
+  function pgPaintEdges() {
+    var eh = pgState.edgeHover;
+    var nid = pgState.hovered || pgState.selected;
+    $$('.pg-edge-g').forEach(function (g) {
+      var a = g.getAttribute('data-a'), b = g.getAttribute('data-b');
+      var onE = !!eh && a === eh.a && b === eh.b;
+      var onN = !eh && !!nid && (a === nid || b === nid);
+      var on = onE || onN;
+      g.classList.toggle('on', on);
+      g.classList.toggle('dim', !on && (!!eh || !!nid));
+    });
+  }
+
+  /* 连线悬停：按「指针到线段距离」取最近一条，避免密集区命中区互相遮挡 */
+  function pgBindEdgeHover() {
+    var svg = $('#pgSvg');
+    if (!svg || svg.dataset.edgeHover) return;
+    svg.dataset.edgeHover = '1';
+    var raf = 0, last = null, pt = null;
+
+    function toGraph(ev) {
+      if (!pt) pt = svg.createSVGPoint();
+      pt.x = ev.clientX; pt.y = ev.clientY;
+      var m = svg.getScreenCTM();
+      if (!m) return null;
+      var p = pt.matrixTransform(m.inverse());
+      return { x: (p.x - pgState.tx) / pgState.zoom, y: (p.y - pgState.ty) / pgState.zoom };
+    }
+    function nodeAt(p) {
+      var hit = null;
+      pgState.nodes.forEach(function (nd) {
+        var r = Math.min(9, 3.4 + Math.sqrt(nd.deg) * 1.9);
+        if (Math.hypot(p.x - nd.x, p.y - nd.y) <= r + 2) hit = nd;
+      });
+      return hit;
+    }
+    function segDist(px, py, ax, ay, bx, by) {
+      var dx = bx - ax, dy = by - ay, l2 = dx * dx + dy * dy;
+      var t = l2 ? ((px - ax) * dx + (py - ay) * dy) / l2 : 0;
+      t = Math.max(0, Math.min(1, t));
+      return Math.hypot(px - (ax + t * dx), py - (ay + t * dy));
+    }
+    function update(ev) {
+      if (!ev) return;
+      var p = toGraph(ev);
+      if (!p) return;
+      if (nodeAt(p)) {
+        if (pgState.edgeHover) { pgState.edgeHover = null; pgHighlight(pgState.hovered); }
+        return;
+      }
+      var best = null, bestD = 1e9;
+      pgState.edges.forEach(function (e) {
+        var a = pgState.nodeMap[e.a], b = pgState.nodeMap[e.b];
+        if (!a || !b) return;
+        var d = segDist(p.x, p.y, a.x, a.y, b.x, b.y);
+        if (d < bestD) { bestD = d; best = e; }
+      });
+      var rect = svg.getBoundingClientRect();
+      var unit = (rect.width ? PG.W / rect.width : 1) / pgState.zoom;
+      if (best && bestD <= 9 * unit) {
+        if (!pgState.edgeHover || pgState.edgeHover.a !== best.a || pgState.edgeHover.b !== best.b) {
+          pgState.edgeHover = { a: best.a, b: best.b };
+          pgState.edgeHoverCat = pgCat(pgState.nodeMap[best.a], pgState.nodeMap[best.b]);
+          pgHighlight(pgState.hovered);
+        }
+      } else if (pgState.edgeHover) {
+        pgState.edgeHover = null;
+        pgHighlight(pgState.hovered);
+      }
+    }
+    svg.addEventListener('mousemove', function (ev) {
+      last = ev;
+      if (raf) return;
+      raf = requestAnimationFrame(function () { raf = 0; update(last); });
+    }, { passive: true });
+    svg.addEventListener('mouseleave', function () {
+      if (pgState.edgeHover) { pgState.edgeHover = null; pgHighlight(pgState.hovered); }
+    });
+  }
+
+  function pgSelectEdge(a, b) {
+    var A = pgState.nodeMap[a], B = pgState.nodeMap[b];
+    if (!A || !B) return;
+    var cat = pgCat(A, B);
+    var shared = (A.item.groups || []).filter(function (g) { return (B.item.groups || []).indexOf(g) >= 0; });
+    $('#pgDetail').innerHTML =
+      '<div class="pgd-head"><i style="background:' + pgColor(A) + '"></i>' +
+        '<h3>' + esc(A.item.name) + ' — ' + esc(B.item.name) + '</h3>' +
+        '<span>' + esc(PG_CAT[cat] ? PG_CAT[cat].label : '关联') + '</span></div>' +
+      '<p class="pgd-summary">' + esc(A.item.summary || '') + '</p>' +
+      '<div class="pgd-tags">' +
+        '<button data-goto="' + A.item.id + '">' + esc(A.item.name) + ' ↗</button>' +
+        '<button data-goto="' + B.item.id + '">' + esc(B.item.name) + ' ↗</button>' +
+      '</div>' +
+      (shared.length ? '<div class="pgd-rel"><b>共同身份</b>' + shared.map(function (g) {
+        return '<span>' + esc(g) + '</span>';
+      }).join('') + '</div>' : '') +
+      '<div class="pgd-rel"><b>简介对照</b>' +
+        '<button data-goto="' + B.item.id + '">' + esc((B.item.summary || '').slice(0, 60)) + '</button>' +
+      '</div>';
+    $$('#pgDetail [data-goto]').forEach(function (btn) {
+      btn.addEventListener('click', function () { pgSelect(btn.getAttribute('data-goto')); });
+    });
+    pgState.selected = null;
+    pgHighlight(null);
+  }
+
+
+  function bindGraphEvents() {
+    var svg = $('#tgSvg');
+    $$('.tg-node', svg).forEach(function (g) {
+      var id = g.getAttribute('data-id');
+      g.addEventListener('click', function (e) {
+        e.stopPropagation();
+        tgState.selected = id;
+        tgHighlight(null);   // 清掉悬停淡出，只留 sel 标记
+        openItem(id);
+      });
+      g.addEventListener('mouseenter', function () { tgState.hovered = id; tgHighlight(id); });
+      g.addEventListener('mouseleave', function () {
+        tgState.hovered = null;
+        tgHighlight(null);
+      });
+      g.addEventListener('focus', function () { tgHighlight(id); });
+      g.addEventListener('blur', function () { tgHighlight(null); });
+      g.addEventListener('keydown', function (ev) {
+        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); openItem(id); }
+      });
+    });
+    svg.addEventListener('mouseleave', function () { tgHighlight(null); });
+  }
+
+  function renderTimelineList(items) {
+    var lastDec = null;
+    $('#timelineList').innerHTML = items.map(function (it) {
+      var dec = decadeOf(it.year);
+      var head = dec !== lastDec ? '<div class="tl-decade">' + dec + '年代</div>' : '';
+      lastDec = dec;
+      var rel = (it.related || []).map(function (r) {
+        var obj = (typeof r === 'string') ? byId[r] : r;
+        return obj ? '<button data-rel="' + esc(obj.id) + '">' + esc(obj.name) + '</button>' : '';
+      }).join('');
+      return head +
+        '<div class="tl-item ' + (it.minor ? 'minor' : 'major') + '" data-tl-id="' + esc(it.id) + '"' +
+        ' style="--era:' + eraColor(it.era) + '">' +
+        '<div class="tl-year">' + it.year + '<small>' + esc(it.era + ' · ' + (it.minor ? '次要' : '大事')) + '</small></div>' +
+        '<div class="tl-card" data-id="' + esc(it.id) + '">' +
+        '<h3>' + esc(it.name) + '</h3><p>' + esc(it.summary) + '</p>' +
+        '<div class="tags">' + (it.tags || []).map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div>' +
+        (rel ? '<div class="tl-rel"><span style="font-size:10px;letter-spacing:.16em;color:var(--ink-3);align-self:center">相关</span>' + rel + '</div>' : '') +
+        '</div></div>';
+    }).join('');
+
+    $$('#timelineList .tl-card').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        var rel = e.target.closest ? e.target.closest('[data-rel]') : null;
+        if (rel) { e.stopPropagation(); openItem(rel.getAttribute('data-rel')); return; }
+        openItem(el.getAttribute('data-id'));
+      });
+    });
+  }
+
+  function jumpToTimeline(id) {
+    if (tlView === 'graph') {
+      var n = tgState.nodeMap && tgState.nodeMap[id];
+      if (!n) { openItem(id); return; }
+      tgState.selected = id;
+      tgHighlight(id);
+      var sc = $('#tgScroll');
+      sc.scrollTo({ left: Math.max(0, n.x - sc.clientWidth / 2), behavior: 'smooth' });
+      return;
+    }
+    var el = document.querySelector('#timelineList [data-tl-id="' + id + '"]');
+    if (!el) { openItem(id); return; }
+    el.scrollIntoView({ block: 'center' });
+    el.classList.remove('flash');
+    void el.offsetWidth;
+    el.classList.add('flash');
+    setTimeout(function () { el.classList.remove('flash'); }, 1500);
+  }
+
+  function renderTimeline() {
+    var all = D.items.filter(function (it) { return it.cat === 'timeline'; })
+      .sort(function (a, b) { return a.year - b.year; });
+
+    var counts = {};
+    all.forEach(function (it) { counts[it.era] = (counts[it.era] || 0) + 1; });
+    var lanes = laneOrder(all);
+
+    var list = all.filter(function (it) {
+      if (tlEra !== 'all' && it.era !== tlEra) return false;
+      return !(tlMajor && it.minor);
+    });
+    state.list = list;
+    var visibleIds = list.map(function (it) { return it.id; });
+
+    var chips = '<button class="chip ' + (tlEra === 'all' ? 'on' : '') + '" data-era="all">全部<em>' + all.length + '</em></button>';
+    chips += lanes.map(function (l) {
+      return '<button class="chip ' + (tlEra === l.era ? 'on' : '') + '" data-era="' + esc(l.era) + '"' +
+        ' style="--era:' + l.color + '"><i class="dot"></i>' + esc(l.era) +
+        '<em>' + l.count + '</em></button>';
+    }).join('');
+    chips += '<button class="chip toggle ' + (tlMajor ? 'on' : '') + '" data-major="1">仅看大事</button>';
+    $('#timelineFilters').innerHTML = chips;
+
+    $$('#timelineFilters .chip').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (b.hasAttribute('data-major')) tlMajor = !tlMajor;
+        else tlEra = b.getAttribute('data-era');
+        renderTimeline();
+      });
+    });
+
+    $('#tgLegend').innerHTML = lanes.map(function (l) {
+      return '<span><i style="background:' + l.color + '"></i>' + esc(l.era) + '</span>';
+    }).join('') + '<span class="tg-count">' + list.length + ' / ' + all.length + ' 条</span>';
+
+    // 视图切换
+    $$('[data-tlview]').forEach(function (b) {
+      b.classList.toggle('on', b.getAttribute('data-tlview') === tlView);
+      b.onclick = function () {
+        tlView = b.getAttribute('data-tlview');
+        renderTimeline();
+      };
+    });
+    var graphOn = tlView === 'graph';
+    $('#tgCard').hidden = !graphOn;
+    $('#tlListWrap').hidden = graphOn;
+    $('#tgZoom').hidden = !graphOn;
+
+    if (graphOn) {
+      if (!tgState.fitted) {
+        var avail = $('#tgScroll').clientWidth - 16;
+        if (avail > 240) {
+          var span0 = (tgState.maxY || 1100) - (tgState.minY || 900);
+          tgState.ppy = Math.max(TG.minPPY, Math.min(TG.maxPPY, avail / (span0 || 380)));
+          tgState.fitted = true;
+        }
+      }
+      renderGraph(all, visibleIds);
+      tgHighlight(null);
+    } else {
+      renderTimelineList(list);
+      $('#tgTip').hidden = true;
+    }
+
+    // 缩放
+    $$('#tgZoom [data-zoom]').forEach(function (b) {
+      b.onclick = function () {
+        var mode = b.getAttribute('data-zoom');
+        if (mode === 'in') tgState.ppy = Math.min(TG.maxPPY, tgState.ppy * 1.45);
+        else if (mode === 'out') tgState.ppy = Math.max(TG.minPPY, tgState.ppy / 1.45);
+        else {
+          var avail = $('#tgScroll').clientWidth - 24;
+          tgState.ppy = Math.max(TG.minPPY, Math.min(TG.maxPPY, avail / (tgState.maxY - tgState.minY)));
+        }
+        renderTimeline();
+      };
+    });
+  }
+
+  /* ---------------- 人物 ---------------- */  /* ---------------- 人物 ---------------- */
+  var peopleType = 'all';
+  var peopleQ = '';
+  function renderPeople() {
+    var pool = D.items.filter(function (i) { return i.cat === 'people'; });
+    var fallback = Array.from(new Set(pool.map(function (i) { return i.ptype || '其他'; })));
+    var types = ['all'].concat(D.groups && D.groups.length ? D.groups : fallback);
+    var q = peopleQ.trim().toLowerCase();
+    var list = pool.filter(function (i) {
+      if (peopleType !== 'all') {
+        var gs = (i.groups && i.groups.length) ? i.groups : [i.ptype || '其他'];
+        if (gs.indexOf(peopleType) < 0) return false;
+      }
+      if (!q) return true;
+      var hay = (i.name + ' ' + (i.ptype || '') + ' ' + (i.era || '') + ' ' +
+        (i.summary || '') + ' ' + (i.tags || []).join(' ')).toLowerCase();
+      return hay.indexOf(q) >= 0;
+    }).sort(function (a, b) {
+      var ya = a.birth == null ? 9999 : a.birth, yb = b.birth == null ? 9999 : b.birth;
+      return ya - yb;
+    });
+    $('#peopleFilters').innerHTML = types.map(function (t) {
+      return '<button class="chip ' + (peopleType === t ? 'on' : '') + '" data-pt="' + esc(t) + '">' +
+        (t === 'all' ? '全部' : t) + '</button>';
+    }).join('') + '<span class="result-count">' + list.length + ' / ' + pool.length + ' 人</span>';
+    $$('#peopleFilters .chip').forEach(function (b) {
+      b.addEventListener('click', function () { peopleType = b.getAttribute('data-pt'); renderPeople(); });
+    });
+    state.list = list;
+    $('#peopleGrid').innerHTML = list.map(function (p) {
+      var life = (p.birth != null ? p.birth : '?') + '—' + (p.death != null ? p.death : '?');
+      var roles = (p.groups && p.groups.length) ? p.groups.join(' · ') : (p.ptype || '');
+      return '<div class="person" data-id="' + p.id + '">' +
+        '<div class="avatar">' + esc(p.name.slice(0, 1)) + '</div>' +
+        '<div><div class="pname">' + esc(p.name) + '</div>' +
+        '<div class="pmeta">' + life + ' · ' + esc(p.era || '') + (roles ? ' · ' + esc(roles) : '') + '</div>' +
+        '<div class="pdesc">' + esc(p.summary || '') + '</div></div></div>';
+    }).join('');
+    bindOpen('#peopleGrid .person');
+    setPeopleView(pgState.view);
+  }
+
+
+  /* ---------------- 人物关系图谱 ---------------- */
+  var PG = { W: 1400, H: 900, pad: 46 };
+  var pgState = { view: 'list', selected: null, hovered: null, zoom: 1, tx: 0, ty: 0, nodes: [], edges: [], nodeMap: {} };
+  var pgGroupColor = {
+    '帝王': '#a8352a', '名臣': '#2f6457', '名将': '#8a3b30', '文豪': '#6b5b8c',
+    '思想家': '#3f6b8a', '科学家': '#2f7a6b', '艺术家': '#9a5f2f', '女性': '#a8486a',
+    '僧道': '#6b6b52', '起义': '#8a5a2f', '外族': '#4a5a72', '宋室': '#9a6a35'
+  };
+
+  // 关系类别：按两端身份推断（本库关系无标签）
+  var PG_CAT = {
+    lord:   { label: '君臣', color: '#a8352a' },
+    civil:  { label: '同朝', color: '#2f6457' },
+    military: { label: '同袍', color: '#8a3b30' },
+    letters: { label: '文友', color: '#6b5b8c' },
+    other:  { label: '关联', color: '#8a7a5f' }
+  };
+  function pgCat(a, b) {
+    if (!a || !b) return 'other';
+    if (a.item.ptype === '帝王' || b.item.ptype === '帝王') return 'lord';
+    var ka = pgGroupKey(a), kb = pgGroupKey(b);
+    if (ka === kb) {
+      if (ka === '文豪' || ka === '思想家' || ka === '艺术家') return 'letters';
+      if (ka === '名将') return 'military';
+      if (ka === '名臣') return 'civil';
+    }
+    return 'other';
+  }
+
+  function pgColor(n) {
+    var gs = n.item.groups && n.item.groups.length ? n.item.groups : [n.item.ptype || '其他'];
+    for (var i = 0; i < gs.length; i++) {
+      if (gs[i] !== '人物' && pgGroupColor[gs[i]]) return pgGroupColor[gs[i]];
+    }
+    return '#6b6458';
+  }
+
+  function pgBuild() {
+    var people = D.items.filter(function (i) { return i.cat === 'people'; });
+    var ids = {};
+    people.forEach(function (p) { ids[p.id] = p; });
+
+    var edges = [], seen = {};
+    people.forEach(function (p) {
+      (p.related || []).forEach(function (r) {
+        var rid = typeof r === 'string' ? r : (r && r.id);
+        if (!rid || !ids[rid] || rid === p.id) return;
+        var key = p.id < rid ? p.id + '|' + rid : rid + '|' + p.id;
+        if (seen[key]) return;
+        seen[key] = 1;
+        edges.push({ a: p.id, b: rid });
+      });
+    });
+
+    var degree = {};
+    edges.forEach(function (e) { degree[e.a] = (degree[e.a] || 0) + 1; degree[e.b] = (degree[e.b] || 0) + 1; });
+
+    var nodes = Object.keys(degree).map(function (id, i) {
+      return { id: id, item: ids[id], deg: degree[id], x: 0, y: 0, vx: 0, vy: 0, i: i };
+    });
+    return { nodes: nodes, edges: edges, degree: degree, total: people.length };
+  }
+
+  /* 力导向：分簇（身份锚点）+ 斥力 + 弹簧，确定性初始化，跑固定轮数 */
+  function pgGroupKey(n) {
+    var gs = (n.item.groups && n.item.groups.length) ? n.item.groups : [n.item.ptype || '其他'];
+    for (var i = 0; i < gs.length; i++) {
+      if (gs[i] !== '人物' && pgGroupColor[gs[i]]) return gs[i];
+    }
+    return gs[0] || '其他';
+  }
+
+  function pgLayout(model) {
+    var nodes = model.nodes;
+    if (!nodes.length) return;
+    var W = PG.W, H = PG.H, PAD = 50, GAP = 54;
+
+    // 按身份分组（与图例同一套 key）
+    var cmap = {}, clusters = [];
+    nodes.forEach(function (nd) {
+      var k = pgGroupKey(nd);
+      if (!cmap[k]) { cmap[k] = { key: k, nodes: [], color: pgGroupColor[k] || '#6b6458' }; clusters.push(cmap[k]); }
+      cmap[k].nodes.push(nd);
+    });
+    clusters.forEach(function (c) {
+      c.nodes.sort(function (a, b) { return b.deg - a.deg; });
+      c.R = c.nodes.length <= 3 ? 54 : 26 + 21 * Math.sqrt(c.nodes.length);
+    });
+
+    // 货架式排布：大岛在前，每行居中，最后整体缩放到一屏
+    var cs = clusters.slice().sort(function (a, b) { return b.R - a.R; });
+    var rows = [], row = { items: [], w: 0, h: 0 }, used = 0, availW = W - PAD * 2;
+    cs.forEach(function (c) {
+      var d = c.R * 2;
+      var add = (row.items.length ? GAP : 0) + d;
+      if (used + add > availW && row.items.length) {
+        rows.push(row); row = { items: [], w: 0, h: 0 }; used = 0; add = d;
+      }
+      row.items.push(c); row.w += add; row.h = Math.max(row.h, d); used += add;
+    });
+    if (row.items.length) rows.push(row);
+
+    var totalH = rows.reduce(function (a, r) { return a + r.h + GAP; }, -GAP);
+    var k = Math.min(1.05, (H - PAD * 2) / Math.max(1, totalH));
+    var y = PAD + ((H - PAD * 2) - totalH * k) / 2;
+    rows.forEach(function (r) {
+      var x = PAD + (availW - r.w * k) / 2;
+      r.items.forEach(function (c) {
+        c.R = c.R * k;
+        c.cx = x + c.R;
+        c.cy = y + (r.h * k) / 2;
+        x += c.R * 2 + GAP * k;
+      });
+      y += (r.h + GAP) * k;
+    });
+
+    // 岛内向日葵式铺点，半径按人数开方
+    clusters.forEach(function (c) {
+      var maxR = Math.max(22, c.R * 0.84);
+      c.nodes.forEach(function (nd, i) {
+        var ang = i * 2.399963229728653;
+        var rad = maxR * Math.sqrt((i + 0.5) / c.nodes.length);
+        nd.x = c.cx + Math.cos(ang) * rad;
+        nd.y = c.cy + Math.sin(ang) * rad;
+        nd.k = 1;
+      });
+    });
+    model.clusters = clusters;
+  }
+
+
+  function pgVisibleIds() {
+    var q = ($('#peopleSearch') && $('#peopleSearch').value || '').trim().toLowerCase();
+    var out = {};
+    D.items.filter(function (i) { return i.cat === 'people'; }).forEach(function (i) {
+      if (peopleType !== 'all') {
+        var gs = (i.groups && i.groups.length) ? i.groups : [i.ptype || '其他'];
+        if (gs.indexOf(peopleType) < 0) return;
+      }
+      if (q) {
+        var hay = (i.name + ' ' + (i.ptype || '') + ' ' + (i.era || '') + ' ' +
+          (i.summary || '') + ' ' + (i.tags || []).join(' ')).toLowerCase();
+        if (hay.indexOf(q) < 0) return;
+      }
+      out[i.id] = 1;
+    });
+    return out;
+  }
+
+  function renderPeopleGraph() {
+    var svg = $('#pgSvg');
+    if (!svg) return;
+    var model = pgBuild();
+    pgState.nodes = model.nodes;
+    pgState.edges = model.edges;
+    var byId = {};
+    model.nodes.forEach(function (n) { byId[n.id] = n; });
+    pgState.nodeMap = byId;
+
+    if (!model.nodes.length) {
+      svg.innerHTML = '';
+      $('#pgDetail').innerHTML = '<div class="pg-detail-empty">还没有人物关联数据。</div>';
+      return;
+    }
+
+    // 复用上一次的坐标：每次重渲染都会新建节点对象，若不回填会全部落到 (0,0)
+    var prev = pgState.pos || {};
+    var needLayout = !pgState.laid;
+    model.nodes.forEach(function (n) {
+      var p = prev[n.id];
+      if (p) { n.x = p[0]; n.y = p[1]; } else { needLayout = true; }
+    });
+    if (needLayout) pgLayout(model);
+    pgState.laid = true;
+    pgState.pos = {};
+    model.nodes.forEach(function (n) { pgState.pos[n.id] = [n.x, n.y]; });
+
+    var vis = pgVisibleIds();
+    var shown = 0;
+    var rOf = function (n) { return Math.min(9, 3.4 + Math.sqrt(n.deg) * 1.9); };
+
+    var parts = [];
+    parts.push('<g id="pgViewport">');
+
+    // 岛屿名（与分簇布局一致）
+    var clusters = model.clusters || [];
+    clusters.forEach(function (c) {
+      var top = Math.min.apply(null, c.nodes.map(function (nd) { return nd.y; }));
+      parts.push('<text class="pg-fam" x="' + c.cx.toFixed(1) + '" y="' + (top - 16).toFixed(1) +
+        '" fill="' + c.color + '">' + esc(c.key) + '</text>');
+    });
+
+    // 连线：按身份分类着色，跨类默认压暗
+    model.edges.forEach(function (e) {
+      var a = byId[e.a], b = byId[e.b];
+      if (!a || !b) return;
+      var on = vis[e.a] && vis[e.b];
+      if (on) shown++;
+      var cat = pgCat(a, b);
+      // 君臣连线与跨类连线一样是长射线，默认压暗，避免中心那个帝王枢纽把画面拉花
+      var cross = (cat === 'other' || cat === 'lord') ? ' cross' : '';
+      var mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+      parts.push('<g class="pg-edge-g ' + cat + cross + (on ? '' : ' dim') +
+        '" data-a="' + e.a + '" data-b="' + e.b + '" data-cat="' + cat + '">' +
+        '<line class="pg-edge-hit" x1="' + a.x.toFixed(1) + '" y1="' + a.y.toFixed(1) +
+        '" x2="' + b.x.toFixed(1) + '" y2="' + b.y.toFixed(1) + '"/>' +
+        '<line class="pg-edge" x1="' + a.x.toFixed(1) + '" y1="' + a.y.toFixed(1) +
+        '" x2="' + b.x.toFixed(1) + '" y2="' + b.y.toFixed(1) + '"/>' +
+        '<text class="pg-edge-label" x="' + mx.toFixed(1) + '" y="' + (my - 4).toFixed(1) + '">' +
+        (PG_CAT[cat] ? PG_CAT[cat].label : '关联') + '</text></g>');
+    });
+    // 节点
+    model.nodes.forEach(function (n) {
+      var on = !!vis[n.id];
+      var g = '<g class="pg-node' + (on ? '' : ' dim') +
+        (n.deg < (model.nodes.length > 100 ? 5 : 3) ? ' minor' : '') +
+        '" data-id="' + n.id + '" tabindex="0" role="button"' +
+        ' aria-label="' + esc(n.item.name) + '">';
+      g += '<circle class="pg-halo" cx="' + n.x.toFixed(1) + '" cy="' + n.y.toFixed(1) + '" r="' + (rOf(n) + 4).toFixed(1) + '"/>';
+      g += '<circle class="pg-dot" cx="' + n.x.toFixed(1) + '" cy="' + n.y.toFixed(1) + '" r="' + rOf(n).toFixed(1) +
+        '" fill="' + pgColor(n) + '"/>';
+      g += '<text class="pg-label" x="' + (n.x + rOf(n) + 3).toFixed(1) + '" y="' + (n.y + 3.2).toFixed(1) + '">' +
+        esc(n.item.name) + '</text>';
+      g += '<title>' + esc(n.item.name + ' · ' + (n.item.era || '') + ' · ' + n.deg + ' 条关联') + '</title>';
+      g += '</g>';
+      parts.push(g);
+    });
+    parts.push('</g>');
+    svg.innerHTML = parts.join('');
+    svg.setAttribute('viewBox', '0 0 ' + PG.W + ' ' + PG.H);
+    svg.setAttribute('width', '100%');
+    svg.setAttribute('height', 'auto');
+    applyPgTransform();
+    bindPeopleGraph();
+    pgBindEdgeHover();
+    $('#pgCount').textContent = model.nodes.length + ' 位有互相关联 · ' + model.edges.length + ' 条关系 · 人物库共 ' + model.total + ' 位';
+    var usedKeys = [];
+    model.nodes.forEach(function (nd) {
+      var k = pgGroupKey(nd);
+      if (usedKeys.indexOf(k) < 0) usedKeys.push(k);
+    });
+    $('#pgLegend').innerHTML = usedKeys.map(function (k) {
+      return '<span><i style="background:' + (pgGroupColor[k] || '#6b6458') + '"></i>' + esc(k) + '</span>';
+    }).join('') + Object.keys(PG_CAT).map(function (c) {
+      return '<span class="el"><i style="border-color:' + PG_CAT[c].color + '"></i>' + PG_CAT[c].label + '</span>';
+    }).join('');
+    $('#pgZoomLabel').textContent = Math.round(pgState.zoom * 100) + '%';
+    pgHighlight(pgState.hovered);
+  }
+
+  function clampPan(v) {
+    var lim = PG.W * 0.5;
+    return Math.max(-lim, Math.min(lim, v));
+  }
+
+  function pgResetView() {
+    pgState.zoom = 1;
+    pgState.tx = 0;
+    pgState.ty = 0;
+    applyPgTransform();
+    var lbl = document.getElementById('pgZoomLabel');
+    if (lbl) lbl.textContent = '100%';
+  }
+
+  function applyPgTransform() {
+    var vp = document.getElementById('pgViewport');
+    if (vp) vp.setAttribute('transform',
+      'translate(' + pgState.tx + ',' + pgState.ty + ') scale(' + pgState.zoom + ')');
   }
 
   function pgSelect(id) {
@@ -1234,6 +1833,32 @@
       });
     });
 
+    var pgs = $('#pgSearch');
+    if (pgs && !pgs.dataset.bound) {
+      pgs.dataset.bound = '1';
+      pgs.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          var q = pgs.value.trim();
+          if (!q) return;
+          var hit = pgState.nodes.filter(function (n) {
+            return n.item.name.indexOf(q) >= 0;
+          })[0];
+          if (hit) pgFocus(hit.id);
+        }
+      });
+    }
+    var pct = $('#pgCrossToggle');
+    if (pct && !pct.dataset.bound) {
+      pct.dataset.bound = '1';
+      pct.addEventListener('click', function () {
+        var on = !document.body.classList.contains('pg-cross-on');
+        document.body.classList.toggle('pg-cross-on', on);
+        pct.classList.toggle('on', on);
+        pct.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+    }
+
     var stage = $('#pgStage');
     if (stage.dataset.bound) return;
     stage.dataset.bound = '1';
@@ -1267,6 +1892,35 @@
       $('#pgZoomLabel').textContent = Math.round(pgState.zoom * 100) + '%';
       applyPgTransform();
     }, { passive: false });
+  }
+
+  function pgFocus(id) {
+    var vis = pgVisibleIds();
+    if (!vis[id]) {
+      // 被搜索或身份筛选排除时，先恢复全量
+      var ps = $('#peopleSearch');
+      if (ps) ps.value = '';
+      peopleType = 'all';
+      renderPeople();
+      renderPeopleGraph();
+    }
+    var n = pgState.nodeMap[id];
+    if (!n) return;
+    var z = Math.max(1.2, pgState.zoom);
+    pgState.zoom = z;
+    pgState.tx = clampPan(PG.W / 2 - n.x * z);
+    pgState.ty = clampPan(PG.H / 2 - n.y * z);
+    applyPgTransform();
+    var lbl = $('#pgZoomLabel');
+    if (lbl) lbl.textContent = Math.round(z * 100) + '%';
+    pgSelect(id);
+    var g = document.querySelector('.pg-node[data-id="' + id + '"]');
+    if (g) {
+      g.classList.remove('pulse');
+      void g.getBoundingClientRect();
+      g.classList.add('pulse');
+      setTimeout(function () { g.classList.remove('pulse'); }, 2500);
+    }
   }
 
   function setPeopleView(v) {
