@@ -1,7 +1,7 @@
 # 大宋全局志 · Song Dynasty Atlas
 
 <p align="center">
-  <img src="docs/screenshot-lineage.png" alt="宋辽金西夏大理五朝帝系族谱" width="880">
+  <img src="docs/demo.gif" alt="大宋全局志：切换宋辽金帝系，点开金太祖看词条" width="820">
 </p>
 
 <p align="center">
@@ -16,6 +16,13 @@
 > SQLite 存储、Python 标准库 API、零依赖前端，可一键构建为纯静态站点。
 
 **如果这个项目对你有帮助，点一个 ⭐ Star 是最好的支持。**
+
+<details>
+<summary>更多截图</summary>
+
+![五朝帝系族谱](docs/screenshot-lineage.png)
+
+</details>
 
 ## 数据规模
 
