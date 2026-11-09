@@ -13,3 +13,6 @@ backup/
 # 构建产物
 dist/
 db/wiki_report.json
+
+# 内部运营文档：只保留在本地
+docs/promotion.md
