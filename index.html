@@ -279,7 +279,10 @@
           <button data-pgzoom="in" aria-label="放大">＋</button>
           <button data-pgzoom="reset" class="pg-fit">重置</button>
         </div>
-        <div class="pg-hint" id="pgHint">拖动画布平移 · 滚轮缩放 · 点击人物看关系</div>
+        <input class="pg-search" id="pgSearch" type="search" placeholder="搜人物，回车定位"
+               autocomplete="off" spellcheck="false" aria-label="搜索图谱中的人物">
+        <button class="chip" id="pgCrossToggle" aria-pressed="false">显示跨类 / 君臣连线</button>
+        <div class="pg-hint" id="pgHint">拖动画布平移 · 滚轮缩放 · 点人物看关系 · 点连线看二人</div>
         <div class="pg-count" id="pgCount"></div>
       </div>
       <div class="pg-legend" id="pgLegend"></div>

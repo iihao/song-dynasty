@@ -1,7 +1,21 @@
 # 大宋全局志 · Song Dynasty Atlas
 
-两宋（960—1279）及辽（916—1125，含西辽）、西夏、金的结构化资料库：**SQLite 数据库 + 标准库 API + 零依赖前端**。
-覆盖政治制度、军事、经济、文化、思想学术、科技、社会民生、风俗生活、地理邦交、人物、名篇、大事年表十二门类。
+<p align="center">
+  <img src="docs/screenshot-lineage.png" alt="宋辽金西夏大理五朝帝系族谱" width="880">
+</p>
+
+<p align="center">
+  <a href="https://iihao.github.io/song-dynasty/"><b>▶ 在线体验（免安装）</b></a>
+  &nbsp;·&nbsp;
+  <img src="https://img.shields.io/github/license/iihao/song-dynasty" alt="license">
+  <img src="https://img.shields.io/github/last-commit/iihao/song-dynasty" alt="last commit">
+  <a href="https://github.com/iihao/song-dynasty/stargazers"><img src="https://img.shields.io/github/stars/iihao/song-dynasty?style=social" alt="stars"></a>
+</p>
+
+> 两宋（960—1279）及辽、西夏、金、大理的结构化资料库：**1049 条结构化条目 + 五朝帝系族谱 + 人物关系图谱 + 势力舆图**。
+> SQLite 存储、Python 标准库 API、零依赖前端，可一键构建为纯静态站点。
+
+**如果这个项目对你有帮助，点一个 ⭐ Star 是最好的支持。**
 
 ## 数据规模
 
@@ -243,6 +257,18 @@ python3 tools/enrich_wiki.py --prune
 
 ## 人物关系图谱
 
+对齐《红楼梦图谱》的岛屿簇式布局：
+
+- **分簇**：按身份（帝王/名臣/名将/文豪/思想家/科学家/艺术家/女性/僧道/起义/外族）分成岛屿，
+  货架式排布 + 每行居中 + 岛内向日葵式铺点，节点不重叠
+- **连线分类**：君臣（赤）、同朝（青）、同袍（铁红）、文友（紫）、其他（灰）；
+  君臣与跨类长线默认压暗，点「显示跨类 / 君臣连线」再展开
+- **悬停**：按「指针到线段距离」判定最近连线并高亮，两端人物描红、其余整体置灰，
+  中点浮出关系类别；悬停人物则显名所有邻座
+- **点击连线**：右侧显示二人对照卡（身份、共同身份、简介）
+- **搜索**：输入姓名回车，自动解除筛选、居中放大并脉冲标出
+
+
 「人物」页新增 **列表 / 关系图谱** 切换：
 
 - 201 位有互相关联的人物、227 条关系，来自 `item_relations`
@@ -368,3 +394,11 @@ python3 tools/enrich_wiki.py --prune
 
 内容为公开史料与常见研究综述的整理，供学习、检索与二次开发使用。
 历史数据与叙述难免疏漏，欢迎按上表结构补充、校正。
+
+## 支持这个项目
+
+如果它帮你省下了翻《宋史》查世系的时间，点一个 **⭐ Star** 能让更多读宋史的人看到它。
+
+- 把它分享给一个对宋史感兴趣的朋友
+- 发现世系、年份或人物关系有误，提一个 Issue
+- 想补充条目（人物、事件、名篇），数据源是 `db/seed.json`，欢迎 PR
