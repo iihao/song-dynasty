@@ -10,6 +10,7 @@
   <img src="https://img.shields.io/github/license/iihao/song-dynasty" alt="license">
   <img src="https://img.shields.io/github/last-commit/iihao/song-dynasty" alt="last commit">
   <a href="https://github.com/iihao/song-dynasty/stargazers"><img src="https://img.shields.io/github/stars/iihao/song-dynasty?style=social" alt="stars"></a>
+  <a href="https://github.com/iihao/song-dynasty/graphs/traffic"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fiihao%2Fsong-dynasty%2Fmain%2Fmetrics%2Fbadge.json" alt="visitors"></a>
 </p>
 
 > 两宋（960—1279）及辽、西夏、金、大理的结构化资料库：**1049 条结构化条目 + 五朝帝系族谱 + 人物关系图谱 + 势力舆图**。
